@@ -11,8 +11,8 @@ from collections import defaultdict
 # CONFIGURATION
 # ============================================
 
-INPUT_FILE = '/2025OctUpdatedCode/SIGCOMM/enriched_links.json'
-OUTPUT_FILE = '/2025OctUpdatedCode/SIGCOMM/enriched_links_grouped.json'
+INPUT_FILE = '../2025OctUpdatedCode/SIGCOMM/enriched_links.json'
+OUTPUT_FILE = '../2025OctUpdatedCode/SIGCOMM/enriched_links_grouped.json'
 
 
 def group_peers_by_country(enriched_data):
