@@ -1,0 +1,1580 @@
+{
+  "11992": {
+    "asn": "11992",
+    "as_info": {
+      "name": "CENTENNIAL-PR",
+      "org": "AT&T Mobility Puerto Rico",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3549",
+        "peer_name": "LVLT-3549",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "2828",
+        "peer_name": "XO-AS15",
+        "peer_org": "Verizon Business",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "2686",
+        "peer_name": "ATGS-MMD-AS",
+        "peer_org": "AT&T Corp.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "36435": {
+    "asn": "36435",
+    "as_info": {
+      "name": "MSWIFIPR",
+      "org": "M.S. Wifi Zone Inc.",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "12179",
+        "peer_name": "INTERNAP-2BLK",
+        "peer_org": "Unitas Global",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "10937": {
+    "asn": "10937",
+    "as_info": {
+      "name": "CENTENNIAL-PR",
+      "org": "AT&T Mobility Puerto Rico",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "12180",
+        "peer_name": "INTERNAP-2BLK",
+        "peer_org": "Unitas Global",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "10396": {
+    "asn": "10396",
+    "as_info": {
+      "name": "COQUI-NET",
+      "org": "DATACOM CARIBE, INC.",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "12180",
+        "peer_name": "INTERNAP-2BLK",
+        "peer_org": "Unitas Global",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "10524",
+        "peer_name": "GOYAD-02",
+        "peer_org": "GOYA DE PUERTO RICO",
+        "peer_country": "Puerto Rico"
+      },
+      {
+        "peer_as": "14537",
+        "peer_name": "CL-1379-14537",
+        "peer_org": "Continent 8 LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "15261",
+        "peer_name": "ZT",
+        "peer_org": "Zellius Telecommunications Inc.",
+        "peer_country": "Puerto Rico"
+      },
+      {
+        "peer_as": "16649",
+        "peer_name": "IUPR-AS",
+        "peer_org": "Interamerican University of Puerto Rico",
+        "peer_country": "Puerto Rico"
+      },
+      {
+        "peer_as": "20333",
+        "peer_name": "OPSUS-NET",
+        "peer_org": "Cloudwave",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "20372",
+        "peer_name": "GOBIERNOPR-AS",
+        "peer_org": "Office of Management and Budget",
+        "peer_country": "Puerto Rico"
+      },
+      {
+        "peer_as": "23534",
+        "peer_name": "PRMSA-ASEMNET-ASN",
+        "peer_org": "Puerto Rico Medical Services Administration",
+        "peer_country": "Puerto Rico"
+      },
+      {
+        "peer_as": "27021",
+        "peer_name": "AS-DGX",
+        "peer_org": "Quest Diagnostics, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "54123",
+        "peer_name": "CAMC-NET",
+        "peer_org": "COSVI'S-ASSET MANAGEMENT CORP.",
+        "peer_country": "Puerto Rico"
+      },
+      {
+        "peer_as": "54848",
+        "peer_name": "UNIVERSIDAD-CENTRAL-DEL-CARIBE-PR",
+        "peer_org": "Universidad Central del Caribe",
+        "peer_country": "Puerto Rico"
+      }
+    ]
+  },
+  "11367": {
+    "asn": "11367",
+    "as_info": {
+      "name": "ICENET",
+      "org": "WorldNet Telecommunications, LLC",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "12180",
+        "peer_name": "INTERNAP-2BLK",
+        "peer_org": "Unitas Global",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "18895": {
+    "asn": "18895",
+    "as_info": {
+      "name": "NUSTREAM-COMMUNICATIONS",
+      "org": "Nustream Communications",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "12180",
+        "peer_name": "INTERNAP-2BLK",
+        "peer_org": "Unitas Global",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "40414",
+        "peer_name": "OPTIVON",
+        "peer_org": "Optivon, Inc.",
+        "peer_country": "Puerto Rico"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "15261": {
+    "asn": "15261",
+    "as_info": {
+      "name": "ZT",
+      "org": "Zellius Telecommunications Inc.",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "12180",
+        "peer_name": "INTERNAP-2BLK",
+        "peer_org": "Unitas Global",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3549",
+        "peer_name": "LVLT-3549",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "10396",
+        "peer_name": "COQUI-NET",
+        "peer_org": "DATACOM CARIBE, INC.",
+        "peer_country": "Puerto Rico"
+      },
+      {
+        "peer_as": "174",
+        "peer_name": "COGENT-174",
+        "peer_org": "Cogent Communications",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "46869": {
+    "asn": "46869",
+    "as_info": {
+      "name": "AWV-UU1",
+      "org": "AWV Communications Inc.",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "12180",
+        "peer_name": "INTERNAP-2BLK",
+        "peer_org": "Unitas Global",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "16649": {
+    "asn": "16649",
+    "as_info": {
+      "name": "IUPR-AS",
+      "org": "Interamerican University of Puerto Rico",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "12180",
+        "peer_name": "INTERNAP-2BLK",
+        "peer_org": "Unitas Global",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "10396",
+        "peer_name": "COQUI-NET",
+        "peer_org": "DATACOM CARIBE, INC.",
+        "peer_country": "Puerto Rico"
+      }
+    ]
+  },
+  "26027": {
+    "asn": "26027",
+    "as_info": {
+      "name": "BDIASN",
+      "org": "Big Dog Internet",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "19151",
+        "peer_name": "BBO-1",
+        "peer_org": "BroadbandONE, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "35892": {
+    "asn": "35892",
+    "as_info": {
+      "name": "DREYFOUS",
+      "org": "DREYFOUS & ASSOCIATES",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "26554",
+        "peer_name": "US-SIGNAL",
+        "peer_org": "US Signal Company, L.L.C.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3549",
+        "peer_name": "LVLT-3549",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "3838": {
+    "asn": "3838",
+    "as_info": {
+      "name": "UBINET-WIRELESS",
+      "org": "Ubinet Wireless",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3582",
+        "peer_name": "UONET",
+        "peer_org": "University of Oregon",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "12206": {
+    "asn": "12206",
+    "as_info": {
+      "name": "DNPNE",
+      "org": "DNP Networks",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "1828",
+        "peer_name": "UNITAS",
+        "peer_org": "Unitas Global LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "14534": {
+    "asn": "14534",
+    "as_info": {
+      "name": "UNONET-CORP",
+      "org": "UNONET CORP",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "14691": {
+    "asn": "14691",
+    "as_info": {
+      "name": "RM-CAT-01",
+      "org": "RM COMMUNICATIONS, INC.",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "14920": {
+    "asn": "14920",
+    "as_info": {
+      "name": "EVERTEC",
+      "org": "Banco Popular de Puerto Rico",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "14974": {
+    "asn": "14974",
+    "as_info": {
+      "name": "VIRTUAL-INC",
+      "org": "Virtual Inc.",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "19163": {
+    "asn": "19163",
+    "as_info": {
+      "name": "CONEX",
+      "org": "CONEX",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "5650",
+        "peer_name": "FRONTIER-FRTR",
+        "peer_org": "Frontier Communications of America, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "20372": {
+    "asn": "20372",
+    "as_info": {
+      "name": "GOBIERNOPR-AS",
+      "org": "Office of Management and Budget",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "10396",
+        "peer_name": "COQUI-NET",
+        "peer_org": "DATACOM CARIBE, INC.",
+        "peer_country": "Puerto Rico"
+      }
+    ]
+  },
+  "21944": {
+    "asn": "21944",
+    "as_info": {
+      "name": "VELOCITYNET",
+      "org": "VelocityNet PR",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "174",
+        "peer_name": "COGENT-174",
+        "peer_org": "Cogent Communications",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "22555": {
+    "asn": "22555",
+    "as_info": {
+      "name": "SMARTNETWORKS",
+      "org": "Smart Networks,LLC",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3549",
+        "peer_name": "LVLT-3549",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "27213": {
+    "asn": "27213",
+    "as_info": {
+      "name": "PRCINTERNET-GATEWAY",
+      "org": "PRC Internet Corp",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "30294": {
+    "asn": "30294",
+    "as_info": {
+      "name": "FAMILYNETPR",
+      "org": "Familynet Inc.",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "30440": {
+    "asn": "30440",
+    "as_info": {
+      "name": "XAPIENS",
+      "org": "Xapiens Corporation",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "30526": {
+    "asn": "30526",
+    "as_info": {
+      "name": "NEPTUNO-NET",
+      "org": "Neptuno Media, Inc.",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "2686",
+        "peer_name": "ATGS-MMD-AS",
+        "peer_org": "AT&T Corp.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "33315": {
+    "asn": "33315",
+    "as_info": {
+      "name": "FIRSTBANK-PUERTO-RICO",
+      "org": "First BanCorp",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "39963": {
+    "asn": "39963",
+    "as_info": {
+      "name": "IP-SOLUTIONS",
+      "org": "IP SOLUTIONS, INC.",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "40414": {
+    "asn": "40414",
+    "as_info": {
+      "name": "OPTIVON",
+      "org": "Optivon, Inc.",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "18895",
+        "peer_name": "NUSTREAM-COMMUNICATIONS",
+        "peer_org": "Nustream Communications",
+        "peer_country": "Puerto Rico"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "46868": {
+    "asn": "46868",
+    "as_info": {
+      "name": "VPNET-2",
+      "org": "VPNET INC",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "46931": {
+    "asn": "46931",
+    "as_info": {
+      "name": "ONNETASN",
+      "org": "ONNET",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3257",
+        "peer_name": "GTT-BACKBONE",
+        "peer_org": "GTT Communications Inc.",
+        "peer_country": "Netherlands"
+      }
+    ]
+  },
+  "46941": {
+    "asn": "46941",
+    "as_info": {
+      "name": "XAIRNET-CORP",
+      "org": "Xairnet",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "54848": {
+    "asn": "54848",
+    "as_info": {
+      "name": "UNIVERSIDAD-CENTRAL-DEL-CARIBE-PR",
+      "org": "Universidad Central del Caribe",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "11404",
+        "peer_name": "AS-WAVE-1",
+        "peer_org": "Wave Broadband",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "10396",
+        "peer_name": "COQUI-NET",
+        "peer_org": "DATACOM CARIBE, INC.",
+        "peer_country": "Puerto Rico"
+      }
+    ]
+  },
+  "62913": {
+    "asn": "62913",
+    "as_info": {
+      "name": "SPEEDYNET",
+      "org": "SpeedyNet",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "62931": {
+    "asn": "62931",
+    "as_info": {
+      "name": "PLAZA-LAS-AMERICAS",
+      "org": "Plaza Las Americas, Inc.",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "63240": {
+    "asn": "63240",
+    "as_info": {
+      "name": "OSNPRW",
+      "org": "OSNET Wireless",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "63393": {
+    "asn": "63393",
+    "as_info": {
+      "name": "BOOMNETPR01",
+      "org": "BOOM NET",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "393573": {
+    "asn": "393573",
+    "as_info": {
+      "name": "FUSE",
+      "org": "Fuse Telecom LLC",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "23379": {
+    "asn": "23379",
+    "as_info": {
+      "name": "AS-BBT",
+      "org": "Blackburn Technologies II, LLC",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "2828",
+        "peer_name": "XO-AS15",
+        "peer_org": "Verizon Business",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "266815",
+        "peer_name": "Unknown",
+        "peer_org": "Cable Del Norte , S.R.L",
+        "peer_country": "Dominican Republic"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "46962": {
+    "asn": "46962",
+    "as_info": {
+      "name": "HRCOM",
+      "org": "HRCOM",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "2828",
+        "peer_name": "XO-AS15",
+        "peer_org": "Verizon Business",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "24115",
+        "peer_name": "ASN-EQIX-MLPE",
+        "peer_org": "Equinix Asia Pacific Pte Ltd",
+        "peer_country": "Singapore"
+      },
+      {
+        "peer_as": "24990",
+        "peer_name": "EQUINIX-FR-ASN",
+        "peer_org": "Equinix France SAS",
+        "peer_country": "France"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "5786": {
+    "asn": "5786",
+    "as_info": {
+      "name": "UPRENET",
+      "org": "University of Puerto Rico",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "11096",
+        "peer_name": "FLORIDANET",
+        "peer_org": "FloridaNet",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "2686",
+        "peer_name": "ATGS-MMD-AS",
+        "peer_org": "AT&T Corp.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "46839": {
+    "asn": "46839",
+    "as_info": {
+      "name": "AIRPORT-SHOPPES-HOTEL",
+      "org": "Airport Shoppes and Hotel Corp",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "5106": {
+    "asn": "5106",
+    "as_info": {
+      "name": "DGCALL",
+      "org": "WinPR, Inc.",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "22162": {
+    "asn": "22162",
+    "as_info": {
+      "name": "IP-SOLUTIONS-AYU",
+      "org": "IP SOLUTIONS, INC.",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "22888": {
+    "asn": "22888",
+    "as_info": {
+      "name": "SUAGM",
+      "org": "Sistema Universitario Ana G. Mendez",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "14957": {
+    "asn": "14957",
+    "as_info": {
+      "name": "PREPA-UUNT1",
+      "org": "Puerto Rico Electric Power Authority",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "10524": {
+    "asn": "10524",
+    "as_info": {
+      "name": "GOYAD-02",
+      "org": "GOYA DE PUERTO RICO",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "10396",
+        "peer_name": "COQUI-NET",
+        "peer_org": "DATACOM CARIBE, INC.",
+        "peer_country": "Puerto Rico"
+      }
+    ]
+  },
+  "13800": {
+    "asn": "13800",
+    "as_info": {
+      "name": "AUTOEXPRESO-PR",
+      "org": "Transcore Atlantic Inc.",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "62823": {
+    "asn": "62823",
+    "as_info": {
+      "name": "CHOICEPR-1",
+      "org": "Puerto Rico Cable Acquisition Company Inc.",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "393937": {
+    "asn": "393937",
+    "as_info": {
+      "name": "MCS-PUBLIC-NET",
+      "org": "Medical Card System, Inc.",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "393678": {
+    "asn": "393678",
+    "as_info": {
+      "name": "XDNETPRS",
+      "org": "XDAR Wireless LLC",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "63308": {
+    "asn": "63308",
+    "as_info": {
+      "name": "PHARMPIXSUPERNAP",
+      "org": "Pharmpix",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "21559": {
+    "asn": "21559",
+    "as_info": {
+      "name": "OSNET",
+      "org": "OSNET Wireless",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "2686",
+        "peer_name": "ATGS-MMD-AS",
+        "peer_org": "AT&T Corp.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "36423": {
+    "asn": "36423",
+    "as_info": {
+      "name": "SAN-JUAN-CABLE",
+      "org": "San Juan Cable, LLC",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "2686",
+        "peer_name": "ATGS-MMD-AS",
+        "peer_org": "AT&T Corp.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "205648": {
+    "asn": "205648",
+    "as_info": {
+      "name": "AS205648",
+      "org": "ODN Inc",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "207083",
+        "peer_name": "HostSlim-Global-Network",
+        "peer_org": "HostSlim B.V.",
+        "peer_country": "Netherlands"
+      }
+    ]
+  },
+  "14979": {
+    "asn": "14979",
+    "as_info": {
+      "name": "AERONET-WIRELESS",
+      "org": "Aeronet Wireless",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "2914",
+        "peer_name": "NTT-LTD-2914",
+        "peer_org": "NTT America, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "13786",
+        "peer_name": "SEABRAS-1",
+        "peer_org": "Seabras 1 USA, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "36810": {
+    "asn": "36810",
+    "as_info": {
+      "name": "NICPR",
+      "org": "Gauss Research Laboratory, Inc.",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "13568": {
+    "asn": "13568",
+    "as_info": {
+      "name": "MEDIAWIRE",
+      "org": "Mediawire Communications",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "22503": {
+    "asn": "22503",
+    "as_info": {
+      "name": "ALPINE",
+      "org": "Alpine Health Technologies, Corp.",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "23534": {
+    "asn": "23534",
+    "as_info": {
+      "name": "PRMSA-ASEMNET-ASN",
+      "org": "Puerto Rico Medical Services Administration",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "10396",
+        "peer_name": "COQUI-NET",
+        "peer_org": "DATACOM CARIBE, INC.",
+        "peer_country": "Puerto Rico"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "54123": {
+    "asn": "54123",
+    "as_info": {
+      "name": "CAMC-NET",
+      "org": "COSVI'S-ASSET MANAGEMENT CORP.",
+      "country": "Puerto Rico"
+    },
+    "links": [
+      {
+        "peer_as": "10396",
+        "peer_name": "COQUI-NET",
+        "peer_org": "DATACOM CARIBE, INC.",
+        "peer_country": "Puerto Rico"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  }
+}

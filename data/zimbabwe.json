@@ -1,0 +1,636 @@
+{
+  "18922": {
+    "asn": "18922",
+    "as_info": {
+      "name": "AfOL-Zw-AS-2",
+      "org": "AFRICA ONLINE ZIMBABWE",
+      "country": "Zimbabwe"
+    },
+    "links": [
+      {
+        "peer_as": "8513",
+        "peer_name": "SKYVISION",
+        "peer_org": "SkyVision Global Networks Ltd",
+        "peer_country": "Bermuda"
+      },
+      {
+        "peer_as": "3549",
+        "peer_name": "LVLT-3549",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "30969": {
+    "asn": "30969",
+    "as_info": {
+      "name": "ZOL-AS",
+      "org": "Zimbabwe Online (Private) Ltd.",
+      "country": "Zimbabwe"
+    },
+    "links": [
+      {
+        "peer_as": "8513",
+        "peer_name": "SKYVISION",
+        "peer_org": "SkyVision Global Networks Ltd",
+        "peer_country": "Bermuda"
+      },
+      {
+        "peer_as": "12491",
+        "peer_name": "IPPLANET-AS",
+        "peer_org": "Gilat Telecom Ltd.",
+        "peer_country": "Israel"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "14988",
+        "peer_name": "BTC-GATE1",
+        "peer_org": "Botswana Telecommunications Corporation",
+        "peer_country": "Botswana"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "27576": {
+    "asn": "27576",
+    "as_info": {
+      "name": "AfOL-Zw-NET",
+      "org": "AFRICA ONLINE ZIMBABWE",
+      "country": "Zimbabwe"
+    },
+    "links": [
+      {
+        "peer_as": "8513",
+        "peer_name": "SKYVISION",
+        "peer_org": "SkyVision Global Networks Ltd",
+        "peer_country": "Bermuda"
+      },
+      {
+        "peer_as": "30844",
+        "peer_name": "LIQUID-AS",
+        "peer_org": "Liquid Telecommunications Ltd",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "37204",
+        "peer_name": "TELONE",
+        "peer_org": "Telone PVT Ltd",
+        "peer_country": "Zimbabwe"
+      },
+      {
+        "peer_as": "14988",
+        "peer_name": "BTC-GATE1",
+        "peer_org": "Botswana Telecommunications Corporation",
+        "peer_country": "Botswana"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "37123": {
+    "asn": "37123",
+    "as_info": {
+      "name": "TELCO-ZW",
+      "org": "Telecontract Pvt Ltd",
+      "country": "Zimbabwe"
+    },
+    "links": [
+      {
+        "peer_as": "8513",
+        "peer_name": "SKYVISION",
+        "peer_org": "SkyVision Global Networks Ltd",
+        "peer_country": "Bermuda"
+      },
+      {
+        "peer_as": "9498",
+        "peer_name": "BBIL-AP",
+        "peer_org": "Bharti Airtel Limited",
+        "peer_country": "India"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "12491",
+        "peer_name": "IPPLANET-AS",
+        "peer_org": "Gilat Telecom Ltd.",
+        "peer_country": "Israel"
+      },
+      {
+        "peer_as": "14988",
+        "peer_name": "BTC-GATE1",
+        "peer_org": "Botswana Telecommunications Corporation",
+        "peer_country": "Botswana"
+      }
+    ]
+  },
+  "36986": {
+    "asn": "36986",
+    "as_info": {
+      "name": "AINET",
+      "org": "Africom Pvt Ltd",
+      "country": "Zimbabwe"
+    },
+    "links": [
+      {
+        "peer_as": "8513",
+        "peer_name": "SKYVISION",
+        "peer_org": "SkyVision Global Networks Ltd",
+        "peer_country": "Bermuda"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "30844",
+        "peer_name": "LIQUID-AS",
+        "peer_org": "Liquid Telecommunications Ltd",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "37662",
+        "peer_name": "WIOCC-AS",
+        "peer_org": "West Indian Ocean Cable Company",
+        "peer_country": "Mauritius"
+      },
+      {
+        "peer_as": "14988",
+        "peer_name": "BTC-GATE1",
+        "peer_org": "Botswana Telecommunications Corporation",
+        "peer_country": "Botswana"
+      },
+      {
+        "peer_as": "30619",
+        "peer_name": "TDM-AS",
+        "peer_org": "Telecomunicacoes de Mocambique (TDM)",
+        "peer_country": "Mozambique"
+      }
+    ]
+  },
+  "328230": {
+    "asn": "328230",
+    "as_info": {
+      "name": "Hammer-and-Tongues-AS",
+      "org": "Hammer and Tongues Africa Holdings (Private) Limited",
+      "country": "Zimbabwe"
+    },
+    "links": [
+      {
+        "peer_as": "9498",
+        "peer_name": "BBIL-AP",
+        "peer_org": "Bharti Airtel Limited",
+        "peer_country": "India"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "37485": {
+    "asn": "37485",
+    "as_info": {
+      "name": "LIQUID-ZW",
+      "org": "Data Control and Systems",
+      "country": "Zimbabwe"
+    },
+    "links": [
+      {
+        "peer_as": "9505",
+        "peer_name": "TWGATE-AP",
+        "peer_org": "Chunghwa Telecom Co., Ltd.",
+        "peer_country": "Taiwan"
+      },
+      {
+        "peer_as": "37700",
+        "peer_name": "DINX",
+        "peer_org": "ISPA SA",
+        "peer_country": "South Africa"
+      }
+    ]
+  },
+  "31856": {
+    "asn": "31856",
+    "as_info": {
+      "name": "CABS",
+      "org": "YoAfrica (Pvt) Ltd",
+      "country": "Zimbabwe"
+    },
+    "links": [
+      {
+        "peer_as": "22351",
+        "peer_name": "INTELSAT-1",
+        "peer_org": "INTELSAT GLOBAL SERVICE CORPORATION",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "9304",
+        "peer_name": "HUTCHISON-AS-AP",
+        "peer_org": "HGC Global Communications Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "56696",
+        "peer_name": "ASLIQUID-MPLS",
+        "peer_org": "Liquid Telecommunications Ltd",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "14988",
+        "peer_name": "BTC-GATE1",
+        "peer_org": "Botswana Telecommunications Corporation",
+        "peer_country": "Botswana"
+      },
+      {
+        "peer_as": "5580",
+        "peer_name": "GTT-ASIA",
+        "peer_org": "GTT Communications Netherlands B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "3741",
+        "peer_name": "IS",
+        "peer_org": "Dimension Data",
+        "peer_country": "South Africa"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "37184": {
+    "asn": "37184",
+    "as_info": {
+      "name": "POWERTEL",
+      "org": "Powertel Communications",
+      "country": "Zimbabwe"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "30844",
+        "peer_name": "LIQUID-AS",
+        "peer_org": "Liquid Telecommunications Ltd",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "14988",
+        "peer_name": "BTC-GATE1",
+        "peer_org": "Botswana Telecommunications Corporation",
+        "peer_country": "Botswana"
+      }
+    ]
+  },
+  "37189": {
+    "asn": "37189",
+    "as_info": {
+      "name": "YoAfrica3",
+      "org": "YoAfrica (Pvt) Ltd",
+      "country": "Zimbabwe"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "37662",
+        "peer_name": "WIOCC-AS",
+        "peer_org": "West Indian Ocean Cable Company",
+        "peer_country": "Mauritius"
+      }
+    ]
+  },
+  "37344": {
+    "asn": "37344",
+    "as_info": {
+      "name": "ZOU",
+      "org": "ZIMBABWE OPEN UNIVERSITY",
+      "country": "Zimbabwe"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "37662",
+        "peer_name": "WIOCC-AS",
+        "peer_org": "West Indian Ocean Cable Company",
+        "peer_country": "Mauritius"
+      }
+    ]
+  },
+  "37568": {
+    "asn": "37568",
+    "as_info": {
+      "name": "NUoS-ASN",
+      "org": "National University of Science and Technology",
+      "country": "Zimbabwe"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "37100",
+        "peer_name": "SEACOM-AS",
+        "peer_org": "SEACOM Limited",
+        "peer_country": "Mauritius"
+      },
+      {
+        "peer_as": "37662",
+        "peer_name": "WIOCC-AS",
+        "peer_org": "West Indian Ocean Cable Company",
+        "peer_country": "Mauritius"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "327770": {
+    "asn": "327770",
+    "as_info": {
+      "name": "Telecel",
+      "org": "Telecel Zimbabwe",
+      "country": "Zimbabwe"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "37662",
+        "peer_name": "WIOCC-AS",
+        "peer_org": "West Indian Ocean Cable Company",
+        "peer_country": "Mauritius"
+      }
+    ]
+  },
+  "328088": {
+    "asn": "328088",
+    "as_info": {
+      "name": "NetOne-Cellular-AS",
+      "org": "NetOne Cellular (Private) Limited",
+      "country": "Zimbabwe"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3741",
+        "peer_name": "IS",
+        "peer_org": "Dimension Data",
+        "peer_country": "South Africa"
+      }
+    ]
+  },
+  "328269": {
+    "asn": "328269",
+    "as_info": {
+      "name": "IT-Anywhere-AS",
+      "org": "IT Anywhere (Private) Limited",
+      "country": "Zimbabwe"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "37662",
+        "peer_name": "WIOCC-AS",
+        "peer_org": "West Indian Ocean Cable Company",
+        "peer_country": "Mauritius"
+      }
+    ]
+  },
+  "37024": {
+    "asn": "37024",
+    "as_info": {
+      "name": "Yoprov",
+      "org": "YoAfrica (Pvt) Ltd",
+      "country": "Zimbabwe"
+    },
+    "links": [
+      {
+        "peer_as": "37662",
+        "peer_name": "WIOCC-AS",
+        "peer_org": "West Indian Ocean Cable Company",
+        "peer_country": "Mauritius"
+      },
+      {
+        "peer_as": "14988",
+        "peer_name": "BTC-GATE1",
+        "peer_org": "Botswana Telecommunications Corporation",
+        "peer_country": "Botswana"
+      }
+    ]
+  },
+  "327863": {
+    "asn": "327863",
+    "as_info": {
+      "name": "UNIVERSITY-OF-ZIMBABWE",
+      "org": "University of Zimbabwe",
+      "country": "Zimbabwe"
+    },
+    "links": [
+      {
+        "peer_as": "37662",
+        "peer_name": "WIOCC-AS",
+        "peer_org": "West Indian Ocean Cable Company",
+        "peer_country": "Mauritius"
+      }
+    ]
+  },
+  "327971": {
+    "asn": "327971",
+    "as_info": {
+      "name": "FBC-Holdings",
+      "org": "FBC Holdings",
+      "country": "Zimbabwe"
+    },
+    "links": [
+      {
+        "peer_as": "37662",
+        "peer_name": "WIOCC-AS",
+        "peer_org": "West Indian Ocean Cable Company",
+        "peer_country": "Mauritius"
+      },
+      {
+        "peer_as": "30844",
+        "peer_name": "LIQUID-AS",
+        "peer_org": "Liquid Telecommunications Ltd",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "328235": {
+    "asn": "328235",
+    "as_info": {
+      "name": "ZINX-MGMT",
+      "org": "Zimbabwe Internet Exchange",
+      "country": "Zimbabwe"
+    },
+    "links": [
+      {
+        "peer_as": "37662",
+        "peer_name": "WIOCC-AS",
+        "peer_org": "West Indian Ocean Cable Company",
+        "peer_country": "Mauritius"
+      }
+    ]
+  },
+  "37204": {
+    "asn": "37204",
+    "as_info": {
+      "name": "TELONE",
+      "org": "Telone PVT Ltd",
+      "country": "Zimbabwe"
+    },
+    "links": [
+      {
+        "peer_as": "12491",
+        "peer_name": "IPPLANET-AS",
+        "peer_org": "Gilat Telecom Ltd.",
+        "peer_country": "Israel"
+      },
+      {
+        "peer_as": "27576",
+        "peer_name": "AfOL-Zw-NET",
+        "peer_org": "AFRICA ONLINE ZIMBABWE",
+        "peer_country": "Zimbabwe"
+      },
+      {
+        "peer_as": "37238",
+        "peer_name": "IWAY-AFRICA",
+        "peer_org": "Africa Online Operations (Mauritius) Limited",
+        "peer_country": "Mauritius"
+      },
+      {
+        "peer_as": "203974",
+        "peer_name": "ADS",
+        "peer_org": "ADVERTISING DISTRIBUTION SUPPLIES SRL",
+        "peer_country": "Romania"
+      },
+      {
+        "peer_as": "37207",
+        "peer_name": "NNPC",
+        "peer_org": "Nigeria National Petroleum Corporation",
+        "peer_country": "Nigeria"
+      },
+      {
+        "peer_as": "37290",
+        "peer_name": "Unknown",
+        "peer_org": "Unknown",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "37554",
+        "peer_name": "Unknown",
+        "peer_org": "Unknown",
+        "peer_country": "Unknown"
+      }
+    ]
+  },
+  "37332": {
+    "asn": "37332",
+    "as_info": {
+      "name": "ZOL",
+      "org": "Zimbabwe Online",
+      "country": "Zimbabwe"
+    },
+    "links": [
+      {
+        "peer_as": "30844",
+        "peer_name": "LIQUID-AS",
+        "peer_org": "Liquid Telecommunications Ltd",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "37391": {
+    "asn": "37391",
+    "as_info": {
+      "name": "ESMALO",
+      "org": "Esmalo Enterprises",
+      "country": "Zimbabwe"
+    },
+    "links": [
+      {
+        "peer_as": "30844",
+        "peer_name": "LIQUID-AS",
+        "peer_org": "Liquid Telecommunications Ltd",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  }
+}

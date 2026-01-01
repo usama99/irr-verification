@@ -1,0 +1,24 @@
+{
+  "41878": {
+    "asn": "41878",
+    "as_info": {
+      "name": "CROSSKEY-AS",
+      "org": "Crosskey Banking Solutions Ab Ltd",
+      "country": "Aland Islands"
+    },
+    "links": [
+      {
+        "peer_as": "3292",
+        "peer_name": "TDC",
+        "peer_org": "TDC Holding A/S",
+        "peer_country": "Denmark"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  }
+}

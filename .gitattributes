@@ -1,0 +1,2 @@
+data/russia.json filter=lfs diff=lfs merge=lfs -text
+data/germany.json filter=lfs diff=lfs merge=lfs -text

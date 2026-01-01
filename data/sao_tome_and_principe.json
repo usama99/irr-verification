@@ -1,0 +1,42 @@
+{
+  "327725": {
+    "asn": "327725",
+    "as_info": {
+      "name": "UnitelSTP",
+      "org": "UNITEL STP SARL",
+      "country": "Sao Tome and Principe"
+    },
+    "links": [
+      {
+        "peer_as": "8657",
+        "peer_name": "MEO-INTERNACIONAL",
+        "peer_org": "MEO - SERVICOS DE COMUNICACOES E MULTIMEDIA S.A.",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "60171",
+        "peer_name": "AFRIX-AS",
+        "peer_org": "AFR-IX TELECOM SAU",
+        "peer_country": "Spain"
+      },
+      {
+        "peer_as": "36924",
+        "peer_name": "GVA-Canalbox",
+        "peer_org": "GVA Cote d'Ivoire SAS",
+        "peer_country": "Ivory Coast"
+      },
+      {
+        "peer_as": "37529",
+        "peer_name": "GITGE",
+        "peer_org": "Gestora de Infraestructuras de Telecomunicaciones de Guinea Ecuatorial",
+        "peer_country": "Equatorial Guinea"
+      }
+    ]
+  }
+}

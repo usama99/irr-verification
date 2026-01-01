@@ -1,0 +1,66 @@
+{
+  "29544": {
+    "asn": "29544",
+    "as_info": {
+      "name": "MAURITEL",
+      "org": "Mauritanian Telecommunication Company",
+      "country": "Mauritania"
+    },
+    "links": [
+      {
+        "peer_as": "22351",
+        "peer_name": "INTELSAT-1",
+        "peer_org": "INTELSAT GLOBAL SERVICE CORPORATION",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "328997": {
+    "asn": "328997",
+    "as_info": {
+      "name": "RIMATEL",
+      "org": "RIMATEL-SA",
+      "country": "Mauritania"
+    },
+    "links": [
+      {
+        "peer_as": "5511",
+        "peer_name": "Opentransit",
+        "peer_org": "Orange S.A.",
+        "peer_country": "France"
+      }
+    ]
+  },
+  "37508": {
+    "asn": "37508",
+    "as_info": {
+      "name": "MATTEL",
+      "org": "MATTEL",
+      "country": "Mauritania"
+    },
+    "links": [
+      {
+        "peer_as": "2905",
+        "peer_name": "TICSA-ASN",
+        "peer_org": "MTN SA",
+        "peer_country": "South Africa"
+      }
+    ]
+  },
+  "37541": {
+    "asn": "37541",
+    "as_info": {
+      "name": "CHINGUITEL",
+      "org": "Chinguitel S.A",
+      "country": "Mauritania"
+    },
+    "links": [
+      {
+        "peer_as": "2905",
+        "peer_name": "TICSA-ASN",
+        "peer_org": "MTN SA",
+        "peer_country": "South Africa"
+      }
+    ]
+  }
+}

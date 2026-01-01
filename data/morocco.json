@@ -1,0 +1,138 @@
+{
+  "36925": {
+    "asn": "36925",
+    "as_info": {
+      "name": "ASMedi",
+      "org": "MEDITELECOM",
+      "country": "Morocco"
+    },
+    "links": [
+      {
+        "peer_as": "12956",
+        "peer_name": "TELXIUS",
+        "peer_org": "TELEFONICA GLOBAL SOLUTIONS SL",
+        "peer_country": "Spain"
+      },
+      {
+        "peer_as": "8928",
+        "peer_name": "INTEROUTE",
+        "peer_org": "GTT Communications Inc.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "30983",
+        "peer_name": "MARWAN-AS",
+        "peer_org": "CNRST (Centre National pour la Recherche Scientifique et Technique)",
+        "peer_country": "Morocco"
+      },
+      {
+        "peer_as": "32816",
+        "peer_name": "WBGSEA",
+        "peer_org": "WB Games, INC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "328671": {
+    "asn": "328671",
+    "as_info": {
+      "name": "Datapacket-Maroc-AS",
+      "org": "Datapacket Maroc SARL",
+      "country": "Morocco"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "328867": {
+    "asn": "328867",
+    "as_info": {
+      "name": "CBS-AS",
+      "org": "Corebach Backbone SARL",
+      "country": "Morocco"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "25198",
+        "peer_name": "ZetNet",
+        "peer_org": "INTERKVM HOST SRL",
+        "peer_country": "Romania"
+      }
+    ]
+  },
+  "30983": {
+    "asn": "30983",
+    "as_info": {
+      "name": "MARWAN-AS",
+      "org": "CNRST (Centre National pour la Recherche Scientifique et Technique)",
+      "country": "Morocco"
+    },
+    "links": [
+      {
+        "peer_as": "36925",
+        "peer_name": "ASMedi",
+        "peer_org": "MEDITELECOM",
+        "peer_country": "Morocco"
+      }
+    ]
+  },
+  "36884": {
+    "asn": "36884",
+    "as_info": {
+      "name": "MAROCCONNECT",
+      "org": "Wana Corporate",
+      "country": "Morocco"
+    },
+    "links": [
+      {
+        "peer_as": "328799",
+        "peer_name": "HOSTOWEB-AS",
+        "peer_org": "PIXI MEDIA SARL",
+        "peer_country": "Morocco"
+      }
+    ]
+  },
+  "328799": {
+    "asn": "328799",
+    "as_info": {
+      "name": "HOSTOWEB-AS",
+      "org": "PIXI MEDIA SARL",
+      "country": "Morocco"
+    },
+    "links": [
+      {
+        "peer_as": "36884",
+        "peer_name": "MAROCCONNECT",
+        "peer_org": "Wana Corporate",
+        "peer_country": "Morocco"
+      }
+    ]
+  },
+  "6713": {
+    "asn": "6713",
+    "as_info": {
+      "name": "IAM-AS",
+      "org": "Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM",
+      "country": "Morocco"
+    },
+    "links": [
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      }
+    ]
+  }
+}

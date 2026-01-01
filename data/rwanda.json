@@ -1,0 +1,648 @@
+{
+  "37228": {
+    "asn": "37228",
+    "as_info": {
+      "name": "Olleh-Rwanda-Networks",
+      "org": "KT RWANDA NETWORK Ltd",
+      "country": "Rwanda"
+    },
+    "links": [
+      {
+        "peer_as": "4809",
+        "peer_name": "CHINATELECOM-CORE-WAN-CN2",
+        "peer_org": "China Telecom",
+        "peer_country": "China"
+      },
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "22351",
+        "peer_name": "INTELSAT-1",
+        "peer_org": "INTELSAT GLOBAL SERVICE CORPORATION",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "198218",
+        "peer_name": "HTS-PET",
+        "peer_org": "horizon teleports GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "37429",
+        "peer_name": "Spidernet",
+        "peer_org": "SPIDERNET SPRL BURUNDI",
+        "peer_country": "Burundi"
+      }
+    ]
+  },
+  "36934": {
+    "asn": "36934",
+    "as_info": {
+      "name": "Broadband-Systems-Corporation",
+      "org": "Broadband Systems Corporation",
+      "country": "Rwanda"
+    },
+    "links": [
+      {
+        "peer_as": "4809",
+        "peer_name": "CHINATELECOM-CORE-WAN-CN2",
+        "peer_org": "China Telecom",
+        "peer_country": "China"
+      },
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "22351",
+        "peer_name": "INTELSAT-1",
+        "peer_org": "INTELSAT GLOBAL SERVICE CORPORATION",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "8928",
+        "peer_name": "INTEROUTE",
+        "peer_org": "GTT Communications Inc.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "37010",
+        "peer_name": "Unknown",
+        "peer_org": "TRUE",
+        "peer_country": "2"
+      },
+      {
+        "peer_as": "37006",
+        "peer_name": "LiquidTelecommunicationRwanda",
+        "peer_org": "Liquid Telecommunication Rwanda Limited",
+        "peer_country": "Rwanda"
+      },
+      {
+        "peer_as": "37124",
+        "peer_name": "tigo-rw-as",
+        "peer_org": "Airtel Rwanda Ltd",
+        "peer_country": "Rwanda"
+      },
+      {
+        "peer_as": "37095",
+        "peer_name": "Unknown",
+        "peer_org": "Unknown",
+        "peer_country": "Unknown"
+      }
+    ]
+  },
+  "327707": {
+    "asn": "327707",
+    "as_info": {
+      "name": "AIRTEL-RW",
+      "org": "Airtel Rwanda Ltd",
+      "country": "Rwanda"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "39386",
+        "peer_name": "STC-IGW-AS",
+        "peer_org": "Saudi Telecom Company JSC",
+        "peer_country": "Saudi Arabia"
+      },
+      {
+        "peer_as": "327708",
+        "peer_name": "AIRTEL-RW",
+        "peer_org": "Airtel Rwanda Ltd",
+        "peer_country": "Rwanda"
+      },
+      {
+        "peer_as": "37429",
+        "peer_name": "Spidernet",
+        "peer_org": "SPIDERNET SPRL BURUNDI",
+        "peer_country": "Burundi"
+      }
+    ]
+  },
+  "37547": {
+    "asn": "37547",
+    "as_info": {
+      "name": "ISPA-RW",
+      "org": "ISPA Ltd",
+      "country": "Rwanda"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "37273",
+        "peer_name": "BCS",
+        "peer_org": "Bandwidth and Cloud Services Group Ltd",
+        "peer_country": "Uganda"
+      },
+      {
+        "peer_as": "2905",
+        "peer_name": "TICSA-ASN",
+        "peer_org": "MTN SA",
+        "peer_country": "South Africa"
+      },
+      {
+        "peer_as": "37619",
+        "peer_name": "BSC-AS",
+        "peer_org": "Broadband Systems Corporation",
+        "peer_country": "Rwanda"
+      },
+      {
+        "peer_as": "37429",
+        "peer_name": "Spidernet",
+        "peer_org": "SPIDERNET SPRL BURUNDI",
+        "peer_country": "Burundi"
+      },
+      {
+        "peer_as": "37224",
+        "peer_name": "RINEX",
+        "peer_org": "Rwanda Internet Exchange Point (RINEX) c/o RICTA",
+        "peer_country": "Rwanda"
+      }
+    ]
+  },
+  "37619": {
+    "asn": "37619",
+    "as_info": {
+      "name": "BSC-AS",
+      "org": "Broadband Systems Corporation",
+      "country": "Rwanda"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "37124",
+        "peer_name": "tigo-rw-as",
+        "peer_org": "Airtel Rwanda Ltd",
+        "peer_country": "Rwanda"
+      },
+      {
+        "peer_as": "37547",
+        "peer_name": "ISPA-RW",
+        "peer_org": "ISPA Ltd",
+        "peer_country": "Rwanda"
+      },
+      {
+        "peer_as": "37429",
+        "peer_name": "Spidernet",
+        "peer_org": "SPIDERNET SPRL BURUNDI",
+        "peer_country": "Burundi"
+      },
+      {
+        "peer_as": "328180",
+        "peer_name": "Bank-Of-Kigali-AS",
+        "peer_org": "Bank of Kigali Ltd",
+        "peer_country": "Rwanda"
+      }
+    ]
+  },
+  "37654": {
+    "asn": "37654",
+    "as_info": {
+      "name": "RwEdNet-AS",
+      "org": "Rwanda Ministry of Education",
+      "country": "Rwanda"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      }
+    ]
+  },
+  "37224": {
+    "asn": "37224",
+    "as_info": {
+      "name": "RINEX",
+      "org": "Rwanda Internet Exchange Point (RINEX) c/o RICTA",
+      "country": "Rwanda"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "37020",
+        "peer_name": "CELTEL-DRC",
+        "peer_org": "CELTEL DRC",
+        "peer_country": "Democratic Republic of the Congo"
+      },
+      {
+        "peer_as": "37124",
+        "peer_name": "tigo-rw-as",
+        "peer_org": "Airtel Rwanda Ltd",
+        "peer_country": "Rwanda"
+      },
+      {
+        "peer_as": "37547",
+        "peer_name": "ISPA-RW",
+        "peer_org": "ISPA Ltd",
+        "peer_country": "Rwanda"
+      }
+    ]
+  },
+  "37124": {
+    "asn": "37124",
+    "as_info": {
+      "name": "tigo-rw-as",
+      "org": "Airtel Rwanda Ltd",
+      "country": "Rwanda"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "36934",
+        "peer_name": "Broadband-Systems-Corporation",
+        "peer_org": "Broadband Systems Corporation",
+        "peer_country": "Rwanda"
+      },
+      {
+        "peer_as": "37273",
+        "peer_name": "BCS",
+        "peer_org": "Bandwidth and Cloud Services Group Ltd",
+        "peer_country": "Uganda"
+      },
+      {
+        "peer_as": "327708",
+        "peer_name": "AIRTEL-RW",
+        "peer_org": "Airtel Rwanda Ltd",
+        "peer_country": "Rwanda"
+      },
+      {
+        "peer_as": "37619",
+        "peer_name": "BSC-AS",
+        "peer_org": "Broadband Systems Corporation",
+        "peer_country": "Rwanda"
+      },
+      {
+        "peer_as": "37224",
+        "peer_name": "RINEX",
+        "peer_org": "Rwanda Internet Exchange Point (RINEX) c/o RICTA",
+        "peer_country": "Rwanda"
+      }
+    ]
+  },
+  "36890": {
+    "asn": "36890",
+    "as_info": {
+      "name": "MTNRW-ASN",
+      "org": "MTN Rwandacell",
+      "country": "Rwanda"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6762",
+        "peer_name": "SEABONE-NET",
+        "peer_org": "Telecom Italia Sparkle S.p.A.",
+        "peer_country": "Italy"
+      },
+      {
+        "peer_as": "37429",
+        "peer_name": "Spidernet",
+        "peer_org": "SPIDERNET SPRL BURUNDI",
+        "peer_country": "Burundi"
+      },
+      {
+        "peer_as": "37397",
+        "peer_name": "Unknown",
+        "peer_org": "Unknown",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "37006": {
+    "asn": "37006",
+    "as_info": {
+      "name": "LiquidTelecommunicationRwanda",
+      "org": "Liquid Telecommunication Rwanda Limited",
+      "country": "Rwanda"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "36934",
+        "peer_name": "Broadband-Systems-Corporation",
+        "peer_org": "Broadband Systems Corporation",
+        "peer_country": "Rwanda"
+      }
+    ]
+  },
+  "22690": {
+    "asn": "22690",
+    "as_info": {
+      "name": "AxiomNET-AS",
+      "org": "Axiom Networks Ltd",
+      "country": "Rwanda"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "43531",
+        "peer_name": "IXREACH",
+        "peer_org": "BSO Network Solutions SAS",
+        "peer_country": "France"
+      },
+      {
+        "peer_as": "37020",
+        "peer_name": "CELTEL-DRC",
+        "peer_org": "CELTEL DRC",
+        "peer_country": "Democratic Republic of the Congo"
+      },
+      {
+        "peer_as": "37483",
+        "peer_name": "Congo-Chine",
+        "peer_org": "ORANGE RDC",
+        "peer_country": "Democratic Republic of the Congo"
+      },
+      {
+        "peer_as": "37429",
+        "peer_name": "Spidernet",
+        "peer_org": "SPIDERNET SPRL BURUNDI",
+        "peer_country": "Burundi"
+      },
+      {
+        "peer_as": "4455",
+        "peer_name": "BSO",
+        "peer_org": "IX Reach Ltd",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "43256",
+        "peer_name": "KIN-AS",
+        "peer_org": "Global Broadband Solution Inc",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "328180",
+        "peer_name": "Bank-Of-Kigali-AS",
+        "peer_org": "Bank of Kigali Ltd",
+        "peer_country": "Rwanda"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "327899": {
+    "asn": "327899",
+    "as_info": {
+      "name": "BSC",
+      "org": "Broadband Systems Corporation",
+      "country": "Rwanda"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "30844",
+        "peer_name": "LIQUID-AS",
+        "peer_org": "Liquid Telecommunications Ltd",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "328014": {
+    "asn": "328014",
+    "as_info": {
+      "name": "RINEX",
+      "org": "Rwanda Internet Exchange Point (RINEX) c/o RICTA",
+      "country": "Rwanda"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "37273",
+        "peer_name": "BCS",
+        "peer_org": "Bandwidth and Cloud Services Group Ltd",
+        "peer_country": "Uganda"
+      },
+      {
+        "peer_as": "2905",
+        "peer_name": "TICSA-ASN",
+        "peer_org": "MTN SA",
+        "peer_country": "South Africa"
+      }
+    ]
+  },
+  "328385": {
+    "asn": "328385",
+    "as_info": {
+      "name": "RRA-AS",
+      "org": "Rwanda Revenue Authority (RRA)",
+      "country": "Rwanda"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "37273",
+        "peer_name": "BCS",
+        "peer_org": "Bandwidth and Cloud Services Group Ltd",
+        "peer_country": "Uganda"
+      }
+    ]
+  },
+  "328180": {
+    "asn": "328180",
+    "as_info": {
+      "name": "Bank-Of-Kigali-AS",
+      "org": "Bank of Kigali Ltd",
+      "country": "Rwanda"
+    },
+    "links": [
+      {
+        "peer_as": "37273",
+        "peer_name": "BCS",
+        "peer_org": "Bandwidth and Cloud Services Group Ltd",
+        "peer_country": "Uganda"
+      },
+      {
+        "peer_as": "2905",
+        "peer_name": "TICSA-ASN",
+        "peer_org": "MTN SA",
+        "peer_country": "South Africa"
+      },
+      {
+        "peer_as": "22690",
+        "peer_name": "AxiomNET-AS",
+        "peer_org": "Axiom Networks Ltd",
+        "peer_country": "Rwanda"
+      },
+      {
+        "peer_as": "37447",
+        "peer_name": "ORANGE-RDC",
+        "peer_org": "ORANGE RDC",
+        "peer_country": "Democratic Republic of the Congo"
+      },
+      {
+        "peer_as": "327879",
+        "peer_name": "AJYWA-TELECOM",
+        "peer_org": "AJYWA TELECOM",
+        "peer_country": "Democratic Republic of the Congo"
+      },
+      {
+        "peer_as": "37619",
+        "peer_name": "BSC-AS",
+        "peer_org": "Broadband Systems Corporation",
+        "peer_country": "Rwanda"
+      },
+      {
+        "peer_as": "327799",
+        "peer_name": "VIETTEL-BURUNDI",
+        "peer_org": "VIETTEL BURUNDI SA",
+        "peer_country": "Burundi"
+      },
+      {
+        "peer_as": "37429",
+        "peer_name": "Spidernet",
+        "peer_org": "SPIDERNET SPRL BURUNDI",
+        "peer_country": "Burundi"
+      },
+      {
+        "peer_as": "328443",
+        "peer_name": "Societe-Datco-AS",
+        "peer_org": "Societe Datco",
+        "peer_country": "Democratic Republic of the Congo"
+      }
+    ]
+  },
+  "327708": {
+    "asn": "327708",
+    "as_info": {
+      "name": "AIRTEL-RW",
+      "org": "Airtel Rwanda Ltd",
+      "country": "Rwanda"
+    },
+    "links": [
+      {
+        "peer_as": "327707",
+        "peer_name": "AIRTEL-RW",
+        "peer_org": "Airtel Rwanda Ltd",
+        "peer_country": "Rwanda"
+      },
+      {
+        "peer_as": "37124",
+        "peer_name": "tigo-rw-as",
+        "peer_org": "Airtel Rwanda Ltd",
+        "peer_country": "Rwanda"
+      },
+      {
+        "peer_as": "327699",
+        "peer_name": "AIRTELMADA",
+        "peer_org": "Airtel Madagascar",
+        "peer_country": "Madagascar"
+      },
+      {
+        "peer_as": "327711",
+        "peer_name": "AIRTEL-NIGER",
+        "peer_org": "Airtel Niger",
+        "peer_country": "Niger"
+      },
+      {
+        "peer_as": "327709",
+        "peer_name": "AIRTEL-SC",
+        "peer_org": "Telecom Seychelles Limited",
+        "peer_country": "Seychelles"
+      },
+      {
+        "peer_as": "36977",
+        "peer_name": "Airtel-UG",
+        "peer_org": "Airtel Uganda Limited",
+        "peer_country": "Uganda"
+      }
+    ]
+  }
+}

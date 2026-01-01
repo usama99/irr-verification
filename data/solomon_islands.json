@@ -1,0 +1,348 @@
+{
+  "7619": {
+    "asn": "7619",
+    "as_info": {
+      "name": "TCOSI-AS-AP",
+      "org": "Telecommunications Commission Solomon Islands",
+      "country": "Solomon Islands"
+    },
+    "links": [
+      {
+        "peer_as": "4766",
+        "peer_name": "KIXS-AS-KR",
+        "peer_org": "Korea Telecom",
+        "peer_country": "South Korea"
+      },
+      {
+        "peer_as": "9498",
+        "peer_name": "BBIL-AP",
+        "peer_org": "Bharti Airtel Limited",
+        "peer_country": "India"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "4515",
+        "peer_name": "ERX-STAR",
+        "peer_org": "PCCW IMS Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "45891": {
+    "asn": "45891",
+    "as_info": {
+      "name": "SBT-AS-AP",
+      "org": "Solomon Telekom Co Ltd",
+      "country": "Solomon Islands"
+    },
+    "links": [
+      {
+        "peer_as": "22351",
+        "peer_name": "INTELSAT-1",
+        "peer_org": "INTELSAT GLOBAL SERVICE CORPORATION",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "4648",
+        "peer_name": "SPARK-NZ",
+        "peer_org": "Spark New Zealand Trading Limited",
+        "peer_country": "New Zealand"
+      },
+      {
+        "peer_as": "139277",
+        "peer_name": "SIG-AS-AP",
+        "peer_org": "Solomon Islands Government ICT Support Department",
+        "peer_country": "Solomon Islands"
+      },
+      {
+        "peer_as": "63956",
+        "peer_name": "COLO-AS-AP",
+        "peer_org": "Colocation Australia Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "2764",
+        "peer_name": "AAPT",
+        "peer_org": "AAPT Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "7594",
+        "peer_name": "ONQ-AS-AP",
+        "peer_org": "On Q Networks",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "7606",
+        "peer_name": "WAIA-AP",
+        "peer_org": "Internet Association of Australia Inc.",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "134525": {
+    "asn": "134525",
+    "as_info": {
+      "name": "SBT-AS-AP",
+      "org": "Solomon Telekom Co Ltd",
+      "country": "Solomon Islands"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "139609",
+        "peer_name": "SISCC-AS-AP",
+        "peer_org": "Solomon Islands Submarine Cable Company",
+        "peer_country": "Solomon Islands"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "7545",
+        "peer_name": "TPG-INTERNET-AP",
+        "peer_org": "TPG Internet Pty Ltd",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "132462": {
+    "asn": "132462",
+    "as_info": {
+      "name": "BEMOBILESI-AS-AP",
+      "org": "Bemobile Solomon Islands Ltd",
+      "country": "Solomon Islands"
+    },
+    "links": [
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "24439",
+        "peer_name": "NTAMAR-AS-AP",
+        "peer_org": "National Telecommunications Authority",
+        "peer_country": "Marshall Islands"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "132468": {
+    "asn": "132468",
+    "as_info": {
+      "name": "SATSOL-NET-SB",
+      "org": "SATSOL LIMITED",
+      "country": "Solomon Islands"
+    },
+    "links": [
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "63956",
+        "peer_name": "COLO-AS-AP",
+        "peer_org": "Colocation Australia Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "7545",
+        "peer_name": "TPG-INTERNET-AP",
+        "peer_org": "TPG Internet Pty Ltd",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "142279": {
+    "asn": "142279",
+    "as_info": {
+      "name": "SOLITECHLTD-AS-AP",
+      "org": "Solitech Ltd",
+      "country": "Solomon Islands"
+    },
+    "links": [
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "150349": {
+    "asn": "150349",
+    "as_info": {
+      "name": "PVEL-AS-AP",
+      "org": "Pacific Vaizeds Enterprise Ltd",
+      "country": "Solomon Islands"
+    },
+    "links": [
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "139277": {
+    "asn": "139277",
+    "as_info": {
+      "name": "SIG-AS-AP",
+      "org": "Solomon Islands Government ICT Support Department",
+      "country": "Solomon Islands"
+    },
+    "links": [
+      {
+        "peer_as": "45891",
+        "peer_name": "SBT-AS-AP",
+        "peer_org": "Solomon Telekom Co Ltd",
+        "peer_country": "Solomon Islands"
+      },
+      {
+        "peer_as": "139609",
+        "peer_name": "SISCC-AS-AP",
+        "peer_org": "Solomon Islands Submarine Cable Company",
+        "peer_country": "Solomon Islands"
+      },
+      {
+        "peer_as": "63956",
+        "peer_name": "COLO-AS-AP",
+        "peer_org": "Colocation Australia Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "7594",
+        "peer_name": "ONQ-AS-AP",
+        "peer_org": "On Q Networks",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "139609": {
+    "asn": "139609",
+    "as_info": {
+      "name": "SISCC-AS-AP",
+      "org": "Solomon Islands Submarine Cable Company",
+      "country": "Solomon Islands"
+    },
+    "links": [
+      {
+        "peer_as": "139277",
+        "peer_name": "SIG-AS-AP",
+        "peer_org": "Solomon Islands Government ICT Support Department",
+        "peer_country": "Solomon Islands"
+      },
+      {
+        "peer_as": "134525",
+        "peer_name": "SBT-AS-AP",
+        "peer_org": "Solomon Telekom Co Ltd",
+        "peer_country": "Solomon Islands"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "132260": {
+    "asn": "132260",
+    "as_info": {
+      "name": "SATSOL-NET-AS-AP",
+      "org": "SATSOL LIMITED",
+      "country": "Solomon Islands"
+    },
+    "links": [
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "63956",
+        "peer_name": "COLO-AS-AP",
+        "peer_org": "Colocation Australia Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "7594",
+        "peer_name": "ONQ-AS-AP",
+        "peer_org": "On Q Networks",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "7606",
+        "peer_name": "WAIA-AP",
+        "peer_org": "Internet Association of Australia Inc.",
+        "peer_country": "Australia"
+      }
+    ]
+  }
+}

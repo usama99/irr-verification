@@ -1,0 +1,74 @@
+{
+  "23657": {
+    "asn": "23657",
+    "as_info": {
+      "name": "BLUESKY-AS-AP",
+      "org": "Blue Sky Communications",
+      "country": "American Samoa"
+    },
+    "links": [
+      {
+        "peer_as": "4648",
+        "peer_name": "SPARK-NZ",
+        "peer_org": "Spark New Zealand Trading Limited",
+        "peer_country": "New Zealand"
+      },
+      {
+        "peer_as": "38800",
+        "peer_name": "DIGICELSAMOA-WS-AS-AP",
+        "peer_org": "Digicel Samoa Ltd",
+        "peer_country": "Samoa"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      }
+    ]
+  },
+  "9751": {
+    "asn": "9751",
+    "as_info": {
+      "name": "ASTCA-AS-AP",
+      "org": "American Samoa Telecommunications Authority",
+      "country": "American Samoa"
+    },
+    "links": [
+      {
+        "peer_as": "11563",
+        "peer_name": "NETENTERPRISE",
+        "peer_org": "NetEnterprise Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3561",
+        "peer_name": "CENTURYLINK-LEGACY-SAVVIS",
+        "peer_org": "CenturyLink Communications, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "266445",
+        "peer_name": "Unknown",
+        "peer_org": "SEA TELECOM LTDA",
+        "peer_country": "Brazil"
+      }
+    ]
+  },
+  "135276": {
+    "asn": "135276",
+    "as_info": {
+      "name": "VCXTECHNOLOGIES-AS-AP",
+      "org": "VCX Technologies Inc.",
+      "country": "American Samoa"
+    },
+    "links": [
+      {
+        "peer_as": "132267",
+        "peer_name": "NOVOCOM-BD",
+        "peer_org": "NovoCom Limited",
+        "peer_country": "Bangladesh"
+      }
+    ]
+  }
+}

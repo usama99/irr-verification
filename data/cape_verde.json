@@ -1,0 +1,100 @@
+{
+  "328440": {
+    "asn": "328440",
+    "as_info": {
+      "name": "Banco-BAI",
+      "org": "Banco BAI Cabo Verde, SA",
+      "country": "Cape Verde"
+    },
+    "links": [
+      {
+        "peer_as": "8657",
+        "peer_name": "MEO-INTERNACIONAL",
+        "peer_org": "MEO - SERVICOS DE COMUNICACOES E MULTIMEDIA S.A.",
+        "peer_country": "Portugal"
+      }
+    ]
+  },
+  "329173": {
+    "asn": "329173",
+    "as_info": {
+      "name": "CV-IX-MGT",
+      "org": "Associação Cabo Verde Internet Exchange Point",
+      "country": "Cape Verde"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "327862": {
+    "asn": "327862",
+    "as_info": {
+      "name": "NOSi",
+      "org": "NOSi EPE",
+      "country": "Cape Verde"
+    },
+    "links": [
+      {
+        "peer_as": "8657",
+        "peer_name": "MEO-INTERNACIONAL",
+        "peer_org": "MEO - SERVICOS DE COMUNICACOES E MULTIMEDIA S.A.",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "37468",
+        "peer_name": "ANGOLA-CABLES",
+        "peer_org": "Angola Cables",
+        "peer_country": "Angola"
+      },
+      {
+        "peer_as": "16735",
+        "peer_name": "Unknown",
+        "peer_org": "ALGAR TELECOM S/A",
+        "peer_country": "Brazil"
+      }
+    ]
+  },
+  "37517": {
+    "asn": "37517",
+    "as_info": {
+      "name": "CV-Multimedia",
+      "org": "CV Multimedia SA",
+      "country": "Cape Verde"
+    },
+    "links": [
+      {
+        "peer_as": "16735",
+        "peer_name": "Unknown",
+        "peer_org": "ALGAR TELECOM S/A",
+        "peer_country": "Brazil"
+      }
+    ]
+  },
+  "37575": {
+    "asn": "37575",
+    "as_info": {
+      "name": "TMAIS",
+      "org": "UNITEL T+ Telecomunicacoes, Sociedade Unipessoal, S.A.",
+      "country": "Cape Verde"
+    },
+    "links": [
+      {
+        "peer_as": "16735",
+        "peer_name": "Unknown",
+        "peer_org": "ALGAR TELECOM S/A",
+        "peer_country": "Brazil"
+      }
+    ]
+  }
+}

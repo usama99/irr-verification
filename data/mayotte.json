@@ -1,0 +1,18 @@
+{
+  "37614": {
+    "asn": "37614",
+    "as_info": {
+      "name": "STOI-AS",
+      "org": "STOI Internet",
+      "country": "Mayotte"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      }
+    ]
+  }
+}

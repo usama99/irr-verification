@@ -1,0 +1,64 @@
+{
+  "36290": {
+    "asn": "36290",
+    "as_info": {
+      "name": "THECABLE-STKITTS-01",
+      "org": "The Cable of St. Kitts",
+      "country": "Saint Kitts and Nevis"
+    },
+    "links": [
+      {
+        "peer_as": "17149",
+        "peer_name": "GCN-AS",
+        "peer_org": "Global Caribbean Network",
+        "peer_country": "Guadeloupe"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "54990": {
+    "asn": "54990",
+    "as_info": {
+      "name": "AS-1337",
+      "org": "1337 Services LLC",
+      "country": "Saint Kitts and Nevis"
+    },
+    "links": [
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "37560",
+        "peer_name": "CYBERDYNE",
+        "peer_org": "Cyberdyne S.A.",
+        "peer_country": "Liberia"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "7545",
+        "peer_name": "TPG-INTERNET-AP",
+        "peer_org": "TPG Internet Pty Ltd",
+        "peer_country": "Australia"
+      }
+    ]
+  }
+}

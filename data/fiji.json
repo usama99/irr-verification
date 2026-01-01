@@ -1,0 +1,354 @@
+{
+  "37976": {
+    "asn": "37976",
+    "as_info": {
+      "name": "TAOF-AS-AP",
+      "org": "Telecommunications Authority of Fiji",
+      "country": "Fiji"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "17557",
+        "peer_name": "PKTELECOM-AS-PK",
+        "peer_org": "Pakistan Telecommuication company limited",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23674",
+        "peer_name": "NAYATEL-PK",
+        "peer_org": "Nayatel (Pvt) Ltd",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "9541",
+        "peer_name": "CYBERNET-AP",
+        "peer_org": "Cyber Internet Services (Private) Limited",
+        "peer_country": "Pakistan"
+      }
+    ]
+  },
+  "132248": {
+    "asn": "132248",
+    "as_info": {
+      "name": "RBOF-AS-AP",
+      "org": "Reserve Bank of Fiji",
+      "country": "Fiji"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "4648",
+        "peer_name": "SPARK-NZ",
+        "peer_org": "Spark New Zealand Trading Limited",
+        "peer_country": "New Zealand"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "135647": {
+    "asn": "135647",
+    "as_info": {
+      "name": "AFL-AS-AP",
+      "org": "Airports Fiji Limited",
+      "country": "Fiji"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "4648",
+        "peer_name": "SPARK-NZ",
+        "peer_org": "Spark New Zealand Trading Limited",
+        "peer_country": "New Zealand"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "24390": {
+    "asn": "24390",
+    "as_info": {
+      "name": "USP-AS-AP",
+      "org": "The University of the South Pacific",
+      "country": "Fiji"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "27318",
+        "peer_name": "ISC-F-AS",
+        "peer_org": "Internet Systems Consortium, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "7606",
+        "peer_name": "WAIA-AP",
+        "peer_org": "Internet Association of Australia Inc.",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "9241": {
+    "asn": "9241",
+    "as_info": {
+      "name": "FINTEL-FJ",
+      "org": "Fiji International Telecommunications Ltd",
+      "country": "Fiji"
+    },
+    "links": [
+      {
+        "peer_as": "7474",
+        "peer_name": "OPTUSCOM-AS01-AU",
+        "peer_org": "SingTel Optus Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "136415",
+        "peer_name": "KIDANET1-AS-AP",
+        "peer_org": "KIDANET Internet Service Provider",
+        "peer_country": "Fiji"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "7606",
+        "peer_name": "WAIA-AP",
+        "peer_org": "Internet Association of Australia Inc.",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "137890": {
+    "asn": "137890",
+    "as_info": {
+      "name": "WALESILTD-AS-AP",
+      "org": "Walesi Ltd",
+      "country": "Fiji"
+    },
+    "links": [
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "141470": {
+    "asn": "141470",
+    "as_info": {
+      "name": "GOVNET-AS-AP",
+      "org": "ITC Services",
+      "country": "Fiji"
+    },
+    "links": [
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "4648",
+        "peer_name": "SPARK-NZ",
+        "peer_org": "Spark New Zealand Trading Limited",
+        "peer_country": "New Zealand"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "133067": {
+    "asn": "133067",
+    "as_info": {
+      "name": "NEWCOM-AS-AP",
+      "org": "Newcom Live (Fiji) Limited",
+      "country": "Fiji"
+    },
+    "links": [
+      {
+        "peer_as": "4648",
+        "peer_name": "SPARK-NZ",
+        "peer_org": "Spark New Zealand Trading Limited",
+        "peer_country": "New Zealand"
+      }
+    ]
+  },
+  "4638": {
+    "asn": "4638",
+    "as_info": {
+      "name": "IS-FJ-AS",
+      "org": "Connect Internet Services",
+      "country": "Fiji"
+    },
+    "links": [
+      {
+        "peer_as": "4648",
+        "peer_name": "SPARK-NZ",
+        "peer_org": "Spark New Zealand Trading Limited",
+        "peer_country": "New Zealand"
+      },
+      {
+        "peer_as": "681",
+        "peer_name": "WAIKATOUNI-AS-AP",
+        "peer_org": "University of Waikato",
+        "peer_country": "New Zealand"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "149429": {
+    "asn": "149429",
+    "as_info": {
+      "name": "RBOF-AS-BRS",
+      "org": "Reserve Bank of Fiji",
+      "country": "Fiji"
+    },
+    "links": [
+      {
+        "peer_as": "4648",
+        "peer_name": "SPARK-NZ",
+        "peer_org": "Spark New Zealand Trading Limited",
+        "peer_country": "New Zealand"
+      }
+    ]
+  },
+  "136415": {
+    "asn": "136415",
+    "as_info": {
+      "name": "KIDANET1-AS-AP",
+      "org": "KIDANET Internet Service Provider",
+      "country": "Fiji"
+    },
+    "links": [
+      {
+        "peer_as": "9241",
+        "peer_name": "FINTEL-FJ",
+        "peer_org": "Fiji International Telecommunications Ltd",
+        "peer_country": "Fiji"
+      }
+    ]
+  },
+  "38442": {
+    "asn": "38442",
+    "as_info": {
+      "name": "VODAFONEFIJI-AS-FJ",
+      "org": "Vodafone Fiji Limited",
+      "country": "Fiji"
+    },
+    "links": [
+      {
+        "peer_as": "63945",
+        "peer_name": "DIGITECPNG-AS-AP",
+        "peer_org": "Digitec PNG Limited",
+        "peer_country": "Papua New Guinea"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "136921": {
+    "asn": "136921",
+    "as_info": {
+      "name": "FNU-AS-AP",
+      "org": "Fiji National University",
+      "country": "Fiji"
+    },
+    "links": [
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      }
+    ]
+  }
+}

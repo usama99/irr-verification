@@ -1,0 +1,528 @@
+{
+  "18200": {
+    "asn": "18200",
+    "as_info": {
+      "name": "OPT-NC-AS-AP",
+      "org": "Office des Postes et des Telecomm. de Nouvelle Caledonie",
+      "country": "New Caledonia"
+    },
+    "links": [
+      {
+        "peer_as": "22351",
+        "peer_name": "INTELSAT-1",
+        "peer_org": "INTELSAT GLOBAL SERVICE CORPORATION",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "7474",
+        "peer_name": "OPTUSCOM-AS01-AU",
+        "peer_org": "SingTel Optus Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "149520",
+        "peer_name": "THEMIS-AS-AP",
+        "peer_org": "THEMIS",
+        "peer_country": "New Caledonia"
+      },
+      {
+        "peer_as": "18117",
+        "peer_name": "HARBOURMSP-AU-AP",
+        "peer_org": "Harbour MSP Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "17480": {
+    "asn": "17480",
+    "as_info": {
+      "name": "CANL",
+      "org": "CAN'L",
+      "country": "New Caledonia"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "7474",
+        "peer_name": "OPTUSCOM-AS01-AU",
+        "peer_org": "SingTel Optus Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "18117",
+        "peer_name": "HARBOURMSP-AU-AP",
+        "peer_org": "Harbour MSP Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      }
+    ]
+  },
+  "45345": {
+    "asn": "45345",
+    "as_info": {
+      "name": "NAUTILE-NC-AS-AP",
+      "org": "Nautile SARL",
+      "country": "New Caledonia"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "5089",
+        "peer_name": "NTL",
+        "peer_org": "Virgin Media Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "34939",
+        "peer_name": "nextdns",
+        "peer_org": "nextdns, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "132079",
+        "peer_name": "OPT-NC-AS-AP",
+        "peer_org": "Office des Postes et des Telecomm. de Nouvelle Caledonie",
+        "peer_country": "New Caledonia"
+      },
+      {
+        "peer_as": "2764",
+        "peer_name": "AAPT",
+        "peer_org": "AAPT Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      }
+    ]
+  },
+  "45461": {
+    "asn": "45461",
+    "as_info": {
+      "name": "TELENET-AS-AP",
+      "org": "TeleNet",
+      "country": "New Caledonia"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "132079",
+        "peer_name": "OPT-NC-AS-AP",
+        "peer_org": "Office des Postes et des Telecomm. de Nouvelle Caledonie",
+        "peer_country": "New Caledonia"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "2764",
+        "peer_name": "AAPT",
+        "peer_org": "AAPT Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      }
+    ]
+  },
+  "56055": {
+    "asn": "56055",
+    "as_info": {
+      "name": "MLS-NC",
+      "org": "Micro Logic Systems",
+      "country": "New Caledonia"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3223",
+        "peer_name": "VOXILITY",
+        "peer_org": "Voxility LLP",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "132079",
+        "peer_name": "OPT-NC-AS-AP",
+        "peer_org": "Office des Postes et des Telecomm. de Nouvelle Caledonie",
+        "peer_country": "New Caledonia"
+      }
+    ]
+  },
+  "131995": {
+    "asn": "131995",
+    "as_info": {
+      "name": "XLPROG-AS-AP",
+      "org": "XL PROGRAMMATION MICRO SARL",
+      "country": "New Caledonia"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "132079",
+        "peer_name": "OPT-NC-AS-AP",
+        "peer_org": "Office des Postes et des Telecomm. de Nouvelle Caledonie",
+        "peer_country": "New Caledonia"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      }
+    ]
+  },
+  "134405": {
+    "asn": "134405",
+    "as_info": {
+      "name": "DATASERVICESPACIFIC-AS-AP",
+      "org": "Data Services Pacific",
+      "country": "New Caledonia"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4651",
+        "peer_name": "THAI-GATEWAY",
+        "peer_org": "CAT Telecom Public Company Limited",
+        "peer_country": "Thailand"
+      },
+      {
+        "peer_as": "9304",
+        "peer_name": "HUTCHISON-AS-AP",
+        "peer_org": "HGC Global Communications Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "133385",
+        "peer_name": "ATOMMYANMAR-AS-AP",
+        "peer_org": "Atom Myanmar Limited",
+        "peer_country": "Myanmar"
+      },
+      {
+        "peer_as": "10099",
+        "peer_name": "UNICOM-Global",
+        "peer_org": "China Unicom (Hong Kong) Operations Limited",
+        "peer_country": "Hong Kong"
+      }
+    ]
+  },
+  "137243": {
+    "asn": "137243",
+    "as_info": {
+      "name": "ISI-AS-AP",
+      "org": "ISI.nc",
+      "country": "New Caledonia"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      }
+    ]
+  },
+  "140718": {
+    "asn": "140718",
+    "as_info": {
+      "name": "EPI-AS-AP",
+      "org": "ENGIE PACIFIQUE INFORMATIQUE",
+      "country": "New Caledonia"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      }
+    ]
+  },
+  "141197": {
+    "asn": "141197",
+    "as_info": {
+      "name": "PACIFICCOMMUNITY-AS-AP",
+      "org": "Pacific Community",
+      "country": "New Caledonia"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      }
+    ]
+  },
+  "141695": {
+    "asn": "141695",
+    "as_info": {
+      "name": "PACIFICCOMMUNITY-AS-AP",
+      "org": "Pacific Community",
+      "country": "New Caledonia"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "4648",
+        "peer_name": "SPARK-NZ",
+        "peer_org": "Spark New Zealand Trading Limited",
+        "peer_country": "New Zealand"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "147030": {
+    "asn": "147030",
+    "as_info": {
+      "name": "MYNET-AS-AP",
+      "org": "Mynet",
+      "country": "New Caledonia"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "136402": {
+    "asn": "136402",
+    "as_info": {
+      "name": "NTL-NC-AS-AP",
+      "org": "Nautile SARL",
+      "country": "New Caledonia"
+    },
+    "links": [
+      {
+        "peer_as": "5089",
+        "peer_name": "NTL",
+        "peer_org": "Virgin Media Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "20473",
+        "peer_name": "AS-CHOOPA",
+        "peer_org": "The Constant Company, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "132079": {
+    "asn": "132079",
+    "as_info": {
+      "name": "OPT-NC-AS-AP",
+      "org": "Office des Postes et des Telecomm. de Nouvelle Caledonie",
+      "country": "New Caledonia"
+    },
+    "links": [
+      {
+        "peer_as": "45345",
+        "peer_name": "NAUTILE-NC-AS-AP",
+        "peer_org": "Nautile SARL",
+        "peer_country": "New Caledonia"
+      },
+      {
+        "peer_as": "45461",
+        "peer_name": "TELENET-AS-AP",
+        "peer_org": "TeleNet",
+        "peer_country": "New Caledonia"
+      },
+      {
+        "peer_as": "56089",
+        "peer_name": "OFFRATEL-AS-AP",
+        "peer_org": "OFFRATEL",
+        "peer_country": "New Caledonia"
+      },
+      {
+        "peer_as": "56055",
+        "peer_name": "MLS-NC",
+        "peer_org": "Micro Logic Systems",
+        "peer_country": "New Caledonia"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "38456",
+        "peer_name": "SPEEDCAST-AU",
+        "peer_org": "SpeedCast Pacific Pty Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "2198",
+        "peer_name": "FR-TOM-NOUVELLE-CALEDONIE",
+        "peer_org": "Renater",
+        "peer_country": "European Union"
+      },
+      {
+        "peer_as": "131995",
+        "peer_name": "XLPROG-AS-AP",
+        "peer_org": "XL PROGRAMMATION MICRO SARL",
+        "peer_country": "New Caledonia"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      }
+    ]
+  },
+  "56089": {
+    "asn": "56089",
+    "as_info": {
+      "name": "OFFRATEL-AS-AP",
+      "org": "OFFRATEL",
+      "country": "New Caledonia"
+    },
+    "links": [
+      {
+        "peer_as": "132079",
+        "peer_name": "OPT-NC-AS-AP",
+        "peer_org": "Office des Postes et des Telecomm. de Nouvelle Caledonie",
+        "peer_country": "New Caledonia"
+      }
+    ]
+  },
+  "149520": {
+    "asn": "149520",
+    "as_info": {
+      "name": "THEMIS-AS-AP",
+      "org": "THEMIS",
+      "country": "New Caledonia"
+    },
+    "links": [
+      {
+        "peer_as": "18200",
+        "peer_name": "OPT-NC-AS-AP",
+        "peer_org": "Office des Postes et des Telecomm. de Nouvelle Caledonie",
+        "peer_country": "New Caledonia"
+      }
+    ]
+  }
+}

@@ -1,0 +1,430 @@
+{
+  "37462": {
+    "asn": "37462",
+    "as_info": {
+      "name": "Prestabist",
+      "org": "PRESTABIST",
+      "country": "Chad"
+    },
+    "links": [
+      {
+        "peer_as": "4230",
+        "peer_name": "Unknown",
+        "peer_org": "CLARO S.A.",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "8513",
+        "peer_name": "SKYVISION",
+        "peer_org": "SkyVision Global Networks Ltd",
+        "peer_country": "Bermuda"
+      },
+      {
+        "peer_as": "2905",
+        "peer_name": "TICSA-ASN",
+        "peer_org": "MTN SA",
+        "peer_country": "South Africa"
+      },
+      {
+        "peer_as": "204523",
+        "peer_name": "Expresso-Telecom-Group",
+        "peer_org": "Expresso Telecom Group Ltd",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "52320",
+        "peer_name": "Unknown",
+        "peer_org": "GlobeNet Cabos Submarinos Colombia, S.A.S.",
+        "peer_country": "Colombia"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "327756": {
+    "asn": "327756",
+    "as_info": {
+      "name": "AIRTEL-TD",
+      "org": "AIRTEL TCHAD",
+      "country": "Chad"
+    },
+    "links": [
+      {
+        "peer_as": "4230",
+        "peer_name": "Unknown",
+        "peer_org": "CLARO S.A.",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "37140",
+        "peer_name": "zain-as",
+        "peer_org": "Airtel Ghana Limited",
+        "peer_country": "Ghana"
+      },
+      {
+        "peer_as": "204523",
+        "peer_name": "Expresso-Telecom-Group",
+        "peer_org": "Expresso Telecom Group Ltd",
+        "peer_country": "United Arab Emirates"
+      }
+    ]
+  },
+  "328594": {
+    "asn": "328594",
+    "as_info": {
+      "name": "SUDATCHAD-AS",
+      "org": "SUDATCHAD SA/CA",
+      "country": "Chad"
+    },
+    "links": [
+      {
+        "peer_as": "4230",
+        "peer_name": "Unknown",
+        "peer_org": "CLARO S.A.",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "52320",
+        "peer_name": "Unknown",
+        "peer_org": "GlobeNet Cabos Submarinos Colombia, S.A.S.",
+        "peer_country": "Colombia"
+      },
+      {
+        "peer_as": "328908",
+        "peer_name": "FOCON-NET-TELECOMS",
+        "peer_org": "Societé FOCON-NET TELECOMS Sarl",
+        "peer_country": "Chad"
+      },
+      {
+        "peer_as": "328104",
+        "peer_name": "ADETIC-AS",
+        "peer_org": "Agence de Developpement de Technologies de l'Information et de la Communication",
+        "peer_country": "Chad"
+      }
+    ]
+  },
+  "328599": {
+    "asn": "328599",
+    "as_info": {
+      "name": "Amanet-SARL",
+      "org": "Société Amanet SARL",
+      "country": "Chad"
+    },
+    "links": [
+      {
+        "peer_as": "4230",
+        "peer_name": "Unknown",
+        "peer_org": "CLARO S.A.",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "15706",
+        "peer_name": "Sudatel",
+        "peer_org": "Sudatel (Sudan Telecom Co. Ltd)",
+        "peer_country": "Sudan"
+      },
+      {
+        "peer_as": "204523",
+        "peer_name": "Expresso-Telecom-Group",
+        "peer_org": "Expresso Telecom Group Ltd",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "52320",
+        "peer_name": "Unknown",
+        "peer_org": "GlobeNet Cabos Submarinos Colombia, S.A.S.",
+        "peer_country": "Colombia"
+      }
+    ]
+  },
+  "327802": {
+    "asn": "327802",
+    "as_info": {
+      "name": "MILLICOM-CHAD",
+      "org": "MILLICOM CHAD SA",
+      "country": "Chad"
+    },
+    "links": [
+      {
+        "peer_as": "8657",
+        "peer_name": "MEO-INTERNACIONAL",
+        "peer_org": "MEO - SERVICOS DE COMUNICACOES E MULTIMEDIA S.A.",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "27822",
+        "peer_name": "Unknown",
+        "peer_org": "Emerging Markets Communications de Argentina S.R.L",
+        "peer_country": "Argentina"
+      },
+      {
+        "peer_as": "204523",
+        "peer_name": "Expresso-Telecom-Group",
+        "peer_org": "Expresso Telecom Group Ltd",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "36912",
+        "peer_name": "ORANGECM",
+        "peer_org": "Orange Cameroun SA",
+        "peer_country": "Cameroon"
+      }
+    ]
+  },
+  "328310": {
+    "asn": "328310",
+    "as_info": {
+      "name": "GLOBALTEL-Networks",
+      "org": "Global Tel Sarl",
+      "country": "Chad"
+    },
+    "links": [
+      {
+        "peer_as": "8657",
+        "peer_name": "MEO-INTERNACIONAL",
+        "peer_org": "MEO - SERVICOS DE COMUNICACOES E MULTIMEDIA S.A.",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "204523",
+        "peer_name": "Expresso-Telecom-Group",
+        "peer_org": "Expresso Telecom Group Ltd",
+        "peer_country": "United Arab Emirates"
+      }
+    ]
+  },
+  "327975": {
+    "asn": "327975",
+    "as_info": {
+      "name": "ILNET-TELECOM",
+      "org": "ILNET TELECOM GROUP SARL",
+      "country": "Chad"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "60725",
+        "peer_name": "O3B-AS",
+        "peer_org": "SES ASTRA S.A.",
+        "peer_country": "Luxembourg"
+      },
+      {
+        "peer_as": "15964",
+        "peer_name": "CAMNET-AS",
+        "peer_org": "CAMTEL",
+        "peer_country": "Cameroon"
+      },
+      {
+        "peer_as": "2905",
+        "peer_name": "TICSA-ASN",
+        "peer_org": "MTN SA",
+        "peer_country": "South Africa"
+      },
+      {
+        "peer_as": "204523",
+        "peer_name": "Expresso-Telecom-Group",
+        "peer_org": "Expresso Telecom Group Ltd",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "328104": {
+    "asn": "328104",
+    "as_info": {
+      "name": "ADETIC-AS",
+      "org": "Agence de Developpement de Technologies de l'Information et de la Communication",
+      "country": "Chad"
+    },
+    "links": [
+      {
+        "peer_as": "207701",
+        "peer_name": "DataGrid",
+        "peer_org": "Talia Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "15706",
+        "peer_name": "Sudatel",
+        "peer_org": "Sudatel (Sudan Telecom Co. Ltd)",
+        "peer_country": "Sudan"
+      },
+      {
+        "peer_as": "204523",
+        "peer_name": "Expresso-Telecom-Group",
+        "peer_org": "Expresso Telecom Group Ltd",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "328594",
+        "peer_name": "SUDATCHAD-AS",
+        "peer_org": "SUDATCHAD SA/CA",
+        "peer_country": "Chad"
+      }
+    ]
+  },
+  "328679": {
+    "asn": "328679",
+    "as_info": {
+      "name": "Societe-Digital",
+      "org": "SOCIETE DIGITAL COM SA/AG",
+      "country": "Chad"
+    },
+    "links": [
+      {
+        "peer_as": "15706",
+        "peer_name": "Sudatel",
+        "peer_org": "Sudatel (Sudan Telecom Co. Ltd)",
+        "peer_country": "Sudan"
+      },
+      {
+        "peer_as": "15964",
+        "peer_name": "CAMNET-AS",
+        "peer_org": "CAMTEL",
+        "peer_country": "Cameroon"
+      },
+      {
+        "peer_as": "204523",
+        "peer_name": "Expresso-Telecom-Group",
+        "peer_org": "Expresso Telecom Group Ltd",
+        "peer_country": "United Arab Emirates"
+      }
+    ]
+  },
+  "328604": {
+    "asn": "328604",
+    "as_info": {
+      "name": "Sahel-Tele-Internet-AS",
+      "org": "Societe 'Sahel Tele Internet' SA/AG",
+      "country": "Chad"
+    },
+    "links": [
+      {
+        "peer_as": "15706",
+        "peer_name": "Sudatel",
+        "peer_org": "Sudatel (Sudan Telecom Co. Ltd)",
+        "peer_country": "Sudan"
+      },
+      {
+        "peer_as": "204523",
+        "peer_name": "Expresso-Telecom-Group",
+        "peer_org": "Expresso Telecom Group Ltd",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "52320",
+        "peer_name": "Unknown",
+        "peer_org": "GlobeNet Cabos Submarinos Colombia, S.A.S.",
+        "peer_country": "Colombia"
+      }
+    ]
+  },
+  "328908": {
+    "asn": "328908",
+    "as_info": {
+      "name": "FOCON-NET-TELECOMS",
+      "org": "Societé FOCON-NET TELECOMS Sarl",
+      "country": "Chad"
+    },
+    "links": [
+      {
+        "peer_as": "15706",
+        "peer_name": "Sudatel",
+        "peer_org": "Sudatel (Sudan Telecom Co. Ltd)",
+        "peer_country": "Sudan"
+      },
+      {
+        "peer_as": "204523",
+        "peer_name": "Expresso-Telecom-Group",
+        "peer_org": "Expresso Telecom Group Ltd",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "328594",
+        "peer_name": "SUDATCHAD-AS",
+        "peer_org": "SUDATCHAD SA/CA",
+        "peer_country": "Chad"
+      }
+    ]
+  },
+  "329158": {
+    "asn": "329158",
+    "as_info": {
+      "name": "N-Djamena-IX-MGT",
+      "org": "N'Djamena IX",
+      "country": "Chad"
+    },
+    "links": [
+      {
+        "peer_as": "15706",
+        "peer_name": "Sudatel",
+        "peer_org": "Sudatel (Sudan Telecom Co. Ltd)",
+        "peer_country": "Sudan"
+      },
+      {
+        "peer_as": "204523",
+        "peer_name": "Expresso-Telecom-Group",
+        "peer_org": "Expresso Telecom Group Ltd",
+        "peer_country": "United Arab Emirates"
+      }
+    ]
+  },
+  "329207": {
+    "asn": "329207",
+    "as_info": {
+      "name": "NBSS1-AS",
+      "org": "NADIF BUSINESS SERVICE SARL",
+      "country": "Chad"
+    },
+    "links": [
+      {
+        "peer_as": "15964",
+        "peer_name": "CAMNET-AS",
+        "peer_org": "CAMTEL",
+        "peer_country": "Cameroon"
+      },
+      {
+        "peer_as": "204523",
+        "peer_name": "Expresso-Telecom-Group",
+        "peer_org": "Expresso Telecom Group Ltd",
+        "peer_country": "United Arab Emirates"
+      }
+    ]
+  },
+  "327864": {
+    "asn": "327864",
+    "as_info": {
+      "name": "ALBIDEYNET",
+      "org": "AlbideyNet",
+      "country": "Chad"
+    },
+    "links": [
+      {
+        "peer_as": "204523",
+        "peer_name": "Expresso-Telecom-Group",
+        "peer_org": "Expresso Telecom Group Ltd",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "52320",
+        "peer_name": "Unknown",
+        "peer_org": "GlobeNet Cabos Submarinos Colombia, S.A.S.",
+        "peer_country": "Colombia"
+      }
+    ]
+  }
+}

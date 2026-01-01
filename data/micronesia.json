@@ -1,0 +1,142 @@
+{
+  "38875": {
+    "asn": "38875",
+    "as_info": {
+      "name": "AS38875",
+      "org": "Federated States of Micronesia Telecomm. Corporation",
+      "country": "Micronesia"
+    },
+    "links": [
+      {
+        "peer_as": "4651",
+        "peer_name": "THAI-GATEWAY",
+        "peer_org": "CAT Telecom Public Company Limited",
+        "peer_country": "Thailand"
+      },
+      {
+        "peer_as": "9304",
+        "peer_name": "HUTCHISON-AS-AP",
+        "peer_org": "HGC Global Communications Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "38176",
+        "peer_name": "ABS-Global",
+        "peer_org": "ABS (HK) Limited",
+        "peer_country": "Hong Kong"
+      }
+    ]
+  },
+  "58524": {
+    "asn": "58524",
+    "as_info": {
+      "name": "AS58524",
+      "org": "Federated States of Micronesia Telecomm. Corporation",
+      "country": "Micronesia"
+    },
+    "links": [
+      {
+        "peer_as": "9304",
+        "peer_name": "HUTCHISON-AS-AP",
+        "peer_org": "HGC Global Communications Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "10130": {
+    "asn": "10130",
+    "as_info": {
+      "name": "AS10130",
+      "org": "Federated States of Micronesia Telecomm. Corporation",
+      "country": "Micronesia"
+    },
+    "links": [
+      {
+        "peer_as": "9304",
+        "peer_name": "HUTCHISON-AS-AP",
+        "peer_org": "HGC Global Communications Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "140066",
+        "peer_name": "MOEL-AS-AP",
+        "peer_org": "MOEL TRADING CO. LTD.",
+        "peer_country": "Kiribati"
+      },
+      {
+        "peer_as": "38176",
+        "peer_name": "ABS-Global",
+        "peer_org": "ABS (HK) Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "9731",
+        "peer_name": "SPEEDCAST-AS-AP",
+        "peer_org": "Speedcast Singapore Pte Ltd",
+        "peer_country": "Singapore"
+      }
+    ]
+  },
+  "45193": {
+    "asn": "45193",
+    "as_info": {
+      "name": "AS45193",
+      "org": "Federated States of Micronesia Telecomm. Corporation",
+      "country": "Micronesia"
+    },
+    "links": [
+      {
+        "peer_as": "9304",
+        "peer_name": "HUTCHISON-AS-AP",
+        "peer_org": "HGC Global Communications Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "38176",
+        "peer_name": "ABS-Global",
+        "peer_org": "ABS (HK) Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "142139": {
+    "asn": "142139",
+    "as_info": {
+      "name": "BOOMINC-AS-AP",
+      "org": "Boom! Inc.",
+      "country": "Micronesia"
+    },
+    "links": [
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      }
+    ]
+  }
+}

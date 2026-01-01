@@ -1,0 +1,524 @@
+{
+  "23959": {
+    "asn": "23959",
+    "as_info": {
+      "name": "OWL-AS-AP",
+      "org": "Owl Limited",
+      "country": "Vanuatu"
+    },
+    "links": [
+      {
+        "peer_as": "9498",
+        "peer_name": "BBIL-AP",
+        "peer_org": "Bharti Airtel Limited",
+        "peer_country": "India"
+      },
+      {
+        "peer_as": "203075",
+        "peer_name": "Duckcloud-Network",
+        "peer_org": "DuckCloud Network INC.",
+        "peer_country": "Canada"
+      },
+      {
+        "peer_as": "57695",
+        "peer_name": "MISAKA",
+        "peer_org": "Misaka Network, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "917",
+        "peer_name": "MISAKA",
+        "peer_org": "Misaka Network, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "57578",
+        "peer_name": "MISAKA-CIS-AS",
+        "peer_org": "Misaka Network, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "58313",
+        "peer_name": "MISAKA-UK-AS",
+        "peer_org": "Misaka Network, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "206499",
+        "peer_name": "MMNETWORKS",
+        "peer_org": "Marek Ziolkowski",
+        "peer_country": "Poland"
+      },
+      {
+        "peer_as": "7473",
+        "peer_name": "SINGTEL-AS-AP",
+        "peer_org": "Singapore Telecommunications (SINGTEL Internet Exchange)",
+        "peer_country": "Singapore"
+      }
+    ]
+  },
+  "9249": {
+    "asn": "9249",
+    "as_info": {
+      "name": "VUTELECOM-AS01-VU-AP",
+      "org": "Telecom Vanuatu Limited",
+      "country": "Vanuatu"
+    },
+    "links": [
+      {
+        "peer_as": "22351",
+        "peer_name": "INTELSAT-1",
+        "peer_org": "INTELSAT GLOBAL SERVICE CORPORATION",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "7474",
+        "peer_name": "OPTUSCOM-AS01-AU",
+        "peer_org": "SingTel Optus Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "4648",
+        "peer_name": "SPARK-NZ",
+        "peer_org": "Spark New Zealand Trading Limited",
+        "peer_country": "New Zealand"
+      },
+      {
+        "peer_as": "17819",
+        "peer_name": "ASN-EQUINIX-AP",
+        "peer_org": "Equinix Asia Pacific Pte Ltd",
+        "peer_country": "Singapore"
+      },
+      {
+        "peer_as": "23694",
+        "peer_name": "IDNIC-ICONMEDIANETWORK-AS-ID",
+        "peer_org": "PT Iconmedia Lintas Nusantara",
+        "peer_country": "Indonesia"
+      },
+      {
+        "peer_as": "18117",
+        "peer_name": "HARBOURMSP-AU-AP",
+        "peer_org": "Harbour MSP Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "38195",
+        "peer_name": "SUPERLOOP-AS-AP",
+        "peer_org": "SUPERLOOP (AUSTRALIA) PTY LTD",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "2764",
+        "peer_name": "AAPT",
+        "peer_org": "AAPT Limited",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "132254": {
+    "asn": "132254",
+    "as_info": {
+      "name": "PRIMADC-AS-AP",
+      "org": "PRIMA DC LIMITED",
+      "country": "Vanuatu"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "17819",
+        "peer_name": "ASN-EQUINIX-AP",
+        "peer_org": "Equinix Asia Pacific Pte Ltd",
+        "peer_country": "Singapore"
+      },
+      {
+        "peer_as": "38195",
+        "peer_name": "SUPERLOOP-AS-AP",
+        "peer_org": "SUPERLOOP (AUSTRALIA) PTY LTD",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "7606",
+        "peer_name": "WAIA-AP",
+        "peer_org": "Internet Association of Australia Inc.",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "132429": {
+    "asn": "132429",
+    "as_info": {
+      "name": "DIGICELVANUATU-VU",
+      "org": "Digicel Vanuatu Ltd",
+      "country": "Vanuatu"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4648",
+        "peer_name": "SPARK-NZ",
+        "peer_org": "Spark New Zealand Trading Limited",
+        "peer_country": "New Zealand"
+      },
+      {
+        "peer_as": "17819",
+        "peer_name": "ASN-EQUINIX-AP",
+        "peer_org": "Equinix Asia Pacific Pte Ltd",
+        "peer_country": "Singapore"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "132797": {
+    "asn": "132797",
+    "as_info": {
+      "name": "VANUATU-AS-AP",
+      "org": "Vanuatu Internet Exchange (VIX)",
+      "country": "Vanuatu"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "45495",
+        "peer_name": "INTERCHANGE-AS-VU-AP",
+        "peer_org": "Interchange Limited",
+        "peer_country": "Vanuatu"
+      },
+      {
+        "peer_as": "38195",
+        "peer_name": "SUPERLOOP-AS-AP",
+        "peer_org": "SUPERLOOP (AUSTRALIA) PTY LTD",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "43357": {
+    "asn": "43357",
+    "as_info": {
+      "name": "OWL",
+      "org": "Owl Limited",
+      "country": "Vanuatu"
+    },
+    "links": [
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23640",
+        "peer_name": "BBIX",
+        "peer_org": "BBIX,Inc.",
+        "peer_country": "Japan"
+      },
+      {
+        "peer_as": "57695",
+        "peer_name": "MISAKA",
+        "peer_org": "Misaka Network, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "917",
+        "peer_name": "MISAKA",
+        "peer_org": "Misaka Network, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "57578",
+        "peer_name": "MISAKA-CIS-AS",
+        "peer_org": "Misaka Network, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "58313",
+        "peer_name": "MISAKA-UK-AS",
+        "peer_org": "Misaka Network, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "206499",
+        "peer_name": "MMNETWORKS",
+        "peer_org": "Marek Ziolkowski",
+        "peer_country": "Poland"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "5617",
+        "peer_name": "TPNET",
+        "peer_org": "Orange Polska Spolka Akcyjna",
+        "peer_country": "Poland"
+      }
+    ]
+  },
+  "45495": {
+    "asn": "45495",
+    "as_info": {
+      "name": "INTERCHANGE-AS-VU-AP",
+      "org": "Interchange Limited",
+      "country": "Vanuatu"
+    },
+    "links": [
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "132797",
+        "peer_name": "VANUATU-AS-AP",
+        "peer_org": "Vanuatu Internet Exchange (VIX)",
+        "peer_country": "Vanuatu"
+      },
+      {
+        "peer_as": "136996",
+        "peer_name": "PACIFICNETWORKS-AS-AP",
+        "peer_org": "Pacific Networks",
+        "peer_country": "Vanuatu"
+      },
+      {
+        "peer_as": "32743",
+        "peer_name": "USCOLO-RETIRED",
+        "peer_org": "U.S. COLO, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "17975",
+        "peer_name": "APT-AP",
+        "peer_org": "APT Telecom Services Limited",
+        "peer_country": "Hong Kong"
+      }
+    ]
+  },
+  "132228": {
+    "asn": "132228",
+    "as_info": {
+      "name": "VANGOV-AS-AP",
+      "org": "Vanuatu Government",
+      "country": "Vanuatu"
+    },
+    "links": [
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "9229",
+        "peer_name": "SPEEDCAST-AP",
+        "peer_org": "Speedcast Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "7606",
+        "peer_name": "WAIA-AP",
+        "peer_org": "Internet Association of Australia Inc.",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "133383": {
+    "asn": "133383",
+    "as_info": {
+      "name": "VANGOV-AS-AP",
+      "org": "Vanuatu Government",
+      "country": "Vanuatu"
+    },
+    "links": [
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "38195",
+        "peer_name": "SUPERLOOP-AS-AP",
+        "peer_org": "SUPERLOOP (AUSTRALIA) PTY LTD",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "131166": {
+    "asn": "131166",
+    "as_info": {
+      "name": "WNL-AS-AP",
+      "org": "Wantok Network Limited",
+      "country": "Vanuatu"
+    },
+    "links": [
+      {
+        "peer_as": "17819",
+        "peer_name": "ASN-EQUINIX-AP",
+        "peer_org": "Equinix Asia Pacific Pte Ltd",
+        "peer_country": "Singapore"
+      },
+      {
+        "peer_as": "38195",
+        "peer_name": "SUPERLOOP-AS-AP",
+        "peer_org": "SUPERLOOP (AUSTRALIA) PTY LTD",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "7606",
+        "peer_name": "WAIA-AP",
+        "peer_org": "Internet Association of Australia Inc.",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "136996": {
+    "asn": "136996",
+    "as_info": {
+      "name": "PACIFICNETWORKS-AS-AP",
+      "org": "Pacific Networks",
+      "country": "Vanuatu"
+    },
+    "links": [
+      {
+        "peer_as": "45495",
+        "peer_name": "INTERCHANGE-AS-VU-AP",
+        "peer_org": "Interchange Limited",
+        "peer_country": "Vanuatu"
+      },
+      {
+        "peer_as": "38195",
+        "peer_name": "SUPERLOOP-AS-AP",
+        "peer_org": "SUPERLOOP (AUSTRALIA) PTY LTD",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "7606",
+        "peer_name": "WAIA-AP",
+        "peer_org": "Internet Association of Australia Inc.",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "45935": {
+    "asn": "45935",
+    "as_info": {
+      "name": "WNL-AS-AP",
+      "org": "Wantok Network Limited",
+      "country": "Vanuatu"
+    },
+    "links": [
+      {
+        "peer_as": "38195",
+        "peer_name": "SUPERLOOP-AS-AP",
+        "peer_org": "SUPERLOOP (AUSTRALIA) PTY LTD",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      }
+    ]
+  }
+}

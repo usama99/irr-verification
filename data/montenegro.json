@@ -1,0 +1,1066 @@
+{
+  "203824": {
+    "asn": "203824",
+    "as_info": {
+      "name": "INFOSME-AS",
+      "org": "Info Sistemi d.o.o.",
+      "country": "Montenegro"
+    },
+    "links": [
+      {
+        "peer_as": "8400",
+        "peer_name": "TELEKOM-AS",
+        "peer_org": "TELEKOM SRBIJA a.d.",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "47881",
+        "peer_name": "MNNEWS-AS",
+        "peer_org": "One Crna Gora DOO",
+        "peer_country": "Montenegro"
+      }
+    ]
+  },
+  "15397": {
+    "asn": "15397",
+    "as_info": {
+      "name": "TelenorMontenegro",
+      "org": "One Crna Gora DOO",
+      "country": "Montenegro"
+    },
+    "links": [
+      {
+        "peer_as": "8400",
+        "peer_name": "TELEKOM-AS",
+        "peer_org": "TELEKOM SRBIJA a.d.",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "51924",
+        "peer_name": "Portomontenegro-AS",
+        "peer_org": "Adriatic Marinas d.o.o.",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "40981",
+        "peer_name": "UNIVCG",
+        "peer_org": "University of Montenegro",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "201649",
+        "peer_name": "CBCGME-AS",
+        "peer_org": "Centralna Banka Crne Gore",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "43846",
+        "peer_name": "TELEMACH-AS",
+        "peer_org": "Telemach d.o.o.",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "200608",
+        "peer_name": "MIXP",
+        "peer_org": "University of Montenegro",
+        "peer_country": "Montenegro"
+      }
+    ]
+  },
+  "47451": {
+    "asn": "47451",
+    "as_info": {
+      "name": "doMEn",
+      "org": "D.O.O.\"Domen\" Drustvo za Proizvodnju,Promet i Usluge - Podgorica",
+      "country": "Montenegro"
+    },
+    "links": [
+      {
+        "peer_as": "8400",
+        "peer_name": "TELEKOM-AS",
+        "peer_org": "TELEKOM SRBIJA a.d.",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "40981",
+        "peer_name": "UNIVCG",
+        "peer_org": "University of Montenegro",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "12041",
+        "peer_name": "AS-AFILIAS1",
+        "peer_org": "Afilias, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "43941",
+        "peer_name": "BAUER-AS",
+        "peer_org": "Wydawnictwo Bauer Sp. z o.o., Sp. K.",
+        "peer_country": "Poland"
+      },
+      {
+        "peer_as": "210762",
+        "peer_name": "FROOT_TGD1",
+        "peer_org": "Internet Systems Consortium Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "13786",
+        "peer_name": "SEABRAS-1",
+        "peer_org": "Seabras 1 USA, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "60861": {
+    "asn": "60861",
+    "as_info": {
+      "name": "ASREDCAT",
+      "org": "D.O.O. Redcat",
+      "country": "Montenegro"
+    },
+    "links": [
+      {
+        "peer_as": "8400",
+        "peer_name": "TELEKOM-AS",
+        "peer_org": "TELEKOM SRBIJA a.d.",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "200276": {
+    "asn": "200276",
+    "as_info": {
+      "name": "BEENET-AS",
+      "org": "ASP Co d.o.o",
+      "country": "Montenegro"
+    },
+    "links": [
+      {
+        "peer_as": "8400",
+        "peer_name": "TELEKOM-AS",
+        "peer_org": "TELEKOM SRBIJA a.d.",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "208856": {
+    "asn": "208856",
+    "as_info": {
+      "name": "FiberCom",
+      "org": "FiberCom Ltd.",
+      "country": "Montenegro"
+    },
+    "links": [
+      {
+        "peer_as": "8400",
+        "peer_name": "TELEKOM-AS",
+        "peer_org": "TELEKOM SRBIJA a.d.",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "47881": {
+    "asn": "47881",
+    "as_info": {
+      "name": "MNNEWS-AS",
+      "org": "One Crna Gora DOO",
+      "country": "Montenegro"
+    },
+    "links": [
+      {
+        "peer_as": "15958",
+        "peer_name": "CETIN_doo_AS",
+        "peer_org": "CETIN Ltd. Belgrade",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "43940",
+        "peer_name": "MTEL-AS",
+        "peer_org": "Drustvo za telekomunikacije \"MTEL\" DOO",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "198961",
+        "peer_name": "Orion-Telekom-Montenegro",
+        "peer_org": "Orion Telekom Tim d.o.o.Beograd",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "60471",
+        "peer_name": "Mobitel-BGP",
+        "peer_org": "Mobitel sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "203824",
+        "peer_name": "INFOSME-AS",
+        "peer_org": "Info Sistemi d.o.o.",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "200608",
+        "peer_name": "MIXP",
+        "peer_org": "University of Montenegro",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "203506",
+        "peer_name": "MoD-Me",
+        "peer_org": "MINISTRY OF DEFENCE OF MONTENEGRO (MINISTARSTVO ODBRANE CRNE GORE)",
+        "peer_country": "Montenegro"
+      }
+    ]
+  },
+  "51924": {
+    "asn": "51924",
+    "as_info": {
+      "name": "Portomontenegro-AS",
+      "org": "Adriatic Marinas d.o.o.",
+      "country": "Montenegro"
+    },
+    "links": [
+      {
+        "peer_as": "15958",
+        "peer_name": "CETIN_doo_AS",
+        "peer_org": "CETIN Ltd. Belgrade",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "15397",
+        "peer_name": "TelenorMontenegro",
+        "peer_org": "One Crna Gora DOO",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "43940",
+        "peer_name": "MTEL-AS",
+        "peer_org": "Drustvo za telekomunikacije \"MTEL\" DOO",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "29453",
+        "peer_name": "TELEKOM-MPLS",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      }
+    ]
+  },
+  "40981": {
+    "asn": "40981",
+    "as_info": {
+      "name": "UNIVCG",
+      "org": "University of Montenegro",
+      "country": "Montenegro"
+    },
+    "links": [
+      {
+        "peer_as": "15958",
+        "peer_name": "CETIN_doo_AS",
+        "peer_org": "CETIN Ltd. Belgrade",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "15397",
+        "peer_name": "TelenorMontenegro",
+        "peer_org": "One Crna Gora DOO",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "47451",
+        "peer_name": "doMEn",
+        "peer_org": "D.O.O.\"Domen\" Drustvo za Proizvodnju,Promet i Usluge - Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "12041",
+        "peer_name": "AS-AFILIAS1",
+        "peer_org": "Afilias, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "33076",
+        "peer_name": "ISC-F-AS",
+        "peer_org": "Internet Systems Consortium, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "200608",
+        "peer_name": "MIXP",
+        "peer_org": "University of Montenegro",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "51629": {
+    "asn": "51629",
+    "as_info": {
+      "name": "MKABL-AS",
+      "org": "Telemach d.o.o.",
+      "country": "Montenegro"
+    },
+    "links": [
+      {
+        "peer_as": "15958",
+        "peer_name": "CETIN_doo_AS",
+        "peer_org": "CETIN Ltd. Belgrade",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "43846",
+        "peer_name": "TELEMACH-AS",
+        "peer_org": "Telemach d.o.o.",
+        "peer_country": "Montenegro"
+      }
+    ]
+  },
+  "201649": {
+    "asn": "201649",
+    "as_info": {
+      "name": "CBCGME-AS",
+      "org": "Centralna Banka Crne Gore",
+      "country": "Montenegro"
+    },
+    "links": [
+      {
+        "peer_as": "15958",
+        "peer_name": "CETIN_doo_AS",
+        "peer_org": "CETIN Ltd. Belgrade",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "15397",
+        "peer_name": "TelenorMontenegro",
+        "peer_org": "One Crna Gora DOO",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "51434": {
+    "asn": "51434",
+    "as_info": {
+      "name": "MERCATOR-CG-AS",
+      "org": "MERCATOR-CG DOO Podgorica",
+      "country": "Montenegro"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "61211",
+        "peer_name": "SETCOR",
+        "peer_org": "SETCOR d.o.o.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "9119",
+        "peer_name": "SOFTNET-AS",
+        "peer_org": "SOFTNET d.o.o.",
+        "peer_country": "Slovenia"
+      }
+    ]
+  },
+  "208568": {
+    "asn": "208568",
+    "as_info": {
+      "name": "hipo",
+      "org": "Hipotekarna banka AD, Podgorica",
+      "country": "Montenegro"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "43940",
+        "peer_name": "MTEL-AS",
+        "peer_org": "Drustvo za telekomunikacije \"MTEL\" DOO",
+        "peer_country": "Montenegro"
+      }
+    ]
+  },
+  "29453": {
+    "asn": "29453",
+    "as_info": {
+      "name": "TELEKOM-MPLS",
+      "org": "Crnogorski Telekom a.d.Podgorica",
+      "country": "Montenegro"
+    },
+    "links": [
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "8400",
+        "peer_name": "TELEKOM-AS",
+        "peer_org": "TELEKOM SRBIJA a.d.",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "51924",
+        "peer_name": "Portomontenegro-AS",
+        "peer_org": "Adriatic Marinas d.o.o.",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "201777",
+        "peer_name": "MTEL-AS-1",
+        "peer_org": "Drustvo za telekomunikacije \"MTEL\" DOO",
+        "peer_country": "Montenegro"
+      }
+    ]
+  },
+  "201777": {
+    "asn": "201777",
+    "as_info": {
+      "name": "MTEL-AS-1",
+      "org": "Drustvo za telekomunikacije \"MTEL\" DOO",
+      "country": "Montenegro"
+    },
+    "links": [
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "29453",
+        "peer_name": "TELEKOM-MPLS",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "49056",
+        "peer_name": "INEL-AS-MK",
+        "peer_org": "Inel Internacional Dooel Kavadarci",
+        "peer_country": "Macedonia"
+      }
+    ]
+  },
+  "43846": {
+    "asn": "43846",
+    "as_info": {
+      "name": "TELEMACH-AS",
+      "org": "Telemach d.o.o.",
+      "country": "Montenegro"
+    },
+    "links": [
+      {
+        "peer_as": "51629",
+        "peer_name": "MKABL-AS",
+        "peer_org": "Telemach d.o.o.",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "43940",
+        "peer_name": "MTEL-AS",
+        "peer_org": "Drustvo za telekomunikacije \"MTEL\" DOO",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "15397",
+        "peer_name": "TelenorMontenegro",
+        "peer_org": "One Crna Gora DOO",
+        "peer_country": "Montenegro"
+      }
+    ]
+  },
+  "8585": {
+    "asn": "8585",
+    "as_info": {
+      "name": "INTERNET-CG",
+      "org": "Crnogorski Telekom a.d.Podgorica",
+      "country": "Montenegro"
+    },
+    "links": [
+      {
+        "peer_as": "35047",
+        "peer_name": "AbissNet",
+        "peer_org": "Abissnet sh.a.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "51434",
+        "peer_name": "MERCATOR-CG-AS",
+        "peer_org": "MERCATOR-CG DOO Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "208568",
+        "peer_name": "hipo",
+        "peer_org": "Hipotekarna banka AD, Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "197167",
+        "peer_name": "PLUS_ASN",
+        "peer_org": "Digicom SHPK",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "42391",
+        "peer_name": "Unknown",
+        "peer_org": "Unknown",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "56782",
+        "peer_name": "AMS-AS",
+        "peer_org": "ALBANIA MARKETING SERVICE Ltd",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "39611",
+        "peer_name": "Tibo-AS",
+        "peer_org": "TIBO COMMUNICATIONS SH.P.K",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "40981",
+        "peer_name": "UNIVCG",
+        "peer_org": "University of Montenegro",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "50616",
+        "peer_name": "AMC",
+        "peer_org": "ONE ALBANIA SH.A.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "12041",
+        "peer_name": "AS-AFILIAS1",
+        "peer_org": "Afilias, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "51924",
+        "peer_name": "Portomontenegro-AS",
+        "peer_org": "Adriatic Marinas d.o.o.",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "42313",
+        "peer_name": "ALBTELECOM-AS",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "47394",
+        "peer_name": "ASC-AL-AS",
+        "peer_org": "\"Albanian Satellite Communications\" sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "198961",
+        "peer_name": "Orion-Telekom-Montenegro",
+        "peer_org": "Orion Telekom Tim d.o.o.Beograd",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "5576",
+        "peer_name": "AKSHI",
+        "peer_org": "Agjencia Kombetare Shoqerise se Informacionit",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "60861",
+        "peer_name": "ASREDCAT",
+        "peer_org": "D.O.O. Redcat",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "52116",
+        "peer_name": "ORIONTELEKOM-DPI-AS",
+        "peer_org": "Orion Telekom Tim d.o.o.Beograd",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "60304",
+        "peer_name": "STARNET",
+        "peer_org": "Starnet Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "58166",
+        "peer_name": "Credins-AS",
+        "peer_org": "Credins Bank Sh.A.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "48265",
+        "peer_name": "ITIRANA-AL-AS",
+        "peer_org": "ITirana Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "60352",
+        "peer_name": "Selcom-AL-AS",
+        "peer_org": "S E L C O M SHPK",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "57961",
+        "peer_name": "RASH-AS",
+        "peer_org": "RASH - Rrjeti Akademik Shqiptar",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "42409",
+        "peer_name": "AKEP-AS",
+        "peer_org": "Autoriteti i Komunikimeve Elektronike dhe Postare - AKEP",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "8214",
+        "peer_name": "Unknown",
+        "peer_org": "Unknown",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "33076",
+        "peer_name": "ISC-F-AS",
+        "peer_org": "Internet Systems Consortium, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "56468",
+        "peer_name": "mcnet",
+        "peer_org": "MC NETWORKING Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "201777",
+        "peer_name": "MTEL-AS-1",
+        "peer_org": "Drustvo za telekomunikacije \"MTEL\" DOO",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "201708",
+        "peer_name": "Raiffeisen-AL-AS",
+        "peer_org": "RAIFFEISEN BANK SH.A",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "201524",
+        "peer_name": "ASP",
+        "peer_org": "Albania State Police",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "35444",
+        "peer_name": "DigicomAlbania-AS",
+        "peer_org": "Digicom SHPK",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "5414",
+        "peer_name": "BANK-OF-ALBANIA",
+        "peer_org": "Banka e Shqiperise",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "60471",
+        "peer_name": "Mobitel-BGP",
+        "peer_org": "Mobitel sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "205832",
+        "peer_name": "UltraNet",
+        "peer_org": "ULTRANET sh.p.k",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "208856",
+        "peer_name": "FiberCom",
+        "peer_org": "FiberCom Ltd.",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "200608",
+        "peer_name": "MIXP",
+        "peer_org": "University of Montenegro",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "3303",
+        "peer_name": "SWISSCOM",
+        "peer_org": "Swisscom (Schweiz) AG",
+        "peer_country": "Switzerland"
+      },
+      {
+        "peer_as": "6461",
+        "peer_name": "ZAYO-6461",
+        "peer_org": "Zayo Bandwidth",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "49056",
+        "peer_name": "INEL-AS-MK",
+        "peer_org": "Inel Internacional Dooel Kavadarci",
+        "peer_country": "Macedonia"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "43940": {
+    "asn": "43940",
+    "as_info": {
+      "name": "MTEL-AS",
+      "org": "Drustvo za telekomunikacije \"MTEL\" DOO",
+      "country": "Montenegro"
+    },
+    "links": [
+      {
+        "peer_as": "47881",
+        "peer_name": "MNNEWS-AS",
+        "peer_org": "One Crna Gora DOO",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "43846",
+        "peer_name": "TELEMACH-AS",
+        "peer_org": "Telemach d.o.o.",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "51924",
+        "peer_name": "Portomontenegro-AS",
+        "peer_org": "Adriatic Marinas d.o.o.",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "25144",
+        "peer_name": "TELEKOM-SRPSKE-AS",
+        "peer_org": "\"Telekomunikacije Republike Srpske\" akcionarsko drustvo Banja Luka",
+        "peer_country": "Bosnia and Herzegovina"
+      },
+      {
+        "peer_as": "200608",
+        "peer_name": "MIXP",
+        "peer_org": "University of Montenegro",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "202441",
+        "peer_name": "MTSDOO-AS",
+        "peer_org": "mts D.O.O",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "208568",
+        "peer_name": "hipo",
+        "peer_org": "Hipotekarna banka AD, Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "211948",
+        "peer_name": "TLSS",
+        "peer_org": "Telesys-AB sh.p.k",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "202644": {
+    "asn": "202644",
+    "as_info": {
+      "name": "mewireless",
+      "org": "Wireless Montenegro D.O.O.",
+      "country": "Montenegro"
+    },
+    "links": [
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "200608": {
+    "asn": "200608",
+    "as_info": {
+      "name": "MIXP",
+      "org": "University of Montenegro",
+      "country": "Montenegro"
+    },
+    "links": [
+      {
+        "peer_as": "40981",
+        "peer_name": "UNIVCG",
+        "peer_org": "University of Montenegro",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "47881",
+        "peer_name": "MNNEWS-AS",
+        "peer_org": "One Crna Gora DOO",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "43940",
+        "peer_name": "MTEL-AS",
+        "peer_org": "Drustvo za telekomunikacije \"MTEL\" DOO",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "15397",
+        "peer_name": "TelenorMontenegro",
+        "peer_org": "One Crna Gora DOO",
+        "peer_country": "Montenegro"
+      }
+    ]
+  },
+  "203879": {
+    "asn": "203879",
+    "as_info": {
+      "name": "ZAPADBANKA",
+      "org": "Zapad banka akcionarsko drustvo - Podgorica",
+      "country": "Montenegro"
+    },
+    "links": [
+      {
+        "peer_as": "9125",
+        "peer_name": "ORIONTELEKOM-AS",
+        "peer_org": "Drustvo za telekomunikacije Orion telekom doo Beograd-Zemun",
+        "peer_country": "Serbia"
+      }
+    ]
+  },
+  "203506": {
+    "asn": "203506",
+    "as_info": {
+      "name": "MoD-Me",
+      "org": "MINISTRY OF DEFENCE OF MONTENEGRO (MINISTARSTVO ODBRANE CRNE GORE)",
+      "country": "Montenegro"
+    },
+    "links": [
+      {
+        "peer_as": "47881",
+        "peer_name": "MNNEWS-AS",
+        "peer_org": "One Crna Gora DOO",
+        "peer_country": "Montenegro"
+      }
+    ]
+  },
+  "42993": {
+    "asn": "42993",
+    "as_info": {
+      "name": "BANKSYS-AS",
+      "org": "DGTL CAPITAL ME D.O.O.",
+      "country": "Montenegro"
+    },
+    "links": [
+      {
+        "peer_as": "61087",
+        "peer_name": "DGTL-UK",
+        "peer_org": "DGTL TECH UK LLP",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "8014": {
+    "asn": "8014",
+    "as_info": {
+      "name": "BATELNET",
+      "org": "Bahamas Telecommunications Corporation",
+      "country": "Bahamas"
+    },
+    "links": [
+      {
+        "peer_as": "12180",
+        "peer_name": "INTERNAP-2BLK",
+        "peer_org": "Unitas Global",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "15146": {
+    "asn": "15146",
+    "as_info": {
+      "name": "CABLEBAHAMAS",
+      "org": "Cable Bahamas",
+      "country": "Bahamas"
+    },
+    "links": [
+      {
+        "peer_as": "12180",
+        "peer_name": "INTERNAP-2BLK",
+        "peer_org": "Unitas Global",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "26855",
+        "peer_name": "IBL-ASN",
+        "peer_org": "IndiGO Networks",
+        "peer_country": "Bahamas"
+      },
+      {
+        "peer_as": "53312",
+        "peer_name": "SUNVALE",
+        "peer_org": "Sunvale Inc.",
+        "peer_country": "Antigua and Barbuda"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "18635": {
+    "asn": "18635",
+    "as_info": {
+      "name": "SECUREHOST",
+      "org": "Secure Hosting Ltd.",
+      "country": "Bahamas"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "19377": {
+    "asn": "19377",
+    "as_info": {
+      "name": "CLOUD-CARIB-LTD",
+      "org": "Cloud Carib Limited",
+      "country": "Bahamas"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "10292",
+        "peer_name": "CWJ-1",
+        "peer_org": "Cable & Wireless Jamaica",
+        "peer_country": "Jamaica"
+      }
+    ]
+  },
+  "22357": {
+    "asn": "22357",
+    "as_info": {
+      "name": "SECURE-SHORE-ASN",
+      "org": "Secure Shores Data Center",
+      "country": "Bahamas"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "7029",
+        "peer_name": "WINDSTREAM",
+        "peer_org": "Windstream Communications LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "19128": {
+    "asn": "19128",
+    "as_info": {
+      "name": "TTN",
+      "org": "TTN Global Operations Limited",
+      "country": "Bahamas"
+    },
+    "links": [
+      {
+        "peer_as": "22691",
+        "peer_name": "ISPNET-1",
+        "peer_org": "ISPnet, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6730",
+        "peer_name": "SUNRISE",
+        "peer_org": "Sunrise GmbH",
+        "peer_country": "Switzerland"
+      },
+      {
+        "peer_as": "1273",
+        "peer_name": "CW",
+        "peer_org": "Vodafone Group PLC",
+        "peer_country": "European Union"
+      },
+      {
+        "peer_as": "13789",
+        "peer_name": "INTERNAP-BLK3",
+        "peer_org": "Unitas Global",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "32903",
+        "peer_name": "AMC2",
+        "peer_org": "Atlantic Metro Communications II, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "33035": {
+    "asn": "33035",
+    "as_info": {
+      "name": "BAHAMAS-WIMAX",
+      "org": "Bahamas WiMax",
+      "country": "Bahamas"
+    },
+    "links": [
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "26855": {
+    "asn": "26855",
+    "as_info": {
+      "name": "IBL-ASN",
+      "org": "IndiGO Networks",
+      "country": "Bahamas"
+    },
+    "links": [
+      {
+        "peer_as": "15146",
+        "peer_name": "CABLEBAHAMAS",
+        "peer_org": "Cable Bahamas",
+        "peer_country": "Bahamas"
+      }
+    ]
+  }
+}

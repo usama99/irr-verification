@@ -1,0 +1,162 @@
+{
+  "55722": {
+    "asn": "55722",
+    "as_info": {
+      "name": "CENPAC-AS-AP",
+      "org": "CenPac Net Inc.",
+      "country": "Nauru"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "9304",
+        "peer_name": "HUTCHISON-AS-AP",
+        "peer_org": "HGC Global Communications Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "38176",
+        "peer_name": "ABS-Global",
+        "peer_org": "ABS (HK) Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "38195",
+        "peer_name": "SUPERLOOP-AS-AP",
+        "peer_org": "SUPERLOOP (AUSTRALIA) PTY LTD",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "7606",
+        "peer_name": "WAIA-AP",
+        "peer_org": "Internet Association of Australia Inc.",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "141368": {
+    "asn": "141368",
+    "as_info": {
+      "name": "ICT-NR-AS-AP",
+      "org": "CenPac Net Inc.",
+      "country": "Nauru"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "4648",
+        "peer_name": "SPARK-NZ",
+        "peer_org": "Spark New Zealand Trading Limited",
+        "peer_country": "New Zealand"
+      },
+      {
+        "peer_as": "38195",
+        "peer_name": "SUPERLOOP-AS-AP",
+        "peer_org": "SUPERLOOP (AUSTRALIA) PTY LTD",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "140504": {
+    "asn": "140504",
+    "as_info": {
+      "name": "DIGICELNAURU-AS-AP",
+      "org": "Digicel Nauru Corporation",
+      "country": "Nauru"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4648",
+        "peer_name": "SPARK-NZ",
+        "peer_org": "Spark New Zealand Trading Limited",
+        "peer_country": "New Zealand"
+      },
+      {
+        "peer_as": "36149",
+        "peer_name": "HAWAIIAN-TELCOM",
+        "peer_org": "Hawaiian Telcom Services Company, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "55723": {
+    "asn": "55723",
+    "as_info": {
+      "name": "DIGICEL-NR-AS-AP",
+      "org": "CenPac Net Inc.",
+      "country": "Nauru"
+    },
+    "links": [
+      {
+        "peer_as": "4648",
+        "peer_name": "SPARK-NZ",
+        "peer_org": "Spark New Zealand Trading Limited",
+        "peer_country": "New Zealand"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      }
+    ]
+  }
+}

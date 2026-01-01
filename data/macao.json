@@ -1,0 +1,1158 @@
+{
+  "4609": {
+    "asn": "4609",
+    "as_info": {
+      "name": "CTM-MO",
+      "org": "Companhia de Telecomunicacoes de Macau",
+      "country": "Macao"
+    },
+    "links": [
+      {
+        "peer_as": "8657",
+        "peer_name": "MEO-INTERNACIONAL",
+        "peer_org": "MEO - SERVICOS DE COMUNICACOES E MULTIMEDIA S.A.",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "5017",
+        "peer_name": "CITICTEL-CPC-AS5017",
+        "peer_org": "CITIC Telecom International CPC Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "9259",
+        "peer_name": "WEBHOST-AS-AP",
+        "peer_org": "Web Host Ltd",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "58779",
+        "peer_name": "I4HKLIMITED-AS",
+        "peer_org": "i4HK Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "9289",
+        "peer_name": "ASMPT-HK-AP",
+        "peer_org": "ASM Pacific Technology Ltd",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "10147",
+        "peer_name": "CNS-AS-AP",
+        "peer_org": "Cloud Network Services (HK) Ltd.",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "16037",
+        "peer_name": "TETRAPAK-AS",
+        "peer_org": "AB Tetra Pak",
+        "peer_country": "Sweden"
+      },
+      {
+        "peer_as": "132702",
+        "peer_name": "TRHKL-AS-AP",
+        "peer_org": "TUV Rheinland Hong Kong Ltd.",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "133158",
+        "peer_name": "WELLPOWER-AS-AP",
+        "peer_org": "WELL-POWER Tech Corp",
+        "peer_country": "Taiwan"
+      },
+      {
+        "peer_as": "133485",
+        "peer_name": "GAMELOFTLIMITED-AS-AP",
+        "peer_org": "Gameloft Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "133549",
+        "peer_name": "GCT-AS-AP",
+        "peer_org": "zhelet limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "134449",
+        "peer_name": "DSBL-AS-AP",
+        "peer_org": "Dah Sing Bank, Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "134608",
+        "peer_name": "M2GOTRADELIMITED-HK",
+        "peer_org": "2GoTrade Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "134700",
+        "peer_name": "SINOYCLOUD-AS-AP",
+        "peer_org": "Sinoycloud Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "59352",
+        "peer_name": "AUSTREME-AS",
+        "peer_org": "Austreme International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "135062",
+        "peer_name": "FBKL-AS-AP",
+        "peer_org": "FINE BRAVERY (HONG KONG) LIMITED",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "38578",
+        "peer_name": "KERRYLOGISTICS-HK-AS-AP",
+        "peer_org": "Kerry Warehouse (Hong Kong) Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "133475",
+        "peer_name": "NEWYORKUNIVERSITY-AS-SHANGHAI",
+        "peer_org": "New York University",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "58451",
+        "peer_name": "Unknown",
+        "peer_org": "Unknown",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "132056",
+        "peer_name": "SCICUBE-AS",
+        "peer_org": "SCICUBE LIMITED",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "136758",
+        "peer_name": "HONGKONG10-AS-AP",
+        "peer_org": "HONGKONG CENTURY-ONE LIMITED",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "133953",
+        "peer_name": "MTCL-AS-AP",
+        "peer_org": "Mega Target Communication Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "137990",
+        "peer_name": "SUNIWAY1-AS-AP",
+        "peer_org": "SUNIWAY GROUP LIMITED",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "140984",
+        "peer_name": "WTWHIGHTECHCOMPAN-AS-AP",
+        "peer_org": "WTW HIGHTECH COMPANY INC",
+        "peer_country": "Philippines"
+      },
+      {
+        "peer_as": "56082",
+        "peer_name": "ONE-NET-HK",
+        "peer_org": "ONENET HK LTD",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "64047",
+        "peer_name": "VKT-HK",
+        "peer_org": "Viking Telecom Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "133398",
+        "peer_name": "TELE-AS",
+        "peer_org": "Tele Asia Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "17814",
+        "peer_name": "COMNET-AP-ASN2",
+        "peer_org": "ComNet Telecom International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "45908",
+        "peer_name": "WISERS-HK",
+        "peer_org": "Wisers Information Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "7540",
+        "peer_name": "HKCIX-AS-AP",
+        "peer_org": "IXTech Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "136800",
+        "peer_name": "MOACKCOLTD-AS-AP",
+        "peer_org": "MOACK.Co.LTD",
+        "peer_country": "South Korea"
+      },
+      {
+        "peer_as": "4828",
+        "peer_name": "WING-HANG-BANK-HK-AP",
+        "peer_org": "Wing Hang Bank Ltd",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "38866",
+        "peer_name": "MSC-HKG-AS-AP",
+        "peer_org": "Mediterranean Shipping Company (Hong Kong) Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "45346",
+        "peer_name": "WELLPOWER-AS-AP",
+        "peer_org": "WELL-POWER Tech Corp",
+        "peer_country": "Taiwan"
+      },
+      {
+        "peer_as": "133107",
+        "peer_name": "FNETLINK",
+        "peer_org": "ONENET HK LTD",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "9535",
+        "peer_name": "ONE-NET-HK",
+        "peer_org": "Beijing CNISP Technology Co., Ltd.",
+        "peer_country": "China"
+      },
+      {
+        "peer_as": "55303",
+        "peer_name": "EAGLENET-AP",
+        "peer_org": "Eagle Sky Co., Lt",
+        "peer_country": "Belize"
+      },
+      {
+        "peer_as": "24335",
+        "peer_name": "CTM-CUST-AS-AP",
+        "peer_org": "Companhia de Telecomunicacoes de Macau",
+        "peer_country": "Macao"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "7582": {
+    "asn": "7582",
+    "as_info": {
+      "name": "UMAC-AS-AP",
+      "org": "University of Macau",
+      "country": "Macao"
+    },
+    "links": [
+      {
+        "peer_as": "8657",
+        "peer_name": "MEO-INTERNACIONAL",
+        "peer_org": "MEO - SERVICOS DE COMUNICACOES E MULTIMEDIA S.A.",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "4528",
+        "peer_name": "HKU-AS-HK",
+        "peer_org": "The University of Hong Kong",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "4641",
+        "peer_name": "HKIX-AS-AP",
+        "peer_org": "The Hong Kong Internet Exchange Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "132088": {
+    "asn": "132088",
+    "as_info": {
+      "name": "WINDCLOUDNETWORK-MO",
+      "org": "Wind Cloud Network Technology Co Ltd",
+      "country": "Macao"
+    },
+    "links": [
+      {
+        "peer_as": "9505",
+        "peer_name": "TWGATE-AP",
+        "peer_org": "Chunghwa Telecom Co., Ltd.",
+        "peer_country": "Taiwan"
+      },
+      {
+        "peer_as": "4651",
+        "peer_name": "THAI-GATEWAY",
+        "peer_org": "CAT Telecom Public Company Limited",
+        "peer_country": "Thailand"
+      },
+      {
+        "peer_as": "38082",
+        "peer_name": "IIT-TIG-AS-AP",
+        "peer_org": "True International Gateway Co., Ltd.",
+        "peer_country": "Thailand"
+      },
+      {
+        "peer_as": "132280",
+        "peer_name": "SYMPHONY-AP-TH",
+        "peer_org": "Symphony Communication Public Company Limited",
+        "peer_country": "Thailand"
+      },
+      {
+        "peer_as": "18403",
+        "peer_name": "FPT-AS-AP",
+        "peer_org": "FPT Telecom Company",
+        "peer_country": "Vietnam"
+      },
+      {
+        "peer_as": "45796",
+        "peer_name": "UIH-BBCONNECT-AS-AP",
+        "peer_org": "United Information Highway Co.,Ltd.",
+        "peer_country": "Thailand"
+      },
+      {
+        "peer_as": "7552",
+        "peer_name": "VIETEL-AS-AP",
+        "peer_org": "Viettel Group",
+        "peer_country": "Vietnam"
+      },
+      {
+        "peer_as": "24088",
+        "peer_name": "HTCHCMC-AS-VN",
+        "peer_org": "Hanoi Telecom Joint Stock Company - HCMC Branch",
+        "peer_country": "Vietnam"
+      },
+      {
+        "peer_as": "131207",
+        "peer_name": "SINET-KH",
+        "peer_org": "S.I Group",
+        "peer_country": "Cambodia"
+      },
+      {
+        "peer_as": "45896",
+        "peer_name": "MOBIFONEGLOBAL-AS-VN",
+        "peer_org": "Mobifone Global JSC",
+        "peer_country": "Vietnam"
+      },
+      {
+        "peer_as": "149522",
+        "peer_name": "ONECUBITCOLTD-AS-AP",
+        "peer_org": "OneCubit Co., Ltd.",
+        "peer_country": "South Korea"
+      },
+      {
+        "peer_as": "206499",
+        "peer_name": "MMNETWORKS",
+        "peer_org": "Marek Ziolkowski",
+        "peer_country": "Poland"
+      },
+      {
+        "peer_as": "38794",
+        "peer_name": "UIH-BBB-AS-AP",
+        "peer_org": "United Information Highway Co.,Ltd.",
+        "peer_country": "Thailand"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "134550": {
+    "asn": "134550",
+    "as_info": {
+      "name": "CITM-NGIA-MRC-MO",
+      "org": "Centro de Informacoes Tecnologia de Macau",
+      "country": "Macao"
+    },
+    "links": [
+      {
+        "peer_as": "9505",
+        "peer_name": "TWGATE-AP",
+        "peer_org": "Chunghwa Telecom Co., Ltd.",
+        "peer_country": "Taiwan"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3462",
+        "peer_name": "HINET",
+        "peer_org": "Chunghwa Telecom Co., Ltd.",
+        "peer_country": "Taiwan"
+      },
+      {
+        "peer_as": "10099",
+        "peer_name": "UNICOM-Global",
+        "peer_org": "China Unicom (Hong Kong) Operations Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "17408",
+        "peer_name": "ABOVE-AS-AP",
+        "peer_org": "AboveNet Communications Taiwan Co., Ltd",
+        "peer_country": "Taiwan"
+      },
+      {
+        "peer_as": "6777",
+        "peer_name": "AMS-IX-RS",
+        "peer_org": "Amsterdam Internet Exchange B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "50056",
+        "peer_name": "AI-NET",
+        "peer_org": "Ai Networks Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "10241",
+        "peer_name": "OCI",
+        "peer_org": "Options & Choices, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "136793": {
+    "asn": "136793",
+    "as_info": {
+      "name": "MCN-AS-AP",
+      "org": "MACAU COMMUNICATION NETWORKS COMPANY LIMITED",
+      "country": "Macao"
+    },
+    "links": [
+      {
+        "peer_as": "9505",
+        "peer_name": "TWGATE-AP",
+        "peer_org": "Chunghwa Telecom Co., Ltd.",
+        "peer_country": "Taiwan"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3462",
+        "peer_name": "HINET",
+        "peer_org": "Chunghwa Telecom Co., Ltd.",
+        "peer_country": "Taiwan"
+      },
+      {
+        "peer_as": "17408",
+        "peer_name": "ABOVE-AS-AP",
+        "peer_org": "AboveNet Communications Taiwan Co., Ltd",
+        "peer_country": "Taiwan"
+      }
+    ]
+  },
+  "24335": {
+    "asn": "24335",
+    "as_info": {
+      "name": "CTM-CUST-AS-AP",
+      "org": "Companhia de Telecomunicacoes de Macau",
+      "country": "Macao"
+    },
+    "links": [
+      {
+        "peer_as": "32787",
+        "peer_name": "PROLEXIC-TECHNOLOGIES-DDOS-MITIGATION-NETWORK",
+        "peer_org": "Akamai Technologies, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "12989",
+        "peer_name": "StackPath",
+        "peer_org": "StackPath LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4609",
+        "peer_name": "CTM-MO",
+        "peer_org": "Companhia de Telecomunicacoes de Macau",
+        "peer_country": "Macao"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "45918": {
+    "asn": "45918",
+    "as_info": {
+      "name": "SMARTONE-AS-AP",
+      "org": "SmarTone Mobile Communications (Macau) Limited",
+      "country": "Macao"
+    },
+    "links": [
+      {
+        "peer_as": "4058",
+        "peer_name": "CITICTEL-CPC-AS4058",
+        "peer_org": "CITIC Telecom International CPC Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "9304",
+        "peer_name": "HUTCHISON-AS-AP",
+        "peer_org": "HGC Global Communications Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "9381",
+        "peer_name": "HKBNES-AS-AP",
+        "peer_org": "HKBN Enterprise Solutions HK Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "9269",
+        "peer_name": "HKBN-AS-AP",
+        "peer_org": "Hong Kong Broadband Network Ltd",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "47674": {
+    "asn": "47674",
+    "as_info": {
+      "name": "NETSOLUTIONS",
+      "org": "Net Solutions - Consultoria Em Tecnologias De Informacao, Sociedade Unipessoal LDA",
+      "country": "Macao"
+    },
+    "links": [
+      {
+        "peer_as": "855",
+        "peer_name": "CANET-ASN-4",
+        "peer_org": "Bell Canada",
+        "peer_country": "Canada"
+      },
+      {
+        "peer_as": "5577",
+        "peer_name": "ROOT",
+        "peer_org": "root SA",
+        "peer_country": "Luxembourg"
+      },
+      {
+        "peer_as": "9329",
+        "peer_name": "SLTINT-AS-AP",
+        "peer_org": "Sri Lanka Telecom Ltd",
+        "peer_country": "Sri Lanka"
+      },
+      {
+        "peer_as": "26496",
+        "peer_name": "AS-26496-GO-DADDY-COM-LLC",
+        "peer_org": "GoDaddy.com, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "28202",
+        "peer_name": "Unknown",
+        "peer_org": "Rede Brasileira de Comunicacao S/A",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "45204",
+        "peer_name": "GEMNET-MN",
+        "peer_org": "Gemnet",
+        "peer_country": "Mongolia"
+      },
+      {
+        "peer_as": "8744",
+        "peer_name": "MegaMax-AS",
+        "peer_org": "OOO \"MediaSeti\"",
+        "peer_country": "Russia"
+      },
+      {
+        "peer_as": "9051",
+        "peer_name": "Unknown",
+        "peer_org": "IncoNet Data Management sal",
+        "peer_country": "Lebanon"
+      },
+      {
+        "peer_as": "15763",
+        "peer_name": "ASDOKOM",
+        "peer_org": "DOKOM Gesellschaft fuer Telekommunikation mbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "9033",
+        "peer_name": "ECIX-AS",
+        "peer_org": "Megaport (Deutschland) GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "5483",
+        "peer_name": "MAGYAR-TELEKOM-MAIN-AS",
+        "peer_org": "Magyar Telekom plc.",
+        "peer_country": "Hungary"
+      },
+      {
+        "peer_as": "9066",
+        "peer_name": "BCC",
+        "peer_org": "EWE TEL GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "16243",
+        "peer_name": "VIRTU-AS",
+        "peer_org": "Virtu Secure Webservices B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "21011",
+        "peer_name": "TOPNET",
+        "peer_org": "PRIVATE JOINT STOCK COMPANY \"DATAGROUP\"",
+        "peer_country": "Ukraine"
+      },
+      {
+        "peer_as": "15772",
+        "peer_name": "WNET",
+        "peer_org": "Wnet Ukraine LLC",
+        "peer_country": "Ukraine"
+      },
+      {
+        "peer_as": "12963",
+        "peer_name": "VOLZ",
+        "peer_org": "Scientific -Industrial Firm \"Volz\" Ltd",
+        "peer_country": "Ukraine"
+      },
+      {
+        "peer_as": "13127",
+        "peer_name": "T-Mobile",
+        "peer_org": "T-mobile Netherlands B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "21219",
+        "peer_name": "Datagroup",
+        "peer_org": "PRIVATE JOINT STOCK COMPANY \"DATAGROUP\"",
+        "peer_country": "Ukraine"
+      },
+      {
+        "peer_as": "25295",
+        "peer_name": "KIELNET-AS",
+        "peer_org": "1&1 Versatel Deutschland GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "28876",
+        "peer_name": "SUEC-DACOR-AS",
+        "peer_org": "suec // dacor GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "29462",
+        "peer_name": "DSD-AS",
+        "peer_org": "Destiny N.V",
+        "peer_country": "Belgium"
+      },
+      {
+        "peer_as": "31055",
+        "peer_name": "CONSULTIX-AS",
+        "peer_org": "Consultix GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "31198",
+        "peer_name": "Telenor-UK-Ltd-AS",
+        "peer_org": "Telenor UK Ltd",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "31661",
+        "peer_name": "COMX",
+        "peer_org": "DANSK KABEL TV A/S",
+        "peer_country": "Denmark"
+      },
+      {
+        "peer_as": "33796",
+        "peer_name": "BNAA-AS",
+        "peer_org": "BOLIGNET-AARHUS F.M.B.A.",
+        "peer_country": "Denmark"
+      },
+      {
+        "peer_as": "34419",
+        "peer_name": "ON-AS",
+        "peer_org": "Vodafone Group Services GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "34486",
+        "peer_name": "IP2",
+        "peer_org": "PQR B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "34569",
+        "peer_name": "Networx-BG",
+        "peer_org": "Networx-Bulgaria Ltd.",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "8492",
+        "peer_name": "OBIT-AS",
+        "peer_org": "\"OBIT\" Ltd.",
+        "peer_country": "Russia"
+      },
+      {
+        "peer_as": "34868",
+        "peer_name": "ANYCAST-AS",
+        "peer_org": "2342 Verwaltungs GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "35213",
+        "peer_name": "COMPNETUA-AS",
+        "peer_org": "TOV \"Kompjuternie Merezhi\"",
+        "peer_country": "Ukraine"
+      },
+      {
+        "peer_as": "35733",
+        "peer_name": "EURID",
+        "peer_org": "EURid vzw",
+        "peer_country": "Belgium"
+      },
+      {
+        "peer_as": "41393",
+        "peer_name": "NASSTAR-AS",
+        "peer_org": "Nasstar Trading Ltd",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "42158",
+        "peer_name": "SENTIA-AS",
+        "peer_org": "Sentia Netherlands BV",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "42927",
+        "peer_name": "S-NET-AS",
+        "peer_org": "S-NET Sp. z o.o.",
+        "peer_country": "Poland"
+      },
+      {
+        "peer_as": "43531",
+        "peer_name": "IXREACH",
+        "peer_org": "BSO Network Solutions SAS",
+        "peer_country": "France"
+      },
+      {
+        "peer_as": "15925",
+        "peer_name": "nexiu",
+        "peer_org": "Occino GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "44654",
+        "peer_name": "MNS-AS",
+        "peer_org": "Media Network Services AS",
+        "peer_country": "Norway"
+      },
+      {
+        "peer_as": "47143",
+        "peer_name": "TDHN",
+        "peer_org": "Todayhost Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "47441",
+        "peer_name": "TRUNKM",
+        "peer_org": "Comfortel Ltd.",
+        "peer_country": "Russia"
+      },
+      {
+        "peer_as": "35662",
+        "peer_name": "REDSTATION",
+        "peer_org": "Redstation Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "50056",
+        "peer_name": "AI-NET",
+        "peer_org": "Ai Networks Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "8772",
+        "peer_name": "Rider",
+        "peer_org": "NetAssist LLC",
+        "peer_country": "Ukraine"
+      },
+      {
+        "peer_as": "50837",
+        "peer_name": "CLOUDSIGMA-AS",
+        "peer_org": "CLOUDSIGMA AG",
+        "peer_country": "Switzerland"
+      },
+      {
+        "peer_as": "50986",
+        "peer_name": "EXCELLENT-HOSTING",
+        "peer_org": "Teleservice Bredband Skane AB",
+        "peer_country": "Sweden"
+      },
+      {
+        "peer_as": "51646",
+        "peer_name": "ictfacilities",
+        "peer_org": "Stepco B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "51795",
+        "peer_name": "TV1",
+        "peer_org": "TV1 GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "51906",
+        "peer_name": "RECAST-AS",
+        "peer_org": "recast IT GmbH & Co. KG",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "57172",
+        "peer_name": "GlobalLayer",
+        "peer_org": "Global Layer B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "57382",
+        "peer_name": "TK1",
+        "peer_org": "Telecommunication Tokelau Corporation Teletok",
+        "peer_country": "Tokelau"
+      },
+      {
+        "peer_as": "199139",
+        "peer_name": "ASN-WERITECH",
+        "peer_org": "Weritech B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "59701",
+        "peer_name": "LYTZENIT",
+        "peer_org": "LytzenIT A/S",
+        "peer_country": "Denmark"
+      },
+      {
+        "peer_as": "61007",
+        "peer_name": "AS-OPENTLD2",
+        "peer_org": "OpenTLD BV",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "60268",
+        "peer_name": "DIGITAL-COMMUNICATION-PALESTINE-ASN",
+        "peer_org": "Digital Communication Company for Telecommunications and Information Technology LTD",
+        "peer_country": "Palestinian Territory"
+      },
+      {
+        "peer_as": "41059",
+        "peer_name": "T-CIX",
+        "peer_org": "\"NOVATEL\" EOOD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "34455",
+        "peer_name": "HotSpotDrive",
+        "peer_org": "x-ion GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "21030",
+        "peer_name": "CDNNOW-AS",
+        "peer_org": "Docker LTD",
+        "peer_country": "Russia"
+      },
+      {
+        "peer_as": "29108",
+        "peer_name": "LEITWERT-RESEARCH",
+        "peer_org": "Leitwert GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "202706",
+        "peer_name": "KEENMOBILE-AS",
+        "peer_org": "KeenSystems B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "206898",
+        "peer_name": "bladeservers",
+        "peer_org": "Server Hosting Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "206073",
+        "peer_name": "driemusk-1",
+        "peer_org": "3MUSK B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "42106",
+        "peer_name": "abelohost1",
+        "peer_org": "Abelohost BV",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "202190",
+        "peer_name": "HOSTPALACE",
+        "peer_org": "HOSTPALACE DATACENTERS LTD",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "210091",
+        "peer_name": "NL-KEEN-AS",
+        "peer_org": "KeenSystems B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "41846",
+        "peer_name": "COLLAB",
+        "peer_org": "Amsterdam Internet Exchange B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "60211",
+        "peer_name": "NL-FIRSTCOLO",
+        "peer_org": "firstcolo GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "209653",
+        "peer_name": "WSO-AS",
+        "peer_org": "Private Mobility Nederland B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "207415",
+        "peer_name": "NPAW",
+        "peer_org": "Nicepeopleatwork, S.L.",
+        "peer_country": "Spain"
+      },
+      {
+        "peer_as": "59692",
+        "peer_name": "IQWEB",
+        "peer_org": "IQWeb FZ-LLC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "59435",
+        "peer_name": "CSPACEHOSTINGS",
+        "peer_org": "CSpace Hostings OU",
+        "peer_country": "Estonia"
+      },
+      {
+        "peer_as": "22957",
+        "peer_name": "BIGWELLS-01",
+        "peer_org": "Bigwells Technology LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "328320",
+        "peer_name": "Kurlec-AS",
+        "peer_org": "Kurlec Wireless (PTY) Ltd",
+        "peer_country": "South Africa"
+      }
+    ]
+  },
+  "137538": {
+    "asn": "137538",
+    "as_info": {
+      "name": "CSTCL-AS-AP",
+      "org": "Caldawin Software Technology Company Limited",
+      "country": "Macao"
+    },
+    "links": [
+      {
+        "peer_as": "58717",
+        "peer_name": "SUMMITCOMMUNICATIONS-BD",
+        "peer_org": "Summit Communication Limited",
+        "peer_country": "Bangladesh"
+      },
+      {
+        "peer_as": "17494",
+        "peer_name": "BTTB-AS-AP",
+        "peer_org": "Bangladesh Telegraph & Telephone Board",
+        "peer_country": "Bangladesh"
+      }
+    ]
+  },
+  "138986": {
+    "asn": "138986",
+    "as_info": {
+      "name": "WINDCLOUDNETWORK-MO",
+      "org": "Wind Cloud Network Technology Co Ltd",
+      "country": "Macao"
+    },
+    "links": [
+      {
+        "peer_as": "149522",
+        "peer_name": "ONECUBITCOLTD-AS-AP",
+        "peer_org": "OneCubit Co., Ltd.",
+        "peer_country": "South Korea"
+      }
+    ]
+  },
+  "61284": {
+    "asn": "61284",
+    "as_info": {
+      "name": "BlazingFastMO",
+      "org": "BlazingFast - A.S.A.S.S.U. Lda.",
+      "country": "Macao"
+    },
+    "links": [
+      {
+        "peer_as": "43350",
+        "peer_name": "NFORCE",
+        "peer_org": "NForce Entertainment B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "47626",
+        "peer_name": "ASTIMER",
+        "peer_org": "Timer, LLC",
+        "peer_country": "Russia"
+      }
+    ]
+  },
+  "7617": {
+    "asn": "7617",
+    "as_info": {
+      "name": "CTM-HK",
+      "org": "Companhia de Telecomunicacoes de Macau",
+      "country": "Macao"
+    },
+    "links": [
+      {
+        "peer_as": "9822",
+        "peer_name": "AMNET-AU-AP",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "9912",
+        "peer_name": "QIS-AS-AP",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "9549",
+        "peer_name": "SUPERLOOP-AS-AP",
+        "peer_org": "SUPERLOOP (AUSTRALIA) PTY LTD",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "9720",
+        "peer_name": "MTN-AP",
+        "peer_org": "MTN Net Design",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "4805",
+        "peer_name": "EQUANT-OCEANIA",
+        "peer_org": "Equant Inc",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "2764",
+        "peer_name": "AAPT",
+        "peer_org": "AAPT Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "45514",
+        "peer_name": "TELEMEDIA-SMB-AS-AP",
+        "peer_org": "Bharti Airtel Limited",
+        "peer_country": "India"
+      }
+    ]
+  },
+  "138164": {
+    "asn": "138164",
+    "as_info": {
+      "name": "MUST-AS-AP",
+      "org": "Macau University of Science and Technology",
+      "country": "Macao"
+    },
+    "links": [
+      {
+        "peer_as": "138737",
+        "peer_name": "AITCPL-AS-IN",
+        "peer_org": "Antarjal It Communication Pvt. Ltd.",
+        "peer_country": "India"
+      }
+    ]
+  }
+}

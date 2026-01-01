@@ -1,0 +1,3728 @@
+{
+  "50973": {
+    "asn": "50973",
+    "as_info": {
+      "name": "VODAFONE-AL-ASN",
+      "org": "Vodafone Albania Sh.A.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "3209",
+        "peer_name": "VODANET",
+        "peer_org": "Vodafone GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "6821",
+        "peer_name": "MT-AS-OWN",
+        "peer_org": "Makedonski Telekom AD-Skopje",
+        "peer_country": "Macedonia"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "201249",
+        "peer_name": "IPRO",
+        "peer_org": "IPRO Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "24796",
+        "peer_name": "NaMeX-IXP-Services",
+        "peer_org": "NAMEX CONSORZIO",
+        "peer_country": "Italy"
+      },
+      {
+        "peer_as": "63293",
+        "peer_name": "FACEBOOK-OFFNET",
+        "peer_org": "Facebook, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "202821",
+        "peer_name": "ALB-IXP",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "208734": {
+    "asn": "208734",
+    "as_info": {
+      "name": "elsa-tech",
+      "org": "ELSA-TECH SH.P.K.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8400",
+        "peer_name": "TELEKOM-AS",
+        "peer_org": "TELEKOM SRBIJA a.d.",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "57070": {
+    "asn": "57070",
+    "as_info": {
+      "name": "ITCOM-Shkoder",
+      "org": "ITCOM Shpk",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8400",
+        "peer_name": "TELEKOM-AS",
+        "peer_org": "TELEKOM SRBIJA a.d.",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "39611",
+        "peer_name": "Tibo-AS",
+        "peer_org": "TIBO COMMUNICATIONS SH.P.K",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "35047",
+        "peer_name": "AbissNet",
+        "peer_org": "Abissnet sh.a.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "60471": {
+    "asn": "60471",
+    "as_info": {
+      "name": "Mobitel-BGP",
+      "org": "Mobitel sh.p.k.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8400",
+        "peer_name": "TELEKOM-AS",
+        "peer_org": "TELEKOM SRBIJA a.d.",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "47881",
+        "peer_name": "MNNEWS-AS",
+        "peer_org": "One Crna Gora DOO",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "48265",
+        "peer_name": "ITIRANA-AL-AS",
+        "peer_org": "ITirana Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "6843",
+        "peer_name": "Diginet",
+        "peer_org": "Diginet shpk",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202821",
+        "peer_name": "ALB-IXP",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202179",
+        "peer_name": "IDS-AS",
+        "peer_org": "Intercom Data Service sh.p.k",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "211555": {
+    "asn": "211555",
+    "as_info": {
+      "name": "SKYNETKS",
+      "org": "Kujtim Leku trading as N.T.SH. \"SKY - NET\"",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8400",
+        "peer_name": "TELEKOM-AS",
+        "peer_org": "TELEKOM SRBIJA a.d.",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "29170",
+        "peer_name": "KUJTESA-AS",
+        "peer_org": "Kujtesa Net Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "208286",
+        "peer_name": "MAXTV",
+        "peer_org": "Max tv SH. P. K",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "210740": {
+    "asn": "210740",
+    "as_info": {
+      "name": "ATMFIBER-AS",
+      "org": "ATM Fiber SH.P.K",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8400",
+        "peer_name": "TELEKOM-AS",
+        "peer_org": "TELEKOM SRBIJA a.d.",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "51088",
+        "peer_name": "A2B",
+        "peer_org": "A2B IP B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "60262",
+        "peer_name": "PANQ",
+        "peer_org": "Panq B.V.",
+        "peer_country": "Netherlands"
+      }
+    ]
+  },
+  "5414": {
+    "asn": "5414",
+    "as_info": {
+      "name": "BANK-OF-ALBANIA",
+      "org": "Banka e Shqiperise",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "48265",
+        "peer_name": "ITIRANA-AL-AS",
+        "peer_org": "ITirana Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "33924",
+        "peer_name": "PRONET-AL-AS",
+        "peer_org": "Pronet sh.p.k.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "5576": {
+    "asn": "5576",
+    "as_info": {
+      "name": "AKSHI",
+      "org": "Agjencia Kombetare Shoqerise se Informacionit",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "57961",
+        "peer_name": "RASH-AS",
+        "peer_org": "RASH - Rrjeti Akademik Shqiptar",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "201524",
+        "peer_name": "ASP",
+        "peer_org": "Albania State Police",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "29238": {
+    "asn": "29238",
+    "as_info": {
+      "name": "Nisatel",
+      "org": "Nisatel LTD",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "6821",
+        "peer_name": "MT-AS-OWN",
+        "peer_org": "Makedonski Telekom AD-Skopje",
+        "peer_country": "Macedonia"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "48265",
+        "peer_name": "ITIRANA-AL-AS",
+        "peer_org": "ITirana Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202821",
+        "peer_name": "ALB-IXP",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "38916": {
+    "asn": "38916",
+    "as_info": {
+      "name": "FBD-AL-AS",
+      "org": "FBD shpk",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "2118",
+        "peer_name": "RELCOM-AS",
+        "peer_org": "Reliable Communications s.r.o.",
+        "peer_country": "Czechia"
+      },
+      {
+        "peer_as": "56468",
+        "peer_name": "mcnet",
+        "peer_org": "MC NETWORKING Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "42409",
+        "peer_name": "AKEP-AS",
+        "peer_org": "Autoriteti i Komunikimeve Elektronike dhe Postare - AKEP",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "48265": {
+    "asn": "48265",
+    "as_info": {
+      "name": "ITIRANA-AL-AS",
+      "org": "ITirana Sh.p.k.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "3329",
+        "peer_name": "HOL-GR",
+        "peer_org": "VODAFONE-PANAFON HELLENIC TELECOMMUNICATIONS COMPANY SA",
+        "peer_country": "Greece"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "60352",
+        "peer_name": "Selcom-AL-AS",
+        "peer_org": "S E L C O M SHPK",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "5414",
+        "peer_name": "BANK-OF-ALBANIA",
+        "peer_org": "Banka e Shqiperise",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "33983",
+        "peer_name": "ARTMOTION-AS",
+        "peer_org": "ARTMOTION SH.P.K.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "33924",
+        "peer_name": "PRONET-AL-AS",
+        "peer_org": "Pronet sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "9119",
+        "peer_name": "SOFTNET-AS",
+        "peer_org": "SOFTNET d.o.o.",
+        "peer_country": "Slovenia"
+      },
+      {
+        "peer_as": "35444",
+        "peer_name": "DigicomAlbania-AS",
+        "peer_org": "Digicom SHPK",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "29170",
+        "peer_name": "KUJTESA-AS",
+        "peer_org": "Kujtesa Net Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "56468",
+        "peer_name": "mcnet",
+        "peer_org": "MC NETWORKING Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "60471",
+        "peer_name": "Mobitel-BGP",
+        "peer_org": "Mobitel sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "198279",
+        "peer_name": "ATU-AL-AS",
+        "peer_org": "Albanian Telecommunications Union SH. P.K.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "29238",
+        "peer_name": "Nisatel",
+        "peer_org": "Nisatel LTD",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "212752",
+        "peer_name": "NetBSS",
+        "peer_org": "Business Strategic Solution SHPK",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "56782": {
+    "asn": "56782",
+    "as_info": {
+      "name": "AMS-AS",
+      "org": "ALBANIA MARKETING SERVICE Ltd",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6821",
+        "peer_name": "MT-AS-OWN",
+        "peer_org": "Makedonski Telekom AD-Skopje",
+        "peer_country": "Macedonia"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      }
+    ]
+  },
+  "57388": {
+    "asn": "57388",
+    "as_info": {
+      "name": "IBC-AS",
+      "org": "I.B.C - Telecom Sh.p.k.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "205278",
+        "peer_name": "NETCOM",
+        "peer_org": "NetCom ISP Sh.p.k.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "58166": {
+    "asn": "58166",
+    "as_info": {
+      "name": "Credins-AS",
+      "org": "Credins Bank Sh.A.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "6821",
+        "peer_name": "MT-AS-OWN",
+        "peer_org": "Makedonski Telekom AD-Skopje",
+        "peer_country": "Macedonia"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "6663",
+        "peer_name": "TTI-NET",
+        "peer_org": "Euroweb Romania S.R.L.",
+        "peer_country": "Romania"
+      },
+      {
+        "peer_as": "12783",
+        "peer_name": "ENET-AL-AS",
+        "peer_org": "ENET Shpk",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "196838": {
+    "asn": "196838",
+    "as_info": {
+      "name": "ASC-AL-AS196838",
+      "org": "\"Albanian Satellite Communications\" sh.p.k.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      }
+    ]
+  },
+  "201524": {
+    "asn": "201524",
+    "as_info": {
+      "name": "ASP",
+      "org": "Albania State Police",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "42313",
+        "peer_name": "ALBTELECOM-AS",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "5576",
+        "peer_name": "AKSHI",
+        "peer_org": "Agjencia Kombetare Shoqerise se Informacionit",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "204894": {
+    "asn": "204894",
+    "as_info": {
+      "name": "StyleNet",
+      "org": "Ezmir Kraja trading as StyleNet",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "35047",
+        "peer_name": "AbissNet",
+        "peer_org": "Abissnet sh.a.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "205110": {
+    "asn": "205110",
+    "as_info": {
+      "name": "next-tv",
+      "org": "NEXT-TV SHPK",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "202821",
+        "peer_name": "ALB-IXP",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "212637",
+        "peer_name": "LightNet",
+        "peer_org": "Lightnet Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "21183",
+        "peer_name": "ABCOM-AS",
+        "peer_org": "Vodafone Albania Sh.A.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "209277": {
+    "asn": "209277",
+    "as_info": {
+      "name": "APT-CABLE-AS",
+      "org": "APT CABLE SHPK",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "209302": {
+    "asn": "209302",
+    "as_info": {
+      "name": "SHIMAJ-NET-AS",
+      "org": "Bujar Shimaj",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "47394",
+        "peer_name": "ASC-AL-AS",
+        "peer_org": "\"Albanian Satellite Communications\" sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "42313",
+        "peer_name": "ALBTELECOM-AS",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "210125": {
+    "asn": "210125",
+    "as_info": {
+      "name": "PriamNET",
+      "org": "PRIAM NET Sh.p.k.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "211098": {
+    "asn": "211098",
+    "as_info": {
+      "name": "mariuxho",
+      "org": "MARIUXHO SH.P.K",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "211147": {
+    "asn": "211147",
+    "as_info": {
+      "name": "INTERFIBER",
+      "org": "INTERFIBER Sh.p.k",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "56468",
+        "peer_name": "mcnet",
+        "peer_org": "MC NETWORKING Sh.p.k.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "211356": {
+    "asn": "211356",
+    "as_info": {
+      "name": "mytvalb",
+      "org": "MyTv-Alb SH.P.K.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "212752": {
+    "asn": "212752",
+    "as_info": {
+      "name": "NetBSS",
+      "org": "Business Strategic Solution SHPK",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "21183",
+        "peer_name": "ABCOM-AS",
+        "peer_org": "Vodafone Albania Sh.A.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "48265",
+        "peer_name": "ITIRANA-AL-AS",
+        "peer_org": "ITirana Sh.p.k.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "212766": {
+    "asn": "212766",
+    "as_info": {
+      "name": "Netsyscom",
+      "org": "Netsyscom sh.p.k",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "21183",
+        "peer_name": "ABCOM-AS",
+        "peer_org": "Vodafone Albania Sh.A.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "42313": {
+    "asn": "42313",
+    "as_info": {
+      "name": "ALBTELECOM-AS",
+      "org": "Albtelecom Sh.a.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "12301",
+        "peer_name": "Invitech",
+        "peer_org": "Invitech ICT Services Kft.",
+        "peer_country": "Hungary"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "197167",
+        "peer_name": "PLUS_ASN",
+        "peer_org": "Digicom SHPK",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "60136",
+        "peer_name": "TeeB",
+        "peer_org": "Teeb-Center",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "201524",
+        "peer_name": "ASP",
+        "peer_org": "Albania State Police",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "209839",
+        "peer_name": "LuvaGroup",
+        "peer_org": "Luva Group Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "209442",
+        "peer_name": "FastNet-Korce",
+        "peer_org": "Gerantina Zylo trading as FASTNET",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "209302",
+        "peer_name": "SHIMAJ-NET-AS",
+        "peer_org": "Bujar Shimaj",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "204816",
+        "peer_name": "VANI",
+        "peer_org": "VANI SHPK",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "33983": {
+    "asn": "33983",
+    "as_info": {
+      "name": "ARTMOTION-AS",
+      "org": "ARTMOTION SH.P.K.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "6821",
+        "peer_name": "MT-AS-OWN",
+        "peer_org": "Makedonski Telekom AD-Skopje",
+        "peer_country": "Macedonia"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "48265",
+        "peer_name": "ITIRANA-AL-AS",
+        "peer_org": "ITirana Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "8661",
+        "peer_name": "PTK",
+        "peer_org": "Telekomi i Kosoves SH.A.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "6663",
+        "peer_name": "TTI-NET",
+        "peer_org": "Euroweb Romania S.R.L.",
+        "peer_country": "Romania"
+      },
+      {
+        "peer_as": "60871",
+        "peer_name": "COMNET-AS",
+        "peer_org": "COMNET Sh.p.k",
+        "peer_country": "Serbia"
+      }
+    ]
+  },
+  "33924": {
+    "asn": "33924",
+    "as_info": {
+      "name": "PRONET-AL-AS",
+      "org": "Pronet sh.p.k.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "6821",
+        "peer_name": "MT-AS-OWN",
+        "peer_org": "Makedonski Telekom AD-Skopje",
+        "peer_country": "Macedonia"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "5414",
+        "peer_name": "BANK-OF-ALBANIA",
+        "peer_org": "Banka e Shqiperise",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "35444",
+        "peer_name": "DigicomAlbania-AS",
+        "peer_org": "Digicom SHPK",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "48265",
+        "peer_name": "ITIRANA-AL-AS",
+        "peer_org": "ITirana Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "35444": {
+    "asn": "35444",
+    "as_info": {
+      "name": "DigicomAlbania-AS",
+      "org": "Digicom SHPK",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "6821",
+        "peer_name": "MT-AS-OWN",
+        "peer_org": "Makedonski Telekom AD-Skopje",
+        "peer_country": "Macedonia"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "33924",
+        "peer_name": "PRONET-AL-AS",
+        "peer_org": "Pronet sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "6843",
+        "peer_name": "Diginet",
+        "peer_org": "Diginet shpk",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "48265",
+        "peer_name": "ITIRANA-AL-AS",
+        "peer_org": "ITirana Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202179",
+        "peer_name": "IDS-AS",
+        "peer_org": "Intercom Data Service sh.p.k",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "21183": {
+    "asn": "21183",
+    "as_info": {
+      "name": "ABCOM-AS",
+      "org": "Vodafone Albania Sh.A.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "6821",
+        "peer_name": "MT-AS-OWN",
+        "peer_org": "Makedonski Telekom AD-Skopje",
+        "peer_country": "Macedonia"
+      },
+      {
+        "peer_as": "29170",
+        "peer_name": "KUJTESA-AS",
+        "peer_org": "Kujtesa Net Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "50616",
+        "peer_name": "AMC",
+        "peer_org": "ONE ALBANIA SH.A.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "212752",
+        "peer_name": "NetBSS",
+        "peer_org": "Business Strategic Solution SHPK",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "212766",
+        "peer_name": "Netsyscom",
+        "peer_org": "Netsyscom sh.p.k",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "199276",
+        "peer_name": "ermal",
+        "peer_org": "Tele.Co.Albania SHPK",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202821",
+        "peer_name": "ALB-IXP",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "205110",
+        "peer_name": "next-tv",
+        "peer_org": "NEXT-TV SHPK",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "6461",
+        "peer_name": "ZAYO-6461",
+        "peer_org": "Zayo Bandwidth",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "13126",
+        "peer_name": "SMS-NET",
+        "peer_org": "Satellite Mediaport Services Ltd.",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "8400",
+        "peer_name": "TELEKOM-AS",
+        "peer_org": "TELEKOM SRBIJA a.d.",
+        "peer_country": "Serbia"
+      }
+    ]
+  },
+  "43272": {
+    "asn": "43272",
+    "as_info": {
+      "name": "DOTNET-AS",
+      "org": "DOTNET SH.P.K",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "6821",
+        "peer_name": "MT-AS-OWN",
+        "peer_org": "Makedonski Telekom AD-Skopje",
+        "peer_country": "Macedonia"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "21246",
+        "peer_name": "IPKO-AS",
+        "peer_org": "IPKO Telecommunications LLC",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "8661": {
+    "asn": "8661",
+    "as_info": {
+      "name": "PTK",
+      "org": "Telekomi i Kosoves SH.A.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "6663",
+        "peer_name": "TTI-NET",
+        "peer_org": "Euroweb Romania S.R.L.",
+        "peer_country": "Romania"
+      },
+      {
+        "peer_as": "6821",
+        "peer_name": "MT-AS-OWN",
+        "peer_org": "Makedonski Telekom AD-Skopje",
+        "peer_country": "Macedonia"
+      },
+      {
+        "peer_as": "6762",
+        "peer_name": "SEABONE-NET",
+        "peer_org": "Telecom Italia Sparkle S.p.A.",
+        "peer_country": "Italy"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "33983",
+        "peer_name": "ARTMOTION-AS",
+        "peer_org": "ARTMOTION SH.P.K.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "50091",
+        "peer_name": "negenet",
+        "peer_org": "Ylli Zeka trading as Negenet, N.T.P.SH",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "3320",
+        "peer_name": "DTAG",
+        "peer_org": "Deutsche Telekom AG",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "47394": {
+    "asn": "47394",
+    "as_info": {
+      "name": "ASC-AL-AS",
+      "org": "\"Albanian Satellite Communications\" sh.p.k.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "3329",
+        "peer_name": "HOL-GR",
+        "peer_org": "VODAFONE-PANAFON HELLENIC TELECOMMUNICATIONS COMPANY SA",
+        "peer_country": "Greece"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "50091",
+        "peer_name": "negenet",
+        "peer_org": "Ylli Zeka trading as Negenet, N.T.P.SH",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "61364",
+        "peer_name": "ambe-al-as",
+        "peer_org": "A.M.B.E shpk",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202821",
+        "peer_name": "ALB-IXP",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "209302",
+        "peer_name": "SHIMAJ-NET-AS",
+        "peer_org": "Bujar Shimaj",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "198279": {
+    "asn": "198279",
+    "as_info": {
+      "name": "ATU-AL-AS",
+      "org": "Albanian Telecommunications Union SH. P.K.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "3329",
+        "peer_name": "HOL-GR",
+        "peer_org": "VODAFONE-PANAFON HELLENIC TELECOMMUNICATIONS COMPANY SA",
+        "peer_country": "Greece"
+      },
+      {
+        "peer_as": "42391",
+        "peer_name": "Unknown",
+        "peer_org": "Unknown",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "209465",
+        "peer_name": "vigal",
+        "peer_org": "VIG SERVICES SHQIPERI Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "207502",
+        "peer_name": "SPEED-LINE",
+        "peer_org": "SPEED LINE SHPK",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "48265",
+        "peer_name": "ITIRANA-AL-AS",
+        "peer_org": "ITirana Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "12783",
+        "peer_name": "ENET-AL-AS",
+        "peer_org": "ENET Shpk",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "56468",
+        "peer_name": "mcnet",
+        "peer_org": "MC NETWORKING Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "205140",
+        "peer_name": "ANIX",
+        "peer_org": "RASH - Rrjeti Akademik Shqiptar",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "58137",
+        "peer_name": "ROUTE-ANIX",
+        "peer_org": "RASH - Rrjeti Akademik Shqiptar",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "209442",
+        "peer_name": "FastNet-Korce",
+        "peer_org": "Gerantina Zylo trading as FASTNET",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202558",
+        "peer_name": "LOBINET",
+        "peer_org": "M.R.M shpk",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "35047": {
+    "asn": "35047",
+    "as_info": {
+      "name": "AbissNet",
+      "org": "Abissnet sh.a.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "3329",
+        "peer_name": "HOL-GR",
+        "peer_org": "VODAFONE-PANAFON HELLENIC TELECOMMUNICATIONS COMPANY SA",
+        "peer_country": "Greece"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "51820",
+        "peer_name": "SBC-NET",
+        "peer_org": "Swisscom Broadcast Ltd",
+        "peer_country": "Switzerland"
+      },
+      {
+        "peer_as": "42409",
+        "peer_name": "AKEP-AS",
+        "peer_org": "Autoriteti i Komunikimeve Elektronike dhe Postare - AKEP",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "50091",
+        "peer_name": "negenet",
+        "peer_org": "Ylli Zeka trading as Negenet, N.T.P.SH",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "197167",
+        "peer_name": "PLUS_ASN",
+        "peer_org": "Digicom SHPK",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "57070",
+        "peer_name": "ITCOM-Shkoder",
+        "peer_org": "ITCOM Shpk",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202821",
+        "peer_name": "ALB-IXP",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "205244",
+        "peer_name": "Firstcom",
+        "peer_org": "Artur Imeraj trading as FIRST.COM",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "208630",
+        "peer_name": "InfotelecomAlbania-AS",
+        "peer_org": "INFO-Telecom Shpk",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "211948",
+        "peer_name": "TLSS",
+        "peer_org": "Telesys-AB sh.p.k",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "205278",
+        "peer_name": "NETCOM",
+        "peer_org": "NetCom ISP Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "204894",
+        "peer_name": "StyleNet",
+        "peer_org": "Ezmir Kraja trading as StyleNet",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "39611": {
+    "asn": "39611",
+    "as_info": {
+      "name": "Tibo-AS",
+      "org": "TIBO COMMUNICATIONS SH.P.K",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "3329",
+        "peer_name": "HOL-GR",
+        "peer_org": "VODAFONE-PANAFON HELLENIC TELECOMMUNICATIONS COMPANY SA",
+        "peer_country": "Greece"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "206262",
+        "peer_name": "Telkos",
+        "peer_org": "TelKos L.L.C",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "21246",
+        "peer_name": "IPKO-AS",
+        "peer_org": "IPKO Telecommunications LLC",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "57070",
+        "peer_name": "ITCOM-Shkoder",
+        "peer_org": "ITCOM Shpk",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "197167",
+        "peer_name": "PLUS_ASN",
+        "peer_org": "Digicom SHPK",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202821",
+        "peer_name": "ALB-IXP",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "206088",
+        "peer_name": "ShqiponjaISP",
+        "peer_org": "shqiponjaisp.al LLC",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202710",
+        "peer_name": "abnet",
+        "peer_org": "ABnet Sh.p.k",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202080",
+        "peer_name": "giganet",
+        "peer_org": "G net Sh.p.k",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "197706": {
+    "asn": "197706",
+    "as_info": {
+      "name": "KemiNet",
+      "org": "Keminet SHPK",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "6821",
+        "peer_name": "MT-AS-OWN",
+        "peer_org": "Makedonski Telekom AD-Skopje",
+        "peer_country": "Macedonia"
+      },
+      {
+        "peer_as": "202179",
+        "peer_name": "IDS-AS",
+        "peer_org": "Intercom Data Service sh.p.k",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "56468": {
+    "asn": "56468",
+    "as_info": {
+      "name": "mcnet",
+      "org": "MC NETWORKING Sh.p.k.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "6663",
+        "peer_name": "TTI-NET",
+        "peer_org": "Euroweb Romania S.R.L.",
+        "peer_country": "Romania"
+      },
+      {
+        "peer_as": "48265",
+        "peer_name": "ITIRANA-AL-AS",
+        "peer_org": "ITirana Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "211147",
+        "peer_name": "INTERFIBER",
+        "peer_org": "INTERFIBER Sh.p.k",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "198279",
+        "peer_name": "ATU-AL-AS",
+        "peer_org": "Albanian Telecommunications Union SH. P.K.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "60304",
+        "peer_name": "STARNET",
+        "peer_org": "Starnet Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "201249",
+        "peer_name": "IPRO",
+        "peer_org": "IPRO Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "39237",
+        "peer_name": "ITS-AS",
+        "peer_org": "I.T.S. SH.P.K.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "209240",
+        "peer_name": "isanet",
+        "peer_org": "ISA.NET Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202821",
+        "peer_name": "ALB-IXP",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "28158",
+        "peer_name": "Unknown",
+        "peer_org": "Ampernet Telecomunicações Ltda",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "38916",
+        "peer_name": "FBD-AL-AS",
+        "peer_org": "FBD shpk",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202179",
+        "peer_name": "IDS-AS",
+        "peer_org": "Intercom Data Service sh.p.k",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "42409": {
+    "asn": "42409",
+    "as_info": {
+      "name": "AKEP-AS",
+      "org": "Autoriteti i Komunikimeve Elektronike dhe Postare - AKEP",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "6821",
+        "peer_name": "MT-AS-OWN",
+        "peer_org": "Makedonski Telekom AD-Skopje",
+        "peer_country": "Macedonia"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "201811",
+        "peer_name": "AUSTOLE",
+        "peer_org": "Austole s.r.o.",
+        "peer_country": "Czechia"
+      },
+      {
+        "peer_as": "35047",
+        "peer_name": "AbissNet",
+        "peer_org": "Abissnet sh.a.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202821",
+        "peer_name": "ALB-IXP",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "38916",
+        "peer_name": "FBD-AL-AS",
+        "peer_org": "FBD shpk",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "12783": {
+    "asn": "12783",
+    "as_info": {
+      "name": "ENET-AL-AS",
+      "org": "ENET Shpk",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "199393",
+        "peer_name": "MAKEAPP",
+        "peer_org": "MakeAPP Cloud Ltd",
+        "peer_country": "Israel"
+      },
+      {
+        "peer_as": "198279",
+        "peer_name": "ATU-AL-AS",
+        "peer_org": "Albanian Telecommunications Union SH. P.K.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "58166",
+        "peer_name": "Credins-AS",
+        "peer_org": "Credins Bank Sh.A.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202821",
+        "peer_name": "ALB-IXP",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202179",
+        "peer_name": "IDS-AS",
+        "peer_org": "Intercom Data Service sh.p.k",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "197167": {
+    "asn": "197167",
+    "as_info": {
+      "name": "PLUS_ASN",
+      "org": "Digicom SHPK",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "42313",
+        "peer_name": "ALBTELECOM-AS",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "35047",
+        "peer_name": "AbissNet",
+        "peer_org": "Abissnet sh.a.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "39611",
+        "peer_name": "Tibo-AS",
+        "peer_org": "TIBO COMMUNICATIONS SH.P.K",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "61364": {
+    "asn": "61364",
+    "as_info": {
+      "name": "ambe-al-as",
+      "org": "A.M.B.E shpk",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "47394",
+        "peer_name": "ASC-AL-AS",
+        "peer_org": "\"Albanian Satellite Communications\" sh.p.k.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "57961": {
+    "asn": "57961",
+    "as_info": {
+      "name": "RASH-AS",
+      "org": "RASH - Rrjeti Akademik Shqiptar",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "137",
+        "peer_name": "ASGARR",
+        "peer_org": "Consortium GARR",
+        "peer_country": "Italy"
+      },
+      {
+        "peer_as": "5576",
+        "peer_name": "AKSHI",
+        "peer_org": "Agjencia Kombetare Shoqerise se Informacionit",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "205140",
+        "peer_name": "ANIX",
+        "peer_org": "RASH - Rrjeti Akademik Shqiptar",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "58137",
+        "peer_name": "ROUTE-ANIX",
+        "peer_org": "RASH - Rrjeti Akademik Shqiptar",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "200045": {
+    "asn": "200045",
+    "as_info": {
+      "name": "ZeroGravitet-AS",
+      "org": "APT CABLE SHPK",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8866",
+        "peer_name": "BTC-AS",
+        "peer_org": "Vivacom Bulgaria EAD",
+        "peer_country": "Bulgaria"
+      },
+      {
+        "peer_as": "202179",
+        "peer_name": "IDS-AS",
+        "peer_org": "Intercom Data Service sh.p.k",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "21246": {
+    "asn": "21246",
+    "as_info": {
+      "name": "IPKO-AS",
+      "org": "IPKO Telecommunications LLC",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "12989",
+        "peer_name": "StackPath",
+        "peer_org": "StackPath LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6821",
+        "peer_name": "MT-AS-OWN",
+        "peer_org": "Makedonski Telekom AD-Skopje",
+        "peer_country": "Macedonia"
+      },
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "8400",
+        "peer_name": "TELEKOM-AS",
+        "peer_org": "TELEKOM SRBIJA a.d.",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "39611",
+        "peer_name": "Tibo-AS",
+        "peer_org": "TIBO COMMUNICATIONS SH.P.K",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "203675",
+        "peer_name": "Vista",
+        "peer_org": "N.T.SH. Vista",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "210003",
+        "peer_name": "SkyElbasan",
+        "peer_org": "SKY ELBASAN sh.p.k",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "57891",
+        "peer_name": "RUHRCIX-AS",
+        "peer_org": "DE-CIX Management GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "43272",
+        "peer_name": "DOTNET-AS",
+        "peer_org": "DOTNET SH.P.K",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "50091",
+        "peer_name": "negenet",
+        "peer_org": "Ylli Zeka trading as Negenet, N.T.P.SH",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "206358",
+        "peer_name": "ISP-broadcast",
+        "peer_org": "Qendrim Kryeziu trading as N.P.SH \"ISP - Broadcast",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "208286",
+        "peer_name": "MAXTV",
+        "peer_org": "Max tv SH. P. K",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "213206": {
+    "asn": "213206",
+    "as_info": {
+      "name": "map-ashi",
+      "org": "Ministria e Administrates Publike",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "198949",
+        "peer_name": "VS-AS",
+        "peer_org": "DC PROTECTION LTD",
+        "peer_country": "Israel"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "202080": {
+    "asn": "202080",
+    "as_info": {
+      "name": "giganet",
+      "org": "G net Sh.p.k",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "43267",
+        "peer_name": "First_Line-SP_for_b2b_customers",
+        "peer_org": "Vysokie tehnologii Limited Liability Company",
+        "peer_country": "Russia"
+      },
+      {
+        "peer_as": "39611",
+        "peer_name": "Tibo-AS",
+        "peer_org": "TIBO COMMUNICATIONS SH.P.K",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "6843",
+        "peer_name": "Diginet",
+        "peer_org": "Diginet shpk",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "50616": {
+    "asn": "50616",
+    "as_info": {
+      "name": "AMC",
+      "org": "ONE ALBANIA SH.A.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "5391",
+        "peer_name": "T-HT",
+        "peer_org": "Hrvatski Telekom d.d.",
+        "peer_country": "Croatia"
+      },
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "21183",
+        "peer_name": "ABCOM-AS",
+        "peer_org": "Vodafone Albania Sh.A.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202821",
+        "peer_name": "ALB-IXP",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "60304": {
+    "asn": "60304",
+    "as_info": {
+      "name": "STARNET",
+      "org": "Starnet Sh.p.k.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "56468",
+        "peer_name": "mcnet",
+        "peer_org": "MC NETWORKING Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202821",
+        "peer_name": "ALB-IXP",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "60352": {
+    "asn": "60352",
+    "as_info": {
+      "name": "Selcom-AL-AS",
+      "org": "S E L C O M SHPK",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "48265",
+        "peer_name": "ITIRANA-AL-AS",
+        "peer_org": "ITirana Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202821",
+        "peer_name": "ALB-IXP",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "201708": {
+    "asn": "201708",
+    "as_info": {
+      "name": "Raiffeisen-AL-AS",
+      "org": "RAIFFEISEN BANK SH.A",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "202821",
+        "peer_name": "ALB-IXP",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "205832": {
+    "asn": "205832",
+    "as_info": {
+      "name": "UltraNet",
+      "org": "ULTRANET sh.p.k",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "8585",
+        "peer_name": "INTERNET-CG",
+        "peer_org": "Crnogorski Telekom a.d.Podgorica",
+        "peer_country": "Montenegro"
+      },
+      {
+        "peer_as": "202821",
+        "peer_name": "ALB-IXP",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "209465": {
+    "asn": "209465",
+    "as_info": {
+      "name": "vigal",
+      "org": "VIG SERVICES SHQIPERI Sh.p.k.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "198279",
+        "peer_name": "ATU-AL-AS",
+        "peer_org": "Albanian Telecommunications Union SH. P.K.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "207502": {
+    "asn": "207502",
+    "as_info": {
+      "name": "SPEED-LINE",
+      "org": "SPEED LINE SHPK",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "198279",
+        "peer_name": "ATU-AL-AS",
+        "peer_org": "Albanian Telecommunications Union SH. P.K.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "29170": {
+    "asn": "29170",
+    "as_info": {
+      "name": "KUJTESA-AS",
+      "org": "Kujtesa Net Sh.p.k.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "21183",
+        "peer_name": "ABCOM-AS",
+        "peer_org": "Vodafone Albania Sh.A.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "203675",
+        "peer_name": "Vista",
+        "peer_org": "N.T.SH. Vista",
+        "peer_country": "Serbia"
+      },
+      {
+        "peer_as": "210964",
+        "peer_name": "Tvkamenica",
+        "peer_org": "TV Kamenica sh.p.k",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "211555",
+        "peer_name": "SKYNETKS",
+        "peer_org": "Kujtim Leku trading as N.T.SH. \"SKY - NET\"",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "5416",
+        "peer_name": "Unknown",
+        "peer_org": "Bahrain Telecommunications Company (BATELCO) B.S.C.",
+        "peer_country": "Bahrain"
+      },
+      {
+        "peer_as": "20253",
+        "peer_name": "QWILTED-PROD-01",
+        "peer_org": "Qwilt Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "55685",
+        "peer_name": "JLM-AS-ID",
+        "peer_org": "PT Jala Lintas Media",
+        "peer_country": "Indonesia"
+      },
+      {
+        "peer_as": "57406",
+        "peer_name": "Zero-Distance",
+        "peer_org": "Zero Distance LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "139057",
+        "peer_name": "BAISHAN-CN",
+        "peer_org": "Guizhou BaishanCloud Technology Co., Ltd",
+        "peer_country": "China"
+      },
+      {
+        "peer_as": "48265",
+        "peer_name": "ITIRANA-AL-AS",
+        "peer_org": "ITirana Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "211470",
+        "peer_name": "ubt",
+        "peer_org": "Kolegji Nderkombetar per Biznes dhe Teknologji - UBT SH.P.K",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "210964": {
+    "asn": "210964",
+    "as_info": {
+      "name": "Tvkamenica",
+      "org": "TV Kamenica sh.p.k",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "29170",
+        "peer_name": "KUJTESA-AS",
+        "peer_org": "Kujtesa Net Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "206262": {
+    "asn": "206262",
+    "as_info": {
+      "name": "Telkos",
+      "org": "TelKos L.L.C",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "39611",
+        "peer_name": "Tibo-AS",
+        "peer_org": "TIBO COMMUNICATIONS SH.P.K",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "213295",
+        "peer_name": "itP",
+        "peer_org": "itPrishtina SH p.K",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "213295": {
+    "asn": "213295",
+    "as_info": {
+      "name": "itP",
+      "org": "itPrishtina SH p.K",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "206262",
+        "peer_name": "Telkos",
+        "peer_org": "TelKos L.L.C",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "213363",
+        "peer_name": "Fiberconn-AS",
+        "peer_org": "FiberConn (SH.P.K)",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "213250",
+        "peer_name": "ITP-SOLUTIONS",
+        "peer_org": "Dominic Scholz trading as ITP-Solutions GmbH & Co. KG",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "212799",
+        "peer_name": "CDNCAMP-AS",
+        "peer_org": "CDN Camp LTD",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "211760",
+        "peer_name": "AS-SUISSE",
+        "peer_org": "Suisse Limited",
+        "peer_country": "Seychelles"
+      }
+    ]
+  },
+  "58137": {
+    "asn": "58137",
+    "as_info": {
+      "name": "ROUTE-ANIX",
+      "org": "RASH - Rrjeti Akademik Shqiptar",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "60144",
+        "peer_name": "THREE-W-INFRA-AS",
+        "peer_org": "3W Infra B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "57961",
+        "peer_name": "RASH-AS",
+        "peer_org": "RASH - Rrjeti Akademik Shqiptar",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "198279",
+        "peer_name": "ATU-AL-AS",
+        "peer_org": "Albanian Telecommunications Union SH. P.K.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "49934",
+        "peer_name": "FREMAP-AS",
+        "peer_org": "FREMAP MUTUA COLABORADORA CON LA SEGURIDAD SOCIAL N 61",
+        "peer_country": "Spain"
+      }
+    ]
+  },
+  "210003": {
+    "asn": "210003",
+    "as_info": {
+      "name": "SkyElbasan",
+      "org": "SKY ELBASAN sh.p.k",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "21246",
+        "peer_name": "IPKO-AS",
+        "peer_org": "IPKO Telecommunications LLC",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "6843",
+        "peer_name": "Diginet",
+        "peer_org": "Diginet shpk",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "201249": {
+    "asn": "201249",
+    "as_info": {
+      "name": "IPRO",
+      "org": "IPRO Sh.p.k.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "50973",
+        "peer_name": "VODAFONE-AL-ASN",
+        "peer_org": "Vodafone Albania Sh.A.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "56468",
+        "peer_name": "mcnet",
+        "peer_org": "MC NETWORKING Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202821",
+        "peer_name": "ALB-IXP",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "6843": {
+    "asn": "6843",
+    "as_info": {
+      "name": "Diginet",
+      "org": "Diginet shpk",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "35444",
+        "peer_name": "DigicomAlbania-AS",
+        "peer_org": "Digicom SHPK",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "60471",
+        "peer_name": "Mobitel-BGP",
+        "peer_org": "Mobitel sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202433",
+        "peer_name": "Acenet",
+        "peer_org": "Acenet sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "210003",
+        "peer_name": "SkyElbasan",
+        "peer_org": "SKY ELBASAN sh.p.k",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202710",
+        "peer_name": "abnet",
+        "peer_org": "ABnet Sh.p.k",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202080",
+        "peer_name": "giganet",
+        "peer_org": "G net Sh.p.k",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "39237": {
+    "asn": "39237",
+    "as_info": {
+      "name": "ITS-AS",
+      "org": "I.T.S. SH.P.K.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "56468",
+        "peer_name": "mcnet",
+        "peer_org": "MC NETWORKING Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "204100": {
+    "asn": "204100",
+    "as_info": {
+      "name": "PCBK",
+      "org": "\"ProCredit Bank\" Sh.a",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "204285": {
+    "asn": "204285",
+    "as_info": {
+      "name": "JabNet",
+      "org": "Fitnete Mujaj trading as N.SH \"J@B - NET",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "206088": {
+    "asn": "206088",
+    "as_info": {
+      "name": "ShqiponjaISP",
+      "org": "shqiponjaisp.al LLC",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "202821",
+        "peer_name": "ALB-IXP",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "39611",
+        "peer_name": "Tibo-AS",
+        "peer_org": "TIBO COMMUNICATIONS SH.P.K",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "206358": {
+    "asn": "206358",
+    "as_info": {
+      "name": "ISP-broadcast",
+      "org": "Qendrim Kryeziu trading as N.P.SH \"ISP - Broadcast",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "21246",
+        "peer_name": "IPKO-AS",
+        "peer_org": "IPKO Telecommunications LLC",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "207047": {
+    "asn": "207047",
+    "as_info": {
+      "name": "RAIFFEISEN-KS-AS",
+      "org": "Raiffeisen Bank Kosovo JSC",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "207385": {
+    "asn": "207385",
+    "as_info": {
+      "name": "CredinsBank",
+      "org": "Credins Bank Sh.A.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "207817": {
+    "asn": "207817",
+    "as_info": {
+      "name": "ILLYSOFT",
+      "org": "ILLYSOFT LLC",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "208286": {
+    "asn": "208286",
+    "as_info": {
+      "name": "MAXTV",
+      "org": "Max tv SH. P. K",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "21246",
+        "peer_name": "IPKO-AS",
+        "peer_org": "IPKO Telecommunications LLC",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "211555",
+        "peer_name": "SKYNETKS",
+        "peer_org": "Kujtim Leku trading as N.T.SH. \"SKY - NET\"",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "209425": {
+    "asn": "209425",
+    "as_info": {
+      "name": "al-as-kumanova",
+      "org": "Kumanova Cable\" SH.P.K.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "209442": {
+    "asn": "209442",
+    "as_info": {
+      "name": "FastNet-Korce",
+      "org": "Gerantina Zylo trading as FASTNET",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "42313",
+        "peer_name": "ALBTELECOM-AS",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "198279",
+        "peer_name": "ATU-AL-AS",
+        "peer_org": "Albanian Telecommunications Union SH. P.K.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "209839": {
+    "asn": "209839",
+    "as_info": {
+      "name": "LuvaGroup",
+      "org": "Luva Group Sh.p.k.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "42313",
+        "peer_name": "ALBTELECOM-AS",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "210693": {
+    "asn": "210693",
+    "as_info": {
+      "name": "Kamenicanet",
+      "org": "Kamenicanet sh.p.k",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "210748": {
+    "asn": "210748",
+    "as_info": {
+      "name": "aab-edu",
+      "org": "UNIVERSITETI AAB SH.P.K",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "211080": {
+    "asn": "211080",
+    "as_info": {
+      "name": "KREN-ASN",
+      "org": "Ministry of Economy of Republic of Kosovo",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "5603",
+        "peer_name": "SIOL-NET",
+        "peer_org": "Telekom Slovenije, d.d.",
+        "peer_country": "Slovenia"
+      }
+    ]
+  },
+  "211385": {
+    "asn": "211385",
+    "as_info": {
+      "name": "DIGITEL",
+      "org": "DIGITEL ALBANIA SHPK",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "207876",
+        "peer_name": "AS-SET-NEWAVE",
+        "peer_org": "Roland Delia trading as NEWAVE",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202558",
+        "peer_name": "LOBINET",
+        "peer_org": "M.R.M shpk",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "24241",
+        "peer_name": "LEVELUP-PH",
+        "peer_org": "ePLDT Inc.",
+        "peer_country": "Philippines"
+      },
+      {
+        "peer_as": "23748",
+        "peer_name": "CAT-AS-AP",
+        "peer_org": "Cat Networks K.K.",
+        "peer_country": "Japan"
+      },
+      {
+        "peer_as": "23862",
+        "peer_name": "DILNET-AS-AP",
+        "peer_org": "University of the Philippines",
+        "peer_country": "Philippines"
+      }
+    ]
+  },
+  "211458": {
+    "asn": "211458",
+    "as_info": {
+      "name": "IH-NET",
+      "org": "IH-NETWORK SHPK",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "211468": {
+    "asn": "211468",
+    "as_info": {
+      "name": "KOSNET",
+      "org": "KOSNET Telecommunications LLC",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "207330",
+        "peer_name": "Drinia",
+        "peer_org": "Drinia Tech SH.P.K",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "211470": {
+    "asn": "211470",
+    "as_info": {
+      "name": "ubt",
+      "org": "Kolegji Nderkombetar per Biznes dhe Teknologji - UBT SH.P.K",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "29170",
+        "peer_name": "KUJTESA-AS",
+        "peer_org": "Kujtesa Net Sh.p.k.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "207330": {
+    "asn": "207330",
+    "as_info": {
+      "name": "Drinia",
+      "org": "Drinia Tech SH.P.K",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "211468",
+        "peer_name": "KOSNET",
+        "peer_org": "KOSNET Telecommunications LLC",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "212645",
+        "peer_name": "GLOBALSAT-AS-MK",
+        "peer_org": "GLOBALSAT DOOEL",
+        "peer_country": "Macedonia"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "202558": {
+    "asn": "202558",
+    "as_info": {
+      "name": "LOBINET",
+      "org": "M.R.M shpk",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "62292",
+        "peer_name": "EZIT-AS",
+        "peer_org": "Websupport Magyarorszag Kft.",
+        "peer_country": "Hungary"
+      },
+      {
+        "peer_as": "211385",
+        "peer_name": "DIGITEL",
+        "peer_org": "DIGITEL ALBANIA SHPK",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "198279",
+        "peer_name": "ATU-AL-AS",
+        "peer_org": "Albanian Telecommunications Union SH. P.K.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "209673",
+        "peer_name": "Dark-IT",
+        "peer_org": "Steven Tappert",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "205023",
+        "peer_name": "UKRENERGO-AS-DC",
+        "peer_org": "PJSC NATIONAL POWER COMPANY UKRENERGO (NPC UKRENERGO)",
+        "peer_country": "Ukraine"
+      }
+    ]
+  },
+  "209240": {
+    "asn": "209240",
+    "as_info": {
+      "name": "isanet",
+      "org": "ISA.NET Sh.p.k.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "56468",
+        "peer_name": "mcnet",
+        "peer_org": "MC NETWORKING Sh.p.k.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "42460": {
+    "asn": "42460",
+    "as_info": {
+      "name": "PLUS_GRX_ASN",
+      "org": "Digicom SHPK",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "6774",
+        "peer_name": "ASN-BICS",
+        "peer_org": "Belgacom International Carrier Services SA",
+        "peer_country": "Belgium"
+      },
+      {
+        "peer_as": "20936",
+        "peer_name": "GRXPROVIDER-AS",
+        "peer_org": "Deutsche Telekom AG",
+        "peer_country": "Germany"
+      }
+    ]
+  },
+  "199276": {
+    "asn": "199276",
+    "as_info": {
+      "name": "ermal",
+      "org": "Tele.Co.Albania SHPK",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "21183",
+        "peer_name": "ABCOM-AS",
+        "peer_org": "Vodafone Albania Sh.A.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "202821",
+        "peer_name": "ALB-IXP",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "60136": {
+    "asn": "60136",
+    "as_info": {
+      "name": "TeeB",
+      "org": "Teeb-Center",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "42313",
+        "peer_name": "ALBTELECOM-AS",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "210349": {
+    "asn": "210349",
+    "as_info": {
+      "name": "NETIBAL",
+      "org": "NETIBAL SH.P.K",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "201814",
+        "peer_name": "PL-SKYTECH-AS",
+        "peer_org": "MEVSPACE sp. z o.o.",
+        "peer_country": "Poland"
+      }
+    ]
+  },
+  "202821": {
+    "asn": "202821",
+    "as_info": {
+      "name": "ALB-IXP",
+      "org": "Albtelecom Sh.a.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "35047",
+        "peer_name": "AbissNet",
+        "peer_org": "Abissnet sh.a.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "50616",
+        "peer_name": "AMC",
+        "peer_org": "ONE ALBANIA SH.A.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "56468",
+        "peer_name": "mcnet",
+        "peer_org": "MC NETWORKING Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "60352",
+        "peer_name": "Selcom-AL-AS",
+        "peer_org": "S E L C O M SHPK",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "60471",
+        "peer_name": "Mobitel-BGP",
+        "peer_org": "Mobitel sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "199276",
+        "peer_name": "ermal",
+        "peer_org": "Tele.Co.Albania SHPK",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "203063",
+        "peer_name": "ISPBA-ASn1",
+        "peer_org": "INTESA SANPAOLO BANK ALBANIA PJSC",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "205832",
+        "peer_name": "UltraNet",
+        "peer_org": "ULTRANET sh.p.k",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "60304",
+        "peer_name": "STARNET",
+        "peer_org": "Starnet Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "205110",
+        "peer_name": "next-tv",
+        "peer_org": "NEXT-TV SHPK",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "206088",
+        "peer_name": "ShqiponjaISP",
+        "peer_org": "shqiponjaisp.al LLC",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "50973",
+        "peer_name": "VODAFONE-AL-ASN",
+        "peer_org": "Vodafone Albania Sh.A.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "12783",
+        "peer_name": "ENET-AL-AS",
+        "peer_org": "ENET Shpk",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "201249",
+        "peer_name": "IPRO",
+        "peer_org": "IPRO Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "201708",
+        "peer_name": "Raiffeisen-AL-AS",
+        "peer_org": "RAIFFEISEN BANK SH.A",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "39611",
+        "peer_name": "Tibo-AS",
+        "peer_org": "TIBO COMMUNICATIONS SH.P.K",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "42409",
+        "peer_name": "AKEP-AS",
+        "peer_org": "Autoriteti i Komunikimeve Elektronike dhe Postare - AKEP",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "21183",
+        "peer_name": "ABCOM-AS",
+        "peer_org": "Vodafone Albania Sh.A.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "29238",
+        "peer_name": "Nisatel",
+        "peer_org": "Nisatel LTD",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "47394",
+        "peer_name": "ASC-AL-AS",
+        "peer_org": "\"Albanian Satellite Communications\" sh.p.k.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "203063": {
+    "asn": "203063",
+    "as_info": {
+      "name": "ISPBA-ASn1",
+      "org": "INTESA SANPAOLO BANK ALBANIA PJSC",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "202821",
+        "peer_name": "ALB-IXP",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "205244": {
+    "asn": "205244",
+    "as_info": {
+      "name": "Firstcom",
+      "org": "Artur Imeraj trading as FIRST.COM",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "35047",
+        "peer_name": "AbissNet",
+        "peer_org": "Abissnet sh.a.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "205140": {
+    "asn": "205140",
+    "as_info": {
+      "name": "ANIX",
+      "org": "RASH - Rrjeti Akademik Shqiptar",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "57961",
+        "peer_name": "RASH-AS",
+        "peer_org": "RASH - Rrjeti Akademik Shqiptar",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "198279",
+        "peer_name": "ATU-AL-AS",
+        "peer_org": "Albanian Telecommunications Union SH. P.K.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "212637": {
+    "asn": "212637",
+    "as_info": {
+      "name": "LightNet",
+      "org": "Lightnet Sh.p.k.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "205110",
+        "peer_name": "next-tv",
+        "peer_org": "NEXT-TV SHPK",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "202433": {
+    "asn": "202433",
+    "as_info": {
+      "name": "Acenet",
+      "org": "Acenet sh.p.k.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "6843",
+        "peer_name": "Diginet",
+        "peer_org": "Diginet shpk",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "208630": {
+    "asn": "208630",
+    "as_info": {
+      "name": "InfotelecomAlbania-AS",
+      "org": "INFO-Telecom Shpk",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "35047",
+        "peer_name": "AbissNet",
+        "peer_org": "Abissnet sh.a.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "207876": {
+    "asn": "207876",
+    "as_info": {
+      "name": "AS-SET-NEWAVE",
+      "org": "Roland Delia trading as NEWAVE",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "211385",
+        "peer_name": "DIGITEL",
+        "peer_org": "DIGITEL ALBANIA SHPK",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "211948": {
+    "asn": "211948",
+    "as_info": {
+      "name": "TLSS",
+      "org": "Telesys-AB sh.p.k",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "35047",
+        "peer_name": "AbissNet",
+        "peer_org": "Abissnet sh.a.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "43940",
+        "peer_name": "MTEL-AS",
+        "peer_org": "Drustvo za telekomunikacije \"MTEL\" DOO",
+        "peer_country": "Montenegro"
+      }
+    ]
+  },
+  "48510": {
+    "asn": "48510",
+    "as_info": {
+      "name": "ALBTELECOM-AS",
+      "org": "Albtelecom Sh.a.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "174",
+        "peer_name": "COGENT-174",
+        "peer_org": "Cogent Communications",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6762",
+        "peer_name": "SEABONE-NET",
+        "peer_org": "Telecom Italia Sparkle S.p.A.",
+        "peer_country": "Italy"
+      },
+      {
+        "peer_as": "12713",
+        "peer_name": "OTEGlobe",
+        "peer_org": "Ote SA (Hellenic Telecommunications Organisation)",
+        "peer_country": "Greece"
+      }
+    ]
+  },
+  "212744": {
+    "asn": "212744",
+    "as_info": {
+      "name": "ALBAHOST",
+      "org": "Albanian Hosting SH.P.K.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "50212",
+        "peer_name": "MEVIX",
+        "peer_org": "MEVSPACE sp. z o.o.",
+        "peer_country": "Poland"
+      }
+    ]
+  },
+  "205278": {
+    "asn": "205278",
+    "as_info": {
+      "name": "NETCOM",
+      "org": "NetCom ISP Sh.p.k.",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "57388",
+        "peer_name": "IBC-AS",
+        "peer_org": "I.B.C - Telecom Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "35047",
+        "peer_name": "AbissNet",
+        "peer_org": "Abissnet sh.a.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "204816": {
+    "asn": "204816",
+    "as_info": {
+      "name": "VANI",
+      "org": "VANI SHPK",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "42313",
+        "peer_name": "ALBTELECOM-AS",
+        "peer_org": "Albtelecom Sh.a.",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "213363": {
+    "asn": "213363",
+    "as_info": {
+      "name": "Fiberconn-AS",
+      "org": "FiberConn (SH.P.K)",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "213295",
+        "peer_name": "itP",
+        "peer_org": "itPrishtina SH p.K",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "202710": {
+    "asn": "202710",
+    "as_info": {
+      "name": "abnet",
+      "org": "ABnet Sh.p.k",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "39611",
+        "peer_name": "Tibo-AS",
+        "peer_org": "TIBO COMMUNICATIONS SH.P.K",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "6843",
+        "peer_name": "Diginet",
+        "peer_org": "Diginet shpk",
+        "peer_country": "Albania"
+      }
+    ]
+  },
+  "202179": {
+    "asn": "202179",
+    "as_info": {
+      "name": "IDS-AS",
+      "org": "Intercom Data Service sh.p.k",
+      "country": "Albania"
+    },
+    "links": [
+      {
+        "peer_as": "56468",
+        "peer_name": "mcnet",
+        "peer_org": "MC NETWORKING Sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "35444",
+        "peer_name": "DigicomAlbania-AS",
+        "peer_org": "Digicom SHPK",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "197706",
+        "peer_name": "KemiNet",
+        "peer_org": "Keminet SHPK",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "12783",
+        "peer_name": "ENET-AL-AS",
+        "peer_org": "ENET Shpk",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "60471",
+        "peer_name": "Mobitel-BGP",
+        "peer_org": "Mobitel sh.p.k.",
+        "peer_country": "Albania"
+      },
+      {
+        "peer_as": "200045",
+        "peer_name": "ZeroGravitet-AS",
+        "peer_org": "APT CABLE SHPK",
+        "peer_country": "Albania"
+      }
+    ]
+  }
+}

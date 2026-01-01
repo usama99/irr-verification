@@ -1,0 +1,196 @@
+{
+  "37173": {
+    "asn": "37173",
+    "as_info": {
+      "name": "GETESA",
+      "org": "GETESA (Orange Equatorial Guinea)",
+      "country": "Equatorial Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "60171",
+        "peer_name": "AFRIX-AS",
+        "peer_org": "AFR-IX TELECOM SAU",
+        "peer_country": "Spain"
+      },
+      {
+        "peer_as": "5511",
+        "peer_name": "Opentransit",
+        "peer_org": "Orange S.A.",
+        "peer_country": "France"
+      },
+      {
+        "peer_as": "60679",
+        "peer_name": "FDR",
+        "peer_org": "Freedom Registry BV",
+        "peer_country": "Netherlands"
+      }
+    ]
+  },
+  "37337": {
+    "asn": "37337",
+    "as_info": {
+      "name": "MUNI-EG",
+      "org": "MUNI S.A",
+      "country": "Equatorial Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "60171",
+        "peer_name": "AFRIX-AS",
+        "peer_org": "AFR-IX TELECOM SAU",
+        "peer_country": "Spain"
+      }
+    ]
+  },
+  "37487": {
+    "asn": "37487",
+    "as_info": {
+      "name": "GUINEANET",
+      "org": "guineanet",
+      "country": "Equatorial Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "60171",
+        "peer_name": "AFRIX-AS",
+        "peer_org": "AFR-IX TELECOM SAU",
+        "peer_country": "Spain"
+      },
+      {
+        "peer_as": "24753",
+        "peer_name": "GCE-NET",
+        "peer_org": "Globecomm Europe B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "59865",
+        "peer_name": "ivm",
+        "peer_org": "Ivent Mobile bv",
+        "peer_country": "Netherlands"
+      }
+    ]
+  },
+  "328207": {
+    "asn": "328207",
+    "as_info": {
+      "name": "OFFICE-TECH",
+      "org": "OFFICE TECH",
+      "country": "Equatorial Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "60171",
+        "peer_name": "AFRIX-AS",
+        "peer_org": "AFR-IX TELECOM SAU",
+        "peer_country": "Spain"
+      }
+    ]
+  },
+  "329219": {
+    "asn": "329219",
+    "as_info": {
+      "name": "Fenix-EG",
+      "org": "Fenix S.L.",
+      "country": "Equatorial Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "60171",
+        "peer_name": "AFRIX-AS",
+        "peer_org": "AFR-IX TELECOM SAU",
+        "peer_country": "Spain"
+      }
+    ]
+  },
+  "37512": {
+    "asn": "37512",
+    "as_info": {
+      "name": "IPXEG-AS",
+      "org": "IPX Equatorial Guinea S.A",
+      "country": "Equatorial Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "60171",
+        "peer_name": "AFRIX-AS",
+        "peer_org": "AFR-IX TELECOM SAU",
+        "peer_country": "Spain"
+      }
+    ]
+  },
+  "328311": {
+    "asn": "328311",
+    "as_info": {
+      "name": "Conexxia-AS",
+      "org": "Conexxia Guinea Equatorial, S.L",
+      "country": "Equatorial Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "60171",
+        "peer_name": "AFRIX-AS",
+        "peer_org": "AFR-IX TELECOM SAU",
+        "peer_country": "Spain"
+      }
+    ]
+  },
+  "37529": {
+    "asn": "37529",
+    "as_info": {
+      "name": "GITGE",
+      "org": "Gestora de Infraestructuras de Telecomunicaciones de Guinea Ecuatorial",
+      "country": "Equatorial Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "37203",
+        "peer_name": "LIBTELCO",
+        "peer_org": "Liberia Telecommunications Corporation (libtelco)",
+        "peer_country": "Liberia"
+      },
+      {
+        "peer_as": "328136",
+        "peer_name": "Telecel-Liberia-AS",
+        "peer_org": "Telecel Liberia Limited",
+        "peer_country": "Liberia"
+      },
+      {
+        "peer_as": "327725",
+        "peer_name": "UnitelSTP",
+        "peer_org": "UNITEL STP SARL",
+        "peer_country": "Sao Tome and Principe"
+      }
+    ]
+  }
+}

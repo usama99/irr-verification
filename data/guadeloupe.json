@@ -1,0 +1,150 @@
+{
+  "29837": {
+    "asn": "29837",
+    "as_info": {
+      "name": "SAINT-BARTH-TELECOM",
+      "org": "ST BARTH TELECOM",
+      "country": "Guadeloupe"
+    },
+    "links": [
+      {
+        "peer_as": "14743",
+        "peer_name": "INTERNAP-BLOCK-4",
+        "peer_org": "Unitas Global",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "16467",
+        "peer_name": "GEOLINKS-AS",
+        "peer_org": "GeoLinks",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "17149": {
+    "asn": "17149",
+    "as_info": {
+      "name": "GCN-AS",
+      "org": "Global Caribbean Network",
+      "country": "Guadeloupe"
+    },
+    "links": [
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "2740",
+        "peer_name": "CARIBCABLE",
+        "peer_org": "Caribbean Cable Communications",
+        "peer_country": "Anguilla"
+      },
+      {
+        "peer_as": "36290",
+        "peer_name": "THECABLE-STKITTS-01",
+        "peer_org": "The Cable of St. Kitts",
+        "peer_country": "Saint Kitts and Nevis"
+      },
+      {
+        "peer_as": "3549",
+        "peer_name": "LVLT-3549",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "33576",
+        "peer_name": "DIG001",
+        "peer_org": "Digicel Jamaica",
+        "peer_country": "Jamaica"
+      },
+      {
+        "peer_as": "203253",
+        "peer_name": "ANTIANE",
+        "peer_org": "Antiane SARL",
+        "peer_country": "France"
+      },
+      {
+        "peer_as": "204802",
+        "peer_name": "freedom-network",
+        "peer_org": "FREEDOM NETWORK",
+        "peer_country": "France"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "36511": {
+    "asn": "36511",
+    "as_info": {
+      "name": "NETDT-GUA",
+      "org": "Dauphin Telecom Guadeloupe",
+      "country": "Guadeloupe"
+    },
+    "links": [
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "264728",
+        "peer_name": "Unknown",
+        "peer_org": "DAUPHIN TELECOM GUYANE",
+        "peer_country": "French Guiana"
+      },
+      {
+        "peer_as": "44530",
+        "peer_name": "HOPUS",
+        "peer_org": "HOPUS SAS",
+        "peer_country": "France"
+      },
+      {
+        "peer_as": "7029",
+        "peer_name": "WINDSTREAM",
+        "peer_org": "Windstream Communications LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "21351": {
+    "asn": "21351",
+    "as_info": {
+      "name": "CANALPLUSTELECOM",
+      "org": "Canal + Telecom SAS",
+      "country": "Guadeloupe"
+    },
+    "links": [
+      {
+        "peer_as": "11139",
+        "peer_name": "CWC-ROC-11139",
+        "peer_org": "Cable & Wireless Dominica",
+        "peer_country": "Dominica"
+      },
+      {
+        "peer_as": "262190",
+        "peer_name": "Unknown",
+        "peer_org": "Guyane Numerique",
+        "peer_country": "French Guiana"
+      },
+      {
+        "peer_as": "886",
+        "peer_name": "SBH-IX-SERVICES",
+        "peer_org": "COLLECTIVITE DE SAINT BARTHELEMY",
+        "peer_country": "France"
+      },
+      {
+        "peer_as": "328540",
+        "peer_name": "UOMAS",
+        "peer_org": "University of Mauritius",
+        "peer_country": "Mauritius"
+      }
+    ]
+  }
+}

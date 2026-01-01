@@ -1,0 +1,34 @@
+{
+  "45168": {
+    "asn": "45168",
+    "as_info": {
+      "name": "NINET-AS-NF-AP",
+      "org": "Norfolk Telecom",
+      "country": "Norfolk Island"
+    },
+    "links": [
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "38234": {
+    "asn": "38234",
+    "as_info": {
+      "name": "NIDS-AS-AP",
+      "org": "Norfolk Island Data Services",
+      "country": "Norfolk Island"
+    },
+    "links": [
+      {
+        "peer_as": "2764",
+        "peer_name": "AAPT",
+        "peer_org": "AAPT Limited",
+        "peer_country": "Australia"
+      }
+    ]
+  }
+}

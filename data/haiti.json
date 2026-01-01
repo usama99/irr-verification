@@ -1,0 +1,188 @@
+{
+  "52260": {
+    "asn": "52260",
+    "as_info": {
+      "name": "Unknown",
+      "org": "Télécommunications de Haití (Teleco)",
+      "country": "Haiti"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "263685": {
+    "asn": "263685",
+    "as_info": {
+      "name": "Unknown",
+      "org": "SOGEBANK",
+      "country": "Haiti"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6400",
+        "peer_name": "Unknown",
+        "peer_org": "Compañía Dominicana de Teléfonos S. A.",
+        "peer_country": "Dominican Republic"
+      }
+    ]
+  },
+  "27774": {
+    "asn": "27774",
+    "as_info": {
+      "name": "Unknown",
+      "org": "Haiti Networking Group S.A.",
+      "country": "Haiti"
+    },
+    "links": [
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "14080",
+        "peer_name": "Unknown",
+        "peer_org": "Telmex Colombia S.A.",
+        "peer_country": "Colombia"
+      }
+    ]
+  },
+  "52297": {
+    "asn": "52297",
+    "as_info": {
+      "name": "Unknown",
+      "org": "HAICOM (Haiti Communications, S.A.)",
+      "country": "Haiti"
+    },
+    "links": [
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "264616": {
+    "asn": "264616",
+    "as_info": {
+      "name": "Unknown",
+      "org": "Haiti Data Networks S.A.",
+      "country": "Haiti"
+    },
+    "links": [
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "271897": {
+    "asn": "271897",
+    "as_info": {
+      "name": "Unknown",
+      "org": "UNIBANK S.A.",
+      "country": "Haiti"
+    },
+    "links": [
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "33576",
+        "peer_name": "DIG001",
+        "peer_org": "Digicel Jamaica",
+        "peer_country": "Jamaica"
+      }
+    ]
+  },
+  "10824": {
+    "asn": "10824",
+    "as_info": {
+      "name": "Unknown",
+      "org": "BANQUE DE LA REPUBLIQUE D'HAITI",
+      "country": "Haiti"
+    },
+    "links": [
+      {
+        "peer_as": "7727",
+        "peer_name": "Unknown",
+        "peer_org": "Hondutel",
+        "peer_country": "Honduras"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "27759": {
+    "asn": "27759",
+    "as_info": {
+      "name": "Unknown",
+      "org": "ACCESS HAITI S.A.",
+      "country": "Haiti"
+    },
+    "links": [
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "52382": {
+    "asn": "52382",
+    "as_info": {
+      "name": "Unknown",
+      "org": "Faculte Des Sciences, Universite dEtat dHaiti",
+      "country": "Haiti"
+    },
+    "links": [
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  }
+}

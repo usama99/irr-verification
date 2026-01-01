@@ -1,0 +1,1268 @@
+{
+  "265880": {
+    "asn": "265880",
+    "as_info": {
+      "name": "Unknown",
+      "org": "CORPORACION VISTA COBIJA S.R.L.",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "4230",
+        "peer_name": "Unknown",
+        "peer_org": "CLARO S.A.",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "26615",
+        "peer_name": "Unknown",
+        "peer_org": "TIM S/A",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "61884",
+        "peer_name": "Unknown",
+        "peer_org": "OLLA COMUNICACAO LTDA",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "16735",
+        "peer_name": "Unknown",
+        "peer_org": "ALGAR TELECOM S/A",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "7195",
+        "peer_name": "Unknown",
+        "peer_org": "EDGEUNO SAS",
+        "peer_country": "Colombia"
+      },
+      {
+        "peer_as": "262206",
+        "peer_name": "Unknown",
+        "peer_org": "COMCEL GUATEMALA S.A.",
+        "peer_country": "Guatemala"
+      },
+      {
+        "peer_as": "262596",
+        "peer_name": "Unknown",
+        "peer_org": "JUNTO TELECOM SERVIÇOS DE TELECOMUNICAÇÕES LTDA",
+        "peer_country": "Brazil"
+      }
+    ]
+  },
+  "267770": {
+    "asn": "267770",
+    "as_info": {
+      "name": "Unknown",
+      "org": "COTEGUA LTDA (Coop. de Telecomunicaciones Guayaramerin Ltda.)",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "4230",
+        "peer_name": "Unknown",
+        "peer_org": "CLARO S.A.",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "26615",
+        "peer_name": "Unknown",
+        "peer_org": "TIM S/A",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "61884",
+        "peer_name": "Unknown",
+        "peer_org": "OLLA COMUNICACAO LTDA",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "8167",
+        "peer_name": "Unknown",
+        "peer_org": "V tal",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "262596",
+        "peer_name": "Unknown",
+        "peer_org": "JUNTO TELECOM SERVIÇOS DE TELECOMUNICAÇÕES LTDA",
+        "peer_country": "Brazil"
+      }
+    ]
+  },
+  "26210": {
+    "asn": "26210",
+    "as_info": {
+      "name": "Unknown",
+      "org": "AXS Bolivia S. A.",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "3549",
+        "peer_name": "LVLT-3549",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "27722",
+        "peer_name": "Unknown",
+        "peer_org": "Unknown",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "5580",
+        "peer_name": "GTT-ASIA",
+        "peer_org": "GTT Communications Netherlands B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "262206",
+        "peer_name": "Unknown",
+        "peer_org": "COMCEL GUATEMALA S.A.",
+        "peer_country": "Guatemala"
+      }
+    ]
+  },
+  "271987": {
+    "asn": "271987",
+    "as_info": {
+      "name": "Unknown",
+      "org": "ACTEL SRL",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "53062",
+        "peer_name": "Unknown",
+        "peer_org": "GGNET TELECOM BACKBONE",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "7195",
+        "peer_name": "Unknown",
+        "peer_org": "EDGEUNO SAS",
+        "peer_country": "Colombia"
+      }
+    ]
+  },
+  "266671": {
+    "asn": "266671",
+    "as_info": {
+      "name": "Unknown",
+      "org": "CONFIARED S.R.L.",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "23640",
+        "peer_name": "BBIX",
+        "peer_org": "BBIX,Inc.",
+        "peer_country": "Japan"
+      },
+      {
+        "peer_as": "22541",
+        "peer_name": "Unknown",
+        "peer_org": "MEGALINK S.R.L.",
+        "peer_country": "Bolivia"
+      },
+      {
+        "peer_as": "52499",
+        "peer_name": "Unknown",
+        "peer_org": "MEGALINK S.R.L.",
+        "peer_country": "Bolivia"
+      },
+      {
+        "peer_as": "7545",
+        "peer_name": "TPG-INTERNET-AP",
+        "peer_org": "TPG Internet Pty Ltd",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "199343": {
+    "asn": "199343",
+    "as_info": {
+      "name": "MITANET",
+      "org": "Luis Fernando Mita Caceres",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "15704",
+        "peer_name": "AS15704",
+        "peer_org": "XTRA TELECOM S.A.",
+        "peer_country": "Spain"
+      },
+      {
+        "peer_as": "29119",
+        "peer_name": "SERVIHOSTING-AS",
+        "peer_org": "AIRE NETWORKS DEL MEDITERRANEO SL UNIPERSONAL",
+        "peer_country": "Spain"
+      },
+      {
+        "peer_as": "44278",
+        "peer_name": "GRANACABLE",
+        "peer_org": "GRANACABLE S.L",
+        "peer_country": "Spain"
+      },
+      {
+        "peer_as": "34927",
+        "peer_name": "iFog-GmbH",
+        "peer_org": "iFog GmbH",
+        "peer_country": "Switzerland"
+      },
+      {
+        "peer_as": "924",
+        "peer_name": "CLOUDIE-NETWORKS-LLC",
+        "peer_org": "Cloudie Networks LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "22541": {
+    "asn": "22541",
+    "as_info": {
+      "name": "Unknown",
+      "org": "MEGALINK S.R.L.",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "26615",
+        "peer_name": "Unknown",
+        "peer_org": "TIM S/A",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "28663",
+        "peer_name": "Unknown",
+        "peer_org": "FLYS INTERATIVA LTDA",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "12252",
+        "peer_name": "Unknown",
+        "peer_org": "America Movil Peru S.A.C.",
+        "peer_country": "Peru"
+      },
+      {
+        "peer_as": "18747",
+        "peer_name": "IFX18747",
+        "peer_org": "IFX Corporation",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "16735",
+        "peer_name": "Unknown",
+        "peer_org": "ALGAR TELECOM S/A",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "225416",
+        "peer_name": "Unknown",
+        "peer_org": "Unknown",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "269959",
+        "peer_name": "Unknown",
+        "peer_org": "ADMINISTRADORA DE TARJETAS DE CRÉDITO S.A (ATC S.A)",
+        "peer_country": "Bolivia"
+      },
+      {
+        "peer_as": "265779",
+        "peer_name": "Unknown",
+        "peer_org": "AUTORIDAD DE SUPERVISIÓN DEL SISTEMA FINANCIERO (ASFI)",
+        "peer_country": "Bolivia"
+      },
+      {
+        "peer_as": "266671",
+        "peer_name": "Unknown",
+        "peer_org": "CONFIARED S.R.L.",
+        "peer_country": "Bolivia"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "270080": {
+    "asn": "270080",
+    "as_info": {
+      "name": "Unknown",
+      "org": "INTERCORP S.R.L.",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "26615",
+        "peer_name": "Unknown",
+        "peer_org": "TIM S/A",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "14840",
+        "peer_name": "Unknown",
+        "peer_org": "BR Digital",
+        "peer_country": "Brazil"
+      }
+    ]
+  },
+  "27882": {
+    "asn": "27882",
+    "as_info": {
+      "name": "Unknown",
+      "org": "Telefónica Celular de Bolivia S.A.",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6762",
+        "peer_name": "SEABONE-NET",
+        "peer_org": "Telecom Italia Sparkle S.p.A.",
+        "peer_country": "Italy"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "12252",
+        "peer_name": "Unknown",
+        "peer_org": "America Movil Peru S.A.C.",
+        "peer_country": "Peru"
+      },
+      {
+        "peer_as": "16735",
+        "peer_name": "Unknown",
+        "peer_org": "ALGAR TELECOM S/A",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "5580",
+        "peer_name": "GTT-ASIA",
+        "peer_org": "GTT Communications Netherlands B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "52495": {
+    "asn": "52495",
+    "as_info": {
+      "name": "Unknown",
+      "org": "Cotel Ltda.",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "12252",
+        "peer_name": "Unknown",
+        "peer_org": "America Movil Peru S.A.C.",
+        "peer_country": "Peru"
+      },
+      {
+        "peer_as": "262206",
+        "peer_name": "Unknown",
+        "peer_org": "COMCEL GUATEMALA S.A.",
+        "peer_country": "Guatemala"
+      }
+    ]
+  },
+  "27839": {
+    "asn": "27839",
+    "as_info": {
+      "name": "Unknown",
+      "org": "Comteco Ltda",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "16735",
+        "peer_name": "Unknown",
+        "peer_org": "ALGAR TELECOM S/A",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "262206",
+        "peer_name": "Unknown",
+        "peer_org": "COMCEL GUATEMALA S.A.",
+        "peer_country": "Guatemala"
+      }
+    ]
+  },
+  "27714": {
+    "asn": "27714",
+    "as_info": {
+      "name": "Unknown",
+      "org": "Unete Telecomunicaciones Ltda.",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "263702",
+        "peer_name": "Unknown",
+        "peer_org": "GRUPO ZGH SPA",
+        "peer_country": "Chile"
+      },
+      {
+        "peer_as": "270014",
+        "peer_name": "Unknown",
+        "peer_org": "GRUPO CG LIMITADA",
+        "peer_country": "Chile"
+      },
+      {
+        "peer_as": "12252",
+        "peer_name": "Unknown",
+        "peer_org": "America Movil Peru S.A.C.",
+        "peer_country": "Peru"
+      },
+      {
+        "peer_as": "16735",
+        "peer_name": "Unknown",
+        "peer_org": "ALGAR TELECOM S/A",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "262206",
+        "peer_name": "Unknown",
+        "peer_org": "COMCEL GUATEMALA S.A.",
+        "peer_country": "Guatemala"
+      },
+      {
+        "peer_as": "52499",
+        "peer_name": "Unknown",
+        "peer_org": "MEGALINK S.R.L.",
+        "peer_country": "Bolivia"
+      }
+    ]
+  },
+  "52499": {
+    "asn": "52499",
+    "as_info": {
+      "name": "Unknown",
+      "org": "MEGALINK S.R.L.",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "270014",
+        "peer_name": "Unknown",
+        "peer_org": "GRUPO CG LIMITADA",
+        "peer_country": "Chile"
+      },
+      {
+        "peer_as": "42",
+        "peer_name": "WOODYNET-1",
+        "peer_org": "WoodyNet, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3856",
+        "peer_name": "PCH-AS",
+        "peer_org": "Packet Clearing House, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "27714",
+        "peer_name": "Unknown",
+        "peer_org": "Unete Telecomunicaciones Ltda.",
+        "peer_country": "Bolivia"
+      },
+      {
+        "peer_as": "30081",
+        "peer_name": "CACHENETWORKS",
+        "peer_org": "CacheNetworks, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "264690",
+        "peer_name": "Unknown",
+        "peer_org": "BANCO SOLIDARIO S.A.",
+        "peer_country": "Bolivia"
+      },
+      {
+        "peer_as": "264747",
+        "peer_name": "Unknown",
+        "peer_org": "Agencia Nacional de Hidrocarburos",
+        "peer_country": "Bolivia"
+      },
+      {
+        "peer_as": "264789",
+        "peer_name": "Unknown",
+        "peer_org": "AGENCIA BOLIVIANA ESPACIAL",
+        "peer_country": "Bolivia"
+      },
+      {
+        "peer_as": "264858",
+        "peer_name": "Unknown",
+        "peer_org": "Servicio de Impuestos Nacionales",
+        "peer_country": "Bolivia"
+      },
+      {
+        "peer_as": "265756",
+        "peer_name": "Unknown",
+        "peer_org": "BANCO PRODEM SA",
+        "peer_country": "Bolivia"
+      },
+      {
+        "peer_as": "266671",
+        "peer_name": "Unknown",
+        "peer_org": "CONFIARED S.R.L.",
+        "peer_country": "Bolivia"
+      },
+      {
+        "peer_as": "267685",
+        "peer_name": "Unknown",
+        "peer_org": "SIRIO TELECOMUNICACIONES S.R.L",
+        "peer_country": "Bolivia"
+      },
+      {
+        "peer_as": "272041",
+        "peer_name": "Unknown",
+        "peer_org": "FUNDACION DIACONIA FONDO ROTATIVO DE INVERSION Y FOMENTO INSTITUCION FINANCIERA DE DESARROLLO (DIACONIA FRIF - IFD)",
+        "peer_country": "Bolivia"
+      }
+    ]
+  },
+  "265647": {
+    "asn": "265647",
+    "as_info": {
+      "name": "Unknown",
+      "org": "BANCO DE CREDITO DE BOLIVIA S.A.",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "12252",
+        "peer_name": "Unknown",
+        "peer_org": "America Movil Peru S.A.C.",
+        "peer_country": "Peru"
+      }
+    ]
+  },
+  "266745": {
+    "asn": "266745",
+    "as_info": {
+      "name": "Unknown",
+      "org": "INVERSIONES CREDICORP BOLIVIA S.A.",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "12252",
+        "peer_name": "Unknown",
+        "peer_org": "America Movil Peru S.A.C.",
+        "peer_country": "Peru"
+      }
+    ]
+  },
+  "262159": {
+    "asn": "262159",
+    "as_info": {
+      "name": "Unknown",
+      "org": "Digital TV CABLE DE EDMUND S.R.L.",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "12252",
+        "peer_name": "Unknown",
+        "peer_org": "America Movil Peru S.A.C.",
+        "peer_country": "Peru"
+      },
+      {
+        "peer_as": "16735",
+        "peer_name": "Unknown",
+        "peer_org": "ALGAR TELECOM S/A",
+        "peer_country": "Brazil"
+      }
+    ]
+  },
+  "265779": {
+    "asn": "265779",
+    "as_info": {
+      "name": "Unknown",
+      "org": "AUTORIDAD DE SUPERVISIÓN DEL SISTEMA FINANCIERO (ASFI)",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "12252",
+        "peer_name": "Unknown",
+        "peer_org": "America Movil Peru S.A.C.",
+        "peer_country": "Peru"
+      },
+      {
+        "peer_as": "22541",
+        "peer_name": "Unknown",
+        "peer_org": "MEGALINK S.R.L.",
+        "peer_country": "Bolivia"
+      },
+      {
+        "peer_as": "262206",
+        "peer_name": "Unknown",
+        "peer_org": "COMCEL GUATEMALA S.A.",
+        "peer_country": "Guatemala"
+      }
+    ]
+  },
+  "267765": {
+    "asn": "267765",
+    "as_info": {
+      "name": "Unknown",
+      "org": "COTAP LTDA",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "12252",
+        "peer_name": "Unknown",
+        "peer_org": "America Movil Peru S.A.C.",
+        "peer_country": "Peru"
+      }
+    ]
+  },
+  "61488": {
+    "asn": "61488",
+    "as_info": {
+      "name": "Unknown",
+      "org": "BOLITEL SRL",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "12252",
+        "peer_name": "Unknown",
+        "peer_org": "America Movil Peru S.A.C.",
+        "peer_country": "Peru"
+      }
+    ]
+  },
+  "262161": {
+    "asn": "262161",
+    "as_info": {
+      "name": "Unknown",
+      "org": "COTES Ltda.",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "12252",
+        "peer_name": "Unknown",
+        "peer_org": "America Movil Peru S.A.C.",
+        "peer_country": "Peru"
+      },
+      {
+        "peer_as": "262206",
+        "peer_name": "Unknown",
+        "peer_org": "COMCEL GUATEMALA S.A.",
+        "peer_country": "Guatemala"
+      }
+    ]
+  },
+  "52355": {
+    "asn": "52355",
+    "as_info": {
+      "name": "Unknown",
+      "org": "Jalasoft Corp.",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "12252",
+        "peer_name": "Unknown",
+        "peer_org": "America Movil Peru S.A.C.",
+        "peer_country": "Peru"
+      },
+      {
+        "peer_as": "262206",
+        "peer_name": "Unknown",
+        "peer_org": "COMCEL GUATEMALA S.A.",
+        "peer_country": "Guatemala"
+      }
+    ]
+  },
+  "269797": {
+    "asn": "269797",
+    "as_info": {
+      "name": "Unknown",
+      "org": "LOCH TEL SRL (GOLOCHTEL)",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "12252",
+        "peer_name": "Unknown",
+        "peer_org": "America Movil Peru S.A.C.",
+        "peer_country": "Peru"
+      }
+    ]
+  },
+  "52340": {
+    "asn": "52340",
+    "as_info": {
+      "name": "Unknown",
+      "org": "Comteco Ltda",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "12252",
+        "peer_name": "Unknown",
+        "peer_org": "America Movil Peru S.A.C.",
+        "peer_country": "Peru"
+      },
+      {
+        "peer_as": "262206",
+        "peer_name": "Unknown",
+        "peer_org": "COMCEL GUATEMALA S.A.",
+        "peer_country": "Guatemala"
+      }
+    ]
+  },
+  "263242": {
+    "asn": "263242",
+    "as_info": {
+      "name": "Unknown",
+      "org": "DIGITAL WORK",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "12252",
+        "peer_name": "Unknown",
+        "peer_org": "America Movil Peru S.A.C.",
+        "peer_country": "Peru"
+      },
+      {
+        "peer_as": "262206",
+        "peer_name": "Unknown",
+        "peer_org": "COMCEL GUATEMALA S.A.",
+        "peer_country": "Guatemala"
+      }
+    ]
+  },
+  "265670": {
+    "asn": "265670",
+    "as_info": {
+      "name": "Unknown",
+      "org": "BANCO NACIONAL DE BOLIVIA S.A.",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "12252",
+        "peer_name": "Unknown",
+        "peer_org": "America Movil Peru S.A.C.",
+        "peer_country": "Peru"
+      },
+      {
+        "peer_as": "262206",
+        "peer_name": "Unknown",
+        "peer_org": "COMCEL GUATEMALA S.A.",
+        "peer_country": "Guatemala"
+      }
+    ]
+  },
+  "264612": {
+    "asn": "264612",
+    "as_info": {
+      "name": "Unknown",
+      "org": "BANCO MERCANTIL SANTA CRUZ S.A.",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "12252",
+        "peer_name": "Unknown",
+        "peer_org": "America Movil Peru S.A.C.",
+        "peer_country": "Peru"
+      },
+      {
+        "peer_as": "262206",
+        "peer_name": "Unknown",
+        "peer_org": "COMCEL GUATEMALA S.A.",
+        "peer_country": "Guatemala"
+      }
+    ]
+  },
+  "264789": {
+    "asn": "264789",
+    "as_info": {
+      "name": "Unknown",
+      "org": "AGENCIA BOLIVIANA ESPACIAL",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "12252",
+        "peer_name": "Unknown",
+        "peer_org": "America Movil Peru S.A.C.",
+        "peer_country": "Peru"
+      },
+      {
+        "peer_as": "262206",
+        "peer_name": "Unknown",
+        "peer_org": "COMCEL GUATEMALA S.A.",
+        "peer_country": "Guatemala"
+      },
+      {
+        "peer_as": "52499",
+        "peer_name": "Unknown",
+        "peer_org": "MEGALINK S.R.L.",
+        "peer_country": "Bolivia"
+      }
+    ]
+  },
+  "264858": {
+    "asn": "264858",
+    "as_info": {
+      "name": "Unknown",
+      "org": "Servicio de Impuestos Nacionales",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "12252",
+        "peer_name": "Unknown",
+        "peer_org": "America Movil Peru S.A.C.",
+        "peer_country": "Peru"
+      },
+      {
+        "peer_as": "52499",
+        "peer_name": "Unknown",
+        "peer_org": "MEGALINK S.R.L.",
+        "peer_country": "Bolivia"
+      }
+    ]
+  },
+  "264690": {
+    "asn": "264690",
+    "as_info": {
+      "name": "Unknown",
+      "org": "BANCO SOLIDARIO S.A.",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "12252",
+        "peer_name": "Unknown",
+        "peer_org": "America Movil Peru S.A.C.",
+        "peer_country": "Peru"
+      },
+      {
+        "peer_as": "262206",
+        "peer_name": "Unknown",
+        "peer_org": "COMCEL GUATEMALA S.A.",
+        "peer_country": "Guatemala"
+      },
+      {
+        "peer_as": "52499",
+        "peer_name": "Unknown",
+        "peer_org": "MEGALINK S.R.L.",
+        "peer_country": "Bolivia"
+      }
+    ]
+  },
+  "266723": {
+    "asn": "266723",
+    "as_info": {
+      "name": "Unknown",
+      "org": "BANCO PARA EL FOMENTO A INICIATIVAS ECONOMICAS S.A.",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "12252",
+        "peer_name": "Unknown",
+        "peer_org": "America Movil Peru S.A.C.",
+        "peer_country": "Peru"
+      },
+      {
+        "peer_as": "262206",
+        "peer_name": "Unknown",
+        "peer_org": "COMCEL GUATEMALA S.A.",
+        "peer_country": "Guatemala"
+      }
+    ]
+  },
+  "28024": {
+    "asn": "28024",
+    "as_info": {
+      "name": "Unknown",
+      "org": "Nuevatel PCS de Bolivia S.A.",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "6762",
+        "peer_name": "SEABONE-NET",
+        "peer_org": "Telecom Italia Sparkle S.p.A.",
+        "peer_country": "Italy"
+      },
+      {
+        "peer_as": "16735",
+        "peer_name": "Unknown",
+        "peer_org": "ALGAR TELECOM S/A",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "262206",
+        "peer_name": "Unknown",
+        "peer_org": "COMCEL GUATEMALA S.A.",
+        "peer_country": "Guatemala"
+      }
+    ]
+  },
+  "204655": {
+    "asn": "204655",
+    "as_info": {
+      "name": "BOLIVIA",
+      "org": "MegaLink SRL",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "57271",
+        "peer_name": "BITWEB-AS",
+        "peer_org": "BitWeb LLC",
+        "peer_country": "Russia"
+      }
+    ]
+  },
+  "6568": {
+    "asn": "6568",
+    "as_info": {
+      "name": "Unknown",
+      "org": "Entel S.A. - EntelNet",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "27722",
+        "peer_name": "Unknown",
+        "peer_org": "Unknown",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "27828",
+        "peer_name": "Unknown",
+        "peer_org": "UNIVERSIDAD MAYOR DE SAN ANDRES",
+        "peer_country": "Bolivia"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "262206",
+        "peer_name": "Unknown",
+        "peer_org": "COMCEL GUATEMALA S.A.",
+        "peer_country": "Guatemala"
+      },
+      {
+        "peer_as": "15169",
+        "peer_name": "GOOGLE",
+        "peer_org": "Google LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "32934",
+        "peer_name": "FACEBOOK",
+        "peer_org": "Facebook, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3545",
+        "peer_name": "DNIC-AS-03545",
+        "peer_org": "DoD Network Information Center",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "25620": {
+    "asn": "25620",
+    "as_info": {
+      "name": "Unknown",
+      "org": "COTAS LTDA.",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "53062",
+        "peer_name": "Unknown",
+        "peer_org": "GGNET TELECOM BACKBONE",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "7138",
+        "peer_name": "ENCOMPASS-ASN",
+        "peer_org": "Encompass Digital Media, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "14840",
+        "peer_name": "Unknown",
+        "peer_org": "BR Digital",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "262206",
+        "peer_name": "Unknown",
+        "peer_org": "COMCEL GUATEMALA S.A.",
+        "peer_country": "Guatemala"
+      }
+    ]
+  },
+  "27828": {
+    "asn": "27828",
+    "as_info": {
+      "name": "Unknown",
+      "org": "UNIVERSIDAD MAYOR DE SAN ANDRES",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "16735",
+        "peer_name": "Unknown",
+        "peer_org": "ALGAR TELECOM S/A",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "6568",
+        "peer_name": "Unknown",
+        "peer_org": "Entel S.A. - EntelNet",
+        "peer_country": "Bolivia"
+      },
+      {
+        "peer_as": "262206",
+        "peer_name": "Unknown",
+        "peer_org": "COMCEL GUATEMALA S.A.",
+        "peer_country": "Guatemala"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "269959": {
+    "asn": "269959",
+    "as_info": {
+      "name": "Unknown",
+      "org": "ADMINISTRADORA DE TARJETAS DE CRÉDITO S.A (ATC S.A)",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "22541",
+        "peer_name": "Unknown",
+        "peer_org": "MEGALINK S.R.L.",
+        "peer_country": "Bolivia"
+      }
+    ]
+  },
+  "61458": {
+    "asn": "61458",
+    "as_info": {
+      "name": "Unknown",
+      "org": "GOBIERNO AUTÓNOMO MUNICIPAL DE LA PAZ",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "262206",
+        "peer_name": "Unknown",
+        "peer_org": "COMCEL GUATEMALA S.A.",
+        "peer_country": "Guatemala"
+      }
+    ]
+  },
+  "265756": {
+    "asn": "265756",
+    "as_info": {
+      "name": "Unknown",
+      "org": "BANCO PRODEM SA",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "262206",
+        "peer_name": "Unknown",
+        "peer_org": "COMCEL GUATEMALA S.A.",
+        "peer_country": "Guatemala"
+      },
+      {
+        "peer_as": "52499",
+        "peer_name": "Unknown",
+        "peer_org": "MEGALINK S.R.L.",
+        "peer_country": "Bolivia"
+      }
+    ]
+  },
+  "270045": {
+    "asn": "270045",
+    "as_info": {
+      "name": "Unknown",
+      "org": "TELECOMUNICACIONES OPORTUNAS INTELIGENTES SRL",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "263681",
+        "peer_name": "Unknown",
+        "peer_org": "IPTP NETWORKS S.A.C.",
+        "peer_country": "Peru"
+      }
+    ]
+  },
+  "264747": {
+    "asn": "264747",
+    "as_info": {
+      "name": "Unknown",
+      "org": "Agencia Nacional de Hidrocarburos",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "52499",
+        "peer_name": "Unknown",
+        "peer_org": "MEGALINK S.R.L.",
+        "peer_country": "Bolivia"
+      }
+    ]
+  },
+  "267685": {
+    "asn": "267685",
+    "as_info": {
+      "name": "Unknown",
+      "org": "SIRIO TELECOMUNICACIONES S.R.L",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "52499",
+        "peer_name": "Unknown",
+        "peer_org": "MEGALINK S.R.L.",
+        "peer_country": "Bolivia"
+      }
+    ]
+  },
+  "272041": {
+    "asn": "272041",
+    "as_info": {
+      "name": "Unknown",
+      "org": "FUNDACION DIACONIA FONDO ROTATIVO DE INVERSION Y FOMENTO INSTITUCION FINANCIERA DE DESARROLLO (DIACONIA FRIF - IFD)",
+      "country": "Bolivia"
+    },
+    "links": [
+      {
+        "peer_as": "52499",
+        "peer_name": "Unknown",
+        "peer_org": "MEGALINK S.R.L.",
+        "peer_country": "Bolivia"
+      }
+    ]
+  }
+}

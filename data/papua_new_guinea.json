@@ -1,0 +1,886 @@
+{
+  "63945": {
+    "asn": "63945",
+    "as_info": {
+      "name": "DIGITECPNG-AS-AP",
+      "org": "Digitec PNG Limited",
+      "country": "Papua New Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "38176",
+        "peer_name": "ABS-Global",
+        "peer_org": "ABS (HK) Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "9304",
+        "peer_name": "HUTCHISON-AS-AP",
+        "peer_org": "HGC Global Communications Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "38442",
+        "peer_name": "VODAFONEFIJI-AS-FJ",
+        "peer_org": "Vodafone Fiji Limited",
+        "peer_country": "Fiji"
+      },
+      {
+        "peer_as": "137068",
+        "peer_name": "DIGITECPNG-AS-AP",
+        "peer_org": "Digitec PNG Limited",
+        "peer_country": "Papua New Guinea"
+      },
+      {
+        "peer_as": "38195",
+        "peer_name": "SUPERLOOP-AS-AP",
+        "peer_org": "SUPERLOOP (AUSTRALIA) PTY LTD",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "7606",
+        "peer_name": "WAIA-AP",
+        "peer_org": "Internet Association of Australia Inc.",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "38009": {
+    "asn": "38009",
+    "as_info": {
+      "name": "TELIKOM-PNG-AS-AP",
+      "org": "Telikom PNG LTD",
+      "country": "Papua New Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "7474",
+        "peer_name": "OPTUSCOM-AS01-AU",
+        "peer_org": "SingTel Optus Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "63956",
+        "peer_name": "COLO-AS-AP",
+        "peer_org": "Colocation Australia Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "24130",
+        "peer_name": "TPG-AU",
+        "peer_org": "TPG Internet Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "6421",
+        "peer_name": "AS6421",
+        "peer_org": "TATA COMMUNICATIONS (AMERICA) INC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "7594",
+        "peer_name": "ONQ-AS-AP",
+        "peer_org": "On Q Networks",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "7606",
+        "peer_name": "WAIA-AP",
+        "peer_org": "Internet Association of Australia Inc.",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "45924": {
+    "asn": "45924",
+    "as_info": {
+      "name": "GLOBAL-AS-AP",
+      "org": "Global Technologies Limited",
+      "country": "Papua New Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "24130",
+        "peer_name": "TPG-AU",
+        "peer_org": "TPG Internet Pty Ltd",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "55792": {
+    "asn": "55792",
+    "as_info": {
+      "name": "DATEC-PNG-AS-AP",
+      "org": "Datec-PNG",
+      "country": "Papua New Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "9304",
+        "peer_name": "HUTCHISON-AS-AP",
+        "peer_org": "HGC Global Communications Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "17819",
+        "peer_name": "ASN-EQUINIX-AP",
+        "peer_org": "Equinix Asia Pacific Pte Ltd",
+        "peer_country": "Singapore"
+      },
+      {
+        "peer_as": "38176",
+        "peer_name": "ABS-Global",
+        "peer_org": "ABS (HK) Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "38195",
+        "peer_name": "SUPERLOOP-AS-AP",
+        "peer_org": "SUPERLOOP (AUSTRALIA) PTY LTD",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "24130",
+        "peer_name": "TPG-AU",
+        "peer_org": "TPG Internet Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "7606",
+        "peer_name": "WAIA-AP",
+        "peer_org": "Internet Association of Australia Inc.",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "58460": {
+    "asn": "58460",
+    "as_info": {
+      "name": "DIGICELPNG-AS-AP",
+      "org": "Digicel (PNG) Ltd",
+      "country": "Papua New Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "266445",
+        "peer_name": "Unknown",
+        "peer_org": "SEA TELECOM LTDA",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "24130",
+        "peer_name": "TPG-AU",
+        "peer_org": "TPG Internet Pty Ltd",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "132786": {
+    "asn": "132786",
+    "as_info": {
+      "name": "BOPNG-AS-AP",
+      "org": "Bank of Papua New Guinea",
+      "country": "Papua New Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "133137": {
+    "asn": "133137",
+    "as_info": {
+      "name": "BEMOBILEPNG-AS-AP",
+      "org": "Bemobie LTD",
+      "country": "Papua New Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "7606",
+        "peer_name": "WAIA-AP",
+        "peer_org": "Internet Association of Australia Inc.",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "134151": {
+    "asn": "134151",
+    "as_info": {
+      "name": "STC-AS-AP",
+      "org": "Steamships Ltd",
+      "country": "Papua New Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "38176",
+        "peer_name": "ABS-Global",
+        "peer_org": "ABS (HK) Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "17828",
+        "peer_name": "PNGDATACOLIMITED-AS-PG",
+        "peer_org": "PNG DATACO LIMITED",
+        "peer_country": "Papua New Guinea"
+      },
+      {
+        "peer_as": "38195",
+        "peer_name": "SUPERLOOP-AS-AP",
+        "peer_org": "SUPERLOOP (AUSTRALIA) PTY LTD",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "134605": {
+    "asn": "134605",
+    "as_info": {
+      "name": "COMSERVPNGLTD-AS-AP",
+      "org": "Comserv PNG Ltd",
+      "country": "Papua New Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      }
+    ]
+  },
+  "136239": {
+    "asn": "136239",
+    "as_info": {
+      "name": "CLICKPACIFICLTD-AS-AP",
+      "org": "CLICK PACIFIC LTD",
+      "country": "Papua New Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      }
+    ]
+  },
+  "136587": {
+    "asn": "136587",
+    "as_info": {
+      "name": "PNGDATACOLIMITED-AS-AP",
+      "org": "PNG DATACO LIMITED",
+      "country": "Papua New Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "7606",
+        "peer_name": "WAIA-AP",
+        "peer_org": "Internet Association of Australia Inc.",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "138506": {
+    "asn": "138506",
+    "as_info": {
+      "name": "PNTL-AS-AP",
+      "org": "PNG Nambawan Trophy Ltd",
+      "country": "Papua New Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "7606",
+        "peer_name": "WAIA-AP",
+        "peer_org": "Internet Association of Australia Inc.",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "138902": {
+    "asn": "138902",
+    "as_info": {
+      "name": "EMSTRET1-AS-AP",
+      "org": "Emstret Holdings Ltd",
+      "country": "Papua New Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      }
+    ]
+  },
+  "139778": {
+    "asn": "139778",
+    "as_info": {
+      "name": "CARPENTERS-AS-AP",
+      "org": "DALTRON",
+      "country": "Papua New Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      }
+    ]
+  },
+  "138519": {
+    "asn": "138519",
+    "as_info": {
+      "name": "EXCITE-AS-AP",
+      "org": "Excite Limited",
+      "country": "Papua New Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "63956",
+        "peer_name": "COLO-AS-AP",
+        "peer_org": "Colocation Australia Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "49788",
+        "peer_name": "NEXTHOP",
+        "peer_org": "Nexthop AS",
+        "peer_country": "Norway"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "7594",
+        "peer_name": "ONQ-AS-AP",
+        "peer_org": "On Q Networks",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "7606",
+        "peer_name": "WAIA-AP",
+        "peer_org": "Internet Association of Australia Inc.",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "139783": {
+    "asn": "139783",
+    "as_info": {
+      "name": "GCL-AS-AP",
+      "org": "Genesis Communications (PNG) Limited",
+      "country": "Papua New Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "63956",
+        "peer_name": "COLO-AS-AP",
+        "peer_org": "Colocation Australia Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "7594",
+        "peer_name": "ONQ-AS-AP",
+        "peer_org": "On Q Networks",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "139898": {
+    "asn": "139898",
+    "as_info": {
+      "name": "DCL-AS-AP",
+      "org": "Digitec Communications Limited",
+      "country": "Papua New Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "63956",
+        "peer_name": "COLO-AS-AP",
+        "peer_org": "Colocation Australia Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "6421",
+        "peer_name": "AS6421",
+        "peer_org": "TATA COMMUNICATIONS (AMERICA) INC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "7545",
+        "peer_name": "TPG-INTERNET-AP",
+        "peer_org": "TPG Internet Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "7594",
+        "peer_name": "ONQ-AS-AP",
+        "peer_org": "On Q Networks",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "142269": {
+    "asn": "142269",
+    "as_info": {
+      "name": "KINA-AS-AP",
+      "org": "KINA BANK",
+      "country": "Papua New Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "38176",
+        "peer_name": "ABS-Global",
+        "peer_org": "ABS (HK) Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      }
+    ]
+  },
+  "146949": {
+    "asn": "146949",
+    "as_info": {
+      "name": "NSFL-AS-AP",
+      "org": "National Superannuation Fund Ltd.",
+      "country": "Papua New Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "137068": {
+    "asn": "137068",
+    "as_info": {
+      "name": "DIGITECPNG-AS-AP",
+      "org": "Digitec PNG Limited",
+      "country": "Papua New Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "63945",
+        "peer_name": "DIGITECPNG-AS-AP",
+        "peer_org": "Digitec PNG Limited",
+        "peer_country": "Papua New Guinea"
+      }
+    ]
+  },
+  "17828": {
+    "asn": "17828",
+    "as_info": {
+      "name": "PNGDATACOLIMITED-AS-PG",
+      "org": "PNG DATACO LIMITED",
+      "country": "Papua New Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "20144",
+        "peer_name": "IMRS",
+        "peer_org": "ICANN",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "134151",
+        "peer_name": "STC-AS-AP",
+        "peer_org": "Steamships Ltd",
+        "peer_country": "Papua New Guinea"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "24130",
+        "peer_name": "TPG-AU",
+        "peer_org": "TPG Internet Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "2764",
+        "peer_name": "AAPT",
+        "peer_org": "AAPT Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "7606",
+        "peer_name": "WAIA-AP",
+        "peer_org": "Internet Association of Australia Inc.",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "133428": {
+    "asn": "133428",
+    "as_info": {
+      "name": "PNGUOT-AS-AP",
+      "org": "Papua New Guinea University of Technology",
+      "country": "Papua New Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "38195",
+        "peer_name": "SUPERLOOP-AS-AP",
+        "peer_org": "SUPERLOOP (AUSTRALIA) PTY LTD",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "136940": {
+    "asn": "136940",
+    "as_info": {
+      "name": "COMSATLTD-AS-AP",
+      "org": "ComSat Ltd",
+      "country": "Papua New Guinea"
+    },
+    "links": [
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      }
+    ]
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "12486": {
+    "asn": "12486",
+    "as_info": {
+      "name": "TeleYemen",
+      "org": "TeleYemen",
+      "country": "Yemen"
+    },
+    "links": [
+      {
+        "peer_as": "22351",
+        "peer_name": "INTELSAT-1",
+        "peer_org": "INTELSAT GLOBAL SERVICE CORPORATION",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "39386",
+        "peer_name": "STC-IGW-AS",
+        "peer_org": "Saudi Telecom Company JSC",
+        "peer_country": "Saudi Arabia"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "48237",
+        "peer_name": "MOBILY-AS",
+        "peer_org": "Etihad Etisalat, a joint stock company",
+        "peer_country": "Saudi Arabia"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "201051",
+        "peer_name": "YM",
+        "peer_org": "Yemen Mobile Company, Public Yemeni Joint-Stock Company",
+        "peer_country": "Yemen"
+      },
+      {
+        "peer_as": "51140",
+        "peer_name": "MTN-YEMEN",
+        "peer_org": "Yemen Oman United Telecom CJSC",
+        "peer_country": "Yemen"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "30873": {
+    "asn": "30873",
+    "as_info": {
+      "name": "PTC-YemenNet",
+      "org": "Public Telecommunication Corporation",
+      "country": "Yemen"
+    },
+    "links": [
+      {
+        "peer_as": "39386",
+        "peer_name": "STC-IGW-AS",
+        "peer_org": "Saudi Telecom Company JSC",
+        "peer_country": "Saudi Arabia"
+      },
+      {
+        "peer_as": "5416",
+        "peer_name": "Unknown",
+        "peer_org": "Bahrain Telecommunications Company (BATELCO) B.S.C.",
+        "peer_country": "Bahrain"
+      },
+      {
+        "peer_as": "10099",
+        "peer_name": "UNICOM-Global",
+        "peer_org": "China Unicom (Hong Kong) Operations Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "201051",
+        "peer_name": "YM",
+        "peer_org": "Yemen Mobile Company, Public Yemeni Joint-Stock Company",
+        "peer_country": "Yemen"
+      },
+      {
+        "peer_as": "51140",
+        "peer_name": "MTN-YEMEN",
+        "peer_org": "Yemen Oman United Telecom CJSC",
+        "peer_country": "Yemen"
+      },
+      {
+        "peer_as": "8781",
+        "peer_name": "QA-ISP",
+        "peer_org": "Ooredoo Q.S.C.",
+        "peer_country": "Qatar"
+      }
+    ]
+  },
+  "201051": {
+    "asn": "201051",
+    "as_info": {
+      "name": "YM",
+      "org": "Yemen Mobile Company, Public Yemeni Joint-Stock Company",
+      "country": "Yemen"
+    },
+    "links": [
+      {
+        "peer_as": "12486",
+        "peer_name": "TeleYemen",
+        "peer_org": "TeleYemen",
+        "peer_country": "Yemen"
+      },
+      {
+        "peer_as": "30873",
+        "peer_name": "PTC-YemenNet",
+        "peer_org": "Public Telecommunication Corporation",
+        "peer_country": "Yemen"
+      }
+    ]
+  },
+  "204317": {
+    "asn": "204317",
+    "as_info": {
+      "name": "Adennet",
+      "org": "Aden net",
+      "country": "Yemen"
+    },
+    "links": [
+      {
+        "peer_as": "15412",
+        "peer_name": "FLAG-AS",
+        "peer_org": "FLAG TELECOM UK LIMITED",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "51140": {
+    "asn": "51140",
+    "as_info": {
+      "name": "MTN-YEMEN",
+      "org": "Yemen Oman United Telecom CJSC",
+      "country": "Yemen"
+    },
+    "links": [
+      {
+        "peer_as": "12486",
+        "peer_name": "TeleYemen",
+        "peer_org": "TeleYemen",
+        "peer_country": "Yemen"
+      },
+      {
+        "peer_as": "30873",
+        "peer_name": "PTC-YemenNet",
+        "peer_org": "Public Telecommunication Corporation",
+        "peer_country": "Yemen"
+      }
+    ]
+  },
+  "212951": {
+    "asn": "212951",
+    "as_info": {
+      "name": "sabaon-as",
+      "org": "Yemen Co. for Mobile Telephony (Sabafon) CJSC",
+      "country": "Yemen"
+    },
+    "links": [
+      {
+        "peer_as": "15169",
+        "peer_name": "GOOGLE",
+        "peer_org": "Google LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "36040",
+        "peer_name": "YOUTUBE",
+        "peer_org": "Google LLC",
+        "peer_country": "United States"
+      }
+    ]
+  }
+}

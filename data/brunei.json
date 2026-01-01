@@ -1,0 +1,238 @@
+{
+  "10101": {
+    "asn": "10101",
+    "as_info": {
+      "name": "SIMPUR-BN",
+      "org": "Unified National Networks",
+      "country": "Brunei"
+    },
+    "links": [
+      {
+        "peer_as": "9505",
+        "peer_name": "TWGATE-AP",
+        "peer_org": "Chunghwa Telecom Co., Ltd.",
+        "peer_country": "Taiwan"
+      },
+      {
+        "peer_as": "4657",
+        "peer_name": "STARHUB-INTERNET",
+        "peer_org": "Starhub Internet Pte Ltd",
+        "peer_country": "Singapore"
+      },
+      {
+        "peer_as": "7473",
+        "peer_name": "SINGTEL-AS-AP",
+        "peer_org": "Singapore Telecommunications (SINGTEL Internet Exchange)",
+        "peer_country": "Singapore"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "131467": {
+    "asn": "131467",
+    "as_info": {
+      "name": "EGNC-AS",
+      "org": "Unified National Networks",
+      "country": "Brunei"
+    },
+    "links": [
+      {
+        "peer_as": "9505",
+        "peer_name": "TWGATE-AP",
+        "peer_org": "Chunghwa Telecom Co., Ltd.",
+        "peer_country": "Taiwan"
+      },
+      {
+        "peer_as": "9304",
+        "peer_name": "HUTCHISON-AS-AP",
+        "peer_org": "HGC Global Communications Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "132395",
+        "peer_name": "DST-AS",
+        "peer_org": "Unified National Networks",
+        "peer_country": "Brunei"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "132395": {
+    "asn": "132395",
+    "as_info": {
+      "name": "DST-AS",
+      "org": "Unified National Networks",
+      "country": "Brunei"
+    },
+    "links": [
+      {
+        "peer_as": "9505",
+        "peer_name": "TWGATE-AP",
+        "peer_org": "Chunghwa Telecom Co., Ltd.",
+        "peer_country": "Taiwan"
+      },
+      {
+        "peer_as": "9304",
+        "peer_name": "HUTCHISON-AS-AP",
+        "peer_org": "HGC Global Communications Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "10094",
+        "peer_name": "UNN-BN",
+        "peer_org": "Unified National Networks",
+        "peer_country": "Brunei"
+      },
+      {
+        "peer_as": "131467",
+        "peer_name": "EGNC-AS",
+        "peer_org": "Unified National Networks",
+        "peer_country": "Brunei"
+      },
+      {
+        "peer_as": "134232",
+        "peer_name": "SACOFA-AS-AP",
+        "peer_org": "SACOFA Sdn. Bhd.",
+        "peer_country": "Malaysia"
+      }
+    ]
+  },
+  "55724": {
+    "asn": "55724",
+    "as_info": {
+      "name": "BRUHAAS-MY-AS-AP",
+      "org": "BRUHAAS",
+      "country": "Brunei"
+    },
+    "links": [
+      {
+        "peer_as": "9304",
+        "peer_name": "HUTCHISON-AS-AP",
+        "peer_org": "HGC Global Communications Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "9534",
+        "peer_name": "MAXIS-AS1-AP",
+        "peer_org": "Maxis Broadband Sdn Bhd",
+        "peer_country": "Malaysia"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      }
+    ]
+  },
+  "133788": {
+    "asn": "133788",
+    "as_info": {
+      "name": "UNN-BN",
+      "org": "Unified National Networks",
+      "country": "Brunei"
+    },
+    "links": [
+      {
+        "peer_as": "9304",
+        "peer_name": "HUTCHISON-AS-AP",
+        "peer_org": "HGC Global Communications Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "10094",
+        "peer_name": "UNN-BN",
+        "peer_org": "Unified National Networks",
+        "peer_country": "Brunei"
+      }
+    ]
+  },
+  "10094": {
+    "asn": "10094",
+    "as_info": {
+      "name": "UNN-BN",
+      "org": "Unified National Networks",
+      "country": "Brunei"
+    },
+    "links": [
+      {
+        "peer_as": "24077",
+        "peer_name": "TMHK-Transit-AS-HK-AP",
+        "peer_org": "Telekom Malaysia (Hong Kong) Ltd.",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "133788",
+        "peer_name": "UNN-BN",
+        "peer_org": "Unified National Networks",
+        "peer_country": "Brunei"
+      },
+      {
+        "peer_as": "132874",
+        "peer_name": "UMS-AS-AP",
+        "peer_org": "Universiti Malaysia Sabah",
+        "peer_country": "Malaysia"
+      },
+      {
+        "peer_as": "132395",
+        "peer_name": "DST-AS",
+        "peer_org": "Unified National Networks",
+        "peer_country": "Brunei"
+      },
+      {
+        "peer_as": "7473",
+        "peer_name": "SINGTEL-AS-AP",
+        "peer_org": "Singapore Telecommunications (SINGTEL Internet Exchange)",
+        "peer_country": "Singapore"
+      }
+    ]
+  },
+  "45259": {
+    "asn": "45259",
+    "as_info": {
+      "name": "BRUHAAS-BN",
+      "org": "BRUHAAS",
+      "country": "Brunei"
+    },
+    "links": [
+      {
+        "peer_as": "24077",
+        "peer_name": "TMHK-Transit-AS-HK-AP",
+        "peer_org": "Telekom Malaysia (Hong Kong) Ltd.",
+        "peer_country": "Hong Kong"
+      }
+    ]
+  },
+  "4617": {
+    "asn": "4617",
+    "as_info": {
+      "name": "UNN-BN",
+      "org": "Unified National Networks",
+      "country": "Brunei"
+    },
+    "links": [
+      {
+        "peer_as": "9748",
+        "peer_name": "DECIX-AS-AP",
+        "peer_org": "DE-CIX Singapore PTE LTD",
+        "peer_country": "Singapore"
+      }
+    ]
+  }
+}

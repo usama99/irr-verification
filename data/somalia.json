@@ -1,0 +1,670 @@
+{
+  "37326": {
+    "asn": "37326",
+    "as_info": {
+      "name": "GICO",
+      "org": "Global Internet Company",
+      "country": "Somalia"
+    },
+    "links": [
+      {
+        "peer_as": "8513",
+        "peer_name": "SKYVISION",
+        "peer_org": "SkyVision Global Networks Ltd",
+        "peer_country": "Bermuda"
+      },
+      {
+        "peer_as": "37662",
+        "peer_name": "WIOCC-AS",
+        "peer_org": "West Indian Ocean Cable Company",
+        "peer_country": "Mauritius"
+      },
+      {
+        "peer_as": "30990",
+        "peer_name": "ADJIB-AS",
+        "peer_org": "DJIBOUTI TELECOM S.A.",
+        "peer_country": "Djibouti"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "30844",
+        "peer_name": "LIQUID-AS",
+        "peer_org": "Liquid Telecommunications Ltd",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "327732",
+        "peer_name": "DALKOM-SOMALIA",
+        "peer_org": "Dalkom Somalia",
+        "peer_country": "Somalia"
+      },
+      {
+        "peer_as": "16735",
+        "peer_name": "Unknown",
+        "peer_org": "ALGAR TELECOM S/A",
+        "peer_country": "Brazil"
+      }
+    ]
+  },
+  "37371": {
+    "asn": "37371",
+    "as_info": {
+      "name": "HORMUUD",
+      "org": "Hormuud Telecom Somalia INC",
+      "country": "Somalia"
+    },
+    "links": [
+      {
+        "peer_as": "8513",
+        "peer_name": "SKYVISION",
+        "peer_org": "SkyVision Global Networks Ltd",
+        "peer_country": "Bermuda"
+      },
+      {
+        "peer_as": "22351",
+        "peer_name": "INTELSAT-1",
+        "peer_org": "INTELSAT GLOBAL SERVICE CORPORATION",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "328469",
+        "peer_name": "Somtel-Somalia-AS",
+        "peer_org": "Somtel Somalia LTD",
+        "peer_country": "Somalia"
+      }
+    ]
+  },
+  "327828": {
+    "asn": "327828",
+    "as_info": {
+      "name": "Somali-Optical-Networks",
+      "org": "Somali Optical Networks",
+      "country": "Somalia"
+    },
+    "links": [
+      {
+        "peer_as": "8513",
+        "peer_name": "SKYVISION",
+        "peer_org": "SkyVision Global Networks Ltd",
+        "peer_country": "Bermuda"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "328469",
+        "peer_name": "Somtel-Somalia-AS",
+        "peer_org": "Somtel Somalia LTD",
+        "peer_country": "Somalia"
+      }
+    ]
+  },
+  "328590": {
+    "asn": "328590",
+    "as_info": {
+      "name": "Somlink-Wireless-AS",
+      "org": "Somlink Wireless Network",
+      "country": "Somalia"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "37662",
+        "peer_name": "WIOCC-AS",
+        "peer_org": "West Indian Ocean Cable Company",
+        "peer_country": "Mauritius"
+      },
+      {
+        "peer_as": "327732",
+        "peer_name": "DALKOM-SOMALIA",
+        "peer_org": "Dalkom Somalia",
+        "peer_country": "Somalia"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "327742": {
+    "asn": "327742",
+    "as_info": {
+      "name": "SOMALI-WIRELESS",
+      "org": "Somali Wireless Network",
+      "country": "Somalia"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "30990",
+        "peer_name": "ADJIB-AS",
+        "peer_org": "DJIBOUTI TELECOM S.A.",
+        "peer_country": "Djibouti"
+      },
+      {
+        "peer_as": "5416",
+        "peer_name": "Unknown",
+        "peer_org": "Bahrain Telecommunications Company (BATELCO) B.S.C.",
+        "peer_country": "Bahrain"
+      },
+      {
+        "peer_as": "8781",
+        "peer_name": "QA-ISP",
+        "peer_org": "Ooredoo Q.S.C.",
+        "peer_country": "Qatar"
+      }
+    ]
+  },
+  "37425": {
+    "asn": "37425",
+    "as_info": {
+      "name": "Somcable",
+      "org": "SomCable",
+      "country": "Somalia"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "33788",
+        "peer_name": "KANARTEL",
+        "peer_org": "Kanar Telecommunication (Canar Telecom Co.Ltd)",
+        "peer_country": "Sudan"
+      },
+      {
+        "peer_as": "204523",
+        "peer_name": "Expresso-Telecom-Group",
+        "peer_org": "Expresso Telecom Group Ltd",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "33771",
+        "peer_name": "SAFARICOM-LIMITED",
+        "peer_org": "Safaricom Limited",
+        "peer_country": "Kenya"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "37563": {
+    "asn": "37563",
+    "as_info": {
+      "name": "SOMTEL",
+      "org": "SOMTEL INTERNATIONAL Ltd",
+      "country": "Somalia"
+    },
+    "links": [
+      {
+        "peer_as": "39386",
+        "peer_name": "STC-IGW-AS",
+        "peer_org": "Saudi Telecom Company JSC",
+        "peer_country": "Saudi Arabia"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "15706",
+        "peer_name": "Sudatel",
+        "peer_org": "Sudatel (Sudan Telecom Co. Ltd)",
+        "peer_country": "Sudan"
+      },
+      {
+        "peer_as": "33788",
+        "peer_name": "KANARTEL",
+        "peer_org": "Kanar Telecommunication (Canar Telecom Co.Ltd)",
+        "peer_country": "Sudan"
+      },
+      {
+        "peer_as": "328469",
+        "peer_name": "Somtel-Somalia-AS",
+        "peer_org": "Somtel Somalia LTD",
+        "peer_country": "Somalia"
+      },
+      {
+        "peer_as": "204523",
+        "peer_name": "Expresso-Telecom-Group",
+        "peer_org": "Expresso Telecom Group Ltd",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "33771",
+        "peer_name": "SAFARICOM-LIMITED",
+        "peer_org": "Safaricom Limited",
+        "peer_country": "Kenya"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "37644": {
+    "asn": "37644",
+    "as_info": {
+      "name": "MIPT-AS",
+      "org": "Ministry of Posts, Telecommunications and Technology",
+      "country": "Somalia"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "328469",
+        "peer_name": "Somtel-Somalia-AS",
+        "peer_org": "Somtel Somalia LTD",
+        "peer_country": "Somalia"
+      }
+    ]
+  },
+  "327747": {
+    "asn": "327747",
+    "as_info": {
+      "name": "SAHAL-TELECOM",
+      "org": "Sahal Telecom Somalia",
+      "country": "Somalia"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "327768": {
+    "asn": "327768",
+    "as_info": {
+      "name": "SOMCAST-NETWORKS",
+      "org": "Somcast Networks LLC",
+      "country": "Somalia"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "30990",
+        "peer_name": "ADJIB-AS",
+        "peer_org": "DJIBOUTI TELECOM S.A.",
+        "peer_country": "Djibouti"
+      },
+      {
+        "peer_as": "327732",
+        "peer_name": "DALKOM-SOMALIA",
+        "peer_org": "Dalkom Somalia",
+        "peer_country": "Somalia"
+      }
+    ]
+  },
+  "328250": {
+    "asn": "328250",
+    "as_info": {
+      "name": "Golis-Telecom-AS",
+      "org": "Golis Telecom Somalia",
+      "country": "Somalia"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "10099",
+        "peer_name": "UNICOM-Global",
+        "peer_org": "China Unicom (Hong Kong) Operations Limited",
+        "peer_country": "Hong Kong"
+      }
+    ]
+  },
+  "328319": {
+    "asn": "328319",
+    "as_info": {
+      "name": "Amtel-AS",
+      "org": "AMTEL LTD",
+      "country": "Somalia"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "30990",
+        "peer_name": "ADJIB-AS",
+        "peer_org": "DJIBOUTI TELECOM S.A.",
+        "peer_country": "Djibouti"
+      },
+      {
+        "peer_as": "328469",
+        "peer_name": "Somtel-Somalia-AS",
+        "peer_org": "Somtel Somalia LTD",
+        "peer_country": "Somalia"
+      },
+      {
+        "peer_as": "204523",
+        "peer_name": "Expresso-Telecom-Group",
+        "peer_org": "Expresso Telecom Group Ltd",
+        "peer_country": "United Arab Emirates"
+      }
+    ]
+  },
+  "328435": {
+    "asn": "328435",
+    "as_info": {
+      "name": "Economic-Strategic-Research-Center-AS",
+      "org": "Economic & Strategic Research Center",
+      "country": "Somalia"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "37662",
+        "peer_name": "WIOCC-AS",
+        "peer_org": "West Indian Ocean Cable Company",
+        "peer_country": "Mauritius"
+      },
+      {
+        "peer_as": "328469",
+        "peer_name": "Somtel-Somalia-AS",
+        "peer_org": "Somtel Somalia LTD",
+        "peer_country": "Somalia"
+      }
+    ]
+  },
+  "328469": {
+    "asn": "328469",
+    "as_info": {
+      "name": "Somtel-Somalia-AS",
+      "org": "Somtel Somalia LTD",
+      "country": "Somalia"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "37371",
+        "peer_name": "HORMUUD",
+        "peer_org": "Hormuud Telecom Somalia INC",
+        "peer_country": "Somalia"
+      },
+      {
+        "peer_as": "328435",
+        "peer_name": "Economic-Strategic-Research-Center-AS",
+        "peer_org": "Economic & Strategic Research Center",
+        "peer_country": "Somalia"
+      },
+      {
+        "peer_as": "37563",
+        "peer_name": "SOMTEL",
+        "peer_org": "SOMTEL INTERNATIONAL Ltd",
+        "peer_country": "Somalia"
+      },
+      {
+        "peer_as": "327828",
+        "peer_name": "Somali-Optical-Networks",
+        "peer_org": "Somali Optical Networks",
+        "peer_country": "Somalia"
+      },
+      {
+        "peer_as": "328319",
+        "peer_name": "Amtel-AS",
+        "peer_org": "AMTEL LTD",
+        "peer_country": "Somalia"
+      },
+      {
+        "peer_as": "37644",
+        "peer_name": "MIPT-AS",
+        "peer_org": "Ministry of Posts, Telecommunications and Technology",
+        "peer_country": "Somalia"
+      }
+    ]
+  },
+  "328954": {
+    "asn": "328954",
+    "as_info": {
+      "name": "BL27-AS",
+      "org": "Bluecom Ltd",
+      "country": "Somalia"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "30990",
+        "peer_name": "ADJIB-AS",
+        "peer_org": "DJIBOUTI TELECOM S.A.",
+        "peer_country": "Djibouti"
+      },
+      {
+        "peer_as": "202546",
+        "peer_name": "BLUECOM",
+        "peer_org": "Bluecom SAS",
+        "peer_country": "France"
+      }
+    ]
+  },
+  "328959": {
+    "asn": "328959",
+    "as_info": {
+      "name": "SO_Gasho",
+      "org": "SO! Limited",
+      "country": "Somalia"
+    },
+    "links": [
+      {
+        "peer_as": "30990",
+        "peer_name": "ADJIB-AS",
+        "peer_org": "DJIBOUTI TELECOM S.A.",
+        "peer_country": "Djibouti"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "327764": {
+    "asn": "327764",
+    "as_info": {
+      "name": "SomaliREN",
+      "org": "Somali Research & Education Network(SomaliREN)",
+      "country": "Somalia"
+    },
+    "links": [
+      {
+        "peer_as": "30990",
+        "peer_name": "ADJIB-AS",
+        "peer_org": "DJIBOUTI TELECOM S.A.",
+        "peer_country": "Djibouti"
+      },
+      {
+        "peer_as": "37662",
+        "peer_name": "WIOCC-AS",
+        "peer_org": "West Indian Ocean Cable Company",
+        "peer_country": "Mauritius"
+      },
+      {
+        "peer_as": "327732",
+        "peer_name": "DALKOM-SOMALIA",
+        "peer_org": "Dalkom Somalia",
+        "peer_country": "Somalia"
+      }
+    ]
+  },
+  "37473": {
+    "asn": "37473",
+    "as_info": {
+      "name": "TELESOM",
+      "org": "Telesom",
+      "country": "Somalia"
+    },
+    "links": [
+      {
+        "peer_as": "10099",
+        "peer_name": "UNICOM-Global",
+        "peer_org": "China Unicom (Hong Kong) Operations Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "15706",
+        "peer_name": "Sudatel",
+        "peer_org": "Sudatel (Sudan Telecom Co. Ltd)",
+        "peer_country": "Sudan"
+      },
+      {
+        "peer_as": "204523",
+        "peer_name": "Expresso-Telecom-Group",
+        "peer_org": "Expresso Telecom Group Ltd",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "33771",
+        "peer_name": "SAFARICOM-LIMITED",
+        "peer_org": "Safaricom Limited",
+        "peer_country": "Kenya"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "327732": {
+    "asn": "327732",
+    "as_info": {
+      "name": "DALKOM-SOMALIA",
+      "org": "Dalkom Somalia",
+      "country": "Somalia"
+    },
+    "links": [
+      {
+        "peer_as": "328590",
+        "peer_name": "Somlink-Wireless-AS",
+        "peer_org": "Somlink Wireless Network",
+        "peer_country": "Somalia"
+      },
+      {
+        "peer_as": "37326",
+        "peer_name": "GICO",
+        "peer_org": "Global Internet Company",
+        "peer_country": "Somalia"
+      },
+      {
+        "peer_as": "327764",
+        "peer_name": "SomaliREN",
+        "peer_org": "Somali Research & Education Network(SomaliREN)",
+        "peer_country": "Somalia"
+      },
+      {
+        "peer_as": "327768",
+        "peer_name": "SOMCAST-NETWORKS",
+        "peer_org": "Somcast Networks LLC",
+        "peer_country": "Somalia"
+      },
+      {
+        "peer_as": "37781",
+        "peer_name": "SOIXP-PEERING-AS",
+        "peer_org": "Somali Research & Education Network(SomaliREN)",
+        "peer_country": "Somalia"
+      }
+    ]
+  },
+  "37781": {
+    "asn": "37781",
+    "as_info": {
+      "name": "SOIXP-PEERING-AS",
+      "org": "Somali Research & Education Network(SomaliREN)",
+      "country": "Somalia"
+    },
+    "links": [
+      {
+        "peer_as": "327732",
+        "peer_name": "DALKOM-SOMALIA",
+        "peer_org": "Dalkom Somalia",
+        "peer_country": "Somalia"
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "149813": {
+    "asn": "149813",
+    "as_info": {
+      "name": "MANANETLIMITED-AS-AP",
+      "org": "ManaNet",
+      "country": "Cook Islands"
+    },
+    "links": [
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "63956",
+        "peer_name": "COLO-AS-AP",
+        "peer_org": "Colocation Australia Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "7545",
+        "peer_name": "TPG-INTERNET-AP",
+        "peer_org": "TPG Internet Pty Ltd",
+        "peer_country": "Australia"
+      }
+    ]
+  },
+  "10131": {
+    "asn": "10131",
+    "as_info": {
+      "name": "CKTELECOM-CK-AP",
+      "org": "Telecom Cook Islands Ltd",
+      "country": "Cook Islands"
+    },
+    "links": [
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "1221",
+        "peer_name": "ASN-TELSTRA",
+        "peer_org": "Telstra Corporation Limited",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "7606",
+        "peer_name": "WAIA-AP",
+        "peer_org": "Internet Association of Australia Inc.",
+        "peer_country": "Australia"
+      }
+    ]
+  }
+}

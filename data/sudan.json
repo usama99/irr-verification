@@ -1,0 +1,354 @@
+{
+  "36972": {
+    "asn": "36972",
+    "as_info": {
+      "name": "MTNSD",
+      "org": "MTN SUDAN",
+      "country": "Sudan"
+    },
+    "links": [
+      {
+        "peer_as": "7713",
+        "peer_name": "telkomnet-as-ap",
+        "peer_org": "Telekomunikasi Indonesia (PT)",
+        "peer_country": "Indonesia"
+      },
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "15706",
+        "peer_name": "Sudatel",
+        "peer_org": "Sudatel (Sudan Telecom Co. Ltd)",
+        "peer_country": "Sudan"
+      },
+      {
+        "peer_as": "2905",
+        "peer_name": "TICSA-ASN",
+        "peer_org": "MTN SA",
+        "peer_country": "South Africa"
+      },
+      {
+        "peer_as": "204523",
+        "peer_name": "Expresso-Telecom-Group",
+        "peer_org": "Expresso Telecom Group Ltd",
+        "peer_country": "United Arab Emirates"
+      }
+    ]
+  },
+  "37256": {
+    "asn": "37256",
+    "as_info": {
+      "name": "NICSUDAN",
+      "org": "National Information Center (NIC)",
+      "country": "Sudan"
+    },
+    "links": [
+      {
+        "peer_as": "8513",
+        "peer_name": "SKYVISION",
+        "peer_org": "SkyVision Global Networks Ltd",
+        "peer_country": "Bermuda"
+      },
+      {
+        "peer_as": "204523",
+        "peer_name": "Expresso-Telecom-Group",
+        "peer_org": "Expresso Telecom Group Ltd",
+        "peer_country": "United Arab Emirates"
+      }
+    ]
+  },
+  "36998": {
+    "asn": "36998",
+    "as_info": {
+      "name": "SDN-MOBITEL",
+      "org": "Sudanese Mobile Telephone (ZAIN) Co Ltd",
+      "country": "Sudan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "30990",
+        "peer_name": "ADJIB-AS",
+        "peer_org": "DJIBOUTI TELECOM S.A.",
+        "peer_country": "Djibouti"
+      },
+      {
+        "peer_as": "6774",
+        "peer_name": "ASN-BICS",
+        "peer_org": "Belgacom International Carrier Services SA",
+        "peer_country": "Belgium"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "37197": {
+    "asn": "37197",
+    "as_info": {
+      "name": "SUDREN",
+      "org": "Sudanese Research and Education Network",
+      "country": "Sudan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "36944",
+        "peer_name": "UBUNTU-UNICAST-AS",
+        "peer_org": "Ubuntunet Alliance For Research and Education Networking",
+        "peer_country": "Malawi"
+      }
+    ]
+  },
+  "15706": {
+    "asn": "15706",
+    "as_info": {
+      "name": "Sudatel",
+      "org": "Sudatel (Sudan Telecom Co. Ltd)",
+      "country": "Sudan"
+    },
+    "links": [
+      {
+        "peer_as": "9498",
+        "peer_name": "BBIL-AP",
+        "peer_org": "Bharti Airtel Limited",
+        "peer_country": "India"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "328104",
+        "peer_name": "ADETIC-AS",
+        "peer_org": "Agence de Developpement de Technologies de l'Information et de la Communication",
+        "peer_country": "Chad"
+      },
+      {
+        "peer_as": "36972",
+        "peer_name": "MTNSD",
+        "peer_org": "MTN SUDAN",
+        "peer_country": "Sudan"
+      },
+      {
+        "peer_as": "328599",
+        "peer_name": "Amanet-SARL",
+        "peer_org": "Société Amanet SARL",
+        "peer_country": "Chad"
+      },
+      {
+        "peer_as": "328679",
+        "peer_name": "Societe-Digital",
+        "peer_org": "SOCIETE DIGITAL COM SA/AG",
+        "peer_country": "Chad"
+      },
+      {
+        "peer_as": "328604",
+        "peer_name": "Sahel-Tele-Internet-AS",
+        "peer_org": "Societe 'Sahel Tele Internet' SA/AG",
+        "peer_country": "Chad"
+      },
+      {
+        "peer_as": "328908",
+        "peer_name": "FOCON-NET-TELECOMS",
+        "peer_org": "Societé FOCON-NET TELECOMS Sarl",
+        "peer_country": "Chad"
+      },
+      {
+        "peer_as": "37473",
+        "peer_name": "TELESOM",
+        "peer_org": "Telesom",
+        "peer_country": "Somalia"
+      },
+      {
+        "peer_as": "37563",
+        "peer_name": "SOMTEL",
+        "peer_org": "SOMTEL INTERNATIONAL Ltd",
+        "peer_country": "Somalia"
+      },
+      {
+        "peer_as": "329158",
+        "peer_name": "N-Djamena-IX-MGT",
+        "peer_org": "N'Djamena IX",
+        "peer_country": "Chad"
+      },
+      {
+        "peer_as": "15412",
+        "peer_name": "FLAG-AS",
+        "peer_org": "FLAG TELECOM UK LIMITED",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "5400",
+        "peer_name": "BT",
+        "peer_org": "British Telecommunications PLC",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "52320",
+        "peer_name": "Unknown",
+        "peer_org": "GlobeNet Cabos Submarinos Colombia, S.A.S.",
+        "peer_country": "Colombia"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "37211": {
+    "asn": "37211",
+    "as_info": {
+      "name": "MAX-NET-FOR-INTERNET-SERVICES",
+      "org": "MAX NET FOR INTERNET SERVICES",
+      "country": "Sudan"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "30990",
+        "peer_name": "ADJIB-AS",
+        "peer_org": "DJIBOUTI TELECOM S.A.",
+        "peer_country": "Djibouti"
+      },
+      {
+        "peer_as": "204523",
+        "peer_name": "Expresso-Telecom-Group",
+        "peer_org": "Expresso Telecom Group Ltd",
+        "peer_country": "United Arab Emirates"
+      }
+    ]
+  },
+  "327881": {
+    "asn": "327881",
+    "as_info": {
+      "name": "NICDC",
+      "org": "National Information Center (NIC)",
+      "country": "Sudan"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "30990",
+        "peer_name": "ADJIB-AS",
+        "peer_org": "DJIBOUTI TELECOM S.A.",
+        "peer_country": "Djibouti"
+      },
+      {
+        "peer_as": "204523",
+        "peer_name": "Expresso-Telecom-Group",
+        "peer_org": "Expresso Telecom Group Ltd",
+        "peer_country": "United Arab Emirates"
+      }
+    ]
+  },
+  "328381": {
+    "asn": "328381",
+    "as_info": {
+      "name": "Sudanese-Internet-AS",
+      "org": "Sudanese Internet Association",
+      "country": "Sudan"
+    },
+    "links": [
+      {
+        "peer_as": "30990",
+        "peer_name": "ADJIB-AS",
+        "peer_org": "DJIBOUTI TELECOM S.A.",
+        "peer_country": "Djibouti"
+      }
+    ]
+  },
+  "33788": {
+    "asn": "33788",
+    "as_info": {
+      "name": "KANARTEL",
+      "org": "Kanar Telecommunication (Canar Telecom Co.Ltd)",
+      "country": "Sudan"
+    },
+    "links": [
+      {
+        "peer_as": "37388",
+        "peer_name": "Unknown",
+        "peer_org": "Unknown",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "37425",
+        "peer_name": "Somcable",
+        "peer_org": "SomCable",
+        "peer_country": "Somalia"
+      },
+      {
+        "peer_as": "37563",
+        "peer_name": "SOMTEL",
+        "peer_org": "SOMTEL INTERNATIONAL Ltd",
+        "peer_country": "Somalia"
+      },
+      {
+        "peer_as": "204523",
+        "peer_name": "Expresso-Telecom-Group",
+        "peer_org": "Expresso Telecom Group Ltd",
+        "peer_country": "United Arab Emirates"
+      }
+    ]
+  },
+  "328936": {
+    "asn": "328936",
+    "as_info": {
+      "name": "DGCL1-AS",
+      "org": "DAL Group Co. Limited",
+      "country": "Sudan"
+    },
+    "links": [
+      {
+        "peer_as": "204523",
+        "peer_name": "Expresso-Telecom-Group",
+        "peer_org": "Expresso Telecom Group Ltd",
+        "peer_country": "United Arab Emirates"
+      }
+    ]
+  }
+}

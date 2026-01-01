@@ -1,0 +1,180 @@
+{
+  "11960": {
+    "asn": "11960",
+    "as_info": {
+      "name": "Unknown",
+      "org": "EMPRESA DE TELECOMUNICACIONES DE CUBA S.A. (IXP CUBA)",
+      "country": "Cuba"
+    },
+    "links": [
+      {
+        "peer_as": "12180",
+        "peer_name": "INTERNAP-2BLK",
+        "peer_org": "Unitas Global",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "264713",
+        "peer_name": "Unknown",
+        "peer_org": "Empresa de Telecomunicaciones de Cuba, S.A.",
+        "peer_country": "Cuba"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "32034",
+        "peer_name": "NEWCOM-INTL",
+        "peer_org": "NewCom International, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "209970",
+        "peer_name": "NEWCOM",
+        "peer_org": "NewCom TLC S.r.l.",
+        "peer_country": "Italy"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "27725": {
+    "asn": "27725",
+    "as_info": {
+      "name": "Unknown",
+      "org": "Empresa de Telecomunicaciones de Cuba, S.A.",
+      "country": "Cuba"
+    },
+    "links": [
+      {
+        "peer_as": "12180",
+        "peer_name": "INTERNAP-2BLK",
+        "peer_org": "Unitas Global",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "11081",
+        "peer_name": "Unknown",
+        "peer_org": "United Telecommunication Services (UTS)",
+        "peer_country": "Curacao"
+      },
+      {
+        "peer_as": "10569",
+        "peer_name": "Unknown",
+        "peer_org": "Red CENIAInternet",
+        "peer_country": "Cuba"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "32034",
+        "peer_name": "NEWCOM-INTL",
+        "peer_org": "NewCom International, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "209970",
+        "peer_name": "NEWCOM",
+        "peer_org": "NewCom TLC S.r.l.",
+        "peer_country": "Italy"
+      }
+    ]
+  },
+  "10569": {
+    "asn": "10569",
+    "as_info": {
+      "name": "Unknown",
+      "org": "Red CENIAInternet",
+      "country": "Cuba"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "11081",
+        "peer_name": "Unknown",
+        "peer_org": "United Telecommunication Services (UTS)",
+        "peer_country": "Curacao"
+      },
+      {
+        "peer_as": "27725",
+        "peer_name": "Unknown",
+        "peer_org": "Empresa de Telecomunicaciones de Cuba, S.A.",
+        "peer_country": "Cuba"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "32034",
+        "peer_name": "NEWCOM-INTL",
+        "peer_org": "NewCom International, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "209970",
+        "peer_name": "NEWCOM",
+        "peer_org": "NewCom TLC S.r.l.",
+        "peer_country": "Italy"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "264713": {
+    "asn": "264713",
+    "as_info": {
+      "name": "Unknown",
+      "org": "Empresa de Telecomunicaciones de Cuba, S.A.",
+      "country": "Cuba"
+    },
+    "links": [
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "11960",
+        "peer_name": "Unknown",
+        "peer_org": "EMPRESA DE TELECOMUNICACIONES DE CUBA S.A. (IXP CUBA)",
+        "peer_country": "Cuba"
+      }
+    ]
+  }
+}

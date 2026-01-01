@@ -1,0 +1,142 @@
+{
+  "48210": {
+    "asn": "48210",
+    "as_info": {
+      "name": "BONNETERRE-AS",
+      "org": "Bonne Terre Ltd",
+      "country": "Guernsey"
+    },
+    "links": [
+      {
+        "peer_as": "8681",
+        "peer_name": "JT",
+        "peer_org": "JT (Jersey) Limited",
+        "peer_country": "Jersey"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "5607",
+        "peer_name": "BSKYB-BROADBAND-AS",
+        "peer_org": "Sky UK Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "174",
+        "peer_name": "COGENT-174",
+        "peer_org": "Cogent Communications",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4589",
+        "peer_name": "EASYNET",
+        "peer_org": "Easynet Global Services",
+        "peer_country": "European Union"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      }
+    ]
+  },
+  "13216": {
+    "asn": "13216",
+    "as_info": {
+      "name": "ITEX-AS",
+      "org": "C5 IT Services (Guernsey) Limited",
+      "country": "Guernsey"
+    },
+    "links": [
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "174",
+        "peer_name": "COGENT-174",
+        "peer_org": "Cogent Communications",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6461",
+        "peer_name": "ZAYO-6461",
+        "peer_org": "Zayo Bandwidth",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "212615": {
+    "asn": "212615",
+    "as_info": {
+      "name": "resit_cloud",
+      "org": "Resolution IT Limited",
+      "country": "Guernsey"
+    },
+    "links": [
+      {
+        "peer_as": "8680",
+        "peer_name": "SURE-International-Limited",
+        "peer_org": "Sure (Guernsey) Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "13173",
+        "peer_name": "FORESHORE-AS",
+        "peer_org": "Foreshore Limited",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "211913": {
+    "asn": "211913",
+    "as_info": {
+      "name": "GUERNSEY-AIRTEL",
+      "org": "Guernsey Airtel Limited",
+      "country": "Guernsey"
+    },
+    "links": [
+      {
+        "peer_as": "8681",
+        "peer_name": "JT",
+        "peer_org": "JT (Jersey) Limited",
+        "peer_country": "Jersey"
+      },
+      {
+        "peer_as": "13208",
+        "peer_name": "NEWTELSOLUTIONS-AS",
+        "peer_org": "Newtel Limited",
+        "peer_country": "Jersey"
+      }
+    ]
+  },
+  "34497": {
+    "asn": "34497",
+    "as_info": {
+      "name": "AS2E2_1",
+      "org": "Logicalis Guernsey Ltd",
+      "country": "Guernsey"
+    },
+    "links": [
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  }
+}

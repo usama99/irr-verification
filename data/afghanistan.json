@@ -1,0 +1,3158 @@
+{
+  "132707": {
+    "asn": "132707",
+    "as_info": {
+      "name": "ASIX-AS-AP",
+      "org": "Asix",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8781",
+        "peer_name": "QA-ISP",
+        "peer_org": "Ooredoo Q.S.C.",
+        "peer_country": "Qatar"
+      },
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "5416",
+        "peer_name": "Unknown",
+        "peer_org": "Bahrain Telecommunications Company (BATELCO) B.S.C.",
+        "peer_country": "Bahrain"
+      },
+      {
+        "peer_as": "12880",
+        "peer_name": "DCI-AS",
+        "peer_org": "Information Technology Company (ITC)",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "55330",
+        "peer_name": "GCN-DCN-AS",
+        "peer_org": "Government Communications Network",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "49666",
+        "peer_name": "TIC-GW-AS",
+        "peer_org": "Telecommunication Infrastructure Company",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "10099",
+        "peer_name": "UNICOM-Global",
+        "peer_org": "China Unicom (Hong Kong) Operations Limited",
+        "peer_country": "Hong Kong"
+      }
+    ]
+  },
+  "137276": {
+    "asn": "137276",
+    "as_info": {
+      "name": "ASIABRIDGETELECOM-AS-AP",
+      "org": "Asia Bridge Telecom",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "12880",
+        "peer_name": "DCI-AS",
+        "peer_org": "Information Technology Company (ITC)",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "49666",
+        "peer_name": "TIC-GW-AS",
+        "peer_org": "Telecommunication Infrastructure Company",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "48159",
+        "peer_name": "TIC-AS",
+        "peer_org": "Telecommunication Infrastructure Company",
+        "peer_country": "Iran"
+      }
+    ]
+  },
+  "136479": {
+    "asn": "136479",
+    "as_info": {
+      "name": "CYBERTELECOMISP-AS-AP",
+      "org": "Cyber Telecom ISP",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "12880",
+        "peer_name": "DCI-AS",
+        "peer_org": "Information Technology Company (ITC)",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "44570",
+        "peer_name": "ROUTE48-AS",
+        "peer_org": "Cloudie Networks, LLC.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "48159",
+        "peer_name": "TIC-AS",
+        "peer_org": "Telecommunication Infrastructure Company",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "24381",
+        "peer_name": "BGPE-AS",
+        "peer_org": "HostLink",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "141355": {
+    "asn": "141355",
+    "as_info": {
+      "name": "ANTS-AS-AP",
+      "org": "Amoo Net Technology Services",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "55330",
+        "peer_name": "GCN-DCN-AS",
+        "peer_org": "Government Communications Network",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "142051": {
+    "asn": "142051",
+    "as_info": {
+      "name": "HAQNET-AS-AP",
+      "org": "HaqNet Technology Services",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "138322",
+        "peer_name": "AWCC-AS-AP",
+        "peer_org": "Afghan Wireless Communication Company",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "58427": {
+    "asn": "58427",
+    "as_info": {
+      "name": "GEC-AF",
+      "org": "Global Entourage Services",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "8449",
+        "peer_name": "AS8449-ELCAT",
+        "peer_org": "\"ElCat\" Ltd.",
+        "peer_country": "Kyrgyzstan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "142541": {
+    "asn": "142541",
+    "as_info": {
+      "name": "OIS-AS-AP",
+      "org": "Optix Wave Internet Services",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "55330",
+        "peer_name": "GCN-DCN-AS",
+        "peer_org": "Government Communications Network",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "136986": {
+    "asn": "136986",
+    "as_info": {
+      "name": "CYBERNET1-AS-AP",
+      "org": "Cyber Net ISP",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "59796",
+        "peer_name": "STORMWALL-AS",
+        "peer_org": "StormWall s.r.o.",
+        "peer_country": "Slovakia"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "137895": {
+    "asn": "137895",
+    "as_info": {
+      "name": "FAST-AS-AP",
+      "org": "Fast Net Telecom",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      }
+    ]
+  },
+  "141447": {
+    "asn": "141447",
+    "as_info": {
+      "name": "SWT-AS-AP",
+      "org": "Sky Wave Technologies Internet Service",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "55424": {
+    "asn": "55424",
+    "as_info": {
+      "name": "INSTATELECOM-AS-AP",
+      "org": "Instatelecom Limited",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "49666",
+        "peer_name": "TIC-GW-AS",
+        "peer_org": "Telecommunication Infrastructure Company",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "209141",
+        "peer_name": "CMI-Russia",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "134134": {
+    "asn": "134134",
+    "as_info": {
+      "name": "NORTHTELECOM-AF",
+      "org": "North Telecom",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "12880",
+        "peer_name": "DCI-AS",
+        "peer_org": "Information Technology Company (ITC)",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "48159",
+        "peer_name": "TIC-AS",
+        "peer_org": "Telecommunication Infrastructure Company",
+        "peer_country": "Iran"
+      }
+    ]
+  },
+  "139651": {
+    "asn": "139651",
+    "as_info": {
+      "name": "KAYANATTECHNOLOGY-AS-AP",
+      "org": "KAYANAT TECHNOLOGY INTERNET SERVICES CO",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "55330",
+        "peer_name": "GCN-DCN-AS",
+        "peer_org": "Government Communications Network",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "137475": {
+    "asn": "137475",
+    "as_info": {
+      "name": "SNISP-AS-AP",
+      "org": "Shah Net Internet Services Provider",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "17557",
+        "peer_name": "PKTELECOM-AS-PK",
+        "peer_org": "Pakistan Telecommuication company limited",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "136400",
+        "peer_name": "ACG-AFG-AS-AP",
+        "peer_org": "Asia Consultancy Group",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "132404": {
+    "asn": "132404",
+    "as_info": {
+      "name": "NEDA-KAF-AF",
+      "org": "Neda Telecommunications",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      }
+    ]
+  },
+  "132173": {
+    "asn": "132173",
+    "as_info": {
+      "name": "STREAMLINK-AS",
+      "org": "Streamlink",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "17557",
+        "peer_name": "PKTELECOM-AS-PK",
+        "peer_org": "Pakistan Telecommuication company limited",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "58469": {
+    "asn": "58469",
+    "as_info": {
+      "name": "MOCI-AS-AP",
+      "org": "Ministry of Communication & IT",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "45178": {
+    "asn": "45178",
+    "as_info": {
+      "name": "ROSHAN-AF",
+      "org": "Telecom Development Company Afghanistan",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "30721",
+        "peer_name": "SatGate",
+        "peer_org": "SatGate LLC",
+        "peer_country": "Russia"
+      },
+      {
+        "peer_as": "12880",
+        "peer_name": "DCI-AS",
+        "peer_org": "Information Technology Company (ITC)",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "10099",
+        "peer_name": "UNICOM-Global",
+        "peer_org": "China Unicom (Hong Kong) Operations Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "209141",
+        "peer_name": "CMI-Russia",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "136400",
+        "peer_name": "ACG-AFG-AS-AP",
+        "peer_org": "Asia Consultancy Group",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "136106",
+        "peer_name": "FIBERSTAR-AS-ID",
+        "peer_org": "PT. Mega Akses Persada",
+        "peer_country": "Indonesia"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "133894": {
+    "asn": "133894",
+    "as_info": {
+      "name": "EASYCONNECTISP-AS-AP",
+      "org": "Easy Connect- ISP",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "8449",
+        "peer_name": "AS8449-ELCAT",
+        "peer_org": "\"ElCat\" Ltd.",
+        "peer_country": "Kyrgyzstan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "138322",
+        "peer_name": "AWCC-AS-AP",
+        "peer_org": "Afghan Wireless Communication Company",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "137007",
+        "peer_name": "PROLINK-AS-AP",
+        "peer_org": "Prolink Telecommunication & ICT Services Company",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "133174": {
+    "asn": "133174",
+    "as_info": {
+      "name": "NEDA-AS-AP",
+      "org": "Neda Telecommunications",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "133066": {
+    "asn": "133066",
+    "as_info": {
+      "name": "ANS-AS-AP",
+      "org": "Ariana Network Services Co",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "10099",
+        "peer_name": "UNICOM-Global",
+        "peer_org": "China Unicom (Hong Kong) Operations Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "59317",
+        "peer_name": "AFGHANCYBERISP-AF",
+        "peer_org": "Afghan Cyber ISP",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "133076": {
+    "asn": "133076",
+    "as_info": {
+      "name": "UAT-AF",
+      "org": "Unique Atlantic Telecommunication",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "132471": {
+    "asn": "132471",
+    "as_info": {
+      "name": "MTNAFGHANISTAN-AS-AP",
+      "org": "MTN Afghanistan",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "12880",
+        "peer_name": "DCI-AS",
+        "peer_org": "Information Technology Company (ITC)",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "209141",
+        "peer_name": "CMI-Russia",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "138322",
+        "peer_name": "AWCC-AS-AP",
+        "peer_org": "Afghan Wireless Communication Company",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "48159",
+        "peer_name": "TIC-AS",
+        "peer_org": "Telecommunication Infrastructure Company",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "2905",
+        "peer_name": "TICSA-ASN",
+        "peer_org": "MTN SA",
+        "peer_country": "South Africa"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "59317": {
+    "asn": "59317",
+    "as_info": {
+      "name": "AFGHANCYBERISP-AF",
+      "org": "Afghan Cyber ISP",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "17557",
+        "peer_name": "PKTELECOM-AS-PK",
+        "peer_org": "Pakistan Telecommuication company limited",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "138322",
+        "peer_name": "AWCC-AS-AP",
+        "peer_org": "Afghan Wireless Communication Company",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "133066",
+        "peer_name": "ANS-AS-AP",
+        "peer_org": "Ariana Network Services Co",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "133202": {
+    "asn": "133202",
+    "as_info": {
+      "name": "AFSAT-AS-AP",
+      "org": "Afghanistan Faiz Satellite Communications",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "17557",
+        "peer_name": "PKTELECOM-AS-PK",
+        "peer_org": "Pakistan Telecommuication company limited",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "138322",
+        "peer_name": "AWCC-AS-AP",
+        "peer_org": "Afghan Wireless Communication Company",
+        "peer_country": "Afghanistan"
+      }
+    ]
+  },
+  "133533": {
+    "asn": "133533",
+    "as_info": {
+      "name": "KIL-AF",
+      "org": "Khogiyant International ltd",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "59796",
+        "peer_name": "STORMWALL-AS",
+        "peer_org": "StormWall s.r.o.",
+        "peer_country": "Slovakia"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "136454": {
+    "asn": "136454",
+    "as_info": {
+      "name": "FIBERSAT-AS-AP",
+      "org": "Fiber Sat Networking Services",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "17557",
+        "peer_name": "PKTELECOM-AS-PK",
+        "peer_org": "Pakistan Telecommuication company limited",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "137975": {
+    "asn": "137975",
+    "as_info": {
+      "name": "STARKTELECOM-AS-AP",
+      "org": "Stark Telecom",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "12880",
+        "peer_name": "DCI-AS",
+        "peer_org": "Information Technology Company (ITC)",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "55330",
+        "peer_name": "GCN-DCN-AS",
+        "peer_org": "Government Communications Network",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "48159",
+        "peer_name": "TIC-AS",
+        "peer_org": "Telecommunication Infrastructure Company",
+        "peer_country": "Iran"
+      }
+    ]
+  },
+  "137007": {
+    "asn": "137007",
+    "as_info": {
+      "name": "PROLINK-AS-AP",
+      "org": "Prolink Telecommunication & ICT Services Company",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "55330",
+        "peer_name": "GCN-DCN-AS",
+        "peer_org": "Government Communications Network",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "133894",
+        "peer_name": "EASYCONNECTISP-AS-AP",
+        "peer_org": "Easy Connect- ISP",
+        "peer_country": "Afghanistan"
+      }
+    ]
+  },
+  "137040": {
+    "asn": "137040",
+    "as_info": {
+      "name": "NZSPL-AS-AP",
+      "org": "Network Zone Solution Provider Ltd",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "17557",
+        "peer_name": "PKTELECOM-AS-PK",
+        "peer_org": "Pakistan Telecommuication company limited",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "55330",
+        "peer_name": "GCN-DCN-AS",
+        "peer_org": "Government Communications Network",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      }
+    ]
+  },
+  "137039": {
+    "asn": "137039",
+    "as_info": {
+      "name": "ZT-AS-AP",
+      "org": "Zohak Technology (Z-Tech)",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      }
+    ]
+  },
+  "59355": {
+    "asn": "59355",
+    "as_info": {
+      "name": "AACL-AS-AP",
+      "org": "Arif Azim Ltd",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "17557",
+        "peer_name": "PKTELECOM-AS-PK",
+        "peer_org": "Pakistan Telecommuication company limited",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "138322",
+        "peer_name": "AWCC-AS-AP",
+        "peer_org": "Afghan Wireless Communication Company",
+        "peer_country": "Afghanistan"
+      }
+    ]
+  },
+  "140908": {
+    "asn": "140908",
+    "as_info": {
+      "name": "ATLASSURKH-AS-AP",
+      "org": "Atlas Surkh Networking Services Company",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "131284",
+        "peer_name": "ETISALATAFG-AS-AP",
+        "peer_org": "Etisalat Afghan",
+        "peer_country": "Afghanistan"
+      }
+    ]
+  },
+  "139770": {
+    "asn": "139770",
+    "as_info": {
+      "name": "SADATTELECOM-AS-AP",
+      "org": "SADAT Telecom",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "138322",
+        "peer_name": "AWCC-AS-AP",
+        "peer_org": "Afghan Wireless Communication Company",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "141224": {
+    "asn": "141224",
+    "as_info": {
+      "name": "FIBERNETTELECOM-AS-AP",
+      "org": "Fibernet Telecom",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "55330",
+        "peer_name": "GCN-DCN-AS",
+        "peer_org": "Government Communications Network",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "132222": {
+    "asn": "132222",
+    "as_info": {
+      "name": "AHG-AS-AP",
+      "org": "Afghanistan Holding Group",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "136400": {
+    "asn": "136400",
+    "as_info": {
+      "name": "ACG-AFG-AS-AP",
+      "org": "Asia Consultancy Group",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "12880",
+        "peer_name": "DCI-AS",
+        "peer_org": "Information Technology Company (ITC)",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "45430",
+        "peer_name": "SBN-AWN-IIG-AS-AP",
+        "peer_org": "ADVANCED WIRELESS NETWORK COMPANY LIMITED",
+        "peer_country": "Thailand"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "48159",
+        "peer_name": "TIC-AS",
+        "peer_org": "Telecommunication Infrastructure Company",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "45178",
+        "peer_name": "ROSHAN-AF",
+        "peer_org": "Telecom Development Company Afghanistan",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "137475",
+        "peer_name": "SNISP-AS-AP",
+        "peer_org": "Shah Net Internet Services Provider",
+        "peer_country": "Afghanistan"
+      }
+    ]
+  },
+  "135298": {
+    "asn": "135298",
+    "as_info": {
+      "name": "Transworld-AS-AP",
+      "org": "Ankabut Internet Service Provider",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "12880",
+        "peer_name": "DCI-AS",
+        "peer_org": "Information Technology Company (ITC)",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "48159",
+        "peer_name": "TIC-AS",
+        "peer_org": "Telecommunication Infrastructure Company",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "139885": {
+    "asn": "139885",
+    "as_info": {
+      "name": "FUSHANJ-TELECOM-AS-AP",
+      "org": "Fushanj Telecom ISP",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      }
+    ]
+  },
+  "149173": {
+    "asn": "149173",
+    "as_info": {
+      "name": "HBISC-AS-AP",
+      "org": "Hindukush Bridge ICT Services Company",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "17557",
+        "peer_name": "PKTELECOM-AS-PK",
+        "peer_org": "Pakistan Telecommuication company limited",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "149771": {
+    "asn": "149771",
+    "as_info": {
+      "name": "HASC-AS-AP",
+      "org": "Hewad Aziz Services Company",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      }
+    ]
+  },
+  "132104": {
+    "asn": "132104",
+    "as_info": {
+      "name": "FarsRoute-AS-AP",
+      "org": "Fars Route Information Technology Services Company",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "9498",
+        "peer_name": "BBIL-AP",
+        "peer_org": "Bharti Airtel Limited",
+        "peer_country": "India"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "9304",
+        "peer_name": "HUTCHISON-AS-AP",
+        "peer_org": "HGC Global Communications Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "38278",
+        "peer_name": "OTSB-AS-AP",
+        "peer_org": "Orient Telecoms Sdn. Bhd",
+        "peer_country": "Malaysia"
+      },
+      {
+        "peer_as": "38322",
+        "peer_name": "TTSSB-MY",
+        "peer_org": "TM TECHNOLOGY SERVICES SDN BHD",
+        "peer_country": "Malaysia"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "131284": {
+    "asn": "131284",
+    "as_info": {
+      "name": "ETISALATAFG-AS-AP",
+      "org": "Etisalat Afghan",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "17557",
+        "peer_name": "PKTELECOM-AS-PK",
+        "peer_org": "Pakistan Telecommuication company limited",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "12880",
+        "peer_name": "DCI-AS",
+        "peer_org": "Information Technology Company (ITC)",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "34984",
+        "peer_name": "TELLCOM-AS",
+        "peer_org": "Superonline Iletisim Hizmetleri A.S.",
+        "peer_country": "Turkey"
+      },
+      {
+        "peer_as": "38742",
+        "peer_name": "AWCC-AS-AP",
+        "peer_org": "Afghan Wireless Communication Company",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "7473",
+        "peer_name": "SINGTEL-AS-AP",
+        "peer_org": "Singapore Telecommunications (SINGTEL Internet Exchange)",
+        "peer_country": "Singapore"
+      },
+      {
+        "peer_as": "11344",
+        "peer_name": "YOUTUBE",
+        "peer_org": "YouTube, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "63293",
+        "peer_name": "FACEBOOK-OFFNET",
+        "peer_org": "Facebook, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "140908",
+        "peer_name": "ATLASSURKH-AS-AP",
+        "peer_org": "Atlas Surkh Networking Services Company",
+        "peer_country": "Afghanistan"
+      }
+    ]
+  },
+  "137824": {
+    "asn": "137824",
+    "as_info": {
+      "name": "VNT-ISP-AS-AP",
+      "org": "View Net Technology",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "17557",
+        "peer_name": "PKTELECOM-AS-PK",
+        "peer_org": "Pakistan Telecommuication company limited",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "38742": {
+    "asn": "38742",
+    "as_info": {
+      "name": "AWCC-AS-AP",
+      "org": "Afghan Wireless Communication Company",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "9304",
+        "peer_name": "HUTCHISON-AS-AP",
+        "peer_org": "HGC Global Communications Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "61010",
+        "peer_name": "IPNET-AS",
+        "peer_org": "IPNET OOO",
+        "peer_country": "Kyrgyzstan"
+      },
+      {
+        "peer_as": "10099",
+        "peer_name": "UNICOM-Global",
+        "peer_org": "China Unicom (Hong Kong) Operations Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "131284",
+        "peer_name": "ETISALATAFG-AS-AP",
+        "peer_org": "Etisalat Afghan",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "50384",
+        "peer_name": "W-IX_LTD",
+        "peer_org": "iHome LLC",
+        "peer_country": "Russia"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "17411": {
+    "asn": "17411",
+    "as_info": {
+      "name": "IO-GLOBAL-AP",
+      "org": "Io-Global Services Pvt. Ltd.",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "7474",
+        "peer_name": "OPTUSCOM-AS01-AU",
+        "peer_org": "SingTel Optus Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "55330": {
+    "asn": "55330",
+    "as_info": {
+      "name": "GCN-DCN-AS",
+      "org": "Government Communications Network",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "209141",
+        "peer_name": "CMI-Russia",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      },
+      {
+        "peer_as": "12880",
+        "peer_name": "DCI-AS",
+        "peer_org": "Information Technology Company (ITC)",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "55434",
+        "peer_name": "ADS-AS-EAST-AP",
+        "peer_org": "Airbus Defence and Space AS",
+        "peer_country": "Norway"
+      },
+      {
+        "peer_as": "133477",
+        "peer_name": "BANGLADESHPOLICE-AS-AP",
+        "peer_org": "Bangladesh Police",
+        "peer_country": "Bangladesh"
+      },
+      {
+        "peer_as": "133510",
+        "peer_name": "IBPL-AS-AP",
+        "peer_org": "Infinet Broadband Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "44027",
+        "peer_name": "SPITAMEN_ALEXANDER_INTERNET-AS",
+        "peer_org": "Spitamen Alexander Internet LLC.",
+        "peer_country": "Tajikistan"
+      },
+      {
+        "peer_as": "134152",
+        "peer_name": "XTSB-AS-AP",
+        "peer_org": "XMT Technologies Sdn Bhd",
+        "peer_country": "Malaysia"
+      },
+      {
+        "peer_as": "133022",
+        "peer_name": "Unknown",
+        "peer_org": "Unknown",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "23649",
+        "peer_name": "NEWSKIES-AS-AP",
+        "peer_org": "New Skies Satellites B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "132467",
+        "peer_name": "AFREN-AS-AP",
+        "peer_org": "Ministry of Higher Education",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "132707",
+        "peer_name": "ASIX-AS-AP",
+        "peer_org": "Asix",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "136582",
+        "peer_name": "Unknown",
+        "peer_org": "Unknown",
+        "peer_country": "Unknown"
+      },
+      {
+        "peer_as": "136992",
+        "peer_name": "M7EPL-AS-AP",
+        "peer_org": "7-Eleven Stores Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "137040",
+        "peer_name": "NZSPL-AS-AP",
+        "peer_org": "Network Zone Solution Provider Ltd",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "42869",
+        "peer_name": "IPExperts",
+        "peer_org": "Fara Negar Pardaz Noor Khuzestan Co.JSP",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "137975",
+        "peer_name": "STARKTELECOM-AS-AP",
+        "peer_org": "Stark Telecom",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "139820",
+        "peer_name": "HG1-AS-AP",
+        "peer_org": "HG TELECOMMUNICATION PRIVATE LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "139697",
+        "peer_name": "MIKROGATE-AS-AP",
+        "peer_org": "Mikrogate ICT Services Company",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "63293",
+        "peer_name": "FACEBOOK-OFFNET",
+        "peer_org": "Facebook, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "137007",
+        "peer_name": "PROLINK-AS-AP",
+        "peer_org": "Prolink Telecommunication & ICT Services Company",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "141224",
+        "peer_name": "FIBERNETTELECOM-AS-AP",
+        "peer_org": "Fibernet Telecom",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "141355",
+        "peer_name": "ANTS-AS-AP",
+        "peer_org": "Amoo Net Technology Services",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "139651",
+        "peer_name": "KAYANATTECHNOLOGY-AS-AP",
+        "peer_org": "KAYANAT TECHNOLOGY INTERNET SERVICES CO",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "142541",
+        "peer_name": "OIS-AS-AP",
+        "peer_org": "Optix Wave Internet Services",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "10099",
+        "peer_name": "UNICOM-Global",
+        "peer_org": "China Unicom (Hong Kong) Operations Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "34984",
+        "peer_name": "TELLCOM-AS",
+        "peer_org": "Superonline Iletisim Hizmetleri A.S.",
+        "peer_country": "Turkey"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "58697": {
+    "asn": "58697",
+    "as_info": {
+      "name": "THREESPARK-NET-AF",
+      "org": "Vital Telecommunication",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "49666",
+        "peer_name": "TIC-GW-AS",
+        "peer_org": "Telecommunication Infrastructure Company",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "138322",
+        "peer_name": "AWCC-AS-AP",
+        "peer_org": "Afghan Wireless Communication Company",
+        "peer_country": "Afghanistan"
+      }
+    ]
+  },
+  "59381": {
+    "asn": "59381",
+    "as_info": {
+      "name": "VICEGROUP-AF",
+      "org": "Vice Group",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "43727",
+        "peer_name": "KVANT-TELECOM",
+        "peer_org": "JSC KVANT-TELEKOM",
+        "peer_country": "Russia"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "12880",
+        "peer_name": "DCI-AS",
+        "peer_org": "Information Technology Company (ITC)",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "49666",
+        "peer_name": "TIC-GW-AS",
+        "peer_org": "Telecommunication Infrastructure Company",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "209141",
+        "peer_name": "CMI-Russia",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "48159",
+        "peer_name": "TIC-AS",
+        "peer_org": "Telecommunication Infrastructure Company",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "59796",
+        "peer_name": "STORMWALL-AS",
+        "peer_org": "StormWall s.r.o.",
+        "peer_country": "Slovakia"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "135376": {
+    "asn": "135376",
+    "as_info": {
+      "name": "RAHANET-ISP-AS-AP",
+      "org": "Rahanet Internet Service Provider",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "12880",
+        "peer_name": "DCI-AS",
+        "peer_org": "Information Technology Company (ITC)",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "49666",
+        "peer_name": "TIC-GW-AS",
+        "peer_org": "Telecommunication Infrastructure Company",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "59796",
+        "peer_name": "STORMWALL-AS",
+        "peer_org": "StormWall s.r.o.",
+        "peer_country": "Slovakia"
+      }
+    ]
+  },
+  "150155": {
+    "asn": "150155",
+    "as_info": {
+      "name": "SPEED-AS-AP",
+      "org": "Speed Light ICT Services Company",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "9002",
+        "peer_name": "RETN-AS",
+        "peer_org": "RETN Limited",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "138322": {
+    "asn": "138322",
+    "as_info": {
+      "name": "AWCC-AS-AP",
+      "org": "Afghan Wireless Communication Company",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "855",
+        "peer_name": "CANET-ASN-4",
+        "peer_org": "Bell Canada",
+        "peer_country": "Canada"
+      },
+      {
+        "peer_as": "5577",
+        "peer_name": "ROOT",
+        "peer_org": "root SA",
+        "peer_country": "Luxembourg"
+      },
+      {
+        "peer_as": "7160",
+        "peer_name": "NETDYNAMICS",
+        "peer_org": "Oracle Corporation",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "9329",
+        "peer_name": "SLTINT-AS-AP",
+        "peer_org": "Sri Lanka Telecom Ltd",
+        "peer_country": "Sri Lanka"
+      },
+      {
+        "peer_as": "26496",
+        "peer_name": "AS-26496-GO-DADDY-COM-LLC",
+        "peer_org": "GoDaddy.com, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "8744",
+        "peer_name": "MegaMax-AS",
+        "peer_org": "OOO \"MediaSeti\"",
+        "peer_country": "Russia"
+      },
+      {
+        "peer_as": "9066",
+        "peer_name": "BCC",
+        "peer_org": "EWE TEL GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "16243",
+        "peer_name": "VIRTU-AS",
+        "peer_org": "Virtu Secure Webservices B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "21011",
+        "peer_name": "TOPNET",
+        "peer_org": "PRIVATE JOINT STOCK COMPANY \"DATAGROUP\"",
+        "peer_country": "Ukraine"
+      },
+      {
+        "peer_as": "15772",
+        "peer_name": "WNET",
+        "peer_org": "Wnet Ukraine LLC",
+        "peer_country": "Ukraine"
+      },
+      {
+        "peer_as": "138435",
+        "peer_name": "YUETAU-AS-HK",
+        "peer_org": "Aperture Science Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "133894",
+        "peer_name": "EASYCONNECTISP-AS-AP",
+        "peer_org": "Easy Connect- ISP",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "132471",
+        "peer_name": "MTNAFGHANISTAN-AS-AP",
+        "peer_org": "MTN Afghanistan",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "202756",
+        "peer_name": "AS",
+        "peer_org": "RFE/RL, INC.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "139770",
+        "peer_name": "SADATTELECOM-AS-AP",
+        "peer_org": "SADAT Telecom",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "133202",
+        "peer_name": "AFSAT-AS-AP",
+        "peer_org": "Afghanistan Faiz Satellite Communications",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "58697",
+        "peer_name": "THREESPARK-NET-AF",
+        "peer_org": "Vital Telecommunication",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "59317",
+        "peer_name": "AFGHANCYBERISP-AF",
+        "peer_org": "Afghan Cyber ISP",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "142051",
+        "peer_name": "HAQNET-AS-AP",
+        "peer_org": "HaqNet Technology Services",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "59355",
+        "peer_name": "AACL-AS-AP",
+        "peer_org": "Arif Azim Ltd",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "44570",
+        "peer_name": "ROUTE48-AS",
+        "peer_org": "Cloudie Networks, LLC.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "13127",
+        "peer_name": "T-Mobile",
+        "peer_org": "T-mobile Netherlands B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "21219",
+        "peer_name": "Datagroup",
+        "peer_org": "PRIVATE JOINT STOCK COMPANY \"DATAGROUP\"",
+        "peer_country": "Ukraine"
+      },
+      {
+        "peer_as": "25295",
+        "peer_name": "KIELNET-AS",
+        "peer_org": "1&1 Versatel Deutschland GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "29462",
+        "peer_name": "DSD-AS",
+        "peer_org": "Destiny N.V",
+        "peer_country": "Belgium"
+      },
+      {
+        "peer_as": "31055",
+        "peer_name": "CONSULTIX-AS",
+        "peer_org": "Consultix GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "31661",
+        "peer_name": "COMX",
+        "peer_org": "DANSK KABEL TV A/S",
+        "peer_country": "Denmark"
+      },
+      {
+        "peer_as": "33796",
+        "peer_name": "BNAA-AS",
+        "peer_org": "BOLIGNET-AARHUS F.M.B.A.",
+        "peer_country": "Denmark"
+      },
+      {
+        "peer_as": "34270",
+        "peer_name": "INETC",
+        "peer_org": "Internet Connections Ltd",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "34419",
+        "peer_name": "ON-AS",
+        "peer_org": "Vodafone Group Services GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "34486",
+        "peer_name": "IP2",
+        "peer_org": "PQR B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "34868",
+        "peer_name": "ANYCAST-AS",
+        "peer_org": "2342 Verwaltungs GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "35733",
+        "peer_name": "EURID",
+        "peer_org": "EURid vzw",
+        "peer_country": "Belgium"
+      },
+      {
+        "peer_as": "41393",
+        "peer_name": "NASSTAR-AS",
+        "peer_org": "Nasstar Trading Ltd",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "42158",
+        "peer_name": "SENTIA-AS",
+        "peer_org": "Sentia Netherlands BV",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "47143",
+        "peer_name": "TDHN",
+        "peer_org": "Todayhost Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "47441",
+        "peer_name": "TRUNKM",
+        "peer_org": "Comfortel Ltd.",
+        "peer_country": "Russia"
+      },
+      {
+        "peer_as": "35662",
+        "peer_name": "REDSTATION",
+        "peer_org": "Redstation Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "50056",
+        "peer_name": "AI-NET",
+        "peer_org": "Ai Networks Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "50986",
+        "peer_name": "EXCELLENT-HOSTING",
+        "peer_org": "Teleservice Bredband Skane AB",
+        "peer_country": "Sweden"
+      },
+      {
+        "peer_as": "51906",
+        "peer_name": "RECAST-AS",
+        "peer_org": "recast IT GmbH & Co. KG",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "57172",
+        "peer_name": "GlobalLayer",
+        "peer_org": "Global Layer B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "57382",
+        "peer_name": "TK1",
+        "peer_org": "Telecommunication Tokelau Corporation Teletok",
+        "peer_country": "Tokelau"
+      },
+      {
+        "peer_as": "59560",
+        "peer_name": "WORLDICT",
+        "peer_org": "World-ICT B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "199139",
+        "peer_name": "ASN-WERITECH",
+        "peer_org": "Weritech B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "61007",
+        "peer_name": "AS-OPENTLD2",
+        "peer_org": "OpenTLD BV",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "34455",
+        "peer_name": "HotSpotDrive",
+        "peer_org": "x-ion GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "29108",
+        "peer_name": "LEITWERT-RESEARCH",
+        "peer_org": "Leitwert GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "202706",
+        "peer_name": "KEENMOBILE-AS",
+        "peer_org": "KeenSystems B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "206898",
+        "peer_name": "bladeservers",
+        "peer_org": "Server Hosting Pty Ltd",
+        "peer_country": "Australia"
+      },
+      {
+        "peer_as": "206073",
+        "peer_name": "driemusk-1",
+        "peer_org": "3MUSK B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "42106",
+        "peer_name": "abelohost1",
+        "peer_org": "Abelohost BV",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "202190",
+        "peer_name": "HOSTPALACE",
+        "peer_org": "HOSTPALACE DATACENTERS LTD",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "210091",
+        "peer_name": "NL-KEEN-AS",
+        "peer_org": "KeenSystems B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "207534",
+        "peer_name": "Oris_Global_Networks",
+        "peer_org": "ORIS GLOBAL NETWORKS LTD",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "41846",
+        "peer_name": "COLLAB",
+        "peer_org": "Amsterdam Internet Exchange B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "60211",
+        "peer_name": "NL-FIRSTCOLO",
+        "peer_org": "firstcolo GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "209653",
+        "peer_name": "WSO-AS",
+        "peer_org": "Private Mobility Nederland B.V.",
+        "peer_country": "Netherlands"
+      },
+      {
+        "peer_as": "207415",
+        "peer_name": "NPAW",
+        "peer_org": "Nicepeopleatwork, S.L.",
+        "peer_country": "Spain"
+      },
+      {
+        "peer_as": "59692",
+        "peer_name": "IQWEB",
+        "peer_org": "IQWeb FZ-LLC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "59435",
+        "peer_name": "CSPACEHOSTINGS",
+        "peer_org": "CSpace Hostings OU",
+        "peer_country": "Estonia"
+      },
+      {
+        "peer_as": "22957",
+        "peer_name": "BIGWELLS-01",
+        "peer_org": "Bigwells Technology LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "55732": {
+    "asn": "55732",
+    "as_info": {
+      "name": "RANATECHNET-AF",
+      "org": "RANA Technologies",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "12880",
+        "peer_name": "DCI-AS",
+        "peer_org": "Information Technology Company (ITC)",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "49666",
+        "peer_name": "TIC-GW-AS",
+        "peer_org": "Telecommunication Infrastructure Company",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "48159",
+        "peer_name": "TIC-AS",
+        "peer_org": "Telecommunication Infrastructure Company",
+        "peer_country": "Iran"
+      }
+    ]
+  },
+  "55745": {
+    "asn": "55745",
+    "as_info": {
+      "name": "NEDA-AS-AP",
+      "org": "Neda Telecommunications",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "12880",
+        "peer_name": "DCI-AS",
+        "peer_org": "Information Technology Company (ITC)",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "49666",
+        "peer_name": "TIC-GW-AS",
+        "peer_org": "Telecommunication Infrastructure Company",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "48159",
+        "peer_name": "TIC-AS",
+        "peer_org": "Telecommunication Infrastructure Company",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      }
+    ]
+  },
+  "132467": {
+    "asn": "132467",
+    "as_info": {
+      "name": "AFREN-AS-AP",
+      "org": "Ministry of Higher Education",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "55330",
+        "peer_name": "GCN-DCN-AS",
+        "peer_org": "Government Communications Network",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "7473",
+        "peer_name": "SINGTEL-AS-AP",
+        "peer_org": "Singapore Telecommunications (SINGTEL Internet Exchange)",
+        "peer_country": "Singapore"
+      }
+    ]
+  },
+  "134112": {
+    "asn": "134112",
+    "as_info": {
+      "name": "ARIASAT-LTD",
+      "org": "Aria Sat LTD",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "28910",
+        "peer_name": "INTAL-ASN",
+        "peer_org": "\"Uzbektelekom\" Joint Stock Company",
+        "peer_country": "Uzbekistan"
+      },
+      {
+        "peer_as": "12880",
+        "peer_name": "DCI-AS",
+        "peer_org": "Information Technology Company (ITC)",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      },
+      {
+        "peer_as": "49666",
+        "peer_name": "TIC-GW-AS",
+        "peer_org": "Telecommunication Infrastructure Company",
+        "peer_country": "Iran"
+      },
+      {
+        "peer_as": "48159",
+        "peer_name": "TIC-AS",
+        "peer_org": "Telecommunication Infrastructure Company",
+        "peer_country": "Iran"
+      }
+    ]
+  },
+  "139697": {
+    "asn": "139697",
+    "as_info": {
+      "name": "MIKROGATE-AS-AP",
+      "org": "Mikrogate ICT Services Company",
+      "country": "Afghanistan"
+    },
+    "links": [
+      {
+        "peer_as": "55330",
+        "peer_name": "GCN-DCN-AS",
+        "peer_org": "Government Communications Network",
+        "peer_country": "Afghanistan"
+      },
+      {
+        "peer_as": "38193",
+        "peer_name": "TWA-AS-AP",
+        "peer_org": "TRANSWORLD ASSOCIATES (PVT) LIMITED",
+        "peer_country": "Pakistan"
+      }
+    ]
+  }
+}

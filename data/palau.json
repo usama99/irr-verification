@@ -1,0 +1,98 @@
+{
+  "133897": {
+    "asn": "133897",
+    "as_info": {
+      "name": "PEACCDPT-AS-AP",
+      "org": "Palau Equipment Co. Inc.",
+      "country": "Palau"
+    },
+    "links": [
+      {
+        "peer_as": "9505",
+        "peer_name": "TWGATE-AP",
+        "peer_org": "Chunghwa Telecom Co., Ltd.",
+        "peer_country": "Taiwan"
+      },
+      {
+        "peer_as": "9229",
+        "peer_name": "SPEEDCAST-AP",
+        "peer_org": "Speedcast Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      }
+    ]
+  },
+  "17893": {
+    "asn": "17893",
+    "as_info": {
+      "name": "PALAU-AS-AP",
+      "org": "Palau National Communications Corporation",
+      "country": "Palau"
+    },
+    "links": [
+      {
+        "peer_as": "9505",
+        "peer_name": "TWGATE-AP",
+        "peer_org": "Chunghwa Telecom Co., Ltd.",
+        "peer_country": "Taiwan"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      }
+    ]
+  },
+  "58932": {
+    "asn": "58932",
+    "as_info": {
+      "name": "PWC-AS-AP",
+      "org": "Palau Wifi Corporation",
+      "country": "Palau"
+    },
+    "links": [
+      {
+        "peer_as": "9505",
+        "peer_name": "TWGATE-AP",
+        "peer_org": "Chunghwa Telecom Co., Ltd.",
+        "peer_country": "Taiwan"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "140570",
+        "peer_name": "HKBCS-AS-AP",
+        "peer_org": "Hong Kong Beecloud System Technology Services Limited",
+        "peer_country": "Hong Kong"
+      }
+    ]
+  }
+}

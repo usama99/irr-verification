@@ -1,0 +1,110 @@
+{
+  "132486": {
+    "asn": "132486",
+    "as_info": {
+      "name": "OCEANLINKLTD-AS-AP",
+      "org": "OCEAN LINK LTD",
+      "country": "Kiribati"
+    },
+    "links": [
+      {
+        "peer_as": "9498",
+        "peer_name": "BBIL-AP",
+        "peer_org": "Bharti Airtel Limited",
+        "peer_country": "India"
+      },
+      {
+        "peer_as": "9304",
+        "peer_name": "HUTCHISON-AS-AP",
+        "peer_org": "HGC Global Communications Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "134783": {
+    "asn": "134783",
+    "as_info": {
+      "name": "ATHKL-AS-AP",
+      "org": "Amalgamated Telecom Holdings Kiribati Ltd",
+      "country": "Kiribati"
+    },
+    "links": [
+      {
+        "peer_as": "9505",
+        "peer_name": "TWGATE-AP",
+        "peer_org": "Chunghwa Telecom Co., Ltd.",
+        "peer_country": "Taiwan"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "9299",
+        "peer_name": "IPG-AS-AP",
+        "peer_org": "Philippine Long Distance Telephone Co.",
+        "peer_country": "Philippines"
+      },
+      {
+        "peer_as": "9304",
+        "peer_name": "HUTCHISON-AS-AP",
+        "peer_org": "HGC Global Communications Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "140066": {
+    "asn": "140066",
+    "as_info": {
+      "name": "MOEL-AS-AP",
+      "org": "MOEL TRADING CO. LTD.",
+      "country": "Kiribati"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "10130",
+        "peer_name": "AS10130",
+        "peer_org": "Federated States of Micronesia Telecomm. Corporation",
+        "peer_country": "Micronesia"
+      },
+      {
+        "peer_as": "38176",
+        "peer_name": "ABS-Global",
+        "peer_org": "ABS (HK) Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "4826",
+        "peer_name": "VOCUS-BACKBONE-AS",
+        "peer_org": "Vocus Communications",
+        "peer_country": "Unknown"
+      }
+    ]
+  }
+}

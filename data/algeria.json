@@ -1,0 +1,194 @@
+{
+  "33774": {
+    "asn": "33774",
+    "as_info": {
+      "name": "DJAWEB",
+      "org": "Telecom Algeria",
+      "country": "Algeria"
+    },
+    "links": [
+      {
+        "peer_as": "12956",
+        "peer_name": "TELXIUS",
+        "peer_org": "TELEFONICA GLOBAL SOLUTIONS SL",
+        "peer_country": "Spain"
+      },
+      {
+        "peer_as": "5511",
+        "peer_name": "Opentransit",
+        "peer_org": "Orange S.A.",
+        "peer_country": "France"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "33779": {
+    "asn": "33779",
+    "as_info": {
+      "name": "wataniya-telecom-as",
+      "org": "Wataniya Telecom Algerie",
+      "country": "Algeria"
+    },
+    "links": [
+      {
+        "peer_as": "22351",
+        "peer_name": "INTELSAT-1",
+        "peer_org": "INTELSAT GLOBAL SERVICE CORPORATION",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6774",
+        "peer_name": "ASN-BICS",
+        "peer_org": "Belgacom International Carrier Services SA",
+        "peer_country": "Belgium"
+      },
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "200795": {
+    "asn": "200795",
+    "as_info": {
+      "name": "TOUMI-AS",
+      "org": "Toumi Mohamed",
+      "country": "Algeria"
+    },
+    "links": [
+      {
+        "peer_as": "56655",
+        "peer_name": "TERRAHOST",
+        "peer_org": "TerraHost AS",
+        "peer_country": "Norway"
+      },
+      {
+        "peer_as": "44570",
+        "peer_name": "ROUTE48-AS",
+        "peer_org": "Cloudie Networks, LLC.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "136620",
+        "peer_name": "VMHAUSLIMITED-AS-AP",
+        "peer_org": "VMHaus Limited",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "5617",
+        "peer_name": "TPNET",
+        "peer_org": "Orange Polska Spolka Akcyjna",
+        "peer_country": "Poland"
+      }
+    ]
+  },
+  "36947": {
+    "asn": "36947",
+    "as_info": {
+      "name": "ALGTEL-AS",
+      "org": "Telecom Algeria",
+      "country": "Algeria"
+    },
+    "links": [
+      {
+        "peer_as": "5438",
+        "peer_name": "ATI-TN",
+        "peer_org": "Agence Tunisienne d'Internet",
+        "peer_country": "Tunisia"
+      }
+    ]
+  },
+  "3208": {
+    "asn": "3208",
+    "as_info": {
+      "name": "ARN",
+      "org": "Algerian Academic Research Network",
+      "country": "Algeria"
+    },
+    "links": [
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "21391": {
+    "asn": "21391",
+    "as_info": {
+      "name": "TDA-AS",
+      "org": "Algerian Broadcasting (Tele Diffusion d'Algerie TDA)",
+      "country": "Algeria"
+    },
+    "links": [
+      {
+        "peer_as": "3356",
+        "peer_name": "LEVEL3",
+        "peer_org": "Level 3 Parent, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "16214": {
+    "asn": "16214",
+    "as_info": {
+      "name": "CERIST",
+      "org": "C.E.R.I.S.T.",
+      "country": "Algeria"
+    },
+    "links": [
+      {
+        "peer_as": "1239",
+        "peer_name": "SPRINTLINK",
+        "peer_org": "Sprint",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "327931": {
+    "asn": "327931",
+    "as_info": {
+      "name": "Optimum-Telecom-Algeria",
+      "org": "Optimum Telecom Algeria",
+      "country": "Algeria"
+    },
+    "links": [
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "327712": {
+    "asn": "327712",
+    "as_info": {
+      "name": "ATM",
+      "org": "Telecom Algeria",
+      "country": "Algeria"
+    },
+    "links": [
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  }
+}

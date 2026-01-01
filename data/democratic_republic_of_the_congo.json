@@ -1,0 +1,1276 @@
+{
+  "37571": {
+    "asn": "37571",
+    "as_info": {
+      "name": "ITM-DRC",
+      "org": "ITM",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "8513",
+        "peer_name": "SKYVISION",
+        "peer_org": "SkyVision Global Networks Ltd",
+        "peer_country": "Bermuda"
+      },
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "5416",
+        "peer_name": "Unknown",
+        "peer_org": "Bahrain Telecommunications Company (BATELCO) B.S.C.",
+        "peer_country": "Bahrain"
+      },
+      {
+        "peer_as": "60171",
+        "peer_name": "AFRIX-AS",
+        "peer_org": "AFR-IX TELECOM SAU",
+        "peer_country": "Spain"
+      },
+      {
+        "peer_as": "38176",
+        "peer_name": "ABS-Global",
+        "peer_org": "ABS (HK) Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "50293",
+        "peer_name": "INTERFIBER-PT",
+        "peer_org": "Interfiber Networks LDA",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "37613",
+        "peer_name": "Dolphin-Telecom-AS",
+        "peer_org": "DOLPHIN TELECOMMUNICATION LIMITED",
+        "peer_country": "Ghana"
+      },
+      {
+        "peer_as": "47961",
+        "peer_name": "RRmedia",
+        "peer_org": "MX1 Ltd.",
+        "peer_country": "Israel"
+      },
+      {
+        "peer_as": "60632",
+        "peer_name": "HDIGR",
+        "peer_org": "Sniperhill Internet services LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "37447",
+        "peer_name": "ORANGE-RDC",
+        "peer_org": "ORANGE RDC",
+        "peer_country": "Democratic Republic of the Congo"
+      },
+      {
+        "peer_as": "37677",
+        "peer_name": "SCPT",
+        "peer_org": "Societe Congolaise des Postes et Telecommunications (SCPT)",
+        "peer_country": "Democratic Republic of the Congo"
+      },
+      {
+        "peer_as": "8781",
+        "peer_name": "QA-ISP",
+        "peer_org": "Ooredoo Q.S.C.",
+        "peer_country": "Qatar"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "37415": {
+    "asn": "37415",
+    "as_info": {
+      "name": "AFRINET",
+      "org": "AFRINET SA",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "8657",
+        "peer_name": "MEO-INTERNACIONAL",
+        "peer_org": "MEO - SERVICOS DE COMUNICACOES E MULTIMEDIA S.A.",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "50293",
+        "peer_name": "INTERFIBER-PT",
+        "peer_org": "Interfiber Networks LDA",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "37677",
+        "peer_name": "SCPT",
+        "peer_org": "Societe Congolaise des Postes et Telecommunications (SCPT)",
+        "peer_country": "Democratic Republic of the Congo"
+      }
+    ]
+  },
+  "37447": {
+    "asn": "37447",
+    "as_info": {
+      "name": "ORANGE-RDC",
+      "org": "ORANGE RDC",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "8657",
+        "peer_name": "MEO-INTERNACIONAL",
+        "peer_org": "MEO - SERVICOS DE COMUNICACOES E MULTIMEDIA S.A.",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "22351",
+        "peer_name": "INTELSAT-1",
+        "peer_org": "INTELSAT GLOBAL SERVICE CORPORATION",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "27822",
+        "peer_name": "Unknown",
+        "peer_org": "Emerging Markets Communications de Argentina S.R.L",
+        "peer_country": "Argentina"
+      },
+      {
+        "peer_as": "5416",
+        "peer_name": "Unknown",
+        "peer_org": "Bahrain Telecommunications Company (BATELCO) B.S.C.",
+        "peer_country": "Bahrain"
+      },
+      {
+        "peer_as": "205996",
+        "peer_name": "Interfiber",
+        "peer_org": "Interfiber Ltd",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "38176",
+        "peer_name": "ABS-Global",
+        "peer_org": "ABS (HK) Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "50293",
+        "peer_name": "INTERFIBER-PT",
+        "peer_org": "Interfiber Networks LDA",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "39151",
+        "peer_name": "AXESS",
+        "peer_org": "AXESS Networks Solutions Germany GmbH",
+        "peer_country": "Germany"
+      },
+      {
+        "peer_as": "37571",
+        "peer_name": "ITM-DRC",
+        "peer_org": "ITM",
+        "peer_country": "Democratic Republic of the Congo"
+      },
+      {
+        "peer_as": "37133",
+        "peer_name": "airtel-tz-as",
+        "peer_org": "Airtel Tanzania",
+        "peer_country": "Tanzania"
+      },
+      {
+        "peer_as": "16735",
+        "peer_name": "Unknown",
+        "peer_org": "ALGAR TELECOM S/A",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "328180",
+        "peer_name": "Bank-Of-Kigali-AS",
+        "peer_org": "Bank of Kigali Ltd",
+        "peer_country": "Rwanda"
+      },
+      {
+        "peer_as": "8781",
+        "peer_name": "QA-ISP",
+        "peer_org": "Ooredoo Q.S.C.",
+        "peer_country": "Qatar"
+      },
+      {
+        "peer_as": "47961",
+        "peer_name": "RRmedia",
+        "peer_org": "MX1 Ltd.",
+        "peer_country": "Israel"
+      }
+    ]
+  },
+  "37453": {
+    "asn": "37453",
+    "as_info": {
+      "name": "VODACOM-CONGO",
+      "org": "Vodacom Congo",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "8657",
+        "peer_name": "MEO-INTERNACIONAL",
+        "peer_org": "MEO - SERVICOS DE COMUNICACOES E MULTIMEDIA S.A.",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "22351",
+        "peer_name": "INTELSAT-1",
+        "peer_org": "INTELSAT GLOBAL SERVICE CORPORATION",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "50293",
+        "peer_name": "INTERFIBER-PT",
+        "peer_org": "Interfiber Networks LDA",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "55002",
+        "peer_name": "DEFENSE-NET",
+        "peer_org": "Defense.Net, Inc",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "37451",
+        "peer_name": "CongoTelecom",
+        "peer_org": "CONGO TELECOM",
+        "peer_country": "Republic of the Congo"
+      },
+      {
+        "peer_as": "16284",
+        "peer_name": "Inq-Digital-Nigeria-AS",
+        "peer_org": "Inq. Digital Nigeria",
+        "peer_country": "Nigeria"
+      }
+    ]
+  },
+  "37483": {
+    "asn": "37483",
+    "as_info": {
+      "name": "Congo-Chine",
+      "org": "ORANGE RDC",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "8657",
+        "peer_name": "MEO-INTERNACIONAL",
+        "peer_org": "MEO - SERVICOS DE COMUNICACOES E MULTIMEDIA S.A.",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "30844",
+        "peer_name": "LIQUID-AS",
+        "peer_org": "Liquid Telecommunications Ltd",
+        "peer_country": "United Kingdom"
+      },
+      {
+        "peer_as": "37273",
+        "peer_name": "BCS",
+        "peer_org": "Bandwidth and Cloud Services Group Ltd",
+        "peer_country": "Uganda"
+      },
+      {
+        "peer_as": "22690",
+        "peer_name": "AxiomNET-AS",
+        "peer_org": "Axiom Networks Ltd",
+        "peer_country": "Rwanda"
+      }
+    ]
+  },
+  "37638": {
+    "asn": "37638",
+    "as_info": {
+      "name": "Orioncom",
+      "org": "Orioncom SPRL",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "8657",
+        "peer_name": "MEO-INTERNACIONAL",
+        "peer_org": "MEO - SERVICOS DE COMUNICACOES E MULTIMEDIA S.A.",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "327738": {
+    "asn": "327738",
+    "as_info": {
+      "name": "AFRICELL-DRC",
+      "org": "STE AFRICELL RDC SPRL",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "8657",
+        "peer_name": "MEO-INTERNACIONAL",
+        "peer_org": "MEO - SERVICOS DE COMUNICACOES E MULTIMEDIA S.A.",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "22351",
+        "peer_name": "INTELSAT-1",
+        "peer_org": "INTELSAT GLOBAL SERVICE CORPORATION",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "4637",
+        "peer_name": "ASN-TELSTRA-GLOBAL",
+        "peer_org": "Telstra International Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "50293",
+        "peer_name": "INTERFIBER-PT",
+        "peer_org": "Interfiber Networks LDA",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "60725",
+        "peer_name": "O3B-AS",
+        "peer_org": "SES ASTRA S.A.",
+        "peer_country": "Luxembourg"
+      },
+      {
+        "peer_as": "59796",
+        "peer_name": "STORMWALL-AS",
+        "peer_org": "StormWall s.r.o.",
+        "peer_country": "Slovakia"
+      },
+      {
+        "peer_as": "37613",
+        "peer_name": "Dolphin-Telecom-AS",
+        "peer_org": "DOLPHIN TELECOMMUNICATION LIMITED",
+        "peer_country": "Ghana"
+      },
+      {
+        "peer_as": "2905",
+        "peer_name": "TICSA-ASN",
+        "peer_org": "MTN SA",
+        "peer_country": "South Africa"
+      },
+      {
+        "peer_as": "37451",
+        "peer_name": "CongoTelecom",
+        "peer_org": "CONGO TELECOM",
+        "peer_country": "Republic of the Congo"
+      },
+      {
+        "peer_as": "16735",
+        "peer_name": "Unknown",
+        "peer_org": "ALGAR TELECOM S/A",
+        "peer_country": "Brazil"
+      }
+    ]
+  },
+  "328003": {
+    "asn": "328003",
+    "as_info": {
+      "name": "STANDARD-TELECOM-CONGO",
+      "org": "STANDARD TELECOM CONGO SARL- STC SA",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "8657",
+        "peer_name": "MEO-INTERNACIONAL",
+        "peer_org": "MEO - SERVICOS DE COMUNICACOES E MULTIMEDIA S.A.",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "12491",
+        "peer_name": "IPPLANET-AS",
+        "peer_org": "Gilat Telecom Ltd.",
+        "peer_country": "Israel"
+      },
+      {
+        "peer_as": "50293",
+        "peer_name": "INTERFIBER-PT",
+        "peer_org": "Interfiber Networks LDA",
+        "peer_country": "Portugal"
+      }
+    ]
+  },
+  "327879": {
+    "asn": "327879",
+    "as_info": {
+      "name": "AJYWA-TELECOM",
+      "org": "AJYWA TELECOM",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "37662",
+        "peer_name": "WIOCC-AS",
+        "peer_org": "West Indian Ocean Cable Company",
+        "peer_country": "Mauritius"
+      },
+      {
+        "peer_as": "37273",
+        "peer_name": "BCS",
+        "peer_org": "Bandwidth and Cloud Services Group Ltd",
+        "peer_country": "Uganda"
+      },
+      {
+        "peer_as": "37084",
+        "peer_name": "simbanet-tz",
+        "peer_org": "Simbanet (T) Limited",
+        "peer_country": "Tanzania"
+      },
+      {
+        "peer_as": "37545",
+        "peer_name": "BBSS",
+        "peer_org": "Burundi Backbone System SM",
+        "peer_country": "Burundi"
+      },
+      {
+        "peer_as": "328180",
+        "peer_name": "Bank-Of-Kigali-AS",
+        "peer_org": "Bank of Kigali Ltd",
+        "peer_country": "Rwanda"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      }
+    ]
+  },
+  "327870": {
+    "asn": "327870",
+    "as_info": {
+      "name": "GBS-DRC",
+      "org": "Global Broadband Solution",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "50293",
+        "peer_name": "INTERFIBER-PT",
+        "peer_org": "Interfiber Networks LDA",
+        "peer_country": "Portugal"
+      }
+    ]
+  },
+  "37020": {
+    "asn": "37020",
+    "as_info": {
+      "name": "CELTEL-DRC",
+      "org": "CELTEL DRC",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "27822",
+        "peer_name": "Unknown",
+        "peer_org": "Emerging Markets Communications de Argentina S.R.L",
+        "peer_country": "Argentina"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "50293",
+        "peer_name": "INTERFIBER-PT",
+        "peer_org": "Interfiber Networks LDA",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "37273",
+        "peer_name": "BCS",
+        "peer_org": "Bandwidth and Cloud Services Group Ltd",
+        "peer_country": "Uganda"
+      },
+      {
+        "peer_as": "22690",
+        "peer_name": "AxiomNET-AS",
+        "peer_org": "Axiom Networks Ltd",
+        "peer_country": "Rwanda"
+      },
+      {
+        "peer_as": "37133",
+        "peer_name": "airtel-tz-as",
+        "peer_org": "Airtel Tanzania",
+        "peer_country": "Tanzania"
+      },
+      {
+        "peer_as": "16735",
+        "peer_name": "Unknown",
+        "peer_org": "ALGAR TELECOM S/A",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "37224",
+        "peer_name": "RINEX",
+        "peer_org": "Rwanda Internet Exchange Point (RINEX) c/o RICTA",
+        "peer_country": "Rwanda"
+      }
+    ]
+  },
+  "37677": {
+    "asn": "37677",
+    "as_info": {
+      "name": "SCPT",
+      "org": "Societe Congolaise des Postes et Telecommunications (SCPT)",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "8966",
+        "peer_name": "Etisalat-AS",
+        "peer_org": "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+        "peer_country": "United Arab Emirates"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "37571",
+        "peer_name": "ITM-DRC",
+        "peer_org": "ITM",
+        "peer_country": "Democratic Republic of the Congo"
+      },
+      {
+        "peer_as": "37415",
+        "peer_name": "AFRINET",
+        "peer_org": "AFRINET SA",
+        "peer_country": "Democratic Republic of the Congo"
+      },
+      {
+        "peer_as": "16735",
+        "peer_name": "Unknown",
+        "peer_org": "ALGAR TELECOM S/A",
+        "peer_country": "Brazil"
+      }
+    ]
+  },
+  "37102": {
+    "asn": "37102",
+    "as_info": {
+      "name": "CIELUX-RDC",
+      "org": "CIELUX TELECOM RDC",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "12491",
+        "peer_name": "IPPLANET-AS",
+        "peer_org": "Gilat Telecom Ltd.",
+        "peer_country": "Israel"
+      },
+      {
+        "peer_as": "5416",
+        "peer_name": "Unknown",
+        "peer_org": "Bahrain Telecommunications Company (BATELCO) B.S.C.",
+        "peer_country": "Bahrain"
+      },
+      {
+        "peer_as": "38176",
+        "peer_name": "ABS-Global",
+        "peer_org": "ABS (HK) Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "50293",
+        "peer_name": "INTERFIBER-PT",
+        "peer_org": "Interfiber Networks LDA",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "47961",
+        "peer_name": "RRmedia",
+        "peer_org": "MX1 Ltd.",
+        "peer_country": "Israel"
+      },
+      {
+        "peer_as": "8781",
+        "peer_name": "QA-ISP",
+        "peer_org": "Ooredoo Q.S.C.",
+        "peer_country": "Qatar"
+      },
+      {
+        "peer_as": "58453",
+        "peer_name": "CMI-INT-HK",
+        "peer_org": "China Mobile",
+        "peer_country": "China"
+      },
+      {
+        "peer_as": "6774",
+        "peer_name": "ASN-BICS",
+        "peer_org": "Belgacom International Carrier Services SA",
+        "peer_country": "Belgium"
+      }
+    ]
+  },
+  "37414": {
+    "asn": "37414",
+    "as_info": {
+      "name": "Microcom-Sprl",
+      "org": "Microcom Sprl",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "38176",
+        "peer_name": "ABS-Global",
+        "peer_org": "ABS (HK) Limited",
+        "peer_country": "Hong Kong"
+      },
+      {
+        "peer_as": "50293",
+        "peer_name": "INTERFIBER-PT",
+        "peer_org": "Interfiber Networks LDA",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "37133",
+        "peer_name": "airtel-tz-as",
+        "peer_org": "Airtel Tanzania",
+        "peer_country": "Tanzania"
+      },
+      {
+        "peer_as": "37468",
+        "peer_name": "ANGOLA-CABLES",
+        "peer_org": "Angola Cables",
+        "peer_country": "Angola"
+      },
+      {
+        "peer_as": "16735",
+        "peer_name": "Unknown",
+        "peer_org": "ALGAR TELECOM S/A",
+        "peer_country": "Brazil"
+      }
+    ]
+  },
+  "37730": {
+    "asn": "37730",
+    "as_info": {
+      "name": "ACIX-Peering",
+      "org": "United S.A.S.",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "327797": {
+    "asn": "327797",
+    "as_info": {
+      "name": "COWS",
+      "org": "ITM",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "50293",
+        "peer_name": "INTERFIBER-PT",
+        "peer_org": "Interfiber Networks LDA",
+        "peer_country": "Portugal"
+      }
+    ]
+  },
+  "327875": {
+    "asn": "327875",
+    "as_info": {
+      "name": "ISPA-DRC-CONTENT",
+      "org": "Internet service provider association - DRC",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "60171",
+        "peer_name": "AFRIX-AS",
+        "peer_org": "AFR-IX TELECOM SAU",
+        "peer_country": "Spain"
+      },
+      {
+        "peer_as": "37451",
+        "peer_name": "CongoTelecom",
+        "peer_org": "CONGO TELECOM",
+        "peer_country": "Republic of the Congo"
+      },
+      {
+        "peer_as": "16735",
+        "peer_name": "Unknown",
+        "peer_org": "ALGAR TELECOM S/A",
+        "peer_country": "Brazil"
+      }
+    ]
+  },
+  "327937": {
+    "asn": "327937",
+    "as_info": {
+      "name": "Smile-Communication-DRC",
+      "org": "Smile Communication DRC",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "12491",
+        "peer_name": "IPPLANET-AS",
+        "peer_org": "Gilat Telecom Ltd.",
+        "peer_country": "Israel"
+      },
+      {
+        "peer_as": "60171",
+        "peer_name": "AFRIX-AS",
+        "peer_org": "AFR-IX TELECOM SAU",
+        "peer_country": "Spain"
+      },
+      {
+        "peer_as": "50293",
+        "peer_name": "INTERFIBER-PT",
+        "peer_org": "Interfiber Networks LDA",
+        "peer_country": "Portugal"
+      }
+    ]
+  },
+  "328000": {
+    "asn": "328000",
+    "as_info": {
+      "name": "Banque-Commerciale-Du-Congo",
+      "org": "Equity Banque Commerciale Du Congo SA",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "50293",
+        "peer_name": "INTERFIBER-PT",
+        "peer_org": "Interfiber Networks LDA",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "37468",
+        "peer_name": "ANGOLA-CABLES",
+        "peer_org": "Angola Cables",
+        "peer_country": "Angola"
+      },
+      {
+        "peer_as": "16735",
+        "peer_name": "Unknown",
+        "peer_org": "ALGAR TELECOM S/A",
+        "peer_country": "Brazil"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6774",
+        "peer_name": "ASN-BICS",
+        "peer_org": "Belgacom International Carrier Services SA",
+        "peer_country": "Belgium"
+      }
+    ]
+  },
+  "328238": {
+    "asn": "328238",
+    "as_info": {
+      "name": "INFOSET-AS",
+      "org": "INFOSET SARL",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "328344": {
+    "asn": "328344",
+    "as_info": {
+      "name": "STETechplus-AS",
+      "org": "STE Techplus SARL",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "30844",
+        "peer_name": "LIQUID-AS",
+        "peer_org": "Liquid Telecommunications Ltd",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "328452": {
+    "asn": "328452",
+    "as_info": {
+      "name": "ISPA-RDC-LUBUX-MGMT",
+      "org": "Internet service provider association - DRC",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "37273",
+        "peer_name": "BCS",
+        "peer_org": "Bandwidth and Cloud Services Group Ltd",
+        "peer_country": "Uganda"
+      },
+      {
+        "peer_as": "37133",
+        "peer_name": "airtel-tz-as",
+        "peer_org": "Airtel Tanzania",
+        "peer_country": "Tanzania"
+      }
+    ]
+  },
+  "328542": {
+    "asn": "328542",
+    "as_info": {
+      "name": "MITC-SARL",
+      "org": "Mulangane Information Technology Consult SARL - MITC SARL",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "60171",
+        "peer_name": "AFRIX-AS",
+        "peer_org": "AFR-IX TELECOM SAU",
+        "peer_country": "Spain"
+      },
+      {
+        "peer_as": "50293",
+        "peer_name": "INTERFIBER-PT",
+        "peer_org": "Interfiber Networks LDA",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "37468",
+        "peer_name": "ANGOLA-CABLES",
+        "peer_org": "Angola Cables",
+        "peer_country": "Angola"
+      }
+    ]
+  },
+  "328566": {
+    "asn": "328566",
+    "as_info": {
+      "name": "Elite-Networks-AS",
+      "org": "STE ELITE NETWORKS SARL",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "37273",
+        "peer_name": "BCS",
+        "peer_org": "Bandwidth and Cloud Services Group Ltd",
+        "peer_country": "Uganda"
+      }
+    ]
+  },
+  "328618": {
+    "asn": "328618",
+    "as_info": {
+      "name": "OLIVERSOFT",
+      "org": "Ets OliverSoft",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "37273",
+        "peer_name": "BCS",
+        "peer_org": "Bandwidth and Cloud Services Group Ltd",
+        "peer_country": "Uganda"
+      }
+    ]
+  },
+  "328796": {
+    "asn": "328796",
+    "as_info": {
+      "name": "GOMIX-MGT",
+      "org": "Internet service provider association - DRC",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "37273",
+        "peer_name": "BCS",
+        "peer_org": "Bandwidth and Cloud Services Group Ltd",
+        "peer_country": "Uganda"
+      }
+    ]
+  },
+  "328928": {
+    "asn": "328928",
+    "as_info": {
+      "name": "CEDESURK",
+      "org": "CEDESURK ASBL",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "328552": {
+    "asn": "328552",
+    "as_info": {
+      "name": "STE-MDICIS",
+      "org": "STE MDICIS SAS",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "60171",
+        "peer_name": "AFRIX-AS",
+        "peer_org": "AFR-IX TELECOM SAU",
+        "peer_country": "Spain"
+      },
+      {
+        "peer_as": "50293",
+        "peer_name": "INTERFIBER-PT",
+        "peer_org": "Interfiber Networks LDA",
+        "peer_country": "Portugal"
+      }
+    ]
+  },
+  "329017": {
+    "asn": "329017",
+    "as_info": {
+      "name": "RAGA-NET",
+      "org": "RAGA NET SARL",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "60171",
+        "peer_name": "AFRIX-AS",
+        "peer_org": "AFR-IX TELECOM SAU",
+        "peer_country": "Spain"
+      }
+    ]
+  },
+  "37598": {
+    "asn": "37598",
+    "as_info": {
+      "name": "Ebale",
+      "org": "Eb@le",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "50293",
+        "peer_name": "INTERFIBER-PT",
+        "peer_org": "Interfiber Networks LDA",
+        "peer_country": "Portugal"
+      }
+    ]
+  },
+  "328445": {
+    "asn": "328445",
+    "as_info": {
+      "name": "UNLIMITED-SARL-AS",
+      "org": "UNLIMITED SARL",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "50293",
+        "peer_name": "INTERFIBER-PT",
+        "peer_org": "Interfiber Networks LDA",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "205996",
+        "peer_name": "Interfiber",
+        "peer_org": "Interfiber Ltd",
+        "peer_country": "United Kingdom"
+      }
+    ]
+  },
+  "328249": {
+    "asn": "328249",
+    "as_info": {
+      "name": "Kinshasa-Wireless-AS",
+      "org": "Kinshasa Wireless SARL (KIWI SARL)",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "50293",
+        "peer_name": "INTERFIBER-PT",
+        "peer_org": "Interfiber Networks LDA",
+        "peer_country": "Portugal"
+      },
+      {
+        "peer_as": "201749",
+        "peer_name": "iq-supercell",
+        "peer_org": "SUPER CELL NETWORK FOR INTERNET SERVICES LTD",
+        "peer_country": "Iraq"
+      }
+    ]
+  },
+  "328601": {
+    "asn": "328601",
+    "as_info": {
+      "name": "Compagnie-Financiere-du-Congo-AS",
+      "org": "Compagnie Financiere du Congo S.a.r.l.",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "50293",
+        "peer_name": "INTERFIBER-PT",
+        "peer_org": "Interfiber Networks LDA",
+        "peer_country": "Portugal"
+      }
+    ]
+  },
+  "328569": {
+    "asn": "328569",
+    "as_info": {
+      "name": "Banque-Central-Congo",
+      "org": "BANQUE CENTRALE DU CONGO",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "5377",
+        "peer_name": "MARLINK-EMEA",
+        "peer_org": "Marlink AS",
+        "peer_country": "Norway"
+      }
+    ]
+  },
+  "328443": {
+    "asn": "328443",
+    "as_info": {
+      "name": "Societe-Datco-AS",
+      "org": "Societe Datco",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "37273",
+        "peer_name": "BCS",
+        "peer_org": "Bandwidth and Cloud Services Group Ltd",
+        "peer_country": "Uganda"
+      },
+      {
+        "peer_as": "328180",
+        "peer_name": "Bank-Of-Kigali-AS",
+        "peer_org": "Bank of Kigali Ltd",
+        "peer_country": "Rwanda"
+      }
+    ]
+  },
+  "328551": {
+    "asn": "328551",
+    "as_info": {
+      "name": "Baraka-Broadband-AS",
+      "org": "Baraka Broadband Solutions Sarl",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "37273",
+        "peer_name": "BCS",
+        "peer_org": "Bandwidth and Cloud Services Group Ltd",
+        "peer_country": "Uganda"
+      }
+    ]
+  },
+  "327978": {
+    "asn": "327978",
+    "as_info": {
+      "name": "ISS",
+      "org": "INTERNATIONAL SYSTEMS SARL",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "43076",
+        "peer_name": "LU-AS",
+        "peer_org": "Global Broadband Solution Inc",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "37084",
+        "peer_name": "simbanet-tz",
+        "peer_org": "Simbanet (T) Limited",
+        "peer_country": "Tanzania"
+      }
+    ]
+  },
+  "328442": {
+    "asn": "328442",
+    "as_info": {
+      "name": "UNITED-SA",
+      "org": "United S.A.S.",
+      "country": "Democratic Republic of the Congo"
+    },
+    "links": [
+      {
+        "peer_as": "37451",
+        "peer_name": "CongoTelecom",
+        "peer_org": "CONGO TELECOM",
+        "peer_country": "Republic of the Congo"
+      }
+    ]
+  }
+}

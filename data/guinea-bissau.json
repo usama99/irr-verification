@@ -1,0 +1,42 @@
+{
+  "327769": {
+    "asn": "327769",
+    "as_info": {
+      "name": "MTN-Bissau",
+      "org": "Spacetel - Guine-Bissau",
+      "country": "Guinea-Bissau"
+    },
+    "links": [
+      {
+        "peer_as": "22351",
+        "peer_name": "INTELSAT-1",
+        "peer_org": "INTELSAT GLOBAL SERVICE CORPORATION",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "6939",
+        "peer_name": "HURRICANE",
+        "peer_org": "Hurricane Electric LLC",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "60171",
+        "peer_name": "AFRIX-AS",
+        "peer_org": "AFR-IX TELECOM SAU",
+        "peer_country": "Spain"
+      },
+      {
+        "peer_as": "2905",
+        "peer_name": "TICSA-ASN",
+        "peer_org": "MTN SA",
+        "peer_country": "South Africa"
+      },
+      {
+        "peer_as": "6774",
+        "peer_name": "ASN-BICS",
+        "peer_org": "Belgacom International Carrier Services SA",
+        "peer_country": "Belgium"
+      }
+    ]
+  }
+}

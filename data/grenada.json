@@ -1,0 +1,134 @@
+{
+  "30272": {
+    "asn": "30272",
+    "as_info": {
+      "name": "GOV-GD",
+      "org": "Government of Grenada",
+      "country": "Grenada"
+    },
+    "links": [
+      {
+        "peer_as": "11404",
+        "peer_name": "AS-WAVE-1",
+        "peer_org": "Wave Broadband",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "33576",
+        "peer_name": "DIG001",
+        "peer_org": "Digicel Jamaica",
+        "peer_country": "Jamaica"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "10292",
+        "peer_name": "CWJ-1",
+        "peer_org": "Cable & Wireless Jamaica",
+        "peer_country": "Jamaica"
+      },
+      {
+        "peer_as": "10835",
+        "peer_name": "VISIONARY",
+        "peer_org": "Visionary Communications, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "10307": {
+    "asn": "10307",
+    "as_info": {
+      "name": "ASN10307-GND",
+      "org": "LIME",
+      "country": "Grenada"
+    },
+    "links": [
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "393629": {
+    "asn": "393629",
+    "as_info": {
+      "name": "GDGR",
+      "org": "Green Dot Grenada Ltd",
+      "country": "Grenada"
+    },
+    "links": [
+      {
+        "peer_as": "23520",
+        "peer_name": "COLUMBUS-NETWORKS",
+        "peer_org": "Columbus Networks USA, Inc.",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "14432": {
+    "asn": "14432",
+    "as_info": {
+      "name": "GREX",
+      "org": "NTRC-Grenada",
+      "country": "Grenada"
+    },
+    "links": [
+      {
+        "peer_as": "13786",
+        "peer_name": "SEABRAS-1",
+        "peer_org": "Seabras 1 USA, LLC",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "46650": {
+    "asn": "46650",
+    "as_info": {
+      "name": "ASN46650-CCGL",
+      "org": "Columbus Communications Grenada Ltd.",
+      "country": "Grenada"
+    },
+    "links": [
+      {
+        "peer_as": "12025",
+        "peer_name": "IMDC-AS12025",
+        "peer_org": "Iron Mountain Data Center",
+        "peer_country": "United States"
+      },
+      {
+        "peer_as": "3491",
+        "peer_name": "BTN-ASN",
+        "peer_org": "PCCW Global, Inc.",
+        "peer_country": "United States"
+      }
+    ]
+  },
+  "393682": {
+    "asn": "393682",
+    "as_info": {
+      "name": "AICASNREQ10232014",
+      "org": "AIsleCom",
+      "country": "Grenada"
+    },
+    "links": [
+      {
+        "peer_as": "15164",
+        "peer_name": "UPNLLC",
+        "peer_org": "Unite Private Networks LLC.",
+        "peer_country": "United States"
+      }
+    ]
+  }
+}
