@@ -850,6 +850,18 @@
                 captchaInput.value = 'false';
                 form.appendChild(captchaInput);
 
+                const nextInput = document.createElement('input');
+                nextInput.type = 'hidden';
+                nextInput.name = '_next';
+                nextInput.value = 'https://usama99.github.io/irr-verification/';
+                form.appendChild(nextInput);
+
+                const templateInput = document.createElement('input');
+                templateInput.type = 'hidden';
+                templateInput.name = '_template';
+                templateInput.value = 'box';
+                form.appendChild(templateInput);
+
                 document.body.appendChild(form);
                 form.submit();
                 document.body.removeChild(form);
@@ -857,6 +869,38 @@
                 console.error('Email send error:', error);
             }
         }
+        // async function sendToResearcher(data) {
+        //     try {
+        //         const form = document.createElement('form');
+        //         form.method = 'POST';
+        //         form.action = 'https://formsubmit.co/usamaijaz404@gmail.com';
+        //         form.target = '_blank';
+        //
+        //         const subjectInput = document.createElement('input');
+        //         subjectInput.type = 'hidden';
+        //         subjectInput.name = '_subject';
+        //         subjectInput.value = `AS${data.asn} IRR Verification`;
+        //         form.appendChild(subjectInput);
+        //
+        //         const dataInput = document.createElement('input');
+        //         dataInput.type = 'hidden';
+        //         dataInput.name = 'data';
+        //         dataInput.value = JSON.stringify(data, null, 2);
+        //         form.appendChild(dataInput);
+        //
+        //         const captchaInput = document.createElement('input');
+        //         captchaInput.type = 'hidden';
+        //         captchaInput.name = '_captcha';
+        //         captchaInput.value = 'false';
+        //         form.appendChild(captchaInput);
+        //
+        //         document.body.appendChild(form);
+        //         form.submit();
+        //         document.body.removeChild(form);
+        //     } catch (error) {
+        //         console.error('Email send error:', error);
+        //     }
+        // }
 
         function downloadJSONBackup(data) {
             const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
