@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IRR Link Verification Portal</title>
+    <title>IRR Verification</title>
     <style>
         * {
             margin: 0;
@@ -12,7 +12,7 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 20px;
@@ -23,7 +23,16 @@
             margin: 0 auto;
         }
 
-        .login-box, .main-content {
+        .login-section {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 500px;
+            margin: 100px auto;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .main-content {
             background: white;
             border-radius: 12px;
             padding: 40px;
@@ -32,361 +41,89 @@
 
         h1 {
             color: #333;
+            font-size: 32px;
             margin-bottom: 10px;
-            font-size: 28px;
         }
 
         .subtitle {
             color: #666;
             margin-bottom: 30px;
-            font-size: 14px;
+            font-size: 16px;
         }
 
-        input[type="password"], input[type="text"] {
+        input[type="text"],
+        input[type="password"],
+        select {
             width: 100%;
             padding: 12px;
             border: 2px solid #e0e0e0;
             border-radius: 8px;
             font-size: 16px;
             margin-bottom: 15px;
+            transition: border-color 0.3s;
         }
 
-        button {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-
-        button:hover {
-            transform: translateY(-2px);
-        }
-
-        button:disabled {
-            background: #ccc;
-            cursor: not-allowed;
-            transform: none;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .search-section {
-            margin-bottom: 30px;
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 8px;
-        }
-
-        .search-peer-section {
-            margin-bottom: 20px;
-            padding: 20px;
-            background: #f0f8ff;
-            border-radius: 8px;
-            border-left: 4px solid #667eea;
-        }
-
-        .search-results {
-            margin-top: 15px;
-            padding: 15px;
-            background: #fff;
-            border-radius: 8px;
-            border: 1px solid #e0e0e0;
-        }
-
-        .search-result-item {
-            padding: 12px;
-            margin-bottom: 10px;
-            background: #f8f9fa;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-
-        .search-result-item:hover {
-            background: #e9ecef;
-        }
-
-        .search-match {
-            background: #fff3cd !important;
-            border-left: 4px solid #ffc107 !important;
-            animation: highlight 0.5s ease;
-        }
-
-        @keyframes highlight {
-            0% { background: #fff3cd; }
-            50% { background: #ffe082; }
-            100% { background: #fff3cd; }
-        }
-
-        .stats {
-            display: flex;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-
-        .stat-box {
-            flex: 1;
-            padding: 15px;
-            background: white;
-            border-radius: 8px;
-            border-left: 4px solid #667eea;
-        }
-
-        .stat-label {
-            font-size: 12px;
-            color: #666;
-            text-transform: uppercase;
-        }
-
-        .stat-value {
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
-        }
-
-        .country-group {
-            background: white;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            overflow: hidden;
-            transition: all 0.3s;
-        }
-
-        .country-group:hover {
+        input:focus,
+        select:focus {
+            outline: none;
             border-color: #667eea;
         }
 
-        .country-header {
-            padding: 20px;
-            background: #f8f9fa;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .country-header:hover {
-            background: #e9ecef;
-        }
-
-        .country-title {
-            font-size: 18px;
-            font-weight: bold;
-            color: #333;
-        }
-
-        .country-count {
-            color: #667eea;
-            font-weight: bold;
-        }
-
-        .country-preview {
-            font-size: 13px;
-            color: #666;
-            margin-top: 5px;
-        }
-
-        .country-actions {
-            display: flex;
-            gap: 10px;
-            padding: 15px 20px;
-            background: #fff;
-            border-top: 1px solid #e0e0e0;
-        }
-
-        .country-actions button {
-            flex: 1;
-            padding: 10px;
-            font-size: 14px;
-        }
-
-        .action-verify {
-            background: #667eea;
-        }
-
-        .country-details {
-            padding: 20px;
-            background: #fff;
-            border-top: 1px solid #e0e0e0;
-        }
-
-        .instruction-box {
-            padding: 15px;
-            background: #e7f3ff;
-            border-left: 4px solid #2196F3;
-            border-radius: 4px;
-            margin-bottom: 20px;
-            font-size: 14px;
-            color: #1565C0;
-        }
-
-        .peer-verification-list {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin-top: 15px;
-        }
-
-        .peer-verification-item {
-            padding: 15px;
-            background: #f8f9fa;
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
             border-radius: 8px;
-            border-left: 4px solid #667eea;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: all 0.3s;
-        }
-
-        .peer-info {
-            flex: 1;
-        }
-
-        .peer-as {
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 4px;
-            font-size: 15px;
-        }
-
-        .peer-org {
-            font-size: 13px;
-            color: #666;
-        }
-
-        .peer-actions {
-            display: flex;
-            gap: 10px;
-            flex-shrink: 0;
-        }
-
-        .radio-group {
-            display: flex;
-            gap: 15px;
-        }
-
-        .radio-option {
-            display: flex;
-            align-items: center;
-            gap: 5px;
+            font-size: 16px;
+            font-weight: 600;
             cursor: pointer;
-            padding: 8px 12px;
-            border-radius: 6px;
-            transition: background 0.2s;
+            transition: opacity 0.3s;
         }
 
-        .radio-option:hover {
-            background: #e9ecef;
+        button:hover {
+            opacity: 0.9;
         }
 
-        .radio-option input[type="radio"] {
-            cursor: pointer;
-            width: 18px;
-            height: 18px;
-        }
-
-        .radio-option label {
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 500;
-        }
-
-        .radio-active {
-            color: #28a745;
-        }
-
-        .radio-obsolete {
-            color: #dc3545;
-        }
-
-        .radio-unknown {
-            color: #6c757d;
-        }
-
-        .pagination-controls {
-            margin-top: 20px;
-            padding: 15px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .pagination-controls p {
-            margin-bottom: 10px;
-            color: #666;
-            font-size: 14px;
-        }
-
-        .pagination-controls button {
-            background: #667eea;
-        }
-
-        .submit-section {
-            margin-top: 30px;
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .submit-btn {
-            padding: 15px 40px;
-            font-size: 18px;
-            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+        .hidden {
+            display: none !important;
         }
 
         .error {
             color: #dc3545;
             margin-top: 10px;
+            font-size: 14px;
         }
 
-        .success {
-            color: #28a745;
-            margin-top: 10px;
+        .as-search-section {
+            margin-bottom: 30px;
         }
 
-        .contact {
-            text-align: center;
-            margin-top: 20px;
-            padding: 15px;
-            background: #fff3cd;
-            border-radius: 8px;
-            color: #856404;
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
         }
 
-        .verification-summary {
-            margin-top: 20px;
-            padding: 15px;
-            background: #d4edda;
-            border-radius: 8px;
-            color: #155724;
-        }
-
-        .loading {
-            text-align: center;
+        .stat-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
             padding: 20px;
-            color: #667eea;
-            font-size: 16px;
+            border-radius: 8px;
+            text-align: center;
         }
 
-        .progress-info {
-            margin-top: 10px;
-            padding: 10px;
-            background: #fff;
-            border-radius: 6px;
-            font-size: 13px;
-            color: #666;
+        .stat-label {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 5px;
         }
 
-        .clear-btn {
-            background: #6c757d;
+        .stat-value {
+            font-size: 28px;
+            font-weight: bold;
         }
 
         .large-as-warning {
@@ -399,237 +136,236 @@
             color: #856404;
         }
 
-        .modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.7);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-        }
-
-        .modal-content {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            max-width: 500px;
-            width: 90%;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-        }
-
-        .modal-header {
-            margin-bottom: 20px;
-        }
-
-        .modal-header h2 {
-            color: #333;
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .modal-header p {
-            color: #666;
-            font-size: 14px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-            color: #333;
-            font-size: 14px;
-        }
-
-        .form-group label .required {
-            color: #dc3545;
-        }
-
-        .form-group input, .form-group select {
-            width: 100%;
-            padding: 12px;
-            border: 2px solid #e0e0e0;
+        .search-peer-section {
+            background: #f8f9fa;
+            padding: 20px;
             border-radius: 8px;
-            font-size: 14px;
+            margin-bottom: 20px;
         }
 
-        .form-group input:focus, .form-group select:focus {
-            outline: none;
+        .search-results {
+            margin-top: 15px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .country-group {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .country-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .country-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .country-flag {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .country-progress {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .peer-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border: 2px solid #e0e0e0;
+            transition: border-color 0.3s;
+        }
+
+        .peer-item:hover {
             border-color: #667eea;
         }
 
-        .modal-actions {
+        .peer-header {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .peer-info {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .verification-options {
             display: flex;
             gap: 10px;
-            margin-top: 25px;
         }
 
-        .modal-actions button {
+        .verification-options label {
             flex: 1;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            text-align: center;
+            border: 2px solid #e0e0e0;
+            transition: all 0.3s;
+            font-size: 14px;
         }
 
-        .btn-cancel {
+        .verification-options input[type="radio"] {
+            display: none;
+        }
+
+        .verification-options input[type="radio"]:checked + label {
+            background: #28a745;
+            color: white;
+            border-color: #28a745;
+        }
+
+        .verification-options input[type="radio"][value="obsolete"]:checked + label {
+            background: #dc3545;
+            border-color: #dc3545;
+        }
+
+        .verification-options input[type="radio"][value="unknown"]:checked + label {
+            background: #ffc107;
+            border-color: #ffc107;
+            color: #333;
+        }
+
+        .load-more-btn {
+            background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+            margin-top: 15px;
+        }
+
+        .clear-btn {
             background: #6c757d;
+            padding: 8px 16px;
+            font-size: 14px;
+            width: auto;
         }
 
-        .btn-submit {
+        .verification-summary {
+            background: #e7f3ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .submit-section {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .submit-btn {
             background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            font-size: 18px;
+            padding: 15px;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <!-- Login Section -->
-        <div id="loginSection" class="login-box">
-            <h1>🔒 IRR Link Verification Portal</h1>
-            <p class="subtitle">Verify IRR routing data for your AS</p>
-            <input type="password" id="passwordInput" placeholder="Enter access password" onkeypress="if(event.key==='Enter') login()">
-            <button onclick="login()">Access Portal</button>
-            <p id="loginError" class="error hidden">Incorrect password. Please try again.</p>
-            <div class="contact">
-                <strong>Questions or technical issues?</strong> Contact: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="601513010d01090a011a54505420070d01090c4e030f0d">[email&#160;protected]</a>
-            </div>
+        <div id="loginSection" class="login-section">
+            <h1>🔒 Verification Portal</h1>
+            <p class="subtitle">Enter password to continue</p>
+            <input type="password" id="passwordInput" placeholder="Password" onkeypress="if(event.key==='Enter') login()">
+            <button onclick="login()">Login</button>
+            <div id="loginError" class="error hidden">Incorrect password</div>
         </div>
 
         <!-- Main Content -->
         <div id="mainContent" class="main-content hidden">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-                <div>
-                    <h1>IRR Link Verification</h1>
-                    <p class="subtitle">Verify IRR peering data for your AS</p>
+            <h1>IRR Link Verification</h1>
+            <p class="subtitle">Verify peering relationships for your AS</p>
+
+            <!-- AS Search -->
+            <div class="as-search-section">
+                <input type="text" id="asnInput" placeholder="Enter AS Number (e.g., 174)" oninput="searchAS()">
+                <div id="asResults" class="hidden"></div>
+            </div>
+
+            <!-- Stats -->
+            <div id="statsSection" class="stats hidden">
+                <div class="stat-box">
+                    <div class="stat-label">AS Number</div>
+                    <div class="stat-value" id="currentASN">-</div>
                 </div>
-                <div style="text-align: right;">
-                    <div id="profileIndicator" class="hidden" style="margin-bottom: 10px; color: #28a745; font-size: 14px;">
-                        ✓ <strong id="profileNameDisplay"></strong>
-                    </div>
-                    <button onclick="openProfileModal()" style="font-size: 14px; padding: 8px 16px;">
-                        <span id="profileButtonText">👤 Set Profile</span>
-                    </button>
+                <div class="stat-box">
+                    <div class="stat-label">Total Peers</div>
+                    <div class="stat-value" id="totalPeers">-</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Countries</div>
+                    <div class="stat-value" id="countryCount">-</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Verified</div>
+                    <div class="stat-value" id="verifiedCount">0</div>
                 </div>
             </div>
 
-            <!-- Search Section -->
-            <div class="search-section">
-                <h3 style="margin-bottom: 15px;">Find Your AS</h3>
-                <div style="display: flex; gap: 10px;">
-                    <input type="text" id="asnInput" placeholder="Enter AS number (e.g., 1234 or AS1234)" onkeypress="if(event.key==='Enter') searchAS()">
-                    <button onclick="searchAS()">Search</button>
-                </div>
-                <div id="loadingMessage" class="loading hidden">Loading data...</div>
+            <!-- Large AS Warning -->
+            <div id="largeAsWarning" class="large-as-warning hidden">
+                <strong>⚠️ Large AS</strong><br>
+                This AS has many peers. They are loaded in pages of 50 for better performance.
             </div>
 
-            <!-- Results Section -->
-            <div id="resultsSection" class="hidden">
-                <!-- Stats -->
-                <div class="stats">
-                    <div class="stat-box">
-                        <div class="stat-label">Your AS</div>
-                        <div class="stat-value" id="currentAS">-</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-label">Total Peer Links</div>
-                        <div class="stat-value" id="linkCount">-</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-label">Peer Countries</div>
-                        <div class="stat-value" id="countryCount">-</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-label">Verified Peers</div>
-                        <div class="stat-value" id="verifiedCount">0</div>
-                    </div>
+            <!-- Peer Search -->
+            <div id="peerSearchSection" class="search-peer-section hidden">
+                <h3 style="margin-bottom: 10px;">🔍 Search Peer</h3>
+                <div style="display: flex; gap: 10px; margin-bottom: 10px;">
+                    <input
+                        type="text"
+                        id="peerSearchInput"
+                        placeholder="Search by AS number or name"
+                        style="flex: 1; margin-bottom: 0;"
+                        oninput="searchPeers()">
+                    <button class="clear-btn" onclick="clearPeerSearch()">Clear</button>
                 </div>
+                <div id="searchResults" class="search-results hidden"></div>
+            </div>
 
-                <!-- Large AS Warning -->
-                <div id="largeAsWarning" class="large-as-warning hidden">
-                    <strong>⚠️ Large AS Detected</strong><br>
-                    This AS has many peer links. Peers are loaded in batches of 50 for better performance.
-                    Click "Load More Peers" to see additional peers in each country.
-                </div>
+            <!-- Country Groups -->
+            <div id="countryGroupsContainer"></div>
 
-                <!-- Peer Search Section -->
-                <div class="search-peer-section">
-                    <h3 style="margin-bottom: 10px;">🔍 Find Specific Peer</h3>
-                    <div style="display: flex; gap: 10px; margin-bottom: 10px;">
-                        <input 
-                            type="text" 
-                            id="peerSearchInput" 
-                            placeholder="Search by AS number (e.g., 1234) or name (e.g., Cogent)"
-                            style="flex: 1;"
-                            oninput="searchPeers()">
-                        <button class="clear-btn" onclick="clearPeerSearch()">Clear</button>
-                    </div>
-                    <div id="searchResults" class="search-results hidden"></div>
-                    <p class="subtitle" style="margin-top: 5px;">
-                        💡 Quickly locate a specific peering relationship
-                    </p>
-                </div>
+            <!-- Verification Summary -->
+            <div id="verificationSummary" class="verification-summary hidden">
+                <h3>✓ Summary</h3>
+                <div id="summaryContent"></div>
+            </div>
 
-                <!-- Country Groups -->
-                <div id="countryGroupsContainer"></div>
-
-                <!-- Verification Summary -->
-                <div id="verificationSummary" class="verification-summary hidden">
-                    <h3>✓ Verification Summary</h3>
-                    <div id="summaryContent"></div>
-                </div>
-
-                <!-- Submit Section -->
-                <div class="submit-section">
-                    <button class="submit-btn" onclick="submitVerification()">Submit Verification</button>
-                    <p class="subtitle" style="margin-top: 10px;">
-                        Your responses will be automatically saved. A backup file will also download.
-                    </p>
-                </div>
+            <!-- Submit -->
+            <div class="submit-section">
+                <button class="submit-btn" onclick="submitVerification()">Submit</button>
+                <p class="subtitle" style="margin-top: 10px;">
+                    Data will be saved automatically
+                </p>
             </div>
 
             <div class="contact">
-                <strong>Questions or technical issues?</strong> Contact: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1f6a6c7e727e76757e652b2f2b5f78727e7673317c7072">[email&#160;protected]</a>
-            </div>
-        </div>
-
-        <!-- Profile Setup Modal -->
-        <div id="profileModal" class="modal-overlay hidden">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>👤 Quick Setup (30 seconds)</h2>
-                    <p>Save your info once - all future submissions will be instant!</p>
-                </div>
-                <div style="padding: 15px; background: #fff3cd; border-radius: 8px; margin-bottom: 20px; font-size: 13px; color: #856404;">
-                    ⚡ After this, just click Submit and you're done - no forms ever again!
-                </div>
-                <div class="form-group">
-                    <label>Name <span class="required">*</span></label>
-                    <input type="text" id="profileNameInput" required placeholder="Your full name">
-                </div>
-                <div class="form-group">
-                    <label>Email <span class="required">*</span></label>
-                    <input type="email" id="profileEmailInput" required placeholder="your.email@example.com">
-                </div>
-                <div class="form-group">
-                    <label>Organization <span class="required">*</span></label>
-                    <input type="text" id="profileOrgInput" required placeholder="Your company/organization">
-                </div>
-                <div class="form-group">
-                    <label>Role/Position</label>
-                    <input type="text" id="profileRoleInput" placeholder="e.g., Network Engineer (optional)">
-                </div>
-                <div class="modal-actions">
-                    <button type="button" class="btn-cancel" onclick="skipProfile()">Skip (Submit Anonymous)</button>
-                    <button type="button" class="btn-submit" onclick="saveProfileNow()">Save & Continue</button>
-                </div>
+                <strong>Questions?</strong> Contact: usamaijaz404@gmail.com
             </div>
         </div>
     </div>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script>
         // ============================================
         // CONFIGURATION
         // ============================================
@@ -638,6 +374,26 @@
         const PEERS_PER_PAGE = 50;
         const LARGE_AS_THRESHOLD = 1000;
         const MAX_SEARCH_RESULTS = 50;
+
+        // Country flags
+        const FLAGS = {
+            'United States': '🇺🇸', 'United Kingdom': '🇬🇧', 'Germany': '🇩🇪',
+            'France': '🇫🇷', 'Netherlands': '🇳🇱', 'Canada': '🇨🇦',
+            'Japan': '🇯🇵', 'Australia': '🇦🇺', 'Singapore': '🇸🇬',
+            'Hong Kong': '🇭🇰', 'India': '🇮🇳', 'Brazil': '🇧🇷',
+            'Russia': '🇷🇺', 'China': '🇨🇳', 'South Korea': '🇰🇷',
+            'Switzerland': '🇨🇭', 'Sweden': '🇸🇪', 'Italy': '🇮🇹',
+            'Spain': '🇪🇸', 'Poland': '🇵🇱', 'Belgium': '🇧🇪',
+            'Austria': '🇦🇹', 'Denmark': '🇩🇰', 'Norway': '🇳🇴',
+            'Finland': '🇫🇮', 'Ireland': '🇮🇪', 'Czech Republic': '🇨🇿',
+            'Portugal': '🇵🇹', 'Romania': '🇷🇴', 'Greece': '🇬🇷',
+            'Hungary': '🇭🇺', 'Ukraine': '🇺🇦', 'Thailand': '🇹🇭',
+            'Malaysia': '🇲🇾', 'Indonesia': '🇮🇩', 'Philippines': '🇵🇭',
+            'Vietnam': '🇻🇳', 'Taiwan': '🇹🇼', 'Turkey': '🇹🇷',
+            'Israel': '🇮🇱', 'Saudi Arabia': '🇸🇦', 'UAE': '🇦🇪',
+            'South Africa': '🇿🇦', 'Mexico': '🇲🇽', 'Argentina': '🇦🇷',
+            'Chile': '🇨🇱', 'Colombia': '🇨🇴', 'New Zealand': '🇳🇿'
+        };
 
         // ============================================
         // STATE
@@ -649,11 +405,16 @@
         let peerVerifications = {};
         let sessionHistory = [];
         let countryPages = {};
-        let operatorProfile = null;
 
         // ============================================
-        // PASSWORD & DATA LOADING
+        // PASSWORD & LOGIN
         // ============================================
+
+        async function sha256(str) {
+            const buffer = new TextEncoder().encode(str);
+            const hash = await crypto.subtle.digest('SHA-256', buffer);
+            return Array.from(new Uint8Array(hash)).map(b => b.toString(16).padStart(2, '0')).join('');
+        }
 
         async function login() {
             const password = document.getElementById('passwordInput').value;
@@ -663,693 +424,344 @@
                 document.getElementById('loginSection').classList.add('hidden');
                 document.getElementById('mainContent').classList.remove('hidden');
                 loadCountryIndex();
-                loadOperatorProfile(); // Load saved profile
             } else {
                 document.getElementById('loginError').classList.remove('hidden');
             }
         }
 
-        async function sha256(message) {
-            const msgBuffer = new TextEncoder().encode(message);
-            const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
-            const hashArray = Array.from(new Uint8Array(hashBuffer));
-            return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-        }
+        // ============================================
+        // DATA LOADING
+        // ============================================
 
         async function loadCountryIndex() {
             try {
-                const response = await fetch('data/country_index.json');
+                const response = await fetch('country_index.json');
                 countryIndex = await response.json();
-                console.log('Country index loaded:', Object.keys(countryIndex).length, 'ASes');
+                console.log('Country index loaded');
             } catch (error) {
-                alert('Error loading country index. Please contact support.');
-                console.error(error);
+                console.error('Error loading country index:', error);
+                alert('Error loading data. Please refresh the page.');
             }
         }
 
-        // ============================================
-        // SEARCH & LOAD
-        // ============================================
+        function searchAS() {
+            const input = document.getElementById('asnInput').value;
+            const asn = input.replace(/\D/g, '');
 
-        async function searchAS() {
-            const input = document.getElementById('asnInput').value.trim();
-            const asn = input.replace(/^AS/i, '');
+            if (asn.length > 0) {
+                currentASN = asn;
+                loadASData(asn);
+            }
+        }
 
-            if (!asn) {
-                alert('Please enter an AS number.');
+        async function loadASData(asn) {
+            const country = countryIndex[asn];
+
+            if (!country) {
+                alert('AS not found in database');
                 return;
             }
-
-            const verifiedCount = Object.keys(peerVerifications).length;
-            if (currentASN && verifiedCount > 0) {
-                const proceed = confirm(
-                    `⚠️ Warning: You have ${verifiedCount} unsubmitted verification(s) for AS${currentASN}.\n\n` +
-                    `Searching a new AS will lose this data.\n\n` +
-                    `Click OK to continue anyway, or Cancel to go back and submit first.`
-                );
-
-                if (!proceed) {
-                    return;
-                }
-            }
-
-            if (!countryIndex[asn]) {
-                alert(`AS${asn} not found in our dataset.`);
-                return;
-            }
-
-            currentASN = asn;
-            peerVerifications = {};
-            countryPages = {};
-
-            document.getElementById('loadingMessage').classList.remove('hidden');
-            document.getElementById('resultsSection').classList.add('hidden');
-
-            const countryFile = countryIndex[asn].filename;
-            console.log(`Loading ${countryFile} for AS${asn}...`);
 
             try {
-                const response = await fetch(`data/${countryFile}`);
-                const countryData = await response.json();
+                const response = await fetch(`${country}.json`);
+                const data = await response.json();
 
-                if (!countryData[asn]) {
-                    alert(`AS${asn} not found in ${countryFile}.`);
+                if (!data[asn]) {
+                    alert('AS data not found');
                     return;
                 }
 
-                currentASData = countryData[asn];
-                groupPeersByCountry();
-                displayResults();
-                document.getElementById('loadingMessage').classList.add('hidden');
+                currentASData = data[asn];
+                peerVerifications = {};
+                countryPages = {};
 
-            } catch (error) {
-                alert('Error loading AS data. Please try again.');
-                console.error(error);
-                document.getElementById('loadingMessage').classList.add('hidden');
-            }
-        }
+                displayASInfo();
+                renderCountryGroups();
 
-        function groupPeersByCountry() {
-            const grouped = {};
+                document.getElementById('statsSection').classList.remove('hidden');
+                document.getElementById('peerSearchSection').classList.remove('hidden');
 
-            for (const link of currentASData.links) {
-                const peerCountry = link.peer_country || 'Unknown';
-
-                if (!grouped[peerCountry]) {
-                    grouped[peerCountry] = {
-                        count: 0,
-                        peers: []
-                    };
+                if (currentASData.links.length > LARGE_AS_THRESHOLD) {
+                    document.getElementById('largeAsWarning').classList.remove('hidden');
+                } else {
+                    document.getElementById('largeAsWarning').classList.add('hidden');
                 }
 
-                grouped[peerCountry].count++;
-                grouped[peerCountry].peers.push(link);
+                updateVerificationSummary();
+
+            } catch (error) {
+                console.error('Error loading AS data:', error);
+                alert('Error loading AS data');
             }
-
-            const sortedGrouped = {};
-            const sortedCountries = Object.keys(grouped).sort((a, b) =>
-                grouped[b].count - grouped[a].count
-            );
-
-            for (const country of sortedCountries) {
-                sortedGrouped[country] = grouped[country];
-                countryPages[country] = 0;
-            }
-
-            currentASData.grouped_by_country = sortedGrouped;
         }
 
-        function displayResults() {
-            const data = currentASData;
-            const asInfo = data.as_info || {};
-            const grouped = data.grouped_by_country || {};
+        function displayASInfo() {
+            document.getElementById('currentASN').textContent = currentASN;
+            document.getElementById('totalPeers').textContent = currentASData.links.length;
 
-            const asDisplay = asInfo.name && asInfo.name !== 'Unknown'
-                ? `AS${currentASN} - ${asInfo.name} (${asInfo.country})`
-                : `AS${currentASN}`;
-
-            document.getElementById('currentAS').textContent = asDisplay;
-            document.getElementById('linkCount').textContent = data.links.length;
-            document.getElementById('countryCount').textContent = Object.keys(grouped).length;
+            const countries = new Set(currentASData.links.map(l => l.country || 'Unknown'));
+            document.getElementById('countryCount').textContent = countries.size;
             document.getElementById('verifiedCount').textContent = '0';
-
-            if (data.links.length >= LARGE_AS_THRESHOLD) {
-                document.getElementById('largeAsWarning').classList.remove('hidden');
-            } else {
-                document.getElementById('largeAsWarning').classList.add('hidden');
-            }
-
-            displayCountryGroups(grouped);
-
-            document.getElementById('resultsSection').classList.remove('hidden');
-            document.getElementById('resultsSection').scrollIntoView({ behavior: 'smooth' });
         }
 
-        function displayCountryGroups(grouped) {
+        // ============================================
+        // RENDERING
+        // ============================================
+
+        function renderCountryGroups() {
             const container = document.getElementById('countryGroupsContainer');
             container.innerHTML = '';
 
-            const countryFlags = {
-                'Singapore': '🇸🇬', 'United States': '🇺🇸', 'Japan': '🇯🇵',
-                'Indonesia': '🇮🇩', 'Australia': '🇦🇺', 'Germany': '🇩🇪',
-                'United Kingdom': '🇬🇧', 'Netherlands': '🇳🇱', 'France': '🇫🇷',
-                'China': '🇨🇳', 'India': '🇮🇳', 'Malaysia': '🇲🇾',
-                'Thailand': '🇹🇭', 'South Korea': '🇰🇷', 'Canada': '🇨🇦',
-            };
-
-            for (const [country, group] of Object.entries(grouped)) {
-                const flag = countryFlags[country] || '🌏';
-                const countryDiv = createCountryGroup(country, group, flag);
-                container.appendChild(countryDiv);
-            }
-        }
-
-        function createCountryGroup(country, group, flag) {
-            const div = document.createElement('div');
-            div.className = 'country-group';
-            div.id = `country-${country.replace(/\s+/g, '-')}`;
-
-            const previewPeers = group.peers.slice(0, 3).map(p => p.peer_name).join(', ');
-            const moreText = group.peers.length > 3 ? ` and ${group.peers.length - 3} more` : '';
-
-            const peersToShow = group.peers.slice(0, PEERS_PER_PAGE);
-            const hasMore = group.peers.length > PEERS_PER_PAGE;
-
-            div.innerHTML = `
-                <div class="country-header" onclick="toggleCountryDetails('${country}')">
-                    <div>
-                        <div class="country-title">
-                            ${flag} ${country} <span class="country-count">(${group.count} peers)</span>
-                        </div>
-                        <div class="country-preview">${previewPeers}${moreText}</div>
-                    </div>
-                    <div>▼</div>
-                </div>
-                <div class="country-actions">
-                    <button class="action-verify" onclick="toggleCountryDetails('${country}', event)">
-                        📋 Verify Peers
-                    </button>
-                </div>
-                <div class="country-details hidden" id="details-${country.replace(/\s+/g, '-')}">
-                    <div class="instruction-box">
-                        <strong>Instructions:</strong> Review each peer and mark its current status.
-                        Mark as <strong style="color: #28a745;">Active</strong> if peering relationship exists,
-                        <strong style="color: #dc3545;">Obsolete</strong> if no longer peering, or
-                        <strong style="color: #6c757d;">Unknown</strong> if you're not certain.
-                    </div>
-                    <div class="progress-info">
-                        Verified: <strong id="progress-${country.replace(/\s+/g, '-')}">0</strong> of ${group.count} peers
-                    </div>
-                    <div class="peer-verification-list" id="peer-list-${country.replace(/\s+/g, '-')}">
-                        ${peersToShow.map(peer => renderPeerItem(peer, country)).join('')}
-                    </div>
-                    ${hasMore ? `
-                        <div class="pagination-controls" id="pagination-${country.replace(/\s+/g, '-')}">
-                            <p>Showing ${PEERS_PER_PAGE} of ${group.count} peers</p>
-                            <button onclick="loadMorePeers('${country}', event)">
-                                Load ${Math.min(PEERS_PER_PAGE, group.count - PEERS_PER_PAGE)} More Peers
-                            </button>
-                        </div>
-                    ` : ''}
-                </div>
-            `;
-
-            return div;
-        }
-
-        function renderPeerItem(peer, country) {
-            return `
-                <div class="peer-verification-item" data-peer-as="${peer.peer_as}">
-                    <div class="peer-info">
-                        <div class="peer-as">AS${peer.peer_as} - ${peer.peer_name}</div>
-                        <div class="peer-org">${peer.peer_org}</div>
-                    </div>
-                    <div class="peer-actions">
-                        <div class="radio-group">
-                            <div class="radio-option radio-active">
-                                <input type="radio" name="peer-${peer.peer_as}" value="active"
-                                       id="active-${peer.peer_as}"
-                                       onchange="markPeer('${peer.peer_as}', 'active', '${country}')">
-                                <label for="active-${peer.peer_as}">✓ Active</label>
-                            </div>
-                            <div class="radio-option radio-obsolete">
-                                <input type="radio" name="peer-${peer.peer_as}" value="obsolete"
-                                       id="obsolete-${peer.peer_as}"
-                                       onchange="markPeer('${peer.peer_as}', 'obsolete', '${country}')">
-                                <label for="obsolete-${peer.peer_as}">✗ Obsolete</label>
-                            </div>
-                            <div class="radio-option radio-unknown">
-                                <input type="radio" name="peer-${peer.peer_as}" value="unknown"
-                                       id="unknown-${peer.peer_as}"
-                                       onchange="markPeer('${peer.peer_as}', 'unknown', '${country}')">
-                                <label for="unknown-${peer.peer_as}">? Unknown</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            `;
-        }
-
-        function loadMorePeers(country, event) {
-            event.stopPropagation();
-
-            const group = currentASData.grouped_by_country[country];
-            countryPages[country]++;
-
-            const start = countryPages[country] * PEERS_PER_PAGE;
-            const end = Math.min(start + PEERS_PER_PAGE, group.peers.length);
-            const peersToShow = group.peers.slice(start, end);
-
-            const listId = `peer-list-${country.replace(/\s+/g, '-')}`;
-            const listEl = document.getElementById(listId);
-
-            peersToShow.forEach(peer => {
-                listEl.innerHTML += renderPeerItem(peer, country);
+            // Group by country
+            const byCountry = {};
+            currentASData.links.forEach(link => {
+                const country = link.country || 'Unknown';
+                if (!byCountry[country]) byCountry[country] = [];
+                byCountry[country].push(link);
             });
 
-            const paginationId = `pagination-${country.replace(/\s+/g, '-')}`;
-            const paginationEl = document.getElementById(paginationId);
+            // Render each country group
+            Object.keys(byCountry).sort().forEach(country => {
+                const peers = byCountry[country];
+                const flag = FLAGS[country] || '🌐';
 
-            const loaded = Math.min(end, group.peers.length);
-            const remaining = group.peers.length - loaded;
+                const groupDiv = document.createElement('div');
+                groupDiv.className = 'country-group';
+                groupDiv.id = `group-${country}`;
 
-            if (remaining > 0) {
-                paginationEl.innerHTML = `
-                    <p>Showing ${loaded} of ${group.count} peers</p>
-                    <button onclick="loadMorePeers('${country}', event)">
-                        Load ${Math.min(PEERS_PER_PAGE, remaining)} More Peers
-                    </button>
+                groupDiv.innerHTML = `
+                    <div class="country-header">
+                        <div>
+                            <span class="country-flag">${flag}</span>
+                            <span class="country-title">${country}</span>
+                        </div>
+                        <div class="country-progress" id="progress-${country}">
+                            0 / ${peers.length} verified
+                        </div>
+                    </div>
+                    <div id="peers-${country}"></div>
                 `;
+
+                container.appendChild(groupDiv);
+
+                // Initialize page counter
+                countryPages[country] = 1;
+
+                // Render first page
+                const firstPage = peers.slice(0, PEERS_PER_PAGE);
+                renderPeers(country, firstPage);
+
+                // Add load more button if needed
+                if (peers.length > PEERS_PER_PAGE) {
+                    const loadMoreBtn = document.createElement('button');
+                    loadMoreBtn.className = 'load-more-btn';
+                    loadMoreBtn.textContent = `Load More (${peers.length - PEERS_PER_PAGE} remaining)`;
+                    loadMoreBtn.onclick = () => loadMorePeers(country);
+                    loadMoreBtn.id = `loadmore-${country}`;
+                    groupDiv.appendChild(loadMoreBtn);
+                }
+            });
+        }
+
+        function renderPeers(country, peers) {
+            const container = document.getElementById(`peers-${country}`);
+
+            peers.forEach(peer => {
+                const peerDiv = document.createElement('div');
+                peerDiv.className = 'peer-item';
+                peerDiv.id = `peer-${peer.asn}`;
+
+                peerDiv.innerHTML = `
+                    <div class="peer-header">AS${peer.asn}</div>
+                    <div class="peer-info">${peer.name || 'No name available'}</div>
+                    <div class="verification-options">
+                        <input type="radio" name="peer-${peer.asn}" id="active-${peer.asn}" value="active" onchange="updateVerification('${peer.asn}', 'active', '${country}')">
+                        <label for="active-${peer.asn}">✓ Active</label>
+
+                        <input type="radio" name="peer-${peer.asn}" id="obsolete-${peer.asn}" value="obsolete" onchange="updateVerification('${peer.asn}', 'obsolete', '${country}')">
+                        <label for="obsolete-${peer.asn}">✗ Obsolete</label>
+
+                        <input type="radio" name="peer-${peer.asn}" id="unknown-${peer.asn}" value="unknown" onchange="updateVerification('${peer.asn}', 'unknown', '${country}')">
+                        <label for="unknown-${peer.asn}">? Unknown</label>
+                    </div>
+                `;
+
+                container.appendChild(peerDiv);
+            });
+        }
+
+        function loadMorePeers(country) {
+            const byCountry = {};
+            currentASData.links.forEach(link => {
+                const c = link.country || 'Unknown';
+                if (!byCountry[c]) byCountry[c] = [];
+                byCountry[c].push(link);
+            });
+
+            const peers = byCountry[country];
+            const currentPage = countryPages[country];
+            const nextPage = currentPage + 1;
+
+            const start = currentPage * PEERS_PER_PAGE;
+            const end = start + PEERS_PER_PAGE;
+            const nextPeers = peers.slice(start, end);
+
+            renderPeers(country, nextPeers);
+            countryPages[country] = nextPage;
+
+            // Update or remove load more button
+            const loadMoreBtn = document.getElementById(`loadmore-${country}`);
+            if (end >= peers.length) {
+                loadMoreBtn.remove();
             } else {
-                paginationEl.innerHTML = `
-                    <p>✓ All ${group.count} peers loaded</p>
-                `;
+                loadMoreBtn.textContent = `Load More (${peers.length - end} remaining)`;
             }
         }
 
-        function toggleCountryDetails(country, event) {
-            if (event) event.stopPropagation();
-            const detailsId = `details-${country.replace(/\s+/g, '-')}`;
-            const details = document.getElementById(detailsId);
-            details.classList.toggle('hidden');
-        }
+        // ============================================
+        // VERIFICATION
+        // ============================================
 
-        function markPeer(peerAS, status, country) {
-            peerVerifications[peerAS] = status;
-            updateVerifiedCount();
+        function updateVerification(asn, status, country) {
+            peerVerifications[asn] = status;
+
+            // Update country progress
             updateCountryProgress(country);
-            showVerificationSummary();
+
+            // Update global count
+            document.getElementById('verifiedCount').textContent = Object.keys(peerVerifications).length;
+
+            // Update summary
+            updateVerificationSummary();
         }
 
         function updateCountryProgress(country) {
-            const progressId = `progress-${country.replace(/\s+/g, '-')}`;
-            const progressEl = document.getElementById(progressId);
+            const byCountry = {};
+            currentASData.links.forEach(link => {
+                const c = link.country || 'Unknown';
+                if (!byCountry[c]) byCountry[c] = [];
+                byCountry[c].push(link);
+            });
 
-            if (progressEl) {
-                const countryData = currentASData.grouped_by_country[country];
-                const verified = countryData.peers.filter(p =>
-                    peerVerifications.hasOwnProperty(p.peer_as)
-                ).length;
+            const peers = byCountry[country];
+            const verified = peers.filter(p => peerVerifications[p.asn]).length;
 
-                progressEl.textContent = verified;
-            }
+            document.getElementById(`progress-${country}`).textContent =
+                `${verified} / ${peers.length} verified`;
         }
 
-        function updateVerifiedCount() {
-            const verified = Object.keys(peerVerifications).length;
-            document.getElementById('verifiedCount').textContent = verified;
-        }
-
-        function showVerificationSummary() {
-            const summary = document.getElementById('verificationSummary');
-            const content = document.getElementById('summaryContent');
-
+        function updateVerificationSummary() {
             if (Object.keys(peerVerifications).length === 0) {
-                summary.classList.add('hidden');
+                document.getElementById('verificationSummary').classList.add('hidden');
                 return;
             }
 
-            const activeCount = Object.values(peerVerifications).filter(v => v === 'active').length;
-            const obsoleteCount = Object.values(peerVerifications).filter(v => v === 'obsolete').length;
-            const unknownCount = Object.values(peerVerifications).filter(v => v === 'unknown').length;
+            const active = Object.values(peerVerifications).filter(v => v === 'active').length;
+            const obsolete = Object.values(peerVerifications).filter(v => v === 'obsolete').length;
+            const unknown = Object.values(peerVerifications).filter(v => v === 'unknown').length;
 
-            let html = '<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">';
-            html += `<div><strong>Active:</strong> ${activeCount} peers</div>`;
-            html += `<div><strong>Obsolete:</strong> ${obsoleteCount} peers</div>`;
-            html += `<div><strong>Unknown:</strong> ${unknownCount} peers</div>`;
-            html += '</div>';
+            document.getElementById('summaryContent').innerHTML = `
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 15px;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 24px; font-weight: bold; color: #28a745;">${active}</div>
+                        <div style="color: #666;">Active</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 24px; font-weight: bold; color: #dc3545;">${obsolete}</div>
+                        <div style="color: #666;">Obsolete</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 24px; font-weight: bold; color: #ffc107;">${unknown}</div>
+                        <div style="color: #666;">Unknown</div>
+                    </div>
+                </div>
+            `;
 
-            content.innerHTML = html;
-            summary.classList.remove('hidden');
+            document.getElementById('verificationSummary').classList.remove('hidden');
         }
 
         // ============================================
-        // PEER SEARCH FUNCTIONALITY
+        // PEER SEARCH
         // ============================================
 
         function searchPeers() {
-            const searchTerm = document.getElementById('peerSearchInput').value.toLowerCase().trim();
+            const query = document.getElementById('peerSearchInput').value.toLowerCase().trim();
             const resultsDiv = document.getElementById('searchResults');
 
-            if (!searchTerm) {
+            if (query.length === 0) {
                 resultsDiv.classList.add('hidden');
-                clearHighlights();
                 return;
             }
 
-            const cleanSearch = searchTerm.replace(/^as/i, '');
+            const matches = currentASData.links.filter(link => {
+                const asn = link.asn.toString();
+                const name = (link.name || '').toLowerCase();
+                return asn.includes(query) || name.includes(query);
+            }).slice(0, MAX_SEARCH_RESULTS);
 
-            // Step 1: Search ALL peers (fast - just JavaScript)
-            const allMatches = [];
-            const grouped = currentASData.grouped_by_country;
-
-            for (const [country, group] of Object.entries(grouped)) {
-                const countryMatches = group.peers.filter(peer => {
-                    const asMatch = peer.peer_as.includes(cleanSearch);
-                    const nameMatch = peer.peer_name.toLowerCase().includes(searchTerm);
-                    const orgMatch = peer.peer_org.toLowerCase().includes(searchTerm);
-                    return asMatch || nameMatch || orgMatch;
-                });
-
-                if (countryMatches.length > 0) {
-                    allMatches.push({
-                        country: country,
-                        peers: countryMatches,
-                        count: countryMatches.length
-                    });
-                }
-            }
-
-            // Step 2: Count total matches
-            const totalMatches = allMatches.reduce((sum, m) => sum + m.count, 0);
-
-            if (totalMatches === 0) {
-                resultsDiv.innerHTML = '<p style="color: #666;">No peers found matching "' + searchTerm + '"</p>';
+            if (matches.length === 0) {
+                resultsDiv.innerHTML = '<div style="padding: 10px; color: #666;">No matches found</div>';
                 resultsDiv.classList.remove('hidden');
-                clearHighlights();
                 return;
             }
 
-            // Step 3: Limit displayed results to MAX_SEARCH_RESULTS
-            let displayedCount = 0;
-            const matchesToShow = [];
+            resultsDiv.innerHTML = '';
+            matches.forEach(peer => {
+                const country = peer.country || 'Unknown';
+                const peerDiv = document.createElement('div');
+                peerDiv.className = 'peer-item';
 
-            for (const match of allMatches) {
-                if (displayedCount >= MAX_SEARCH_RESULTS) break;
+                peerDiv.innerHTML = `
+                    <div class="peer-header">AS${peer.asn} - ${country}</div>
+                    <div class="peer-info">${peer.name || 'No name available'}</div>
+                    <div class="verification-options">
+                        <input type="radio" name="peer-${peer.asn}" id="search-active-${peer.asn}" value="active" onchange="updateVerification('${peer.asn}', 'active', '${country}')">
+                        <label for="search-active-${peer.asn}">✓ Active</label>
 
-                const peersToShow = match.peers.slice(0, MAX_SEARCH_RESULTS - displayedCount);
-                matchesToShow.push({
-                    country: match.country,
-                    peers: peersToShow,
-                    count: peersToShow.length
-                });
-                displayedCount += peersToShow.length;
-            }
+                        <input type="radio" name="peer-${peer.asn}" id="search-obsolete-${peer.asn}" value="obsolete" onchange="updateVerification('${peer.asn}', 'obsolete', '${country}')">
+                        <label for="search-obsolete-${peer.asn}">✗ Obsolete</label>
 
-            // Step 4: Display results with appropriate message
-            let html = '<strong>Found ' + totalMatches + ' peer(s)</strong>';
-
-            if (totalMatches > MAX_SEARCH_RESULTS) {
-                html += ` <span style="color: #dc3545;">(showing first ${MAX_SEARCH_RESULTS})</span><br>`;
-                html += '<small style="color: #856404;">💡 Refine your search to see specific peers</small>';
-            }
-
-            html += '<br><br>';
-
-            matchesToShow.forEach(match => {
-                html += `
-                    <div class="search-result-item" onclick="jumpToPeer('${match.country}', '${match.peers[0].peer_as}')">
-                        <strong>${getCountryFlag(match.country)} ${match.country}</strong>: ${match.count} match(es)<br>
-                        <small style="color: #666;">
-                            ${match.peers.map(p => 'AS' + p.peer_as + ' - ' + p.peer_name).join(', ')}
-                        </small>
+                        <input type="radio" name="peer-${peer.asn}" id="search-unknown-${peer.asn}" value="unknown" onchange="updateVerification('${peer.asn}', 'unknown', '${country}')">
+                        <label for="search-unknown-${peer.asn}">? Unknown</label>
                     </div>
                 `;
+
+                // Sync with existing selection if any
+                if (peerVerifications[peer.asn]) {
+                    const radio = peerDiv.querySelector(`input[value="${peerVerifications[peer.asn]}"]`);
+                    if (radio) radio.checked = true;
+                }
+
+                resultsDiv.appendChild(peerDiv);
             });
 
-            resultsDiv.innerHTML = html;
-            resultsDiv.classList.remove('hidden');
-
-            // Only highlight the matches we're showing (not all matches)
-            highlightMatches(matchesToShow);
-        }
-
-        function jumpToPeer(country, peerAS) {
-            const detailsId = `details-${country.replace(/\s+/g, '-')}`;
-            const details = document.getElementById(detailsId);
-            details.classList.remove('hidden');
-
-            // Load all peers in country if not already loaded (to ensure peer is visible)
-            const group = currentASData.grouped_by_country[country];
-            const peerIndex = group.peers.findIndex(p => p.peer_as === peerAS);
-            const currentPage = countryPages[country] || 0;
-            const peersLoaded = (currentPage + 1) * PEERS_PER_PAGE;
-
-            // Load pages until target peer is visible
-            while (peerIndex >= peersLoaded && peersLoaded < group.peers.length) {
-                loadMorePeers(country, { stopPropagation: () => {} });
+            if (matches.length === MAX_SEARCH_RESULTS) {
+                const moreDiv = document.createElement('div');
+                moreDiv.style.padding = '10px';
+                moreDiv.style.color = '#666';
+                moreDiv.style.textAlign = 'center';
+                moreDiv.textContent = `Showing first ${MAX_SEARCH_RESULTS} results`;
+                resultsDiv.appendChild(moreDiv);
             }
 
-            const countryDiv = document.getElementById(`country-${country.replace(/\s+/g, '-')}`);
-            countryDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-            setTimeout(() => {
-                const peerItems = countryDiv.querySelectorAll('.peer-verification-item');
-                peerItems.forEach(item => {
-                    if (item.getAttribute('data-peer-as') === peerAS) {
-                        item.classList.add('search-match');
-                        item.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    }
-                });
-            }, 500);
-        }
-
-        function highlightMatches(matches) {
-            clearHighlights();
-
-            matches.forEach(match => {
-                const detailsId = `details-${match.country.replace(/\s+/g, '-')}`;
-                const details = document.getElementById(detailsId);
-                if (details) {
-                    details.classList.remove('hidden');
-                }
-
-                const countryDiv = document.getElementById(`country-${match.country.replace(/\s+/g, '-')}`);
-                if (countryDiv) {
-                    const peerItems = countryDiv.querySelectorAll('.peer-verification-item');
-                    peerItems.forEach(item => {
-                        match.peers.forEach(peer => {
-                            if (item.getAttribute('data-peer-as') === peer.peer_as) {
-                                item.classList.add('search-match');
-                            }
-                        });
-                    });
-                }
-            });
-        }
-
-        function clearHighlights() {
-            document.querySelectorAll('.search-match').forEach(el => {
-                el.classList.remove('search-match');
-            });
+            resultsDiv.classList.remove('hidden');
         }
 
         function clearPeerSearch() {
             document.getElementById('peerSearchInput').value = '';
             document.getElementById('searchResults').classList.add('hidden');
-            clearHighlights();
-        }
-
-        function getCountryFlag(country) {
-            const flags = {
-                'Singapore': '🇸🇬', 'United States': '🇺🇸', 'Japan': '🇯🇵',
-                'Indonesia': '🇮🇩', 'Australia': '🇦🇺', 'Germany': '🇩🇪',
-                'United Kingdom': '🇬🇧', 'Netherlands': '🇳🇱', 'France': '🇫🇷',
-                'China': '🇨🇳', 'India': '🇮🇳', 'Malaysia': '🇲🇾',
-                'Thailand': '🇹🇭', 'South Korea': '🇰🇷', 'Canada': '🇨🇦',
-            };
-            return flags[country] || '🌏';
-        }
-
-        // ============================================
-        // MULTI-AS SESSION MANAGEMENT
-        // ============================================
-
-        function resetForNewAS() {
-            currentASN = '';
-            currentASData = null;
-            peerVerifications = {};
-            countryPages = {};
-
-            document.getElementById('resultsSection').classList.add('hidden');
-            document.getElementById('asnInput').value = '';
-            document.getElementById('asnInput').focus();
-
-            clearPeerSearch();
-
-            document.querySelector('.search-section').scrollIntoView({ behavior: 'smooth' });
-        }
-
-        function showSessionSummary() {
-            if (sessionHistory.length === 0) {
-                return;
-            }
-
-            let summary = `✓ Session Complete!\n\n`;
-            summary += `You verified ${sessionHistory.length} AS${sessionHistory.length > 1 ? 'es' : ''}:\n\n`;
-
-            sessionHistory.forEach(entry => {
-                const operatorName = entry.operator ? ` (${entry.operator})` : '';
-                summary += `✓ AS${entry.asn}: ${entry.verified_count} peer${entry.verified_count > 1 ? 's' : ''}${operatorName}\n`;
-            });
-
-            summary += `\nThank you for your contribution to routing security research!`;
-
-            alert(summary);
-        }
-
-        // ============================================
-        // OPERATOR PROFILE MANAGEMENT
-        // ============================================
-
-        function loadOperatorProfile() {
-            try {
-                const saved = localStorage.getItem('irr_operator_profile');
-                if (saved) {
-                    operatorProfile = JSON.parse(saved);
-                    updateProfileDisplay();
-                    console.log('Profile loaded:', operatorProfile.name);
-                }
-            } catch (e) {
-                console.error('Error loading profile:', e);
-                operatorProfile = null;
-            }
-        }
-
-        function updateProfileDisplay() {
-            if (operatorProfile && operatorProfile.name) {
-                document.getElementById('profileIndicator').classList.remove('hidden');
-                document.getElementById('profileNameDisplay').textContent = operatorProfile.name;
-                document.getElementById('profileButtonText').textContent = '✏️ Edit';
-            } else {
-                document.getElementById('profileIndicator').classList.add('hidden');
-                document.getElementById('profileButtonText').textContent = '👤 Setup Profile';
-            }
-        }
-
-        function openProfileModal() {
-            // Pre-fill if editing
-            if (operatorProfile) {
-                document.getElementById('profileNameInput').value = operatorProfile.name || '';
-                document.getElementById('profileEmailInput').value = operatorProfile.email || '';
-                document.getElementById('profileOrgInput').value = operatorProfile.organization || '';
-                document.getElementById('profileRoleInput').value = operatorProfile.role || '';
-            }
-            document.getElementById('profileModal').classList.remove('hidden');
-            document.getElementById('profileNameInput').focus();
-        }
-
-        function closeProfileModal() {
-            document.getElementById('profileModal').classList.add('hidden');
-        }
-
-        function saveProfileNow() {
-            // Get values
-            const name = document.getElementById('profileNameInput').value.trim();
-            const email = document.getElementById('profileEmailInput').value.trim();
-            const org = document.getElementById('profileOrgInput').value.trim();
-            const role = document.getElementById('profileRoleInput').value.trim();
-
-            // Validate required fields
-            if (!name || !email || !org) {
-                alert('Please fill in Name, Email, and Organization');
-                return;
-            }
-
-            // Basic email validation
-            if (!email.includes('@') || !email.includes('.')) {
-                alert('Please enter a valid email address');
-                return;
-            }
-
-            // Save profile
-            operatorProfile = {
-                name: name,
-                email: email,
-                organization: org,
-                role: role || 'Not specified'
-            };
-
-            try {
-                localStorage.setItem('irr_operator_profile', JSON.stringify(operatorProfile));
-                console.log('Profile saved successfully:', operatorProfile);
-
-                // Close modal
-                closeProfileModal();
-
-                // Update display
-                updateProfileDisplay();
-
-                // Show success
-                alert('✅ Profile saved!\n\nAll future submissions will now be instant - just click Submit!');
-
-                // If we were in the middle of submission, continue
-                if (pendingSubmission) {
-                    performSubmission();
-                }
-            } catch (e) {
-                console.error('Error saving profile:', e);
-                alert('Error saving profile. Please try again.');
-            }
-        }
-
-        function skipProfile() {
-            closeProfileModal();
-
-            // If we were trying to submit, do it anonymously
-            if (pendingSubmission) {
-                performSubmission();
-            }
         }
 
         // ============================================
         // SUBMISSION
         // ============================================
 
-        let pendingSubmission = false;
-
-        function submitVerification() {
+        async function submitVerification() {
             if (Object.keys(peerVerifications).length === 0) {
-                alert('❌ Please verify at least one peer before submitting.');
+                alert('Please verify at least one peer before submitting.');
                 return;
             }
 
-            // Check if profile is set
-            if (!operatorProfile) {
-                pendingSubmission = true;
-                const shouldSetProfile = confirm(
-                    '⚡ Quick Setup (Recommended)\n\n' +
-                    'Set your profile once (30 sec) → All future submissions instant!\n\n' +
-                    'Click OK to setup profile\n' +
-                    'Click Cancel to submit anonymously this time'
-                );
-
-                if (shouldSetProfile) {
-                    openProfileModal();
-                    return;
-                } else {
-                    pendingSubmission = false;
-                }
-            }
-
-            // Perform submission
-            performSubmission();
-        }
-
-        function performSubmission() {
-            pendingSubmission = false;
-
-            // Prepare complete data
             const data = {
                 asn: currentASN,
                 as_info: currentASData.as_info,
@@ -1364,103 +776,110 @@
                 }
             };
 
-            // Add operator info if profile exists
-            if (operatorProfile) {
-                data.operator = operatorProfile;
-            }
-
-            // Download JSON backup
+            // Download JSON locally for operator
             downloadJSONBackup(data);
 
-            // Send email automatically
-            sendEmailSubmission(data);
+            // Send to researcher
+            await sendToResearcher(data);
 
-            // Update session history
+            // Track session
             sessionHistory.push({
                 asn: currentASN,
                 verified_count: Object.keys(peerVerifications).length,
-                timestamp: data.timestamp,
-                operator: operatorProfile ? operatorProfile.name : 'Anonymous'
+                timestamp: data.timestamp
             });
 
             // Show success and ask about next AS
-            setTimeout(() => {
-                let message = `✅ AS${currentASN} verification submitted!\n\n`;
+            const continueVerifying = confirm(
+                `✓ AS${currentASN} verification submitted!\n\n` +
+                `Verified: ${Object.keys(peerVerifications).length} peers\n\n` +
+                `Data saved successfully.\n\n` +
+                `Verify another AS?`
+            );
 
-                if (operatorProfile) {
-                    message += `Operator: ${operatorProfile.name}\n`;
-                }
-
-                message += `Verified: ${Object.keys(peerVerifications).length} peers\n\n`;
-                message += `✓ JSON file downloaded\n`;
-                message += `✓ Email template opened\n\n`;
-                message += `Please attach JSON and send email to:\nusamaijaz404@gmail.com\n\n`;
-                message += `Verify another AS?`;
-
-                const continueVerifying = confirm(message);
-
-                if (continueVerifying) {
-                    resetForNewAS();
-                } else {
-                    showSessionSummary();
-                }
-            }, 500);
-        }
-
-        function sendEmailSubmission(data) {
-            const subject = `AS${data.asn} IRR Verification Submission`;
-
-            let operatorInfo = 'Operator: Anonymous\n\n';
-            if (data.operator) {
-                operatorInfo = `Operator: ${data.operator.name}\n`;
-                operatorInfo += `Email: ${data.operator.email}\n`;
-                operatorInfo += `Organization: ${data.operator.organization}\n`;
-                if (data.operator.role !== 'Not specified') {
-                    operatorInfo += `Role: ${data.operator.role}\n`;
-                }
-                operatorInfo += '\n';
+            if (continueVerifying) {
+                resetForNewAS();
+            } else {
+                showSessionSummary();
             }
-
-            const body = `Hello,
-
-IRR link verification submission for AS${data.asn}.
-
-=== OPERATOR INFO ===
-${operatorInfo}
-=== VERIFICATION SUMMARY ===
-AS: ${data.asn}
-${data.as_info.name ? `AS Name: ${data.as_info.name}\n` : ''}${data.as_info.country ? `Country: ${data.as_info.country}\n` : ''}
-Total Peers: ${data.total_peers}
-Verified Peers: ${data.verified_peers}
-
-Results:
-- Active: ${data.summary.active} peers
-- Obsolete: ${data.summary.obsolete} peers
-- Unknown: ${data.summary.unknown} peers
-
-Timestamp: ${data.timestamp}
-
-=== ATTACHMENT ===
-JSON file: AS${data.asn}_verification_${Date.now()}.json
-(Downloaded to your Downloads folder - please attach to this email)
-
-Thank you!`;
-
-            // Open mailto link
-            const mailtoLink = `mailto:usamaijaz404@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-            window.open(mailtoLink, '_blank');
         }
 
         function downloadJSONBackup(data) {
-            const filename = `AS${data.asn}_verification_${Date.now()}.json`;
             const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = filename;
+            a.download = `AS${data.asn}_verification_${Date.now()}.json`;
             a.click();
             URL.revokeObjectURL(url);
-            return filename; // Return filename for email reference
+        }
+
+        async function sendToResearcher(data) {
+            try {
+                // Use FormSubmit.co for email delivery
+                const form = document.createElement('form');
+                form.method = 'POST';
+                form.action = 'https://formsubmit.co/usamaijaz404@gmail.com';
+                form.target = '_blank';
+
+                const subjectInput = document.createElement('input');
+                subjectInput.type = 'hidden';
+                subjectInput.name = 'subject';
+                subjectInput.value = `AS${data.asn} IRR Verification`;
+                form.appendChild(subjectInput);
+
+                const dataInput = document.createElement('input');
+                dataInput.type = 'hidden';
+                dataInput.name = 'data';
+                dataInput.value = JSON.stringify(data, null, 2);
+                form.appendChild(dataInput);
+
+                const timestampInput = document.createElement('input');
+                timestampInput.type = 'hidden';
+                timestampInput.name = 'timestamp';
+                timestampInput.value = data.timestamp;
+                form.appendChild(timestampInput);
+
+                document.body.appendChild(form);
+                form.submit();
+                document.body.removeChild(form);
+
+            } catch (error) {
+                console.error('Send error:', error);
+            }
+        }
+
+        function resetForNewAS() {
+            document.getElementById('asnInput').value = '';
+            document.getElementById('countryGroupsContainer').innerHTML = '';
+            document.getElementById('statsSection').classList.add('hidden');
+            document.getElementById('peerSearchSection').classList.add('hidden');
+            document.getElementById('verificationSummary').classList.add('hidden');
+            document.getElementById('largeAsWarning').classList.add('hidden');
+
+            currentASN = '';
+            currentASData = null;
+            peerVerifications = {};
+            countryPages = {};
+
+            document.getElementById('asnInput').focus();
+        }
+
+        function showSessionSummary() {
+            if (sessionHistory.length === 0) {
+                return;
+            }
+
+            let summary = `✓ Session Complete!\n\n`;
+            summary += `You verified ${sessionHistory.length} AS${sessionHistory.length > 1 ? 'es' : ''}:\n\n`;
+
+            sessionHistory.forEach(entry => {
+                summary += `✓ AS${entry.asn}: ${entry.verified_count} peer${entry.verified_count > 1 ? 's' : ''}\n`;
+            });
+
+            summary += `\nThank you for your contribution!`;
+
+            alert(summary);
         }
     </script>
 </body>
