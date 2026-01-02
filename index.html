@@ -83,6 +83,47 @@
             border-radius: 8px;
         }
 
+        .search-peer-section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #f0f8ff;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .search-results {
+            margin-top: 15px;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .search-result-item {
+            padding: 12px;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .search-result-item:hover {
+            background: #e9ecef;
+        }
+
+        .search-match {
+            background: #fff3cd !important;
+            border-left: 4px solid #ffc107 !important;
+            animation: highlight 0.5s ease;
+        }
+
+        @keyframes highlight {
+            0% { background: #fff3cd; }
+            50% { background: #ffe082; }
+            100% { background: #fff3cd; }
+        }
+
         .stats {
             display: flex;
             gap: 20px;
@@ -201,6 +242,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            transition: all 0.3s;
         }
 
         .peer-info {
@@ -324,6 +366,10 @@
             font-size: 13px;
             color: #666;
         }
+
+        .clear-btn {
+            background: #6c757d;
+        }
     </style>
 </head>
 <body>
@@ -331,7 +377,7 @@
         <!-- Login Section -->
         <div id="loginSection" class="login-box">
             <h1>🔒 IRR Link Verification Portal</h1>
-            <p class="subtitle">Validate your routing policy information</p>
+            <p class="subtitle">Verify IRR routing data for your AS</p>
             <input type="password" id="passwordInput" placeholder="Enter access password" onkeypress="if(event.key==='Enter') login()">
             <button onclick="login()">Access Portal</button>
             <p id="loginError" class="error hidden">Incorrect password. Please try again.</p>
@@ -343,7 +389,7 @@
         <!-- Main Content -->
         <div id="mainContent" class="main-content hidden">
             <h1>IRR Link Verification</h1>
-            <p class="subtitle">Verify your AS's IRR links - Expand each country and mark individual peers</p>
+            <p class="subtitle">Verify IRR peering data for your AS</p>
 
             <!-- Search Section -->
             <div class="search-section">
@@ -377,6 +423,24 @@
                     </div>
                 </div>
 
+                <!-- Peer Search Section -->
+                <div class="search-peer-section">
+                    <h3 style="margin-bottom: 10px;">🔍 Find Specific Peer</h3>
+                    <div style="display: flex; gap: 10px; margin-bottom: 10px;">
+                        <input
+                            type="text"
+                            id="peerSearchInput"
+                            placeholder="Search by AS number (e.g., 1234) or name (e.g., Cogent)"
+                            style="flex: 1;"
+                            oninput="searchPeers()">
+                        <button class="clear-btn" onclick="clearPeerSearch()">Clear</button>
+                    </div>
+                    <div id="searchResults" class="search-results hidden"></div>
+                    <p class="subtitle" style="margin-top: 5px;">
+                        💡 Quickly locate a specific peering relationship
+                    </p>
+                </div>
+
                 <!-- Country Groups -->
                 <div id="countryGroupsContainer"></div>
 
@@ -389,14 +453,14 @@
                 <!-- Submit Section -->
                 <div class="submit-section">
                     <button class="submit-btn" onclick="submitVerification()">Submit Verification</button>
-                    <!--<p class="subtitle" style="margin-top: 10px;">
+                    <p class="subtitle" style="margin-top: 10px;">
                         Your responses will be automatically saved. A backup file will also download.
-                    </p!-->
+                    </p>
                 </div>
             </div>
 
             <div class="contact">
-                <strong>Questions or issues?</strong> Email: usamaijaz404@gmail.com
+                <strong>Questions or technical issues?</strong> Contact: usamaijaz404@gmail.com
             </div>
         </div>
     </div>
@@ -422,7 +486,7 @@
         let countryIndex = {};
         let currentASN = '';
         let currentASData = null;
-        let peerVerifications = {}; // {peer_as: 'active'|'obsolete'|'unknown'}
+        let peerVerifications = {};
 
         // ============================================
         // PASSWORD & DATA LOADING
@@ -610,7 +674,7 @@
                     </div>
                     <div class="peer-verification-list">
                         ${group.peers.map(peer => `
-                            <div class="peer-verification-item">
+                            <div class="peer-verification-item" data-peer-as="${peer.peer_as}">
                                 <div class="peer-info">
                                     <div class="peer-as">AS${peer.peer_as} - ${peer.peer_name}</div>
                                     <div class="peer-org">${peer.peer_org}</div>
@@ -703,6 +767,134 @@
         }
 
         // ============================================
+        // PEER SEARCH FUNCTIONALITY
+        // ============================================
+
+        function searchPeers() {
+            const searchTerm = document.getElementById('peerSearchInput').value.toLowerCase().trim();
+            const resultsDiv = document.getElementById('searchResults');
+
+            if (!searchTerm) {
+                resultsDiv.classList.add('hidden');
+                clearHighlights();
+                return;
+            }
+
+            const cleanSearch = searchTerm.replace(/^as/i, '');
+
+            const matches = [];
+            const grouped = currentASData.grouped_by_country;
+
+            for (const [country, group] of Object.entries(grouped)) {
+                const countryMatches = group.peers.filter(peer => {
+                    const asMatch = peer.peer_as.includes(cleanSearch);
+                    const nameMatch = peer.peer_name.toLowerCase().includes(searchTerm);
+                    const orgMatch = peer.peer_org.toLowerCase().includes(searchTerm);
+                    return asMatch || nameMatch || orgMatch;
+                });
+
+                if (countryMatches.length > 0) {
+                    matches.push({
+                        country: country,
+                        peers: countryMatches,
+                        count: countryMatches.length
+                    });
+                }
+            }
+
+            if (matches.length === 0) {
+                resultsDiv.innerHTML = '<p style="color: #666;">No peers found matching "' + searchTerm + '"</p>';
+                resultsDiv.classList.remove('hidden');
+                clearHighlights();
+                return;
+            }
+
+            let html = '<strong>Found ' + matches.reduce((sum, m) => sum + m.count, 0) + ' peer(s):</strong><br><br>';
+
+            matches.forEach(match => {
+                html += `
+                    <div class="search-result-item" onclick="jumpToPeer('${match.country}', '${match.peers[0].peer_as}')">
+                        <strong>${getCountryFlag(match.country)} ${match.country}</strong>: ${match.count} match(es)<br>
+                        <small style="color: #666;">
+                            ${match.peers.map(p => 'AS' + p.peer_as + ' - ' + p.peer_name).join(', ')}
+                        </small>
+                    </div>
+                `;
+            });
+
+            resultsDiv.innerHTML = html;
+            resultsDiv.classList.remove('hidden');
+
+            highlightMatches(matches);
+        }
+
+        function jumpToPeer(country, peerAS) {
+            const detailsId = `details-${country.replace(/\s+/g, '-')}`;
+            const details = document.getElementById(detailsId);
+            details.classList.remove('hidden');
+
+            const countryDiv = document.getElementById(`country-${country.replace(/\s+/g, '-')}`);
+            countryDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+            setTimeout(() => {
+                const peerItems = countryDiv.querySelectorAll('.peer-verification-item');
+                peerItems.forEach(item => {
+                    if (item.getAttribute('data-peer-as') === peerAS) {
+                        item.classList.add('search-match');
+                        item.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                });
+            }, 500);
+        }
+
+        function highlightMatches(matches) {
+            clearHighlights();
+
+            matches.forEach(match => {
+                const detailsId = `details-${match.country.replace(/\s+/g, '-')}`;
+                const details = document.getElementById(detailsId);
+                if (details) {
+                    details.classList.remove('hidden');
+                }
+
+                const countryDiv = document.getElementById(`country-${match.country.replace(/\s+/g, '-')}`);
+                if (countryDiv) {
+                    const peerItems = countryDiv.querySelectorAll('.peer-verification-item');
+                    peerItems.forEach(item => {
+                        match.peers.forEach(peer => {
+                            if (item.getAttribute('data-peer-as') === peer.peer_as) {
+                                item.classList.add('search-match');
+                            }
+                        });
+                    });
+                }
+            });
+        }
+
+        function clearHighlights() {
+            document.querySelectorAll('.search-match').forEach(el => {
+                el.classList.remove('search-match');
+            });
+        }
+
+        function clearPeerSearch() {
+            document.getElementById('peerSearchInput').value = '';
+            document.getElementById('searchResults').classList.add('hidden');
+            clearHighlights();
+        }
+
+        function getCountryFlag(country) {
+            const flags = {
+                'Singapore': '🇸🇬', 'United States': '🇺🇸', 'Japan': '🇯🇵',
+                'Indonesia': '🇮🇩', 'Australia': '🇦🇺', 'Germany': '🇩🇪',
+                'United Kingdom': '🇬🇧', 'Netherlands': '🇳🇱', 'France': '🇫🇷',
+                'China': '🇨🇳', 'India': '🇮🇳', 'Malaysia': '🇲🇾',
+                'Thailand': '🇹🇭', 'South Korea': '🇰🇷', 'Canada': '🇨🇦',
+            };
+            return flags[country] || '🌏';
+        }
+
+        // ============================================
         // SUBMISSION
         // ============================================
 
@@ -729,7 +921,10 @@
             await submitToGoogleForm(data);
             downloadJSONBackup(data);
 
-            alert('✓ Verification submitted successfully!\n\nA backup JSON file has been downloaded to your computer.\n\nPlease email this file to: usamaijaz404@gmail.com\n\nThank you for your contribution!');
+            alert('✓ Verification submitted successfully!\n\n' +
+                  'A backup JSON file has been downloaded to your computer.\n\n' +
+                  'Please email this file to: usamaijaz404@gmail.com\n\n' +
+                  'Thank you for your contribution!');
         }
 
         async function submitToGoogleForm(data) {
