@@ -310,6 +310,24 @@
             color: #6c757d;
         }
 
+        .pagination-controls {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .pagination-controls p {
+            margin-bottom: 10px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .pagination-controls button {
+            background: #667eea;
+        }
+
         .submit-section {
             margin-top: 30px;
             padding: 20px;
@@ -370,6 +388,16 @@
         .clear-btn {
             background: #6c757d;
         }
+
+        .large-as-warning {
+            padding: 15px;
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #856404;
+        }
     </style>
 </head>
 <body>
@@ -421,6 +449,13 @@
                         <div class="stat-label">Verified Peers</div>
                         <div class="stat-value" id="verifiedCount">0</div>
                     </div>
+                </div>
+
+                <!-- Large AS Warning -->
+                <div id="largeAsWarning" class="large-as-warning hidden">
+                    <strong>⚠️ Large AS Detected</strong><br>
+                    This AS has many peer links. Peers are loaded in batches of 50 for better performance.
+                    Click "Load More Peers" to see additional peers in each country.
                 </div>
 
                 <!-- Peer Search Section -->
@@ -479,6 +514,9 @@
             timestamp: "entry.969579197"
         };
 
+        const PEERS_PER_PAGE = 50;
+        const LARGE_AS_THRESHOLD = 1000;
+
         // ============================================
         // STATE
         // ============================================
@@ -488,6 +526,7 @@
         let currentASData = null;
         let peerVerifications = {};
         let sessionHistory = [];
+        let countryPages = {};
 
         // ============================================
         // PASSWORD & DATA LOADING
@@ -537,7 +576,6 @@
                 return;
             }
 
-            // Warn if switching AS with unsubmitted verifications
             const verifiedCount = Object.keys(peerVerifications).length;
             if (currentASN && verifiedCount > 0) {
                 const proceed = confirm(
@@ -558,6 +596,7 @@
 
             currentASN = asn;
             peerVerifications = {};
+            countryPages = {};
 
             document.getElementById('loadingMessage').classList.remove('hidden');
             document.getElementById('resultsSection').classList.add('hidden');
@@ -610,6 +649,7 @@
 
             for (const country of sortedCountries) {
                 sortedGrouped[country] = grouped[country];
+                countryPages[country] = 0;
             }
 
             currentASData.grouped_by_country = sortedGrouped;
@@ -628,6 +668,12 @@
             document.getElementById('linkCount').textContent = data.links.length;
             document.getElementById('countryCount').textContent = Object.keys(grouped).length;
             document.getElementById('verifiedCount').textContent = '0';
+
+            if (data.links.length >= LARGE_AS_THRESHOLD) {
+                document.getElementById('largeAsWarning').classList.remove('hidden');
+            } else {
+                document.getElementById('largeAsWarning').classList.add('hidden');
+            }
 
             displayCountryGroups(grouped);
 
@@ -662,6 +708,9 @@
             const previewPeers = group.peers.slice(0, 3).map(p => p.peer_name).join(', ');
             const moreText = group.peers.length > 3 ? ` and ${group.peers.length - 3} more` : '';
 
+            const peersToShow = group.peers.slice(0, PEERS_PER_PAGE);
+            const hasMore = group.peers.length > PEERS_PER_PAGE;
+
             div.innerHTML = `
                 <div class="country-header" onclick="toggleCountryDetails('${country}')">
                     <div>
@@ -687,42 +736,91 @@
                     <div class="progress-info">
                         Verified: <strong id="progress-${country.replace(/\s+/g, '-')}">0</strong> of ${group.count} peers
                     </div>
-                    <div class="peer-verification-list">
-                        ${group.peers.map(peer => `
-                            <div class="peer-verification-item" data-peer-as="${peer.peer_as}">
-                                <div class="peer-info">
-                                    <div class="peer-as">AS${peer.peer_as} - ${peer.peer_name}</div>
-                                    <div class="peer-org">${peer.peer_org}</div>
-                                </div>
-                                <div class="peer-actions">
-                                    <div class="radio-group">
-                                        <div class="radio-option radio-active">
-                                            <input type="radio" name="peer-${peer.peer_as}" value="active"
-                                                   id="active-${peer.peer_as}"
-                                                   onchange="markPeer('${peer.peer_as}', 'active', '${country}')">
-                                            <label for="active-${peer.peer_as}">✓ Active</label>
-                                        </div>
-                                        <div class="radio-option radio-obsolete">
-                                            <input type="radio" name="peer-${peer.peer_as}" value="obsolete"
-                                                   id="obsolete-${peer.peer_as}"
-                                                   onchange="markPeer('${peer.peer_as}', 'obsolete', '${country}')">
-                                            <label for="obsolete-${peer.peer_as}">✗ Obsolete</label>
-                                        </div>
-                                        <div class="radio-option radio-unknown">
-                                            <input type="radio" name="peer-${peer.peer_as}" value="unknown"
-                                                   id="unknown-${peer.peer_as}"
-                                                   onchange="markPeer('${peer.peer_as}', 'unknown', '${country}')">
-                                            <label for="unknown-${peer.peer_as}">? Unknown</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        `).join('')}
+                    <div class="peer-verification-list" id="peer-list-${country.replace(/\s+/g, '-')}">
+                        ${peersToShow.map(peer => renderPeerItem(peer, country)).join('')}
                     </div>
+                    ${hasMore ? `
+                        <div class="pagination-controls" id="pagination-${country.replace(/\s+/g, '-')}">
+                            <p>Showing ${PEERS_PER_PAGE} of ${group.count} peers</p>
+                            <button onclick="loadMorePeers('${country}', event)">
+                                Load ${Math.min(PEERS_PER_PAGE, group.count - PEERS_PER_PAGE)} More Peers
+                            </button>
+                        </div>
+                    ` : ''}
                 </div>
             `;
 
             return div;
+        }
+
+        function renderPeerItem(peer, country) {
+            return `
+                <div class="peer-verification-item" data-peer-as="${peer.peer_as}">
+                    <div class="peer-info">
+                        <div class="peer-as">AS${peer.peer_as} - ${peer.peer_name}</div>
+                        <div class="peer-org">${peer.peer_org}</div>
+                    </div>
+                    <div class="peer-actions">
+                        <div class="radio-group">
+                            <div class="radio-option radio-active">
+                                <input type="radio" name="peer-${peer.peer_as}" value="active"
+                                       id="active-${peer.peer_as}"
+                                       onchange="markPeer('${peer.peer_as}', 'active', '${country}')">
+                                <label for="active-${peer.peer_as}">✓ Active</label>
+                            </div>
+                            <div class="radio-option radio-obsolete">
+                                <input type="radio" name="peer-${peer.peer_as}" value="obsolete"
+                                       id="obsolete-${peer.peer_as}"
+                                       onchange="markPeer('${peer.peer_as}', 'obsolete', '${country}')">
+                                <label for="obsolete-${peer.peer_as}">✗ Obsolete</label>
+                            </div>
+                            <div class="radio-option radio-unknown">
+                                <input type="radio" name="peer-${peer.peer_as}" value="unknown"
+                                       id="unknown-${peer.peer_as}"
+                                       onchange="markPeer('${peer.peer_as}', 'unknown', '${country}')">
+                                <label for="unknown-${peer.peer_as}">? Unknown</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function loadMorePeers(country, event) {
+            event.stopPropagation();
+
+            const group = currentASData.grouped_by_country[country];
+            countryPages[country]++;
+
+            const start = countryPages[country] * PEERS_PER_PAGE;
+            const end = Math.min(start + PEERS_PER_PAGE, group.peers.length);
+            const peersToShow = group.peers.slice(start, end);
+
+            const listId = `peer-list-${country.replace(/\s+/g, '-')}`;
+            const listEl = document.getElementById(listId);
+
+            peersToShow.forEach(peer => {
+                listEl.innerHTML += renderPeerItem(peer, country);
+            });
+
+            const paginationId = `pagination-${country.replace(/\s+/g, '-')}`;
+            const paginationEl = document.getElementById(paginationId);
+
+            const loaded = Math.min(end, group.peers.length);
+            const remaining = group.peers.length - loaded;
+
+            if (remaining > 0) {
+                paginationEl.innerHTML = `
+                    <p>Showing ${loaded} of ${group.count} peers</p>
+                    <button onclick="loadMorePeers('${country}', event)">
+                        Load ${Math.min(PEERS_PER_PAGE, remaining)} More Peers
+                    </button>
+                `;
+            } else {
+                paginationEl.innerHTML = `
+                    <p>✓ All ${group.count} peers loaded</p>
+                `;
+            }
         }
 
         function toggleCountryDetails(country, event) {
@@ -846,6 +944,15 @@
             const details = document.getElementById(detailsId);
             details.classList.remove('hidden');
 
+            const group = currentASData.grouped_by_country[country];
+            const peerIndex = group.peers.findIndex(p => p.peer_as === peerAS);
+            const currentPage = countryPages[country] || 0;
+            const peersLoaded = (currentPage + 1) * PEERS_PER_PAGE;
+
+            while (peerIndex >= peersLoaded && peersLoaded < group.peers.length) {
+                loadMorePeers(country, { stopPropagation: () => {} });
+            }
+
             const countryDiv = document.getElementById(`country-${country.replace(/\s+/g, '-')}`);
             countryDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
@@ -915,6 +1022,7 @@
             currentASN = '';
             currentASData = null;
             peerVerifications = {};
+            countryPages = {};
 
             document.getElementById('resultsSection').classList.add('hidden');
             document.getElementById('asnInput').value = '';
