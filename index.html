@@ -166,16 +166,8 @@
             font-size: 14px;
         }
 
-        .action-active {
-            background: #28a745;
-        }
-
-        .action-obsolete {
-            background: #dc3545;
-        }
-
-        .action-details {
-            background: #6c757d;
+        .action-verify {
+            background: #667eea;
         }
 
         .country-details {
@@ -184,29 +176,96 @@
             border-top: 1px solid #e0e0e0;
         }
 
-        .peer-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 10px;
+        .instruction-box {
+            padding: 15px;
+            background: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #1565C0;
+        }
+
+        .peer-verification-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
             margin-top: 15px;
         }
 
-        .peer-item {
-            padding: 12px;
+        .peer-verification-item {
+            padding: 15px;
             background: #f8f9fa;
-            border-radius: 6px;
-            border-left: 3px solid #667eea;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .peer-info {
+            flex: 1;
         }
 
         .peer-as {
             font-weight: bold;
             color: #333;
             margin-bottom: 4px;
+            font-size: 15px;
         }
 
         .peer-org {
             font-size: 13px;
             color: #666;
+        }
+
+        .peer-actions {
+            display: flex;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 15px;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+
+        .radio-option:hover {
+            background: #e9ecef;
+        }
+
+        .radio-option input[type="radio"] {
+            cursor: pointer;
+            width: 18px;
+            height: 18px;
+        }
+
+        .radio-option label {
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .radio-active {
+            color: #28a745;
+        }
+
+        .radio-obsolete {
+            color: #dc3545;
+        }
+
+        .radio-unknown {
+            color: #6c757d;
         }
 
         .submit-section {
@@ -256,6 +315,15 @@
             color: #667eea;
             font-size: 16px;
         }
+
+        .progress-info {
+            margin-top: 10px;
+            padding: 10px;
+            background: #fff;
+            border-radius: 6px;
+            font-size: 13px;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -263,7 +331,7 @@
         <!-- Login Section -->
         <div id="loginSection" class="login-box">
             <h1>🔒 IRR Link Verification Portal</h1>
-            <p class="subtitle">Verify your AS's IRR links - Grouped by peer country for quick verification</p>
+            <p class="subtitle">Verify your AS's IRR links - Individual peer verification for research accuracy</p>
             <input type="password" id="passwordInput" placeholder="Enter access password" onkeypress="if(event.key==='Enter') login()">
             <button onclick="login()">Access Portal</button>
             <p id="loginError" class="error hidden">Incorrect password. Please try again.</p>
@@ -275,7 +343,7 @@
         <!-- Main Content -->
         <div id="mainContent" class="main-content hidden">
             <h1>IRR Link Verification</h1>
-            <p class="subtitle">Verify your AS's IRR links - Peers grouped by country for efficient verification</p>
+            <p class="subtitle">Verify your AS's IRR links - Expand each country and mark individual peers</p>
 
             <!-- Search Section -->
             <div class="search-section">
@@ -304,7 +372,7 @@
                         <div class="stat-value" id="countryCount">-</div>
                     </div>
                     <div class="stat-box">
-                        <div class="stat-label">Verified</div>
+                        <div class="stat-label">Verified Peers</div>
                         <div class="stat-value" id="verifiedCount">0</div>
                     </div>
                 </div>
@@ -338,7 +406,7 @@
         // CONFIGURATION
         // ============================================
 
-        const PASSWORD_HASH = "deda38a7fa94cdc6863168750cac646efa25ff2e2a67babe979b46c3cb36b9ee"; // CHANGE THIS!
+        const PASSWORD_HASH = "deda38a7fa94cdc6863168750cac646efa25ff2e2a67babe979b46c3cb36b9ee";
         const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfNAFdeWfeQ9RS-e2sQgysgGnPy75hl9BsJL3c-zMnXaC1yyA/formResponse";
         const FORM_FIELDS = {
             asn: "entry.1255619771",
@@ -351,10 +419,10 @@
         // STATE
         // ============================================
 
-        let countryIndex = {}; // Maps ASN -> country filename
+        let countryIndex = {};
         let currentASN = '';
         let currentASData = null;
-        let countryVerifications = {}; // {country: 'active'|'obsolete'}
+        let peerVerifications = {}; // {peer_as: 'active'|'obsolete'|'unknown'}
 
         // ============================================
         // PASSWORD & DATA LOADING
@@ -410,13 +478,11 @@
             }
 
             currentASN = asn;
-            countryVerifications = {};
+            peerVerifications = {};
 
-            // Show loading
             document.getElementById('loadingMessage').classList.remove('hidden');
             document.getElementById('resultsSection').classList.add('hidden');
 
-            // Load country file
             const countryFile = countryIndex[asn].filename;
             console.log(`Loading ${countryFile} for AS${asn}...`);
 
@@ -430,14 +496,8 @@
                 }
 
                 currentASData = countryData[asn];
-
-                // Group peers by country IN BROWSER
                 groupPeersByCountry();
-
-                // Display
                 displayResults();
-
-                // Hide loading
                 document.getElementById('loadingMessage').classList.add('hidden');
 
             } catch (error) {
@@ -448,7 +508,6 @@
         }
 
         function groupPeersByCountry() {
-            // Group peers by their country (done in browser!)
             const grouped = {};
 
             for (const link of currentASData.links) {
@@ -465,7 +524,6 @@
                 grouped[peerCountry].peers.push(link);
             }
 
-            // Sort by count (descending)
             const sortedGrouped = {};
             const sortedCountries = Object.keys(grouped).sort((a, b) =>
                 grouped[b].count - grouped[a].count
@@ -483,7 +541,6 @@
             const asInfo = data.as_info || {};
             const grouped = data.grouped_by_country || {};
 
-            // Update stats
             const asDisplay = asInfo.name && asInfo.name !== 'Unknown'
                 ? `AS${currentASN} - ${asInfo.name} (${asInfo.country})`
                 : `AS${currentASN}`;
@@ -493,13 +550,9 @@
             document.getElementById('countryCount').textContent = Object.keys(grouped).length;
             document.getElementById('verifiedCount').textContent = '0';
 
-            // Display country groups
             displayCountryGroups(grouped);
 
-            // Show results section
             document.getElementById('resultsSection').classList.remove('hidden');
-
-            // Scroll to results
             document.getElementById('resultsSection').scrollIntoView({ behavior: 'smooth' });
         }
 
@@ -541,23 +594,49 @@
                     <div>▼</div>
                 </div>
                 <div class="country-actions">
-                    <button class="action-active" onclick="markCountry('${country}', 'active', event)">
-                        ✓ Mark All Active
-                    </button>
-                    <button class="action-obsolete" onclick="markCountry('${country}', 'obsolete', event)">
-                        ✗ Mark All Obsolete
-                    </button>
-                    <button class="action-details" onclick="toggleCountryDetails('${country}', event)">
-                        Show Details
+                    <button class="action-verify" onclick="toggleCountryDetails('${country}', event)">
+                        📋 Verify Peers
                     </button>
                 </div>
                 <div class="country-details hidden" id="details-${country.replace(/\s+/g, '-')}">
-                    <h4 style="margin-bottom: 10px;">All ${country} Peers:</h4>
-                    <div class="peer-list">
+                    <div class="instruction-box">
+                        <strong>Instructions:</strong> Review each peer and mark its current status.
+                        Mark as <strong style="color: #28a745;">Active</strong> if peering relationship exists,
+                        <strong style="color: #dc3545;">Obsolete</strong> if no longer peering, or
+                        <strong style="color: #6c757d;">Unknown</strong> if you're not certain.
+                    </div>
+                    <div class="progress-info">
+                        Verified: <strong id="progress-${country.replace(/\s+/g, '-')}">0</strong> of ${group.count} peers
+                    </div>
+                    <div class="peer-verification-list">
                         ${group.peers.map(peer => `
-                            <div class="peer-item">
-                                <div class="peer-as">AS${peer.peer_as} - ${peer.peer_name}</div>
-                                <div class="peer-org">${peer.peer_org}</div>
+                            <div class="peer-verification-item">
+                                <div class="peer-info">
+                                    <div class="peer-as">AS${peer.peer_as} - ${peer.peer_name}</div>
+                                    <div class="peer-org">${peer.peer_org}</div>
+                                </div>
+                                <div class="peer-actions">
+                                    <div class="radio-group">
+                                        <div class="radio-option radio-active">
+                                            <input type="radio" name="peer-${peer.peer_as}" value="active"
+                                                   id="active-${peer.peer_as}"
+                                                   onchange="markPeer('${peer.peer_as}', 'active', '${country}')">
+                                            <label for="active-${peer.peer_as}">✓ Active</label>
+                                        </div>
+                                        <div class="radio-option radio-obsolete">
+                                            <input type="radio" name="peer-${peer.peer_as}" value="obsolete"
+                                                   id="obsolete-${peer.peer_as}"
+                                                   onchange="markPeer('${peer.peer_as}', 'obsolete', '${country}')">
+                                            <label for="obsolete-${peer.peer_as}">✗ Obsolete</label>
+                                        </div>
+                                        <div class="radio-option radio-unknown">
+                                            <input type="radio" name="peer-${peer.peer_as}" value="unknown"
+                                                   id="unknown-${peer.peer_as}"
+                                                   onchange="markPeer('${peer.peer_as}', 'unknown', '${country}')">
+                                            <label for="unknown-${peer.peer_as}">? Unknown</label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         `).join('')}
                     </div>
@@ -574,15 +653,29 @@
             details.classList.toggle('hidden');
         }
 
-        function markCountry(country, status, event) {
-            event.stopPropagation();
-            countryVerifications[country] = status;
+        function markPeer(peerAS, status, country) {
+            peerVerifications[peerAS] = status;
             updateVerifiedCount();
+            updateCountryProgress(country);
             showVerificationSummary();
         }
 
+        function updateCountryProgress(country) {
+            const progressId = `progress-${country.replace(/\s+/g, '-')}`;
+            const progressEl = document.getElementById(progressId);
+
+            if (progressEl) {
+                const countryData = currentASData.grouped_by_country[country];
+                const verified = countryData.peers.filter(p =>
+                    peerVerifications.hasOwnProperty(p.peer_as)
+                ).length;
+
+                progressEl.textContent = verified;
+            }
+        }
+
         function updateVerifiedCount() {
-            const verified = Object.keys(countryVerifications).length;
+            const verified = Object.keys(peerVerifications).length;
             document.getElementById('verifiedCount').textContent = verified;
         }
 
@@ -590,30 +683,20 @@
             const summary = document.getElementById('verificationSummary');
             const content = document.getElementById('summaryContent');
 
-            if (Object.keys(countryVerifications).length === 0) {
+            if (Object.keys(peerVerifications).length === 0) {
                 summary.classList.add('hidden');
                 return;
             }
 
-            const activeCountries = [];
-            const obsoleteCountries = [];
+            const activeCount = Object.values(peerVerifications).filter(v => v === 'active').length;
+            const obsoleteCount = Object.values(peerVerifications).filter(v => v === 'obsolete').length;
+            const unknownCount = Object.values(peerVerifications).filter(v => v === 'unknown').length;
 
-            for (const [country, status] of Object.entries(countryVerifications)) {
-                if (status === 'active') {
-                    activeCountries.push(country);
-                } else if (status === 'obsolete') {
-                    obsoleteCountries.push(country);
-                }
-            }
-
-            let html = '<ul style="list-style: none; padding: 0;">';
-            if (activeCountries.length > 0) {
-                html += `<li><strong>Active:</strong> ${activeCountries.join(', ')}</li>`;
-            }
-            if (obsoleteCountries.length > 0) {
-                html += `<li><strong>Obsolete:</strong> ${obsoleteCountries.join(', ')}</li>`;
-            }
-            html += '</ul>';
+            let html = '<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">';
+            html += `<div><strong>Active:</strong> ${activeCount} peers</div>`;
+            html += `<div><strong>Obsolete:</strong> ${obsoleteCount} peers</div>`;
+            html += `<div><strong>Unknown:</strong> ${unknownCount} peers</div>`;
+            html += '</div>';
 
             content.innerHTML = html;
             summary.classList.remove('hidden');
@@ -624,18 +707,23 @@
         // ============================================
 
         async function submitVerification() {
-            if (Object.keys(countryVerifications).length === 0) {
-                alert('Please verify at least one country group before submitting.');
+            if (Object.keys(peerVerifications).length === 0) {
+                alert('Please verify at least one peer before submitting.');
                 return;
             }
 
             const data = {
                 asn: currentASN,
                 as_info: currentASData.as_info,
-                country_verifications: countryVerifications,
+                peer_verifications: peerVerifications,
                 timestamp: new Date().toISOString(),
-                total_countries: Object.keys(currentASData.grouped_by_country).length,
-                verified_countries: Object.keys(countryVerifications).length
+                total_peers: currentASData.links.length,
+                verified_peers: Object.keys(peerVerifications).length,
+                summary: {
+                    active: Object.values(peerVerifications).filter(v => v === 'active').length,
+                    obsolete: Object.values(peerVerifications).filter(v => v === 'obsolete').length,
+                    unknown: Object.values(peerVerifications).filter(v => v === 'unknown').length
+                }
             };
 
             await submitToGoogleForm(data);
