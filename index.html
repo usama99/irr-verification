@@ -398,6 +398,90 @@
             font-size: 14px;
             color: #856404;
         }
+
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 500px;
+            width: 90%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .modal-header {
+            margin-bottom: 20px;
+        }
+
+        .modal-header h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .modal-header p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .form-group label .required {
+            color: #dc3545;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 25px;
+        }
+
+        .modal-actions button {
+            flex: 1;
+        }
+
+        .btn-cancel {
+            background: #6c757d;
+        }
+
+        .btn-submit {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+        }
     </style>
 </head>
 <body>
@@ -410,14 +494,26 @@
             <button onclick="login()">Access Portal</button>
             <p id="loginError" class="error hidden">Incorrect password. Please try again.</p>
             <div class="contact">
-                <strong>Questions or technical issues?</strong> Contact: usamaijaz404@gmail.com
+                <strong>Questions or technical issues?</strong> Contact: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="601513010d01090a011a54505420070d01090c4e030f0d">[email&#160;protected]</a>
             </div>
         </div>
 
         <!-- Main Content -->
         <div id="mainContent" class="main-content hidden">
-            <h1>IRR Link Verification</h1>
-            <p class="subtitle">Verify IRR peering data for your AS</p>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <div>
+                    <h1>IRR Link Verification</h1>
+                    <p class="subtitle">Verify IRR peering data for your AS</p>
+                </div>
+                <div style="text-align: right;">
+                    <div id="profileIndicator" class="hidden" style="margin-bottom: 10px; color: #28a745; font-size: 14px;">
+                        ✓ <strong id="profileNameDisplay"></strong>
+                    </div>
+                    <button onclick="openProfileModal()" style="font-size: 14px; padding: 8px 16px;">
+                        <span id="profileButtonText">👤 Set Profile</span>
+                    </button>
+                </div>
+            </div>
 
             <!-- Search Section -->
             <div class="search-section">
@@ -462,9 +558,9 @@
                 <div class="search-peer-section">
                     <h3 style="margin-bottom: 10px;">🔍 Find Specific Peer</h3>
                     <div style="display: flex; gap: 10px; margin-bottom: 10px;">
-                        <input
-                            type="text"
-                            id="peerSearchInput"
+                        <input 
+                            type="text" 
+                            id="peerSearchInput" 
                             placeholder="Search by AS number (e.g., 1234) or name (e.g., Cogent)"
                             style="flex: 1;"
                             oninput="searchPeers()">
@@ -495,25 +591,52 @@
             </div>
 
             <div class="contact">
-                <strong>Questions or technical issues?</strong> Contact: usamaijaz404@gmail.com
+                <strong>Questions or technical issues?</strong> Contact: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1f6a6c7e727e76757e652b2f2b5f78727e7673317c7072">[email&#160;protected]</a>
+            </div>
+        </div>
+
+        <!-- Profile Setup Modal -->
+        <div id="profileModal" class="modal-overlay hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>👤 Set Your Profile (One-time)</h2>
+                    <p>Set your information once. All future submissions will be automatic!</p>
+                </div>
+                <form id="profileForm" onsubmit="saveProfile(event)">
+                    <div class="form-group">
+                        <label>Name <span class="required">*</span></label>
+                        <input type="text" id="profileName" required placeholder="Your full name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email <span class="required">*</span></label>
+                        <input type="email" id="profileEmail" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Organization <span class="required">*</span></label>
+                        <input type="text" id="profileOrg" required placeholder="Your company/organization">
+                    </div>
+                    <div class="form-group">
+                        <label>Role/Position</label>
+                        <input type="text" id="profileRole" placeholder="e.g., Network Engineer (optional)">
+                    </div>
+                    <div style="padding: 15px; background: #e7f3ff; border-radius: 8px; margin-bottom: 20px; font-size: 13px; color: #1565C0;">
+                        💡 This info is saved in your browser. All future submissions will use it automatically - just click Submit!
+                    </div>
+                    <div class="modal-actions">
+                        <button type="button" class="btn-cancel" onclick="closeProfileModal()">Cancel</button>
+                        <button type="submit" class="btn-submit">Save Profile</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // ============================================
         // CONFIGURATION
         // ============================================
 
         const PASSWORD_HASH = "deda38a7fa94cdc6863168750cac646efa25ff2e2a67babe979b46c3cb36b9ee";
-        const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfNAFdeWfeQ9RS-e2sQgysgGnPy75hl9BsJL3c-zMnXaC1yyA/formResponse";
-        const FORM_FIELDS = {
-            asn: "entry.1255619771",
-            email: "entry.847494780",
-            data: "entry.143108106",
-            timestamp: "entry.969579197"
-        };
-
         const PEERS_PER_PAGE = 50;
         const LARGE_AS_THRESHOLD = 1000;
         const MAX_SEARCH_RESULTS = 50;
@@ -528,6 +651,7 @@
         let peerVerifications = {};
         let sessionHistory = [];
         let countryPages = {};
+        let operatorProfile = null;
 
         // ============================================
         // PASSWORD & DATA LOADING
@@ -541,6 +665,7 @@
                 document.getElementById('loginSection').classList.add('hidden');
                 document.getElementById('mainContent').classList.remove('hidden');
                 loadCountryIndex();
+                loadOperatorProfile(); // Load saved profile
             } else {
                 document.getElementById('loginError').classList.remove('hidden');
             }
@@ -584,7 +709,7 @@
                     `Searching a new AS will lose this data.\n\n` +
                     `Click OK to continue anyway, or Cancel to go back and submit first.`
                 );
-
+                
                 if (!proceed) {
                     return;
                 }
@@ -729,9 +854,9 @@
                 </div>
                 <div class="country-details hidden" id="details-${country.replace(/\s+/g, '-')}">
                     <div class="instruction-box">
-                        <strong>Instructions:</strong> Review each peer and mark its current status.
-                        Mark as <strong style="color: #28a745;">Active</strong> if peering relationship exists,
-                        <strong style="color: #dc3545;">Obsolete</strong> if no longer peering, or
+                        <strong>Instructions:</strong> Review each peer and mark its current status. 
+                        Mark as <strong style="color: #28a745;">Active</strong> if peering relationship exists, 
+                        <strong style="color: #dc3545;">Obsolete</strong> if no longer peering, or 
                         <strong style="color: #6c757d;">Unknown</strong> if you're not certain.
                     </div>
                     <div class="progress-info">
@@ -764,20 +889,20 @@
                     <div class="peer-actions">
                         <div class="radio-group">
                             <div class="radio-option radio-active">
-                                <input type="radio" name="peer-${peer.peer_as}" value="active"
-                                       id="active-${peer.peer_as}"
+                                <input type="radio" name="peer-${peer.peer_as}" value="active" 
+                                       id="active-${peer.peer_as}" 
                                        onchange="markPeer('${peer.peer_as}', 'active', '${country}')">
                                 <label for="active-${peer.peer_as}">✓ Active</label>
                             </div>
                             <div class="radio-option radio-obsolete">
-                                <input type="radio" name="peer-${peer.peer_as}" value="obsolete"
-                                       id="obsolete-${peer.peer_as}"
+                                <input type="radio" name="peer-${peer.peer_as}" value="obsolete" 
+                                       id="obsolete-${peer.peer_as}" 
                                        onchange="markPeer('${peer.peer_as}', 'obsolete', '${country}')">
                                 <label for="obsolete-${peer.peer_as}">✗ Obsolete</label>
                             </div>
                             <div class="radio-option radio-unknown">
-                                <input type="radio" name="peer-${peer.peer_as}" value="unknown"
-                                       id="unknown-${peer.peer_as}"
+                                <input type="radio" name="peer-${peer.peer_as}" value="unknown" 
+                                       id="unknown-${peer.peer_as}" 
                                        onchange="markPeer('${peer.peer_as}', 'unknown', '${country}')">
                                 <label for="unknown-${peer.peer_as}">? Unknown</label>
                             </div>
@@ -789,27 +914,27 @@
 
         function loadMorePeers(country, event) {
             event.stopPropagation();
-
+            
             const group = currentASData.grouped_by_country[country];
             countryPages[country]++;
-
+            
             const start = countryPages[country] * PEERS_PER_PAGE;
             const end = Math.min(start + PEERS_PER_PAGE, group.peers.length);
             const peersToShow = group.peers.slice(start, end);
-
+            
             const listId = `peer-list-${country.replace(/\s+/g, '-')}`;
             const listEl = document.getElementById(listId);
-
+            
             peersToShow.forEach(peer => {
                 listEl.innerHTML += renderPeerItem(peer, country);
             });
-
+            
             const paginationId = `pagination-${country.replace(/\s+/g, '-')}`;
             const paginationEl = document.getElementById(paginationId);
-
+            
             const loaded = Math.min(end, group.peers.length);
             const remaining = group.peers.length - loaded;
-
+            
             if (remaining > 0) {
                 paginationEl.innerHTML = `
                     <p>Showing ${loaded} of ${group.count} peers</p>
@@ -841,13 +966,13 @@
         function updateCountryProgress(country) {
             const progressId = `progress-${country.replace(/\s+/g, '-')}`;
             const progressEl = document.getElementById(progressId);
-
+            
             if (progressEl) {
                 const countryData = currentASData.grouped_by_country[country];
-                const verified = countryData.peers.filter(p =>
+                const verified = countryData.peers.filter(p => 
                     peerVerifications.hasOwnProperty(p.peer_as)
                 ).length;
-
+                
                 progressEl.textContent = verified;
             }
         }
@@ -887,19 +1012,19 @@
         function searchPeers() {
             const searchTerm = document.getElementById('peerSearchInput').value.toLowerCase().trim();
             const resultsDiv = document.getElementById('searchResults');
-
+            
             if (!searchTerm) {
                 resultsDiv.classList.add('hidden');
                 clearHighlights();
                 return;
             }
-
+            
             const cleanSearch = searchTerm.replace(/^as/i, '');
-
+            
             // Step 1: Search ALL peers (fast - just JavaScript)
             const allMatches = [];
             const grouped = currentASData.grouped_by_country;
-
+            
             for (const [country, group] of Object.entries(grouped)) {
                 const countryMatches = group.peers.filter(peer => {
                     const asMatch = peer.peer_as.includes(cleanSearch);
@@ -907,7 +1032,7 @@
                     const orgMatch = peer.peer_org.toLowerCase().includes(searchTerm);
                     return asMatch || nameMatch || orgMatch;
                 });
-
+                
                 if (countryMatches.length > 0) {
                     allMatches.push({
                         country: country,
@@ -916,24 +1041,24 @@
                     });
                 }
             }
-
+            
             // Step 2: Count total matches
             const totalMatches = allMatches.reduce((sum, m) => sum + m.count, 0);
-
+            
             if (totalMatches === 0) {
                 resultsDiv.innerHTML = '<p style="color: #666;">No peers found matching "' + searchTerm + '"</p>';
                 resultsDiv.classList.remove('hidden');
                 clearHighlights();
                 return;
             }
-
+            
             // Step 3: Limit displayed results to MAX_SEARCH_RESULTS
             let displayedCount = 0;
             const matchesToShow = [];
-
+            
             for (const match of allMatches) {
                 if (displayedCount >= MAX_SEARCH_RESULTS) break;
-
+                
                 const peersToShow = match.peers.slice(0, MAX_SEARCH_RESULTS - displayedCount);
                 matchesToShow.push({
                     country: match.country,
@@ -942,17 +1067,17 @@
                 });
                 displayedCount += peersToShow.length;
             }
-
+            
             // Step 4: Display results with appropriate message
             let html = '<strong>Found ' + totalMatches + ' peer(s)</strong>';
-
+            
             if (totalMatches > MAX_SEARCH_RESULTS) {
                 html += ` <span style="color: #dc3545;">(showing first ${MAX_SEARCH_RESULTS})</span><br>`;
                 html += '<small style="color: #856404;">💡 Refine your search to see specific peers</small>';
             }
-
+            
             html += '<br><br>';
-
+            
             matchesToShow.forEach(match => {
                 html += `
                     <div class="search-result-item" onclick="jumpToPeer('${match.country}', '${match.peers[0].peer_as}')">
@@ -963,10 +1088,10 @@
                     </div>
                 `;
             });
-
+            
             resultsDiv.innerHTML = html;
             resultsDiv.classList.remove('hidden');
-
+            
             // Only highlight the matches we're showing (not all matches)
             highlightMatches(matchesToShow);
         }
@@ -975,21 +1100,21 @@
             const detailsId = `details-${country.replace(/\s+/g, '-')}`;
             const details = document.getElementById(detailsId);
             details.classList.remove('hidden');
-
+            
             // Load all peers in country if not already loaded (to ensure peer is visible)
             const group = currentASData.grouped_by_country[country];
             const peerIndex = group.peers.findIndex(p => p.peer_as === peerAS);
             const currentPage = countryPages[country] || 0;
             const peersLoaded = (currentPage + 1) * PEERS_PER_PAGE;
-
+            
             // Load pages until target peer is visible
             while (peerIndex >= peersLoaded && peersLoaded < group.peers.length) {
                 loadMorePeers(country, { stopPropagation: () => {} });
             }
-
+            
             const countryDiv = document.getElementById(`country-${country.replace(/\s+/g, '-')}`);
             countryDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
+            
             setTimeout(() => {
                 const peerItems = countryDiv.querySelectorAll('.peer-verification-item');
                 peerItems.forEach(item => {
@@ -1003,14 +1128,14 @@
 
         function highlightMatches(matches) {
             clearHighlights();
-
+            
             matches.forEach(match => {
                 const detailsId = `details-${match.country.replace(/\s+/g, '-')}`;
                 const details = document.getElementById(detailsId);
                 if (details) {
                     details.classList.remove('hidden');
                 }
-
+                
                 const countryDiv = document.getElementById(`country-${match.country.replace(/\s+/g, '-')}`);
                 if (countryDiv) {
                     const peerItems = countryDiv.querySelectorAll('.peer-verification-item');
@@ -1057,13 +1182,13 @@
             currentASData = null;
             peerVerifications = {};
             countryPages = {};
-
+            
             document.getElementById('resultsSection').classList.add('hidden');
             document.getElementById('asnInput').value = '';
             document.getElementById('asnInput').focus();
-
+            
             clearPeerSearch();
-
+            
             document.querySelector('.search-section').scrollIntoView({ behavior: 'smooth' });
         }
 
@@ -1074,26 +1199,105 @@
 
             let summary = `✓ Session Complete!\n\n`;
             summary += `You verified ${sessionHistory.length} AS${sessionHistory.length > 1 ? 'es' : ''}:\n\n`;
-
+            
             sessionHistory.forEach(entry => {
-                summary += `✓ AS${entry.asn}: ${entry.verified_count} peer${entry.verified_count > 1 ? 's' : ''}\n`;
+                const operatorName = entry.operator ? ` (${entry.operator})` : '';
+                summary += `✓ AS${entry.asn}: ${entry.verified_count} peer${entry.verified_count > 1 ? 's' : ''}${operatorName}\n`;
             });
-
+            
             summary += `\nThank you for your contribution to routing security research!`;
-
+            
             alert(summary);
+        }
+
+        // ============================================
+        // OPERATOR PROFILE MANAGEMENT
+        // ============================================
+
+        function loadOperatorProfile() {
+            const saved = localStorage.getItem('irr_operator_profile');
+            if (saved) {
+                operatorProfile = JSON.parse(saved);
+                updateProfileDisplay();
+            }
+        }
+
+        function updateProfileDisplay() {
+            if (operatorProfile) {
+                document.getElementById('profileIndicator').classList.remove('hidden');
+                document.getElementById('profileNameDisplay').textContent = operatorProfile.name;
+                document.getElementById('profileButtonText').textContent = '👤 Edit Profile';
+            } else {
+                document.getElementById('profileIndicator').classList.add('hidden');
+                document.getElementById('profileButtonText').textContent = '👤 Set Profile';
+            }
+        }
+
+        function openProfileModal() {
+            // Pre-fill if editing
+            if (operatorProfile) {
+                document.getElementById('profileName').value = operatorProfile.name;
+                document.getElementById('profileEmail').value = operatorProfile.email;
+                document.getElementById('profileOrg').value = operatorProfile.organization;
+                document.getElementById('profileRole').value = operatorProfile.role || '';
+            }
+            document.getElementById('profileModal').classList.remove('hidden');
+            document.getElementById('profileName').focus();
+        }
+
+        function closeProfileModal() {
+            document.getElementById('profileModal').classList.add('hidden');
+            document.getElementById('profileForm').reset();
+        }
+
+        function saveProfile(event) {
+            event.preventDefault();
+
+            operatorProfile = {
+                name: document.getElementById('profileName').value.trim(),
+                email: document.getElementById('profileEmail').value.trim(),
+                organization: document.getElementById('profileOrg').value.trim(),
+                role: document.getElementById('profileRole').value.trim() || 'Not specified'
+            };
+
+            localStorage.setItem('irr_operator_profile', JSON.stringify(operatorProfile));
+            updateProfileDisplay();
+            closeProfileModal();
+
+            alert('✓ Profile saved! All future submissions will now be automatic.');
         }
 
         // ============================================
         // SUBMISSION
         // ============================================
 
-        async function submitVerification() {
+        function submitVerification() {
             if (Object.keys(peerVerifications).length === 0) {
                 alert('Please verify at least one peer before submitting.');
                 return;
             }
 
+            // Check if profile is set
+            if (!operatorProfile) {
+                const shouldSetProfile = confirm(
+                    'Set your profile for automatic submissions?\n\n' +
+                    'Click OK to set your profile once (takes 30 seconds).\n' +
+                    'All future submissions will then be instant!\n\n' +
+                    'Or click Cancel to submit anonymously.'
+                );
+
+                if (shouldSetProfile) {
+                    openProfileModal();
+                    return;
+                }
+            }
+
+            // ONE-CLICK SUBMIT!
+            performSubmission();
+        }
+
+        function performSubmission() {
+            // Prepare complete data
             const data = {
                 asn: currentASN,
                 as_info: currentASData.as_info,
@@ -1108,77 +1312,95 @@
                 }
             };
 
-            await submitToGoogleForm(data);
+            // Add operator info if profile exists
+            if (operatorProfile) {
+                data.operator = operatorProfile;
+            }
+
+            // Download JSON backup
             downloadJSONBackup(data);
 
+            // Send email automatically
+            sendEmailSubmission(data);
+
+            // Update session history
             sessionHistory.push({
                 asn: currentASN,
                 verified_count: Object.keys(peerVerifications).length,
-                timestamp: data.timestamp
+                timestamp: data.timestamp,
+                operator: operatorProfile ? operatorProfile.name : 'Anonymous'
             });
 
-            const continueVerifying = confirm(
-                `✓ AS${currentASN} verification submitted successfully!\n\n` +
-                `Verified: ${Object.keys(peerVerifications).length} peers\n\n` +
-                `A backup JSON file has been downloaded.\n` +
-                `Please email it to: usamaijaz404@gmail.com\n\n` +
-                `Would you like to verify another AS?\n\n` +
-                `Click OK to verify another AS, or Cancel to finish.`
-            );
+            // Show success and ask about next AS
+            setTimeout(() => {
+                const operatorInfo = operatorProfile 
+                    ? `Operator: ${operatorProfile.name} (${operatorProfile.email})\n` 
+                    : '';
 
-            if (continueVerifying) {
-                resetForNewAS();
-            } else {
-                showSessionSummary();
-            }
+                const continueVerifying = confirm(
+                    `✓ AS${currentASN} verification submitted!\n\n` +
+                    operatorInfo +
+                    `Verified: ${Object.keys(peerVerifications).length} peers\n\n` +
+                    `JSON file downloaded and email sent to: usamaijaz404@gmail.com\n\n` +
+                    `Would you like to verify another AS?\n\n` +
+                    `Click OK to verify another AS, or Cancel to finish.`
+                );
+
+                if (continueVerifying) {
+                    resetForNewAS();
+                } else {
+                    showSessionSummary();
+                }
+            }, 500);
         }
 
-        async function submitToGoogleForm(data) {
-            const formData = new FormData();
-            formData.append(FORM_FIELDS.asn, data.asn);
-            formData.append(FORM_FIELDS.email, '');
-            formData.append(FORM_FIELDS.data, JSON.stringify(data));
-            formData.append(FORM_FIELDS.timestamp, data.timestamp);
+        function sendEmailSubmission(data) {
+            const subject = `AS${data.asn} IRR Verification Submission`;
+            
+            const operatorInfo = data.operator 
+                ? `Operator: ${data.operator.name}\nEmail: ${data.operator.email}\nOrganization: ${data.operator.organization}\n${data.operator.role !== 'Not specified' ? `Role: ${data.operator.role}\n` : ''}\n`
+                : 'Operator: Anonymous\n\n';
 
-            try {
-                const iframe = document.createElement('iframe');
-                iframe.name = 'hidden_iframe';
-                iframe.style.display = 'none';
-                document.body.appendChild(iframe);
+            const body = `Hello,
 
-                const form = document.createElement('form');
-                form.method = 'POST';
-                form.action = GOOGLE_FORM_URL;
-                form.target = 'hidden_iframe';
+IRR link verification submission for AS${data.asn}.
 
-                for (const [key, value] of formData.entries()) {
-                    const input = document.createElement('input');
-                    input.type = 'hidden';
-                    input.name = key;
-                    input.value = value;
-                    form.appendChild(input);
-                }
+=== OPERATOR INFO ===
+${operatorInfo}
+=== VERIFICATION SUMMARY ===
+AS: ${data.asn}
+${data.as_info.name ? `AS Name: ${data.as_info.name}\n` : ''}${data.as_info.country ? `Country: ${data.as_info.country}\n` : ''}
+Total Peers: ${data.total_peers}
+Verified Peers: ${data.verified_peers}
 
-                document.body.appendChild(form);
-                form.submit();
+Results:
+- Active: ${data.summary.active} peers
+- Obsolete: ${data.summary.obsolete} peers
+- Unknown: ${data.summary.unknown} peers
 
-                setTimeout(() => {
-                    document.body.removeChild(form);
-                    document.body.removeChild(iframe);
-                }, 1000);
-            } catch (error) {
-                console.error('Google Form submission error:', error);
-            }
+Timestamp: ${data.timestamp}
+
+=== ATTACHMENT ===
+JSON file: AS${data.asn}_verification_${Date.now()}.json
+(Check Downloads folder and attach to this email)
+
+Thank you!`;
+
+            // Open mailto link
+            const mailtoLink = `mailto:usamaijaz404@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.open(mailtoLink, '_blank');
         }
 
         function downloadJSONBackup(data) {
+            const filename = `AS${data.asn}_verification_${Date.now()}.json`;
             const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = `AS${data.asn}_verification_${Date.now()}.json`;
+            a.download = filename;
             a.click();
             URL.revokeObjectURL(url);
+            return filename; // Return filename for email reference
         }
     </script>
 </body>
