@@ -291,11 +291,11 @@
 
         async function loadCountryIndex() {
             try {
-                const response = await fetch('country_index.json');
+                const response = await fetch('index.json');
                 if (!response.ok) throw new Error('File not found');
                 countryIndex = await response.json();
             } catch (error) {
-                alert('Setup Error: country_index.json not found.\n\nMake sure this file is in the same directory as index.html');
+                alert('Setup Error: index.json not found.\n\nMake sure this file is in the same directory as index.html');
             }
         }
 
