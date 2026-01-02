@@ -487,6 +487,7 @@
         let currentASN = '';
         let currentASData = null;
         let peerVerifications = {};
+        let sessionHistory = [];
 
         // ============================================
         // PASSWORD & DATA LOADING
@@ -534,6 +535,20 @@
             if (!asn) {
                 alert('Please enter an AS number.');
                 return;
+            }
+
+            // Warn if switching AS with unsubmitted verifications
+            const verifiedCount = Object.keys(peerVerifications).length;
+            if (currentASN && verifiedCount > 0) {
+                const proceed = confirm(
+                    `⚠️ Warning: You have ${verifiedCount} unsubmitted verification(s) for AS${currentASN}.\n\n` +
+                    `Searching a new AS will lose this data.\n\n` +
+                    `Click OK to continue anyway, or Cancel to go back and submit first.`
+                );
+
+                if (!proceed) {
+                    return;
+                }
             }
 
             if (!countryIndex[asn]) {
@@ -781,7 +796,6 @@
             }
 
             const cleanSearch = searchTerm.replace(/^as/i, '');
-
             const matches = [];
             const grouped = currentASData.grouped_by_country;
 
@@ -824,7 +838,6 @@
 
             resultsDiv.innerHTML = html;
             resultsDiv.classList.remove('hidden');
-
             highlightMatches(matches);
         }
 
@@ -895,6 +908,41 @@
         }
 
         // ============================================
+        // MULTI-AS SESSION MANAGEMENT
+        // ============================================
+
+        function resetForNewAS() {
+            currentASN = '';
+            currentASData = null;
+            peerVerifications = {};
+
+            document.getElementById('resultsSection').classList.add('hidden');
+            document.getElementById('asnInput').value = '';
+            document.getElementById('asnInput').focus();
+
+            clearPeerSearch();
+
+            document.querySelector('.search-section').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function showSessionSummary() {
+            if (sessionHistory.length === 0) {
+                return;
+            }
+
+            let summary = `✓ Session Complete!\n\n`;
+            summary += `You verified ${sessionHistory.length} AS${sessionHistory.length > 1 ? 'es' : ''}:\n\n`;
+
+            sessionHistory.forEach(entry => {
+                summary += `✓ AS${entry.asn}: ${entry.verified_count} peer${entry.verified_count > 1 ? 's' : ''}\n`;
+            });
+
+            summary += `\nThank you for your contribution to routing security research!`;
+
+            alert(summary);
+        }
+
+        // ============================================
         // SUBMISSION
         // ============================================
 
@@ -921,10 +969,26 @@
             await submitToGoogleForm(data);
             downloadJSONBackup(data);
 
-            alert('✓ Verification submitted successfully!\n\n' +
-                  'A backup JSON file has been downloaded to your computer.\n\n' +
-                  'Please email this file to: usamaijaz404@gmail.com\n\n' +
-                  'Thank you for your contribution!');
+            sessionHistory.push({
+                asn: currentASN,
+                verified_count: Object.keys(peerVerifications).length,
+                timestamp: data.timestamp
+            });
+
+            const continueVerifying = confirm(
+                `✓ AS${currentASN} verification submitted successfully!\n\n` +
+                `Verified: ${Object.keys(peerVerifications).length} peers\n\n` +
+                `A backup JSON file has been downloaded.\n` +
+                `Please email it to: usamaijaz404@gmail.com\n\n` +
+                `Would you like to verify another AS?\n\n` +
+                `Click OK to verify another AS, or Cancel to finish.`
+            );
+
+            if (continueVerifying) {
+                resetForNewAS();
+            } else {
+                showSessionSummary();
+            }
         }
 
         async function submitToGoogleForm(data) {
