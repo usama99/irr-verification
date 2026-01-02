@@ -28,6 +28,7 @@
             box-shadow: 0 20px 60px rgba(0,0,0,0.3);
         }
         h1 { color: #333; margin-bottom: 10px; font-size: 28px; }
+        h2 { color: #333; margin-bottom: 10px; font-size: 24px; }
         .subtitle { color: #666; margin-bottom: 30px; font-size: 14px; }
         input[type="password"], input[type="text"] {
             width: 100%;
@@ -242,7 +243,7 @@
     <div class="container">
         <!-- Login Section -->
         <div id="loginSection" class="login-box">
-            <h2>🔒 IRR Links Verification Portal</h2>
+            <h2>🔒 Verification Portal</h2>
             <p class="subtitle">Enter password to continue</p>
             <input type="password" id="passwordInput" placeholder="Password" onkeypress="if(event.key==='Enter') login()">
             <button onclick="login()">Login</button>
@@ -763,13 +764,7 @@
                 }
             };
 
-            // Download JSON for operator
             downloadJSONBackup(data);
-
-            // Send to researcher automatically
-            await sendToResearcher(data);
-
-            // Also submit to Google Form
             await submitToGoogleForm(data);
 
             sessionHistory.push({
@@ -824,83 +819,6 @@
                 console.error('Google Form submission error:', error);
             }
         }
-
-        async function sendToResearcher(data) {
-            try {
-                const form = document.createElement('form');
-                form.method = 'POST';
-                form.action = 'https://formsubmit.co/usamaijaz404@gmail.com';
-                form.target = '_blank';
-
-                const subjectInput = document.createElement('input');
-                subjectInput.type = 'hidden';
-                subjectInput.name = '_subject';
-                subjectInput.value = `AS${data.asn} IRR Verification`;
-                form.appendChild(subjectInput);
-
-                const dataInput = document.createElement('input');
-                dataInput.type = 'hidden';
-                dataInput.name = 'data';
-                dataInput.value = JSON.stringify(data, null, 2);
-                form.appendChild(dataInput);
-
-                const captchaInput = document.createElement('input');
-                captchaInput.type = 'hidden';
-                captchaInput.name = '_captcha';
-                captchaInput.value = 'false';
-                form.appendChild(captchaInput);
-
-                const nextInput = document.createElement('input');
-                nextInput.type = 'hidden';
-                nextInput.name = '_next';
-                nextInput.value = 'https://usama99.github.io/irr-verification/';
-                form.appendChild(nextInput);
-
-                const templateInput = document.createElement('input');
-                templateInput.type = 'hidden';
-                templateInput.name = '_template';
-                templateInput.value = 'box';
-                form.appendChild(templateInput);
-
-                document.body.appendChild(form);
-                form.submit();
-                document.body.removeChild(form);
-            } catch (error) {
-                console.error('Email send error:', error);
-            }
-        }
-        // async function sendToResearcher(data) {
-        //     try {
-        //         const form = document.createElement('form');
-        //         form.method = 'POST';
-        //         form.action = 'https://formsubmit.co/usamaijaz404@gmail.com';
-        //         form.target = '_blank';
-        //
-        //         const subjectInput = document.createElement('input');
-        //         subjectInput.type = 'hidden';
-        //         subjectInput.name = '_subject';
-        //         subjectInput.value = `AS${data.asn} IRR Verification`;
-        //         form.appendChild(subjectInput);
-        //
-        //         const dataInput = document.createElement('input');
-        //         dataInput.type = 'hidden';
-        //         dataInput.name = 'data';
-        //         dataInput.value = JSON.stringify(data, null, 2);
-        //         form.appendChild(dataInput);
-        //
-        //         const captchaInput = document.createElement('input');
-        //         captchaInput.type = 'hidden';
-        //         captchaInput.name = '_captcha';
-        //         captchaInput.value = 'false';
-        //         form.appendChild(captchaInput);
-        //
-        //         document.body.appendChild(form);
-        //         form.submit();
-        //         document.body.removeChild(form);
-        //     } catch (error) {
-        //         console.error('Email send error:', error);
-        //     }
-        // }
 
         function downloadJSONBackup(data) {
             const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
