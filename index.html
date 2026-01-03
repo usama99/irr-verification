@@ -741,14 +741,10 @@
             console.log('- Data field:', FORM_FIELDS.data, '= (JSON data)');
             console.log('- Timestamp field:', FORM_FIELDS.timestamp, '=', data.timestamp);
             try {
-                const iframe = document.createElement('iframe');
-                iframe.name = 'hidden_iframe';
-                iframe.style.display = 'none';
-                document.body.appendChild(iframe);
                 const form = document.createElement('form');
                 form.method = 'POST';
                 form.action = GOOGLE_FORM_URL;
-                form.target = 'hidden_iframe';
+                form.target = '_blank';
                 for (const [key, value] of formData.entries()) {
                     const input = document.createElement('input');
                     input.type = 'hidden';
@@ -759,10 +755,9 @@
                 document.body.appendChild(form);
                 console.log('✓ Form created, submitting to:', GOOGLE_FORM_URL);
                 form.submit();
-                console.log('✓ Form submitted!');
+                console.log('✓ Form submitted! A new tab will open with Google response.');
                 setTimeout(() => {
                     document.body.removeChild(form);
-                    document.body.removeChild(iframe);
                     console.log('✓ Cleanup complete');
                 }, 1000);
             } catch (error) {
