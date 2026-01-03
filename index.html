@@ -241,21 +241,16 @@
 </head>
 <body>
     <div class="container">
-        <!-- Login Section -->
         <div id="loginSection" class="login-box">
-            <h2>🔒 IRR Links Verification Portal</h2>
+            <h2>🔒 Verification Portal</h2>
             <p class="subtitle">Enter password to continue</p>
             <input type="password" id="passwordInput" placeholder="Password" onkeypress="if(event.key==='Enter') login()">
             <button onclick="login()">Login</button>
             <p id="loginError" class="error hidden">Incorrect password</p>
         </div>
-
-        <!-- Main Content -->
         <div id="mainContent" class="main-content hidden">
             <h1>IRR Link Verification</h1>
             <p class="subtitle">Verify IRR peering data for your AS</p>
-
-            <!-- Search Section -->
             <div class="search-section">
                 <h3 style="margin-bottom: 15px;">Find Your AS</h3>
                 <div style="display: flex; gap: 10px;">
@@ -264,36 +259,14 @@
                 </div>
                 <div id="loadingMessage" class="loading hidden">Loading data...</div>
             </div>
-
-            <!-- Results Section -->
             <div id="resultsSection" class="hidden">
-                <!-- Stats -->
                 <div class="stats">
-                    <div class="stat-box">
-                        <div class="stat-label">Your AS</div>
-                        <div class="stat-value" id="currentAS">-</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-label">Total Peer Links</div>
-                        <div class="stat-value" id="linkCount">-</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-label">Peer Countries</div>
-                        <div class="stat-value" id="countryCount">-</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-label">Verified Peers</div>
-                        <div class="stat-value" id="verifiedCount">0</div>
-                    </div>
+                    <div class="stat-box"><div class="stat-label">Your AS</div><div class="stat-value" id="currentAS">-</div></div>
+                    <div class="stat-box"><div class="stat-label">Total Peer Links</div><div class="stat-value" id="linkCount">-</div></div>
+                    <div class="stat-box"><div class="stat-label">Peer Countries</div><div class="stat-value" id="countryCount">-</div></div>
+                    <div class="stat-box"><div class="stat-label">Verified Peers</div><div class="stat-value" id="verifiedCount">0</div></div>
                 </div>
-
-                <!-- Large AS Warning -->
-                <div id="largeAsWarning" class="large-as-warning hidden">
-                    <strong>⚠️ Large AS Detected</strong><br>
-                    This AS has many peer links. Peers are loaded in batches of 50 for better performance.
-                </div>
-
-                <!-- Peer Search Section -->
+                <div id="largeAsWarning" class="large-as-warning hidden"><strong>⚠️ Large AS Detected</strong><br>This AS has many peer links. Peers are loaded in batches of 50 for better performance.</div>
                 <div class="search-peer-section">
                     <h3 style="margin-bottom: 10px;">🔍 Find Specific Peer</h3>
                     <div style="display: flex; gap: 10px; margin-bottom: 10px;">
@@ -302,533 +275,48 @@
                     </div>
                     <div id="searchResults" class="search-results hidden"></div>
                 </div>
-
-                <!-- Country Groups -->
                 <div id="countryGroupsContainer"></div>
-
-                <!-- Verification Summary -->
-                <div id="verificationSummary" class="verification-summary hidden">
-                    <h3>✓ Verification Summary</h3>
-                    <div id="summaryContent"></div>
-                </div>
-
-                <!-- Submit Section -->
+                <div id="verificationSummary" class="verification-summary hidden"><h3>✓ Verification Summary</h3><div id="summaryContent"></div></div>
                 <div class="submit-section">
                     <button class="submit-btn" onclick="submitVerification()">Submit Verification</button>
                     <p class="subtitle" style="margin-top: 10px;">Data will be saved automatically</p>
                 </div>
             </div>
-
-            <div class="contact">
-                <strong>Questions?</strong> Contact: usamaijaz404@gmail.com
-            </div>
+            <div class="contact"><strong>Questions?</strong> Contact: usamaijaz404@gmail.com</div>
         </div>
     </div>
-
     <script>
         const PASSWORD_HASH = "deda38a7fa94cdc6863168750cac646efa25ff2e2a67babe979b46c3cb36b9ee";
         const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfNAFdeWfeQ9RS-e2sQgysgGnPy75hl9BsJL3c-zMnXaC1yyA/formResponse";
-        const FORM_FIELDS = {
-            asn: "entry.1255619771",
-            email: "entry.847494780",
-            data: "entry.143108106",
-            timestamp: "entry.969579197"
-        };
-        const PEERS_PER_PAGE = 50;
-        const LARGE_AS_THRESHOLD = 1000;
-        const MAX_SEARCH_RESULTS = 50;
-
-        let countryIndex = {};
-        let currentASN = '';
-        let currentASData = null;
-        let peerVerifications = {};
-        let sessionHistory = [];
-        let countryPages = {};
-
-        async function login() {
-            const password = document.getElementById('passwordInput').value;
-            const hash = await sha256(password);
-            if (hash === PASSWORD_HASH) {
-                document.getElementById('loginSection').classList.add('hidden');
-                document.getElementById('mainContent').classList.remove('hidden');
-                loadCountryIndex();
-            } else {
-                document.getElementById('loginError').classList.remove('hidden');
-            }
-        }
-
-        async function sha256(message) {
-            const msgBuffer = new TextEncoder().encode(message);
-            const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
-            const hashArray = Array.from(new Uint8Array(hashBuffer));
-            return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-        }
-
-        async function loadCountryIndex() {
-            try {
-                const response = await fetch('data/country_index.json');
-                countryIndex = await response.json();
-            } catch (error) {
-                alert('Error loading data. Please contact support.');
-            }
-        }
-
-        async function searchAS() {
-            const input = document.getElementById('asnInput').value.trim();
-            const asn = input.replace(/^AS/i, '');
-            if (!asn) {
-                alert('Please enter an AS number.');
-                return;
-            }
-            const verifiedCount = Object.keys(peerVerifications).length;
-            if (currentASN && verifiedCount > 0) {
-                const proceed = confirm(`⚠️ Warning: You have ${verifiedCount} unsubmitted verification(s) for AS${currentASN}.\n\nSearching a new AS will lose this data.\n\nClick OK to continue anyway, or Cancel to go back and submit first.`);
-                if (!proceed) return;
-            }
-            if (!countryIndex[asn]) {
-                alert(`AS${asn} not found in our dataset.`);
-                return;
-            }
-            currentASN = asn;
-            peerVerifications = {};
-            countryPages = {};
-            document.getElementById('loadingMessage').classList.remove('hidden');
-            document.getElementById('resultsSection').classList.add('hidden');
-            const countryFile = countryIndex[asn].filename;
-            try {
-                const response = await fetch(`data/${countryFile}`);
-                const countryData = await response.json();
-                if (!countryData[asn]) {
-                    alert(`AS${asn} not found in ${countryFile}.`);
-                    return;
-                }
-                currentASData = countryData[asn];
-                groupPeersByCountry();
-                displayResults();
-                document.getElementById('loadingMessage').classList.add('hidden');
-            } catch (error) {
-                alert('Error loading AS data. Please try again.');
-                document.getElementById('loadingMessage').classList.add('hidden');
-            }
-        }
-
-        function groupPeersByCountry() {
-            const grouped = {};
-            for (const link of currentASData.links) {
-                const peerCountry = link.peer_country || 'Unknown';
-                if (!grouped[peerCountry]) {
-                    grouped[peerCountry] = { count: 0, peers: [] };
-                }
-                grouped[peerCountry].count++;
-                grouped[peerCountry].peers.push(link);
-            }
-            const sortedGrouped = {};
-            const sortedCountries = Object.keys(grouped).sort((a, b) => grouped[b].count - grouped[a].count);
-            for (const country of sortedCountries) {
-                sortedGrouped[country] = grouped[country];
-                countryPages[country] = 0;
-            }
-            currentASData.grouped_by_country = sortedGrouped;
-        }
-
-        function displayResults() {
-            const data = currentASData;
-            const asInfo = data.as_info || {};
-            const grouped = data.grouped_by_country || {};
-            const asDisplay = asInfo.name && asInfo.name !== 'Unknown' ? `AS${currentASN} - ${asInfo.name} (${asInfo.country})` : `AS${currentASN}`;
-            document.getElementById('currentAS').textContent = asDisplay;
-            document.getElementById('linkCount').textContent = data.links.length;
-            document.getElementById('countryCount').textContent = Object.keys(grouped).length;
-            document.getElementById('verifiedCount').textContent = '0';
-            if (data.links.length >= LARGE_AS_THRESHOLD) {
-                document.getElementById('largeAsWarning').classList.remove('hidden');
-            } else {
-                document.getElementById('largeAsWarning').classList.add('hidden');
-            }
-            displayCountryGroups(grouped);
-            document.getElementById('resultsSection').classList.remove('hidden');
-            document.getElementById('resultsSection').scrollIntoView({ behavior: 'smooth' });
-        }
-
-        function displayCountryGroups(grouped) {
-            const container = document.getElementById('countryGroupsContainer');
-            container.innerHTML = '';
-            const countryFlags = {
-                'Singapore': '🇸🇬', 'United States': '🇺🇸', 'Japan': '🇯🇵',
-                'Indonesia': '🇮🇩', 'Australia': '🇦🇺', 'Germany': '🇩🇪',
-                'United Kingdom': '🇬🇧', 'Netherlands': '🇳🇱', 'France': '🇫🇷',
-                'China': '🇨🇳', 'India': '🇮🇳', 'Malaysia': '🇲🇾',
-                'Thailand': '🇹🇭', 'South Korea': '🇰🇷', 'Canada': '🇨🇦',
-            };
-            for (const [country, group] of Object.entries(grouped)) {
-                const flag = countryFlags[country] || '🌏';
-                const countryDiv = createCountryGroup(country, group, flag);
-                container.appendChild(countryDiv);
-            }
-        }
-
-        function createCountryGroup(country, group, flag) {
-            const div = document.createElement('div');
-            div.className = 'country-group';
-            div.id = `country-${country.replace(/\s+/g, '-')}`;
-            const previewPeers = group.peers.slice(0, 3).map(p => p.peer_name).join(', ');
-            const moreText = group.peers.length > 3 ? ` and ${group.peers.length - 3} more` : '';
-            const peersToShow = group.peers.slice(0, PEERS_PER_PAGE);
-            const hasMore = group.peers.length > PEERS_PER_PAGE;
-            div.innerHTML = `
-                <div class="country-header" onclick="toggleCountryDetails('${country}')">
-                    <div>
-                        <div class="country-title">${flag} ${country} <span class="country-count">(${group.count} peers)</span></div>
-                        <div class="country-preview">${previewPeers}${moreText}</div>
-                    </div>
-                    <div>▼</div>
-                </div>
-                <div class="country-actions">
-                    <button class="action-verify" onclick="toggleCountryDetails('${country}', event)">📋 Verify Peers</button>
-                </div>
-                <div class="country-details hidden" id="details-${country.replace(/\s+/g, '-')}">
-                    <div class="instruction-box">
-                        <strong>Instructions:</strong> Review each peer and mark its current status.
-                        Mark as <strong style="color: #28a745;">Active</strong> if peering relationship exists,
-                        <strong style="color: #dc3545;">Obsolete</strong> if no longer peering, or
-                        <strong style="color: #6c757d;">Unknown</strong> if you're not certain.
-                    </div>
-                    <div class="progress-info">Verified: <strong id="progress-${country.replace(/\s+/g, '-')}">0</strong> of ${group.count} peers</div>
-                    <div class="peer-verification-list" id="peer-list-${country.replace(/\s+/g, '-')}">
-                        ${peersToShow.map(peer => renderPeerItem(peer, country)).join('')}
-                    </div>
-                    ${hasMore ? `
-                        <div class="pagination-controls" id="pagination-${country.replace(/\s+/g, '-')}">
-                            <p>Showing ${PEERS_PER_PAGE} of ${group.count} peers</p>
-                            <button onclick="loadMorePeers('${country}', event)">Load ${Math.min(PEERS_PER_PAGE, group.count - PEERS_PER_PAGE)} More Peers</button>
-                        </div>
-                    ` : ''}
-                </div>
-            `;
-            return div;
-        }
-
-        function renderPeerItem(peer, country) {
-            return `
-                <div class="peer-verification-item" data-peer-as="${peer.peer_as}">
-                    <div class="peer-info">
-                        <div class="peer-as">AS${peer.peer_as} - ${peer.peer_name}</div>
-                        <div class="peer-org">${peer.peer_org}</div>
-                    </div>
-                    <div class="peer-actions">
-                        <div class="radio-group">
-                            <div class="radio-option radio-active">
-                                <input type="radio" name="peer-${peer.peer_as}" value="active" id="active-${peer.peer_as}" onchange="markPeer('${peer.peer_as}', 'active', '${country}')">
-                                <label for="active-${peer.peer_as}">✓ Active</label>
-                            </div>
-                            <div class="radio-option radio-obsolete">
-                                <input type="radio" name="peer-${peer.peer_as}" value="obsolete" id="obsolete-${peer.peer_as}" onchange="markPeer('${peer.peer_as}', 'obsolete', '${country}')">
-                                <label for="obsolete-${peer.peer_as}">✗ Obsolete</label>
-                            </div>
-                            <div class="radio-option radio-unknown">
-                                <input type="radio" name="peer-${peer.peer_as}" value="unknown" id="unknown-${peer.peer_as}" onchange="markPeer('${peer.peer_as}', 'unknown', '${country}')">
-                                <label for="unknown-${peer.peer_as}">? Unknown</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            `;
-        }
-
-        function loadMorePeers(country, event) {
-            event.stopPropagation();
-            const group = currentASData.grouped_by_country[country];
-            countryPages[country]++;
-            const start = countryPages[country] * PEERS_PER_PAGE;
-            const end = Math.min(start + PEERS_PER_PAGE, group.peers.length);
-            const peersToShow = group.peers.slice(start, end);
-            const listId = `peer-list-${country.replace(/\s+/g, '-')}`;
-            const listEl = document.getElementById(listId);
-            peersToShow.forEach(peer => {
-                listEl.innerHTML += renderPeerItem(peer, country);
-            });
-            const paginationId = `pagination-${country.replace(/\s+/g, '-')}`;
-            const paginationEl = document.getElementById(paginationId);
-            const loaded = Math.min(end, group.peers.length);
-            const remaining = group.peers.length - loaded;
-            if (remaining > 0) {
-                paginationEl.innerHTML = `<p>Showing ${loaded} of ${group.count} peers</p><button onclick="loadMorePeers('${country}', event)">Load ${Math.min(PEERS_PER_PAGE, remaining)} More Peers</button>`;
-            } else {
-                paginationEl.innerHTML = `<p>✓ All ${group.count} peers loaded</p>`;
-            }
-        }
-
-        function toggleCountryDetails(country, event) {
-            if (event) event.stopPropagation();
-            const detailsId = `details-${country.replace(/\s+/g, '-')}`;
-            const details = document.getElementById(detailsId);
-            details.classList.toggle('hidden');
-        }
-
-        function markPeer(peerAS, status, country) {
-            peerVerifications[peerAS] = status;
-            updateVerifiedCount();
-            updateCountryProgress(country);
-            showVerificationSummary();
-        }
-
-        function updateCountryProgress(country) {
-            const progressId = `progress-${country.replace(/\s+/g, '-')}`;
-            const progressEl = document.getElementById(progressId);
-            if (progressEl) {
-                const countryData = currentASData.grouped_by_country[country];
-                const verified = countryData.peers.filter(p => peerVerifications.hasOwnProperty(p.peer_as)).length;
-                progressEl.textContent = verified;
-            }
-        }
-
-        function updateVerifiedCount() {
-            const verified = Object.keys(peerVerifications).length;
-            document.getElementById('verifiedCount').textContent = verified;
-        }
-
-        function showVerificationSummary() {
-            const summary = document.getElementById('verificationSummary');
-            const content = document.getElementById('summaryContent');
-            if (Object.keys(peerVerifications).length === 0) {
-                summary.classList.add('hidden');
-                return;
-            }
-            const activeCount = Object.values(peerVerifications).filter(v => v === 'active').length;
-            const obsoleteCount = Object.values(peerVerifications).filter(v => v === 'obsolete').length;
-            const unknownCount = Object.values(peerVerifications).filter(v => v === 'unknown').length;
-            let html = '<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">';
-            html += `<div><strong>Active:</strong> ${activeCount} peers</div>`;
-            html += `<div><strong>Obsolete:</strong> ${obsoleteCount} peers</div>`;
-            html += `<div><strong>Unknown:</strong> ${unknownCount} peers</div>`;
-            html += '</div>';
-            content.innerHTML = html;
-            summary.classList.remove('hidden');
-        }
-
-        function searchPeers() {
-            const searchTerm = document.getElementById('peerSearchInput').value.toLowerCase().trim();
-            const resultsDiv = document.getElementById('searchResults');
-            if (!searchTerm) {
-                resultsDiv.classList.add('hidden');
-                clearHighlights();
-                return;
-            }
-            const cleanSearch = searchTerm.replace(/^as/i, '');
-            const allMatches = [];
-            const grouped = currentASData.grouped_by_country;
-            for (const [country, group] of Object.entries(grouped)) {
-                const countryMatches = group.peers.filter(peer => {
-                    const asMatch = peer.peer_as.includes(cleanSearch);
-                    const nameMatch = peer.peer_name.toLowerCase().includes(searchTerm);
-                    const orgMatch = peer.peer_org.toLowerCase().includes(searchTerm);
-                    return asMatch || nameMatch || orgMatch;
-                });
-                if (countryMatches.length > 0) {
-                    allMatches.push({ country: country, peers: countryMatches, count: countryMatches.length });
-                }
-            }
-            const totalMatches = allMatches.reduce((sum, m) => sum + m.count, 0);
-            if (totalMatches === 0) {
-                resultsDiv.innerHTML = '<p style="color: #666;">No peers found matching "' + searchTerm + '"</p>';
-                resultsDiv.classList.remove('hidden');
-                clearHighlights();
-                return;
-            }
-            let displayedCount = 0;
-            const matchesToShow = [];
-            for (const match of allMatches) {
-                if (displayedCount >= MAX_SEARCH_RESULTS) break;
-                const peersToShow = match.peers.slice(0, MAX_SEARCH_RESULTS - displayedCount);
-                matchesToShow.push({ country: match.country, peers: peersToShow, count: peersToShow.length });
-                displayedCount += peersToShow.length;
-            }
-            let html = '<strong>Found ' + totalMatches + ' peer(s)</strong>';
-            if (totalMatches > MAX_SEARCH_RESULTS) {
-                html += ` <span style="color: #dc3545;">(showing first ${MAX_SEARCH_RESULTS})</span><br><small style="color: #856404;">💡 Refine your search to see specific peers</small>`;
-            }
-            html += '<br><br>';
-            matchesToShow.forEach(match => {
-                html += `<div class="search-result-item" onclick="jumpToPeer('${match.country}', '${match.peers[0].peer_as}')"><strong>${getCountryFlag(match.country)} ${match.country}</strong>: ${match.count} match(es)<br><small style="color: #666;">${match.peers.map(p => 'AS' + p.peer_as + ' - ' + p.peer_name).join(', ')}</small></div>`;
-            });
-            resultsDiv.innerHTML = html;
-            resultsDiv.classList.remove('hidden');
-            highlightMatches(matchesToShow);
-        }
-
-        function jumpToPeer(country, peerAS) {
-            const detailsId = `details-${country.replace(/\s+/g, '-')}`;
-            const details = document.getElementById(detailsId);
-            details.classList.remove('hidden');
-            const group = currentASData.grouped_by_country[country];
-            const peerIndex = group.peers.findIndex(p => p.peer_as === peerAS);
-            const currentPage = countryPages[country] || 0;
-            const peersLoaded = (currentPage + 1) * PEERS_PER_PAGE;
-            while (peerIndex >= peersLoaded && peersLoaded < group.peers.length) {
-                loadMorePeers(country, { stopPropagation: () => {} });
-            }
-            const countryDiv = document.getElementById(`country-${country.replace(/\s+/g, '-')}`);
-            countryDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            setTimeout(() => {
-                const peerItems = countryDiv.querySelectorAll('.peer-verification-item');
-                peerItems.forEach(item => {
-                    if (item.getAttribute('data-peer-as') === peerAS) {
-                        item.classList.add('search-match');
-                        item.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    }
-                });
-            }, 500);
-        }
-
-        function highlightMatches(matches) {
-            clearHighlights();
-            matches.forEach(match => {
-                const detailsId = `details-${match.country.replace(/\s+/g, '-')}`;
-                const details = document.getElementById(detailsId);
-                if (details) details.classList.remove('hidden');
-                const countryDiv = document.getElementById(`country-${match.country.replace(/\s+/g, '-')}`);
-                if (countryDiv) {
-                    const peerItems = countryDiv.querySelectorAll('.peer-verification-item');
-                    peerItems.forEach(item => {
-                        match.peers.forEach(peer => {
-                            if (item.getAttribute('data-peer-as') === peer.peer_as) {
-                                item.classList.add('search-match');
-                            }
-                        });
-                    });
-                }
-            });
-        }
-
-        function clearHighlights() {
-            document.querySelectorAll('.search-match').forEach(el => {
-                el.classList.remove('search-match');
-            });
-        }
-
-        function clearPeerSearch() {
-            document.getElementById('peerSearchInput').value = '';
-            document.getElementById('searchResults').classList.add('hidden');
-            clearHighlights();
-        }
-
-        function getCountryFlag(country) {
-            const flags = {
-                'Singapore': '🇸🇬', 'United States': '🇺🇸', 'Japan': '🇯🇵',
-                'Indonesia': '🇮🇩', 'Australia': '🇦🇺', 'Germany': '🇩🇪',
-                'United Kingdom': '🇬🇧', 'Netherlands': '🇳🇱', 'France': '🇫🇷',
-                'China': '🇨🇳', 'India': '🇮🇳', 'Malaysia': '🇲🇾',
-                'Thailand': '🇹🇭', 'South Korea': '🇰🇷', 'Canada': '🇨🇦',
-            };
-            return flags[country] || '🌏';
-        }
-
-        function resetForNewAS() {
-            currentASN = '';
-            currentASData = null;
-            peerVerifications = {};
-            countryPages = {};
-            document.getElementById('resultsSection').classList.add('hidden');
-            document.getElementById('asnInput').value = '';
-            document.getElementById('asnInput').focus();
-            clearPeerSearch();
-            document.querySelector('.search-section').scrollIntoView({ behavior: 'smooth' });
-        }
-
-        function showSessionSummary() {
-            if (sessionHistory.length === 0) return;
-            let summary = `✓ Session Complete!\n\nYou verified ${sessionHistory.length} AS${sessionHistory.length > 1 ? 'es' : ''}:\n\n`;
-            sessionHistory.forEach(entry => {
-                summary += `✓ AS${entry.asn}: ${entry.verified_count} peer${entry.verified_count > 1 ? 's' : ''}\n`;
-            });
-            summary += `\nThank you for your contribution!`;
-            alert(summary);
-        }
-
-        async function submitVerification() {
-            if (Object.keys(peerVerifications).length === 0) {
-                alert('Please verify at least one peer before submitting.');
-                return;
-            }
-            const data = {
-                asn: currentASN,
-                as_info: currentASData.as_info,
-                peer_verifications: peerVerifications,
-                timestamp: new Date().toISOString(),
-                total_peers: currentASData.links.length,
-                verified_peers: Object.keys(peerVerifications).length,
-                summary: {
-                    active: Object.values(peerVerifications).filter(v => v === 'active').length,
-                    obsolete: Object.values(peerVerifications).filter(v => v === 'obsolete').length,
-                    unknown: Object.values(peerVerifications).filter(v => v === 'unknown').length
-                }
-            };
-
-            downloadJSONBackup(data);
-            await submitToGoogleForm(data);
-
-            sessionHistory.push({
-                asn: currentASN,
-                verified_count: Object.keys(peerVerifications).length,
-                timestamp: data.timestamp
-            });
-
-            const continueVerifying = confirm(
-                `✓ AS${currentASN} verification submitted successfully!\n\n` +
-                `Verified: ${Object.keys(peerVerifications).length} peers\n\n` +
-                `Data saved automatically.\n\n` +
-                `Verify another AS?`
-            );
-
-            if (continueVerifying) {
-                resetForNewAS();
-            } else {
-                showSessionSummary();
-            }
-        }
-
-        async function submitToGoogleForm(data) {
-            const formData = new FormData();
-            formData.append(FORM_FIELDS.asn, data.asn);
-            formData.append(FORM_FIELDS.email, '');
-            formData.append(FORM_FIELDS.data, JSON.stringify(data));
-            formData.append(FORM_FIELDS.timestamp, data.timestamp);
-            try {
-                const iframe = document.createElement('iframe');
-                iframe.name = 'hidden_iframe';
-                iframe.style.display = 'none';
-                document.body.appendChild(iframe);
-                const form = document.createElement('form');
-                form.method = 'POST';
-                form.action = GOOGLE_FORM_URL;
-                form.target = 'hidden_iframe';
-                for (const [key, value] of formData.entries()) {
-                    const input = document.createElement('input');
-                    input.type = 'hidden';
-                    input.name = key;
-                    input.value = value;
-                    form.appendChild(input);
-                }
-                document.body.appendChild(form);
-                form.submit();
-                setTimeout(() => {
-                    document.body.removeChild(form);
-                    document.body.removeChild(iframe);
-                }, 1000);
-            } catch (error) {
-                console.error('Google Form submission error:', error);
-            }
-        }
-
-        function downloadJSONBackup(data) {
-            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `AS${data.asn}_verification_${Date.now()}.json`;
-            a.click();
-            URL.revokeObjectURL(url);
-        }
+        const FORM_FIELDS = {asn:"entry.1255619771",email:"entry.847494780",data:"entry.143108106",timestamp:"entry.969579197"};
+        const PEERS_PER_PAGE=50,LARGE_AS_THRESHOLD=1000,MAX_SEARCH_RESULTS=50;
+        let countryIndex={},currentASN='',currentASData=null,peerVerifications={},sessionHistory=[],countryPages={};
+        async function login(){const p=document.getElementById('passwordInput').value,h=await sha256(p);h===PASSWORD_HASH?(document.getElementById('loginSection').classList.add('hidden'),document.getElementById('mainContent').classList.remove('hidden'),loadCountryIndex()):document.getElementById('loginError').classList.remove('hidden')}
+        async function sha256(m){const b=new TextEncoder().encode(m),h=await crypto.subtle.digest('SHA-256',b),a=Array.from(new Uint8Array(h));return a.map(b=>b.toString(16).padStart(2,'0')).join('')}
+        async function loadCountryIndex(){try{const r=await fetch('data/country_index.json');countryIndex=await r.json()}catch(e){alert('Error loading data. Please contact support.')}}
+        async function searchAS(){const i=document.getElementById('asnInput').value.trim(),asn=i.replace(/^AS/i,'');if(!asn){alert('Please enter an AS number.');return}const v=Object.keys(peerVerifications).length;if(currentASN&&v>0){if(!confirm(`⚠️ Warning: You have ${v} unsubmitted verification(s) for AS${currentASN}.\n\nSearching a new AS will lose this data.\n\nClick OK to continue anyway, or Cancel to go back and submit first.`))return}if(!countryIndex[asn]){alert(`AS${asn} not found in our dataset.`);return}currentASN=asn;peerVerifications={};countryPages={};document.getElementById('loadingMessage').classList.remove('hidden');document.getElementById('resultsSection').classList.add('hidden');const cf=countryIndex[asn].filename;try{const r=await fetch(`data/${cf}`),cd=await r.json();if(!cd[asn]){alert(`AS${asn} not found in ${cf}.`);return}currentASData=cd[asn];groupPeersByCountry();displayResults();document.getElementById('loadingMessage').classList.add('hidden')}catch(e){alert('Error loading AS data. Please try again.');document.getElementById('loadingMessage').classList.add('hidden')}}
+        function groupPeersByCountry(){const g={};for(const l of currentASData.links){const pc=l.peer_country||'Unknown';if(!g[pc])g[pc]={count:0,peers:[]};g[pc].count++;g[pc].peers.push(l)}const sg={},sc=Object.keys(g).sort((a,b)=>g[b].count-g[a].count);for(const c of sc){sg[c]=g[c];countryPages[c]=0}currentASData.grouped_by_country=sg}
+        function displayResults(){const d=currentASData,ai=d.as_info||{},g=d.grouped_by_country||{};const ad=ai.name&&ai.name!=='Unknown'?`AS${currentASN} - ${ai.name} (${ai.country})`:`AS${currentASN}`;document.getElementById('currentAS').textContent=ad;document.getElementById('linkCount').textContent=d.links.length;document.getElementById('countryCount').textContent=Object.keys(g).length;document.getElementById('verifiedCount').textContent='0';d.links.length>=LARGE_AS_THRESHOLD?document.getElementById('largeAsWarning').classList.remove('hidden'):document.getElementById('largeAsWarning').classList.add('hidden');displayCountryGroups(g);document.getElementById('resultsSection').classList.remove('hidden');document.getElementById('resultsSection').scrollIntoView({behavior:'smooth'})}
+        function displayCountryGroups(g){const c=document.getElementById('countryGroupsContainer');c.innerHTML='';const f={'Singapore':'🇸🇬','United States':'🇺🇸','Japan':'🇯🇵','Indonesia':'🇮🇩','Australia':'🇦🇺','Germany':'🇩🇪','United Kingdom':'🇬🇧','Netherlands':'🇳🇱','France':'🇫🇷','China':'🇨🇳','India':'🇮🇳','Malaysia':'🇲🇾','Thailand':'🇹🇭','South Korea':'🇰🇷','Canada':'🇨🇦'};for(const[co,gr]of Object.entries(g)){const fl=f[co]||'🌏',cd=createCountryGroup(co,gr,fl);c.appendChild(cd)}}
+        function createCountryGroup(c,g,f){const d=document.createElement('div');d.className='country-group';d.id=`country-${c.replace(/\s+/g,'-')}`;const pp=g.peers.slice(0,3).map(p=>p.peer_name).join(', '),mt=g.peers.length>3?` and ${g.peers.length-3} more`:'',ps=g.peers.slice(0,PEERS_PER_PAGE),hm=g.peers.length>PEERS_PER_PAGE;d.innerHTML=`<div class="country-header" onclick="toggleCountryDetails('${c}')"><div><div class="country-title">${f} ${c} <span class="country-count">(${g.count} peers)</span></div><div class="country-preview">${pp}${mt}</div></div><div>▼</div></div><div class="country-actions"><button class="action-verify" onclick="toggleCountryDetails('${c}', event)">📋 Verify Peers</button></div><div class="country-details hidden" id="details-${c.replace(/\s+/g,'-')}"><div class="instruction-box"><strong>Instructions:</strong> Review each peer and mark its current status. Mark as <strong style="color: #28a745;">Active</strong> if peering relationship exists, <strong style="color: #dc3545;">Obsolete</strong> if no longer peering, or <strong style="color: #6c757d;">Unknown</strong> if you're not certain.</div><div class="progress-info">Verified: <strong id="progress-${c.replace(/\s+/g,'-')}">0</strong> of ${g.count} peers</div><div class="peer-verification-list" id="peer-list-${c.replace(/\s+/g,'-')}">${ps.map(p=>renderPeerItem(p,c)).join('')}</div>${hm?`<div class="pagination-controls" id="pagination-${c.replace(/\s+/g,'-')}"><p>Showing ${PEERS_PER_PAGE} of ${g.count} peers</p><button onclick="loadMorePeers('${c}', event)">Load ${Math.min(PEERS_PER_PAGE,g.count-PEERS_PER_PAGE)} More Peers</button></div>`:''}</div>`;return d}
+        function renderPeerItem(p,c){return`<div class="peer-verification-item" data-peer-as="${p.peer_as}"><div class="peer-info"><div class="peer-as">AS${p.peer_as} - ${p.peer_name}</div><div class="peer-org">${p.peer_org}</div></div><div class="peer-actions"><div class="radio-group"><div class="radio-option radio-active"><input type="radio" name="peer-${p.peer_as}" value="active" id="active-${p.peer_as}" onchange="markPeer('${p.peer_as}', 'active', '${c}')"><label for="active-${p.peer_as}">✓ Active</label></div><div class="radio-option radio-obsolete"><input type="radio" name="peer-${p.peer_as}" value="obsolete" id="obsolete-${p.peer_as}" onchange="markPeer('${p.peer_as}', 'obsolete', '${c}')"><label for="obsolete-${p.peer_as}">✗ Obsolete</label></div><div class="radio-option radio-unknown"><input type="radio" name="peer-${p.peer_as}" value="unknown" id="unknown-${p.peer_as}" onchange="markPeer('${p.peer_as}', 'unknown', '${c}')"><label for="unknown-${p.peer_as}">? Unknown</label></div></div></div></div>`}
+        function loadMorePeers(c,e){e.stopPropagation();const g=currentASData.grouped_by_country[c];countryPages[c]++;const s=countryPages[c]*PEERS_PER_PAGE,en=Math.min(s+PEERS_PER_PAGE,g.peers.length),ps=g.peers.slice(s,en),li=`peer-list-${c.replace(/\s+/g,'-')}`,le=document.getElementById(li);ps.forEach(p=>{le.innerHTML+=renderPeerItem(p,c)});const pi=`pagination-${c.replace(/\s+/g,'-')}`,pe=document.getElementById(pi),ld=Math.min(en,g.peers.length),rm=g.peers.length-ld;rm>0?pe.innerHTML=`<p>Showing ${ld} of ${g.count} peers</p><button onclick="loadMorePeers('${c}', event)">Load ${Math.min(PEERS_PER_PAGE,rm)} More Peers</button>`:pe.innerHTML=`<p>✓ All ${g.count} peers loaded</p>`}
+        function toggleCountryDetails(c,e){if(e)e.stopPropagation();const di=`details-${c.replace(/\s+/g,'-')}`,d=document.getElementById(di);d.classList.toggle('hidden')}
+        function markPeer(pa,s,c){peerVerifications[pa]=s;updateVerifiedCount();updateCountryProgress(c);showVerificationSummary()}
+        function updateCountryProgress(c){const pi=`progress-${c.replace(/\s+/g,'-')}`,pe=document.getElementById(pi);if(pe){const cd=currentASData.grouped_by_country[c],v=cd.peers.filter(p=>peerVerifications.hasOwnProperty(p.peer_as)).length;pe.textContent=v}}
+        function updateVerifiedCount(){const v=Object.keys(peerVerifications).length;document.getElementById('verifiedCount').textContent=v}
+        function showVerificationSummary(){const s=document.getElementById('verificationSummary'),c=document.getElementById('summaryContent');if(Object.keys(peerVerifications).length===0){s.classList.add('hidden');return}const ac=Object.values(peerVerifications).filter(v=>v==='active').length,oc=Object.values(peerVerifications).filter(v=>v==='obsolete').length,uc=Object.values(peerVerifications).filter(v=>v==='unknown').length;let h='<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">';h+=`<div><strong>Active:</strong> ${ac} peers</div><div><strong>Obsolete:</strong> ${oc} peers</div><div><strong>Unknown:</strong> ${uc} peers</div></div>`;c.innerHTML=h;s.classList.remove('hidden')}
+        function searchPeers(){const st=document.getElementById('peerSearchInput').value.toLowerCase().trim(),rd=document.getElementById('searchResults');if(!st){rd.classList.add('hidden');clearHighlights();return}const cs=st.replace(/^as/i,''),am=[],g=currentASData.grouped_by_country;for(const[c,gr]of Object.entries(g)){const cm=gr.peers.filter(p=>{const asm=p.peer_as.includes(cs),nm=p.peer_name.toLowerCase().includes(st),om=p.peer_org.toLowerCase().includes(st);return asm||nm||om});if(cm.length>0)am.push({country:c,peers:cm,count:cm.length})}const tm=am.reduce((s,m)=>s+m.count,0);if(tm===0){rd.innerHTML='<p style="color: #666;">No peers found matching "'+st+'"</p>';rd.classList.remove('hidden');clearHighlights();return}let dc=0;const ms=[];for(const m of am){if(dc>=MAX_SEARCH_RESULTS)break;const ps=m.peers.slice(0,MAX_SEARCH_RESULTS-dc);ms.push({country:m.country,peers:ps,count:ps.length});dc+=ps.length}let h='<strong>Found '+tm+' peer(s)</strong>';if(tm>MAX_SEARCH_RESULTS)h+=` <span style="color: #dc3545;">(showing first ${MAX_SEARCH_RESULTS})</span><br><small style="color: #856404;">💡 Refine your search to see specific peers</small>`;h+='<br><br>';ms.forEach(m=>{h+=`<div class="search-result-item" onclick="jumpToPeer('${m.country}', '${m.peers[0].peer_as}')"><strong>${getCountryFlag(m.country)} ${m.country}</strong>: ${m.count} match(es)<br><small style="color: #666;">${m.peers.map(p=>'AS'+p.peer_as+' - '+p.peer_name).join(', ')}</small></div>`});rd.innerHTML=h;rd.classList.remove('hidden');highlightMatches(ms)}
+        function jumpToPeer(c,pa){const di=`details-${c.replace(/\s+/g,'-')}`,d=document.getElementById(di);d.classList.remove('hidden');const g=currentASData.grouped_by_country[c],pi=g.peers.findIndex(p=>p.peer_as===pa),cp=countryPages[c]||0,pl=(cp+1)*PEERS_PER_PAGE;while(pi>=pl&&pl<g.peers.length){loadMorePeers(c,{stopPropagation:()=>{}})}const cd=document.getElementById(`country-${c.replace(/\s+/g,'-')}`);cd.scrollIntoView({behavior:'smooth',block:'start'});setTimeout(()=>{const pis=cd.querySelectorAll('.peer-verification-item');pis.forEach(i=>{if(i.getAttribute('data-peer-as')===pa){i.classList.add('search-match');i.scrollIntoView({behavior:'smooth',block:'center'})}})},500)}
+        function highlightMatches(m){clearHighlights();m.forEach(ma=>{const di=`details-${ma.country.replace(/\s+/g,'-')}`,d=document.getElementById(di);if(d)d.classList.remove('hidden');const cd=document.getElementById(`country-${ma.country.replace(/\s+/g,'-')}`);if(cd){const pis=cd.querySelectorAll('.peer-verification-item');pis.forEach(i=>{ma.peers.forEach(p=>{if(i.getAttribute('data-peer-as')===p.peer_as)i.classList.add('search-match')})})}})}
+        function clearHighlights(){document.querySelectorAll('.search-match').forEach(e=>e.classList.remove('search-match'))}
+        function clearPeerSearch(){document.getElementById('peerSearchInput').value='';document.getElementById('searchResults').classList.add('hidden');clearHighlights()}
+        function getCountryFlag(c){const f={'Singapore':'🇸🇬','United States':'🇺🇸','Japan':'🇯🇵','Indonesia':'🇮🇩','Australia':'🇦🇺','Germany':'🇩🇪','United Kingdom':'🇬🇧','Netherlands':'🇳🇱','France':'🇫🇷','China':'🇨🇳','India':'🇮🇳','Malaysia':'🇲🇾','Thailand':'🇹🇭','South Korea':'🇰🇷','Canada':'🇨🇦'};return f[c]||'🌏'}
+        function resetForNewAS(){currentASN='';currentASData=null;peerVerifications={};countryPages={};document.getElementById('resultsSection').classList.add('hidden');document.getElementById('asnInput').value='';document.getElementById('asnInput').focus();clearPeerSearch();document.querySelector('.search-section').scrollIntoView({behavior:'smooth'})}
+        function showSessionSummary(){if(sessionHistory.length===0)return;let s=`✓ Session Complete!\n\nYou verified ${sessionHistory.length} AS${sessionHistory.length>1?'es':''}:\n\n`;sessionHistory.forEach(e=>{s+=`✓ AS${e.asn}: ${e.verified_count} peer${e.verified_count>1?'s':''}\n`});s+=`\nThank you for your contribution!`;alert(s)}
+        async function submitVerification(){if(Object.keys(peerVerifications).length===0){alert('Please verify at least one peer before submitting.');return}const d={asn:currentASN,as_info:currentASData.as_info,peer_verifications:peerVerifications,timestamp:new Date().toISOString(),total_peers:currentASData.links.length,verified_peers:Object.keys(peerVerifications).length,summary:{active:Object.values(peerVerifications).filter(v=>v==='active').length,obsolete:Object.values(peerVerifications).filter(v=>v==='obsolete').length,unknown:Object.values(peerVerifications).filter(v=>v==='unknown').length}};downloadJSONBackup(d);await submitToGoogleForm(d);sessionHistory.push({asn:currentASN,verified_count:Object.keys(peerVerifications).length,timestamp:d.timestamp});const c=confirm(`✓ AS${currentASN} verification submitted successfully!\n\nVerified: ${Object.keys(peerVerifications).length} peers\n\nData saved automatically.\n\nVerify another AS?`);c?resetForNewAS():showSessionSummary()}
+        async function submitToGoogleForm(d){const fd=new FormData();fd.append(FORM_FIELDS.asn,d.asn);fd.append(FORM_FIELDS.email,'');fd.append(FORM_FIELDS.data,JSON.stringify(d));fd.append(FORM_FIELDS.timestamp,d.timestamp);try{const if=document.createElement('iframe');if.name='hidden_iframe';if.style.display='none';document.body.appendChild(if);const fm=document.createElement('form');fm.method='POST';fm.action=GOOGLE_FORM_URL;fm.target='hidden_iframe';for(const[k,v]of fd.entries()){const i=document.createElement('input');i.type='hidden';i.name=k;i.value=v;fm.appendChild(i)}document.body.appendChild(fm);fm.submit();setTimeout(()=>{document.body.removeChild(fm);document.body.removeChild(if)},1000)}catch(e){console.error('Form submission error:',e)}}
+        function downloadJSONBackup(d){const b=new Blob([JSON.stringify(d,null,2)],{type:'application/json'}),u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download=`AS${d.asn}_verification_${Date.now()}.json`;a.click();URL.revokeObjectURL(u)}
     </script>
 </body>
 </html>
