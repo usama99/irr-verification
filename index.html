@@ -772,7 +772,7 @@
         }
         function showSessionSummary() {
             if (sessionHistory.length === 0) return;
-            let summary = `✓ Session Complete!\n\nYou verified ${sessionHistory.length} AS${sessionHistory.length > 1 ? 'es' : ''}:\n\n`;
+            let summary = `You verified ${sessionHistory.length} AS${sessionHistory.length > 1 ? 'es' : ''}:\n\n`;
             sessionHistory.forEach(entry => {
                 summary += `✓ AS${entry.asn}: ${entry.verified_count} peer${entry.verified_count > 1 ? 's' : ''}\n`;
             });
