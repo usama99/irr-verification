@@ -381,7 +381,7 @@
         let currentASData = null;
         let peerVerifications = {};
         let countryPages = {};
-        let searchIndex = null; // Fuse.js search index
+        let searchIndex = null;
         let searchDebounceTimer = null;
 
         const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfNAFdeWfeQ9RS-e2sQgysgGnPy75hl9BsJL3c-zMnXaC1yyA/formResponse";
@@ -486,7 +486,7 @@
 
                 currentASData = countryData[asn];
                 groupPeersByCountry();
-                buildSearchIndex(); // Build search index
+                buildSearchIndex();
                 displayResults();
 
             } catch (error) {
@@ -496,7 +496,7 @@
         }
 
         // ====================================================================
-        // BUILD SEARCH INDEX (Fuse.js)
+        // BUILD SEARCH INDEX (FIXED - MORE LENIENT)
         // ====================================================================
         function buildSearchIndex() {
             console.log('Building search index...');
@@ -505,7 +505,7 @@
             for (const [country, group] of Object.entries(currentASData.grouped_by_country)) {
                 group.peers.forEach(peer => {
                     searchData.push({
-                        peer_as: peer.peer_as,
+                        peer_as: peer.peer_as.toString().replace(/^AS/i, ''),
                         peer_name: peer.peer_name,
                         peer_org: peer.peer_org,
                         country: country
@@ -513,16 +513,22 @@
                 });
             }
 
-            // Configure Fuse.js for fast fuzzy search
             const options = {
-                keys: ['peer_as', 'peer_name', 'peer_org'],
-                threshold: 0.3, // Fuzzy matching tolerance
+                keys: [
+                    { name: 'peer_as', weight: 2.0 },
+                    { name: 'peer_name', weight: 1.0 },
+                    { name: 'peer_org', weight: 1.0 }
+                ],
+                threshold: 0.4,
                 ignoreLocation: true,
-                minMatchCharLength: 2
+                minMatchCharLength: 1,
+                includeScore: true,
+                useExtendedSearch: true
             };
 
             searchIndex = new Fuse(searchData, options);
             console.log(`✓ Search index built with ${searchData.length} peers`);
+            console.log('Sample peers in index:', searchData.slice(0, 5));
         }
 
         // ====================================================================
@@ -705,7 +711,7 @@
         }
 
         // ====================================================================
-        // SEARCH PEERS (OPTIMIZED WITH FUSE.JS + DEBOUNCING)
+        // SEARCH PEERS (FIXED - HANDLES AS NUMBER FORMATS)
         // ====================================================================
         function searchPeers() {
             clearTimeout(searchDebounceTimer);
@@ -713,13 +719,12 @@
             const searchTerm = document.getElementById('peerSearchInput').value.trim();
             const resultsDiv = document.getElementById('searchResults');
 
-            if (!searchTerm || searchTerm.length < 2) {
+            if (!searchTerm || searchTerm.length < 1) {
                 resultsDiv.classList.add('hidden');
                 clearHighlights();
                 return;
             }
 
-            // Debounce: wait 150ms after user stops typing
             searchDebounceTimer = setTimeout(() => {
                 performSearch(searchTerm, resultsDiv);
             }, 150);
@@ -727,9 +732,51 @@
 
         function performSearch(searchTerm, resultsDiv) {
             console.time('Search');
+            console.log('Searching for:', searchTerm);
 
-            // Use Fuse.js indexed search (FAST!)
-            const results = searchIndex.search(searchTerm);
+            const cleanSearchTerm = searchTerm.replace(/^AS/i, '').trim().toLowerCase();
+
+            let results = [];
+
+            // Method 1: Exact AS number match
+            if (/^\d+$/.test(cleanSearchTerm)) {
+                console.log('Searching for exact AS number:', cleanSearchTerm);
+                results = searchIndex.search(cleanSearchTerm, { limit: 1000 });
+
+                // Direct match in data
+                const directMatches = [];
+                for (const [country, group] of Object.entries(currentASData.grouped_by_country)) {
+                    group.peers.forEach(peer => {
+                        const peerASClean = peer.peer_as.toString().replace(/^AS/i, '');
+                        if (peerASClean === cleanSearchTerm) {
+                            directMatches.push({
+                                item: {
+                                    peer_as: peer.peer_as,
+                                    peer_name: peer.peer_name,
+                                    peer_org: peer.peer_org,
+                                    country: country
+                                },
+                                score: 0
+                            });
+                        }
+                    });
+                }
+
+                const allMatches = [...directMatches, ...results];
+                const seen = new Set();
+                results = allMatches.filter(r => {
+                    const key = r.item.peer_as + r.item.country;
+                    if (seen.has(key)) return false;
+                    seen.add(key);
+                    return true;
+                });
+
+                console.log('Found', results.length, 'matches for AS number');
+            } else {
+                // Method 2: Text search
+                results = searchIndex.search(searchTerm, { limit: 1000 });
+                console.log('Found', results.length, 'matches for text search');
+            }
 
             console.timeEnd('Search');
 
@@ -740,7 +787,6 @@
                 return;
             }
 
-            // Group by country
             const groupedResults = {};
             results.slice(0, MAX_SEARCH_RESULTS).forEach(result => {
                 const peer = result.item;
@@ -776,7 +822,8 @@
             details.classList.remove('hidden');
 
             const group = currentASData.grouped_by_country[country];
-            const peerIndex = group.peers.findIndex(p => p.peer_as === peerAS);
+            const peerASClean = peerAS.toString().replace(/^AS/i, '');
+            const peerIndex = group.peers.findIndex(p => p.peer_as.toString().replace(/^AS/i, '') === peerASClean);
             const currentPage = countryPages[country] || 0;
             const peersLoaded = (currentPage + 1) * PEERS_PER_PAGE;
 
@@ -790,7 +837,8 @@
             setTimeout(() => {
                 const peerItems = countryDiv.querySelectorAll('.peer-verification-item');
                 peerItems.forEach(item => {
-                    if (item.getAttribute('data-peer-as') === peerAS) {
+                    const itemAS = item.getAttribute('data-peer-as').toString().replace(/^AS/i, '');
+                    if (itemAS === peerASClean) {
                         item.classList.add('search-match');
                         item.scrollIntoView({ behavior: 'smooth', block: 'center' });
                     }
