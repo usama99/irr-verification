@@ -1027,37 +1027,3 @@
     </script>
 </body>
 </html>
-```
-
----
-
-## **WHY THIS IS THE BEST SOLUTION:**
-
-### **Performance Comparison:**
-```
-NAIVE APPROACH (Your concern):
-- Loop through 20,000 peers every keystroke
-- Time: 200-500ms per search
-- Browser: Freezes/lags
-
-OPTIMIZED APPROACH (This solution):
-- Build index once: 100ms (one-time cost)
-- Search 20,000 peers: <10ms (instant!)
-- Debouncing: Reduces searches by 80%
-- Pagination: Only renders 50 peers at a time
-```
-
-### **What Makes It Fast:**
-
-✅ **Fuse.js** - Industry-standard fuzzy search (used by Algolia, Stripe)
-✅ **Indexed Search** - Pre-built search tree, O(log n) lookup
-✅ **Debouncing** - Waits 150ms after typing stops
-✅ **Pagination** - Only renders visible peers
-✅ **Only 50KB library** - Lightweight, works on GitHub Pages
-
-### **Real Performance:**
-```
-With 20,000 peers:
-- Index build: 100ms (once on load)
-- Each search: 5-10ms (instant!)
-- Memory: ~5MB (acceptable)
