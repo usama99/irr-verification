@@ -133,6 +133,65 @@
             background: #fff;
             border-top: 1px solid #e0e0e0;
         }
+
+        /* AS CLASS GROUP STYLES */
+        .as-class-group {
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+        .as-class-header {
+            padding: 15px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.2s;
+        }
+        .as-class-header:hover { background: #e9ecef; }
+        .as-class-title {
+            font-size: 16px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .as-class-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: white;
+        }
+        .as-class-Tier1 .as-class-badge { background: #dc3545; }
+        .as-class-Hypergiant .as-class-badge { background: #fd7e14; }
+        .as-class-Largenetworks .as-class-badge { background: #ffc107; color: #333; }
+        .as-class-Mediumnetworks .as-class-badge { background: #0dcaf0; }
+        .as-class-Smallnetworks .as-class-badge { background: #6c757d; }
+        .as-class-count {
+            font-size: 14px;
+            color: #666;
+            font-weight: normal;
+        }
+        .as-class-details {
+            padding: 15px;
+            background: white;
+            border-top: 1px solid #e0e0e0;
+        }
+        .unclassified-info {
+            padding: 12px;
+            background: #fff3cd;
+            border-left: 3px solid #ffc107;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #856404;
+        }
+
         .instruction-box {
             padding: 15px;
             background: #e7f3ff;
@@ -328,7 +387,7 @@
         <!-- MAIN CONTENT SECTION -->
         <div id="mainContent" class="main-content hidden">
             <h1>IRR Link Verification</h1>
-            <p class="subtitle">Verify IRR peering data for your AS</p>
+            <p class="subtitle">Verify IRR peering data for your AS - Organized by Country & AS Class</p>
 
             <div class="stats">
                 <div class="stat-box"><div class="stat-label">Your AS</div><div class="stat-value" id="currentAS">-</div></div>
@@ -339,7 +398,7 @@
 
             <div id="largeAsWarning" class="large-as-warning hidden">
                 <strong>⚠️ Large AS Detected</strong><br>
-                This AS has many peer links. Use search to find specific peers quickly.
+                Peers are organized by country and AS classification (Tier1, Hypergiant, Large, Medium, Small) to help you prioritize verification.
             </div>
 
             <!-- PEER SEARCH SECTION -->
@@ -364,11 +423,11 @@
                 <p class="subtitle" style="margin-top: 10px;">Data will be saved automatically</p>
             </div>
 
-            <div class="contact">For questions or technical issues, please contact: <strong>usamaijaz404@gmail.com</strong></div>
+            <div class="contact">For questions or technical issues, please contact: <strong>usamaejaz404@gmail.com</strong></div>
         </div>
     </div>
 
-    <!-- Fuse.js - Lightweight fuzzy-search library (50KB) -->
+    <!-- Fuse.js -->
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
 
     <script>
@@ -380,7 +439,7 @@
         let currentASN = '';
         let currentASData = null;
         let peerVerifications = {};
-        let countryPages = {};
+        let asClassPages = {};
         let searchIndex = null;
         let searchDebounceTimer = null;
 
@@ -394,6 +453,23 @@
         const PEERS_PER_PAGE = 50;
         const LARGE_AS_THRESHOLD = 1000;
         const MAX_SEARCH_RESULTS = 50;
+
+        // AS Class display order (excludes Unknown)
+        const AS_CLASS_ORDER = [
+            'Tier1',
+            'Hypergiant',
+            'Large networks',
+            'Medium networks',
+            'Small networks'
+        ];
+
+        const AS_CLASS_LABELS = {
+            'Tier1': '🔴 TIER 1',
+            'Hypergiant': '🟠 HYPERGIANT',
+            'Large networks': '🟡 LARGE',
+            'Medium networks': '🔵 MEDIUM',
+            'Small networks': '⚪ SMALL'
+        };
 
         // ====================================================================
         // INITIALIZE
@@ -485,7 +561,18 @@
                 }
 
                 currentASData = countryData[asn];
-                groupPeersByCountry();
+
+                // Initialize pagination for AS classes
+                for (const country of Object.keys(currentASData.grouped_by_country)) {
+                    asClassPages[country] = {};
+                    const countryData = currentASData.grouped_by_country[country];
+                    if (countryData.grouped_by_as_class) {
+                        for (const asClass of Object.keys(countryData.grouped_by_as_class)) {
+                            asClassPages[country][asClass] = 0;
+                        }
+                    }
+                }
+
                 buildSearchIndex();
                 displayResults();
 
@@ -496,10 +583,9 @@
         }
 
         // ====================================================================
-        // BUILD SEARCH INDEX (FIXED - MORE LENIENT)
+        // BUILD SEARCH INDEX
         // ====================================================================
         function buildSearchIndex() {
-            console.log('Building search index...');
             const searchData = [];
 
             for (const [country, group] of Object.entries(currentASData.grouped_by_country)) {
@@ -508,6 +594,7 @@
                         peer_as: peer.peer_as.toString().replace(/^AS/i, ''),
                         peer_name: peer.peer_name,
                         peer_org: peer.peer_org,
+                        peer_as_class: peer.peer_as_class || 'Unknown',
                         country: country
                     });
                 });
@@ -522,37 +609,10 @@
                 threshold: 0.4,
                 ignoreLocation: true,
                 minMatchCharLength: 1,
-                includeScore: true,
-                useExtendedSearch: true
+                includeScore: true
             };
 
             searchIndex = new Fuse(searchData, options);
-            console.log(`✓ Search index built with ${searchData.length} peers`);
-            console.log('Sample peers in index:', searchData.slice(0, 5));
-        }
-
-        // ====================================================================
-        // GROUP PEERS BY COUNTRY
-        // ====================================================================
-        function groupPeersByCountry() {
-            const grouped = {};
-            for (const link of currentASData.links) {
-                const peerCountry = link.peer_country || 'Unknown';
-                if (!grouped[peerCountry]) {
-                    grouped[peerCountry] = { count: 0, peers: [] };
-                }
-                grouped[peerCountry].count++;
-                grouped[peerCountry].peers.push(link);
-            }
-
-            const sortedGrouped = {};
-            const sortedCountries = Object.keys(grouped).sort((a, b) => grouped[b].count - grouped[a].count);
-            for (const country of sortedCountries) {
-                sortedGrouped[country] = grouped[country];
-                countryPages[country] = 0;
-            }
-
-            currentASData.grouped_by_country = sortedGrouped;
         }
 
         // ====================================================================
@@ -612,8 +672,32 @@
             const previewPeers = group.peers.slice(0, 3).map(p => p.peer_name).join(', ');
             const moreText = group.peers.length > 3 ? ` and ${group.peers.length - 3} more` : '';
 
-            const peersToShow = group.peers.slice(0, PEERS_PER_PAGE);
-            const hasMore = group.peers.length > PEERS_PER_PAGE;
+            const hasASClassGrouping = group.grouped_by_as_class && Object.keys(group.grouped_by_as_class).length > 0;
+
+            let detailsHTML = '';
+
+            if (hasASClassGrouping) {
+                detailsHTML = `
+                    <div class="instruction-box">
+                        <strong>📊 AS Classifications:</strong> Peers are grouped by network size (Tier1 → Hypergiant → Large → Medium → Small).
+                        Verify critical Tier1 relationships first!
+                    </div>
+                    <div class="progress-info">Verified: <strong id="progress-${country.replace(/\s+/g, '-')}">0</strong> of ${group.count} peers</div>
+                    ${createASClassGroups(country, group)}
+                `;
+            } else {
+                const peersToShow = group.peers.slice(0, PEERS_PER_PAGE);
+
+                detailsHTML = `
+                    <div class="instruction-box">
+                        <strong>Instructions:</strong> Review each peer and mark its current status.
+                    </div>
+                    <div class="progress-info">Verified: <strong id="progress-${country.replace(/\s+/g, '-')}">0</strong> of ${group.count} peers</div>
+                    <div class="peer-verification-list">
+                        ${peersToShow.map(peer => renderPeerItem(peer)).join('')}
+                    </div>
+                `;
+            }
 
             div.innerHTML = `
                 <div class="country-header" onclick="toggleCountryDetails('${country}')">
@@ -624,66 +708,119 @@
                     <div>▼</div>
                 </div>
                 <div class="country-details hidden" id="details-${country.replace(/\s+/g, '-')}">
-                    <div class="instruction-box">
-                        <strong>Instructions:</strong> Review each peer and mark its current status.
-                        Mark as <strong style="color: #28a745;">Active</strong> if peering relationship exists,
-                        <strong style="color: #dc3545;">Obsolete</strong> if no longer peering, or
-                        <strong style="color: #6c757d;">Unknown</strong> if you're not certain.
-                    </div>
-                    <div class="progress-info">Verified: <strong id="progress-${country.replace(/\s+/g, '-')}">0</strong> of ${group.count} peers</div>
-                    <div class="peer-verification-list" id="peer-list-${country.replace(/\s+/g, '-')}">
-                        ${peersToShow.map(peer => renderPeerItem(peer, country)).join('')}
-                    </div>
-                    ${hasMore ? `
-                        <div class="pagination-controls" id="pagination-${country.replace(/\s+/g, '-')}">
-                            <p>Showing ${PEERS_PER_PAGE} of ${group.count} peers</p>
-                            <button onclick="loadMorePeers('${country}', event)">Load ${Math.min(PEERS_PER_PAGE, group.count - PEERS_PER_PAGE)} More Peers</button>
-                        </div>
-                    ` : ''}
+                    ${detailsHTML}
                 </div>
             `;
             return div;
         }
 
         // ====================================================================
-        // LOAD MORE PEERS
+        // CREATE AS CLASS GROUPS
         // ====================================================================
-        function loadMorePeers(country, event) {
+        function createASClassGroups(country, countryData) {
+            let html = '';
+
+            const asClassGroups = countryData.grouped_by_as_class || {};
+            const unclassifiedCount = countryData.unclassified_count || 0;
+
+            if (unclassifiedCount > 0) {
+                html += `
+                    <div class="unclassified-info">
+                        ℹ️ ${unclassifiedCount} peer(s) could not be classified (included in total count above).
+                    </div>
+                `;
+            }
+
+            for (const asClass of AS_CLASS_ORDER) {
+                if (!asClassGroups[asClass]) continue;
+
+                const classData = asClassGroups[asClass];
+                const peersToShow = classData.peers.slice(0, PEERS_PER_PAGE);
+                const hasMore = classData.peers.length > PEERS_PER_PAGE;
+
+                const classKey = asClass.replace(/\s+/g, '');
+                const groupId = `${country.replace(/\s+/g, '-')}-${classKey}`;
+
+                html += `
+                    <div class="as-class-group as-class-${classKey}">
+                        <div class="as-class-header" onclick="toggleASClassDetails('${country}', '${asClass}')">
+                            <div class="as-class-title">
+                                <span class="as-class-badge">${AS_CLASS_LABELS[asClass]}</span>
+                                <span class="as-class-count">${classData.count} peers</span>
+                            </div>
+                            <div>▼</div>
+                        </div>
+                        <div class="as-class-details hidden" id="details-${groupId}">
+                            <div class="peer-verification-list" id="peer-list-${groupId}">
+                                ${peersToShow.map(peer => renderPeerItem(peer)).join('')}
+                            </div>
+                            ${hasMore ? `
+                                <div class="pagination-controls" id="pagination-${groupId}">
+                                    <p>Showing ${PEERS_PER_PAGE} of ${classData.count} peers</p>
+                                    <button onclick="loadMorePeersASClass('${country}', '${asClass}', event)">Load ${Math.min(PEERS_PER_PAGE, classData.peers.length - PEERS_PER_PAGE)} More</button>
+                                </div>
+                            ` : ''}
+                        </div>
+                    </div>
+                `;
+            }
+
+            return html;
+        }
+
+        // ====================================================================
+        // TOGGLE AS CLASS DETAILS
+        // ====================================================================
+        function toggleASClassDetails(country, asClass) {
+            const classKey = asClass.replace(/\s+/g, '');
+            const groupId = `${country.replace(/\s+/g, '-')}-${classKey}`;
+            const details = document.getElementById(`details-${groupId}`);
+            details.classList.toggle('hidden');
+        }
+
+        // ====================================================================
+        // LOAD MORE PEERS (AS CLASS)
+        // ====================================================================
+        function loadMorePeersASClass(country, asClass, event) {
             event.stopPropagation();
 
-            const group = currentASData.grouped_by_country[country];
-            countryPages[country]++;
+            const classData = currentASData.grouped_by_country[country].grouped_by_as_class[asClass];
 
-            const start = countryPages[country] * PEERS_PER_PAGE;
-            const end = Math.min(start + PEERS_PER_PAGE, group.peers.length);
-            const peersToShow = group.peers.slice(start, end);
+            if (!asClassPages[country]) asClassPages[country] = {};
+            if (!asClassPages[country][asClass]) asClassPages[country][asClass] = 0;
 
-            const listId = `peer-list-${country.replace(/\s+/g, '-')}`;
-            const listEl = document.getElementById(listId);
+            asClassPages[country][asClass]++;
+
+            const start = asClassPages[country][asClass] * PEERS_PER_PAGE;
+            const end = Math.min(start + PEERS_PER_PAGE, classData.peers.length);
+            const peersToShow = classData.peers.slice(start, end);
+
+            const classKey = asClass.replace(/\s+/g, '');
+            const groupId = `${country.replace(/\s+/g, '-')}-${classKey}`;
+            const listEl = document.getElementById(`peer-list-${groupId}`);
 
             peersToShow.forEach(peer => {
-                listEl.innerHTML += renderPeerItem(peer, country);
+                listEl.innerHTML += renderPeerItem(peer);
             });
 
-            const paginationId = `pagination-${country.replace(/\s+/g, '-')}`;
-            const paginationEl = document.getElementById(paginationId);
-            const loaded = Math.min(end, group.peers.length);
-            const remaining = group.peers.length - loaded;
+            const paginationEl = document.getElementById(`pagination-${groupId}`);
+            const loaded = Math.min(end, classData.peers.length);
+            const remaining = classData.peers.length - loaded;
 
             if (remaining > 0) {
                 paginationEl.innerHTML = `
-                    <p>Showing ${loaded} of ${group.count} peers</p>
-                    <button onclick="loadMorePeers('${country}', event)">Load ${Math.min(PEERS_PER_PAGE, remaining)} More Peers</button>
+                    <p>Showing ${loaded} of ${classData.count} peers</p>
+                    <button onclick="loadMorePeersASClass('${country}', '${asClass}', event)">Load ${Math.min(PEERS_PER_PAGE, remaining)} More</button>
                 `;
             } else {
-                paginationEl.innerHTML = `<p>✓ All ${group.count} peers loaded</p>`;
+                paginationEl.innerHTML = `<p>✓ All ${classData.count} peers loaded</p>`;
             }
         }
 
         // ====================================================================
         // RENDER PEER ITEM
         // ====================================================================
-        function renderPeerItem(peer, country) {
+        function renderPeerItem(peer) {
             return `
                 <div class="peer-verification-item" data-peer-as="${peer.peer_as}">
                     <div class="peer-info">
@@ -693,15 +830,15 @@
                     <div class="peer-actions">
                         <div class="radio-group">
                             <div class="radio-option radio-active">
-                                <input type="radio" name="peer-${peer.peer_as}" value="active" id="active-${peer.peer_as}" onchange="markPeer('${peer.peer_as}', 'active', '${country}')">
+                                <input type="radio" name="peer-${peer.peer_as}" value="active" id="active-${peer.peer_as}" onchange="markPeer('${peer.peer_as}')">
                                 <label for="active-${peer.peer_as}">✓ Active</label>
                             </div>
                             <div class="radio-option radio-obsolete">
-                                <input type="radio" name="peer-${peer.peer_as}" value="obsolete" id="obsolete-${peer.peer_as}" onchange="markPeer('${peer.peer_as}', 'obsolete', '${country}')">
+                                <input type="radio" name="peer-${peer.peer_as}" value="obsolete" id="obsolete-${peer.peer_as}" onchange="markPeer('${peer.peer_as}')">
                                 <label for="obsolete-${peer.peer_as}">✗ Obsolete</label>
                             </div>
                             <div class="radio-option radio-unknown">
-                                <input type="radio" name="peer-${peer.peer_as}" value="unknown" id="unknown-${peer.peer_as}" onchange="markPeer('${peer.peer_as}', 'unknown', '${country}')">
+                                <input type="radio" name="peer-${peer.peer_as}" value="unknown" id="unknown-${peer.peer_as}" onchange="markPeer('${peer.peer_as}')">
                                 <label for="unknown-${peer.peer_as}">? Unknown</label>
                             </div>
                         </div>
@@ -711,7 +848,7 @@
         }
 
         // ====================================================================
-        // SEARCH PEERS (FIXED - HANDLES AS NUMBER FORMATS)
+        // SEARCH PEERS
         // ====================================================================
         function searchPeers() {
             clearTimeout(searchDebounceTimer);
@@ -731,57 +868,17 @@
         }
 
         function performSearch(searchTerm, resultsDiv) {
-            console.time('Search');
-            console.log('Searching for:', searchTerm);
-
-            const cleanSearchTerm = searchTerm.replace(/^AS/i, '').trim().toLowerCase();
-
+            const cleanSearchTerm = searchTerm.replace(/^AS/i, '').trim();
             let results = [];
 
-            // Method 1: Exact AS number match
             if (/^\d+$/.test(cleanSearchTerm)) {
-                console.log('Searching for exact AS number:', cleanSearchTerm);
-                results = searchIndex.search(cleanSearchTerm, { limit: 1000 });
-
-                // Direct match in data
-                const directMatches = [];
-                for (const [country, group] of Object.entries(currentASData.grouped_by_country)) {
-                    group.peers.forEach(peer => {
-                        const peerASClean = peer.peer_as.toString().replace(/^AS/i, '');
-                        if (peerASClean === cleanSearchTerm) {
-                            directMatches.push({
-                                item: {
-                                    peer_as: peer.peer_as,
-                                    peer_name: peer.peer_name,
-                                    peer_org: peer.peer_org,
-                                    country: country
-                                },
-                                score: 0
-                            });
-                        }
-                    });
-                }
-
-                const allMatches = [...directMatches, ...results];
-                const seen = new Set();
-                results = allMatches.filter(r => {
-                    const key = r.item.peer_as + r.item.country;
-                    if (seen.has(key)) return false;
-                    seen.add(key);
-                    return true;
-                });
-
-                console.log('Found', results.length, 'matches for AS number');
+                results = searchIndex.search(cleanSearchTerm);
             } else {
-                // Method 2: Text search
-                results = searchIndex.search(searchTerm, { limit: 1000 });
-                console.log('Found', results.length, 'matches for text search');
+                results = searchIndex.search(searchTerm);
             }
 
-            console.timeEnd('Search');
-
             if (results.length === 0) {
-                resultsDiv.innerHTML = '<p style="color: #666;">No peers found matching "' + searchTerm + '"</p>';
+                resultsDiv.innerHTML = '<p style="color: #666;">No peers found</p>';
                 resultsDiv.classList.remove('hidden');
                 clearHighlights();
                 return;
@@ -796,16 +893,12 @@
                 groupedResults[peer.country].push(peer);
             });
 
-            let html = `<strong>Found ${results.length} peer(s)</strong>`;
-            if (results.length > MAX_SEARCH_RESULTS) {
-                html += ` <span style="color: #dc3545;">(showing first ${MAX_SEARCH_RESULTS})</span>`;
-            }
-            html += '<br><br>';
+            let html = `<strong>Found ${results.length} peer(s)</strong><br><br>`;
 
             for (const [country, peers] of Object.entries(groupedResults)) {
-                html += `<div class="search-result-item" onclick="jumpToPeer('${country}', '${peers[0].peer_as}')">
+                html += `<div class="search-result-item" onclick="jumpToPeer('${country}', '${peers[0].peer_as}', '${peers[0].peer_as_class}')">
                     <strong>${getCountryFlag(country)} ${country}</strong>: ${peers.length} match(es)<br>
-                    <small style="color: #666;">${peers.map(p => 'AS' + p.peer_as + ' - ' + p.peer_name).join(', ')}</small>
+                    <small style="color: #666;">${peers.map(p => 'AS' + p.peer_as).join(', ')}</small>
                 </div>`;
             }
 
@@ -816,29 +909,26 @@
         // ====================================================================
         // JUMP TO PEER
         // ====================================================================
-        function jumpToPeer(country, peerAS) {
-            const detailsId = `details-${country.replace(/\s+/g, '-')}`;
-            const details = document.getElementById(detailsId);
-            details.classList.remove('hidden');
+        function jumpToPeer(country, peerAS, asClass) {
+            const countryDetails = document.getElementById(`details-${country.replace(/\s+/g, '-')}`);
+            countryDetails.classList.remove('hidden');
 
-            const group = currentASData.grouped_by_country[country];
-            const peerASClean = peerAS.toString().replace(/^AS/i, '');
-            const peerIndex = group.peers.findIndex(p => p.peer_as.toString().replace(/^AS/i, '') === peerASClean);
-            const currentPage = countryPages[country] || 0;
-            const peersLoaded = (currentPage + 1) * PEERS_PER_PAGE;
-
-            while (peerIndex >= peersLoaded && peersLoaded < group.peers.length) {
-                loadMorePeers(country, { stopPropagation: () => {} });
+            if (asClass && asClass !== 'Unknown' && AS_CLASS_ORDER.includes(asClass)) {
+                const classKey = asClass.replace(/\s+/g, '');
+                const groupId = `${country.replace(/\s+/g, '-')}-${classKey}`;
+                const asClassDetails = document.getElementById(`details-${groupId}`);
+                if (asClassDetails) {
+                    asClassDetails.classList.remove('hidden');
+                }
             }
 
             const countryDiv = document.getElementById(`country-${country.replace(/\s+/g, '-')}`);
             countryDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
             setTimeout(() => {
-                const peerItems = countryDiv.querySelectorAll('.peer-verification-item');
+                const peerItems = document.querySelectorAll('.peer-verification-item');
                 peerItems.forEach(item => {
-                    const itemAS = item.getAttribute('data-peer-as').toString().replace(/^AS/i, '');
-                    if (itemAS === peerASClean) {
+                    if (item.getAttribute('data-peer-as') == peerAS) {
                         item.classList.add('search-match');
                         item.scrollIntoView({ behavior: 'smooth', block: 'center' });
                     }
@@ -847,7 +937,7 @@
         }
 
         // ====================================================================
-        // CLEAR HIGHLIGHTS
+        // HELPERS
         // ====================================================================
         function clearHighlights() {
             document.querySelectorAll('.search-match').forEach(el => {
@@ -855,18 +945,12 @@
             });
         }
 
-        // ====================================================================
-        // CLEAR PEER SEARCH
-        // ====================================================================
         function clearPeerSearch() {
             document.getElementById('peerSearchInput').value = '';
             document.getElementById('searchResults').classList.add('hidden');
             clearHighlights();
         }
 
-        // ====================================================================
-        // GET COUNTRY FLAG
-        // ====================================================================
         function getCountryFlag(country) {
             const flags = {
                 'Singapore': '🇸🇬', 'United States': '🇺🇸', 'Japan': '🇯🇵',
@@ -878,49 +962,31 @@
             return flags[country] || '🌏';
         }
 
-        // ====================================================================
-        // TOGGLE COUNTRY DETAILS
-        // ====================================================================
         function toggleCountryDetails(country) {
-            const detailsId = `details-${country.replace(/\s+/g, '-')}`;
-            const details = document.getElementById(detailsId);
+            const details = document.getElementById(`details-${country.replace(/\s+/g, '-')}`);
             details.classList.toggle('hidden');
         }
 
-        // ====================================================================
-        // MARK PEER
-        // ====================================================================
-        function markPeer(peerAS, status, country) {
-            peerVerifications[peerAS] = status;
-            updateVerifiedCount();
-            updateCountryProgress(country);
-            showVerificationSummary();
-        }
-
-        // ====================================================================
-        // UPDATE COUNTRY PROGRESS
-        // ====================================================================
-        function updateCountryProgress(country) {
-            const progressId = `progress-${country.replace(/\s+/g, '-')}`;
-            const progressEl = document.getElementById(progressId);
-            if (progressEl) {
-                const countryData = currentASData.grouped_by_country[country];
-                const verified = countryData.peers.filter(p => peerVerifications.hasOwnProperty(p.peer_as)).length;
-                progressEl.textContent = verified;
+        function markPeer(peerAS) {
+            const radios = document.getElementsByName(`peer-${peerAS}`);
+            let status = null;
+            for (const radio of radios) {
+                if (radio.checked) {
+                    status = radio.value;
+                    break;
+                }
+            }
+            if (status) {
+                peerVerifications[peerAS] = status;
+                updateVerifiedCount();
+                showVerificationSummary();
             }
         }
 
-        // ====================================================================
-        // UPDATE VERIFIED COUNT
-        // ====================================================================
         function updateVerifiedCount() {
-            const verified = Object.keys(peerVerifications).length;
-            document.getElementById('verifiedCount').textContent = verified;
+            document.getElementById('verifiedCount').textContent = Object.keys(peerVerifications).length;
         }
 
-        // ====================================================================
-        // SHOW VERIFICATION SUMMARY
-        // ====================================================================
         function showVerificationSummary() {
             const summary = document.getElementById('verificationSummary');
             const content = document.getElementById('summaryContent');
@@ -945,7 +1011,7 @@
         }
 
         // ====================================================================
-        // SUBMIT VERIFICATION
+        // SUBMIT
         // ====================================================================
         async function submitVerification() {
             if (Object.keys(peerVerifications).length === 0) {
@@ -974,9 +1040,6 @@
             showSuccessOverlay(data);
         }
 
-        // ====================================================================
-        // SUBMIT TO GOOGLE FORM
-        // ====================================================================
         async function submitToGoogleForm(data) {
             const formData = new FormData();
             formData.append(FORM_FIELDS.asn, data.asn);
@@ -1011,13 +1074,10 @@
                     document.body.removeChild(iframe);
                 }, 2000);
             } catch (error) {
-                console.error('Google Form submission error:', error);
+                console.error('Google Form error:', error);
             }
         }
 
-        // ====================================================================
-        // DOWNLOAD JSON BACKUP
-        // ====================================================================
         function downloadJSONBackup(data) {
             const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
             const url = URL.createObjectURL(blob);
@@ -1028,9 +1088,6 @@
             URL.revokeObjectURL(url);
         }
 
-        // ====================================================================
-        // SHOW SUCCESS OVERLAY
-        // ====================================================================
         function showSuccessOverlay(data) {
             const overlay = document.createElement('div');
             overlay.className = 'success-overlay';
@@ -1039,7 +1096,7 @@
                     <div class="success-icon">✓</div>
                     <div class="success-title">Verification Submitted!</div>
                     <div class="success-message">
-                        Your verification for AS${data.asn} has been successfully submitted and saved.
+                        Your verification for AS${data.asn} has been successfully submitted.
                     </div>
                     <div class="success-stats">
                         <div class="success-stat-row">
@@ -1064,9 +1121,7 @@
                         </div>
                     </div>
                     <div class="success-buttons">
-                        <button class="success-btn-primary" onclick="location.reload()">
-                            Done
-                        </button>
+                        <button class="success-btn-primary" onclick="location.reload()">Done</button>
                     </div>
                 </div>
             `;
