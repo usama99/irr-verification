@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IRR Link Verification Portal</title>
+
+    <!-- Pako.js for gzip decompression -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
+
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -498,6 +502,9 @@
         const LARGE_AS_THRESHOLD = 1000;
         const MAX_SEARCH_RESULTS = 50;
 
+        // Large compressed files (will be loaded as .gz)
+        const COMPRESSED_FILES = ['russia.json', 'germany.json', 'united_states.json'];
+
         // ====================================================================
         // INITIALIZE
         // ====================================================================
@@ -571,7 +578,7 @@
         }
 
         // ====================================================================
-        // LOAD AS DATA
+        // LOAD AS DATA (WITH GZIP SUPPORT)
         // ====================================================================
         async function loadASData(asn) {
             try {
@@ -580,8 +587,37 @@
                 }
 
                 const countryFile = countryIndex[asn].filename;
-                const response = await fetch(`data/${countryFile}`);
-                const countryData = await response.json();
+
+                // Check if this is a large compressed file
+                const isCompressed = COMPRESSED_FILES.includes(countryFile);
+
+                let countryData;
+
+                if (isCompressed) {
+                    // Load compressed file
+                    const gzFile = `data/${countryFile}.gz`;
+                    console.log(`Loading compressed file: ${gzFile}`);
+
+                    const response = await fetch(gzFile);
+                    if (!response.ok) {
+                        throw new Error(`Failed to load ${gzFile}`);
+                    }
+
+                    const arrayBuffer = await response.arrayBuffer();
+
+                    // Decompress using pako
+                    const decompressed = pako.ungzip(new Uint8Array(arrayBuffer), { to: 'string' });
+                    countryData = JSON.parse(decompressed);
+
+                    console.log(`✓ Decompressed ${countryFile}`);
+                } else {
+                    // Load normal file
+                    const response = await fetch(`data/${countryFile}`);
+                    if (!response.ok) {
+                        throw new Error(`Failed to load ${countryFile}`);
+                    }
+                    countryData = await response.json();
+                }
 
                 if (!countryData[asn]) {
                     throw new Error('AS data not found');
@@ -679,7 +715,6 @@
                 container.appendChild(countryDiv);
             }
 
-            // Apply initial AS class filter
             filterByASClass();
         }
 
@@ -697,7 +732,6 @@
             const peersToShow = group.peers.slice(0, PEERS_PER_PAGE);
             const hasMore = group.peers.length > PEERS_PER_PAGE;
 
-            // Initialize country page counter
             countryPages[country] = 0;
 
             div.innerHTML = `
@@ -764,7 +798,6 @@
                 paginationEl.innerHTML = `<p>✓ All ${group.count} peers loaded</p>`;
             }
 
-            // Apply AS class filter to newly loaded peers
             filterByASClass();
         }
 
@@ -831,7 +864,6 @@
                 filter.closest('.filter-checkbox').classList.toggle('active', isChecked);
             });
 
-            // Update selected set
             if (isChecked) {
                 selectedASClasses = new Set(['Tier1', 'Hypergiant', 'Large networks', 'Medium networks', 'Small networks', 'Unknown']);
             } else {
@@ -845,7 +877,6 @@
         // FILTER BY AS CLASS
         // ====================================================================
         function filterByASClass() {
-            // Update selected AS classes set
             const filters = document.querySelectorAll('.as-class-filter');
             selectedASClasses.clear();
 
@@ -858,16 +889,13 @@
                 }
             });
 
-            // Update "All" checkbox state
             const allCheckbox = document.querySelector('input[value="all"]');
             if (allCheckbox) {
                 allCheckbox.checked = selectedASClasses.size === 6;
                 allCheckbox.closest('.filter-checkbox').classList.toggle('active', selectedASClasses.size === 6);
             }
 
-            // Filter peer items
             const allPeerItems = document.querySelectorAll('.peer-verification-item');
-            let visibleCount = 0;
 
             allPeerItems.forEach(item => {
                 const peerClass = item.getAttribute('data-peer-as-class');
@@ -875,16 +903,12 @@
 
                 if (isVisible) {
                     item.classList.remove('filtered-out');
-                    visibleCount++;
                 } else {
                     item.classList.add('filtered-out');
                 }
             });
 
-            // Update country groups visibility
             updateCountryGroupsVisibility();
-
-            // Update filter stats
             updateFilterStats();
         }
 
@@ -914,7 +938,6 @@
         function updateFilterStats() {
             const statsDiv = document.getElementById('filterStats');
 
-            // Count peers by AS class
             const classCounts = {};
             let totalVisible = 0;
             let totalPeers = 0;
@@ -967,9 +990,6 @@
         }
 
         function performSearch(searchTerm, resultsDiv) {
-            console.time('Search');
-            console.log('Searching for:', searchTerm);
-
             const cleanSearchTerm = searchTerm.replace(/^AS/i, '').trim().toLowerCase();
 
             let results = [];
@@ -1007,8 +1027,6 @@
             } else {
                 results = searchIndex.search(searchTerm, { limit: 1000 });
             }
-
-            console.timeEnd('Search');
 
             if (results.length === 0) {
                 resultsDiv.innerHTML = '<p style="color: #666;">No peers found matching "' + searchTerm + '"</p>';
@@ -1076,27 +1094,18 @@
             }, 500);
         }
 
-        // ====================================================================
-        // CLEAR HIGHLIGHTS
-        // ====================================================================
         function clearHighlights() {
             document.querySelectorAll('.search-match').forEach(el => {
                 el.classList.remove('search-match');
             });
         }
 
-        // ====================================================================
-        // CLEAR PEER SEARCH
-        // ====================================================================
         function clearPeerSearch() {
             document.getElementById('peerSearchInput').value = '';
             document.getElementById('searchResults').classList.add('hidden');
             clearHighlights();
         }
 
-        // ====================================================================
-        // GET COUNTRY FLAG
-        // ====================================================================
         function getCountryFlag(country) {
             const flags = {
                 'Singapore': '🇸🇬', 'United States': '🇺🇸', 'Japan': '🇯🇵',
@@ -1108,18 +1117,12 @@
             return flags[country] || '🌏';
         }
 
-        // ====================================================================
-        // TOGGLE COUNTRY DETAILS
-        // ====================================================================
         function toggleCountryDetails(country) {
             const detailsId = `details-${country.replace(/\s+/g, '-')}`;
             const details = document.getElementById(detailsId);
             details.classList.toggle('hidden');
         }
 
-        // ====================================================================
-        // MARK PEER
-        // ====================================================================
         function markPeer(peerAS, status, country) {
             peerVerifications[peerAS] = status;
             updateVerifiedCount();
@@ -1127,9 +1130,6 @@
             showVerificationSummary();
         }
 
-        // ====================================================================
-        // UPDATE COUNTRY PROGRESS
-        // ====================================================================
         function updateCountryProgress(country) {
             const progressId = `progress-${country.replace(/\s+/g, '-')}`;
             const progressEl = document.getElementById(progressId);
@@ -1140,17 +1140,11 @@
             }
         }
 
-        // ====================================================================
-        // UPDATE VERIFIED COUNT
-        // ====================================================================
         function updateVerifiedCount() {
             const verified = Object.keys(peerVerifications).length;
             document.getElementById('verifiedCount').textContent = verified;
         }
 
-        // ====================================================================
-        // SHOW VERIFICATION SUMMARY
-        // ====================================================================
         function showVerificationSummary() {
             const summary = document.getElementById('verificationSummary');
             const content = document.getElementById('summaryContent');
@@ -1174,9 +1168,6 @@
             summary.classList.remove('hidden');
         }
 
-        // ====================================================================
-        // SUBMIT VERIFICATION
-        // ====================================================================
         async function submitVerification() {
             if (Object.keys(peerVerifications).length === 0) {
                 alert('Please verify at least one peer before submitting.');
@@ -1204,9 +1195,6 @@
             showSuccessOverlay(data);
         }
 
-        // ====================================================================
-        // SUBMIT TO GOOGLE FORM
-        // ====================================================================
         async function submitToGoogleForm(data) {
             const formData = new FormData();
             formData.append(FORM_FIELDS.asn, data.asn);
@@ -1245,9 +1233,6 @@
             }
         }
 
-        // ====================================================================
-        // DOWNLOAD JSON BACKUP
-        // ====================================================================
         function downloadJSONBackup(data) {
             const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
             const url = URL.createObjectURL(blob);
@@ -1258,9 +1243,6 @@
             URL.revokeObjectURL(url);
         }
 
-        // ====================================================================
-        // SHOW SUCCESS OVERLAY
-        // ====================================================================
         function showSuccessOverlay(data) {
             const overlay = document.createElement('div');
             overlay.className = 'success-overlay';
