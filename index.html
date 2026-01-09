@@ -962,7 +962,9 @@
                 const count = classCounts[cls] || 0;
                 const isSelected = selectedASClasses.has(cls);
                 const style = isSelected ? 'font-weight: bold; color: #2196F3;' : 'color: #999;';
+                const displayName = cls === 'Unknown' ? 'Unclassified' : cls;
                 statsHTML += `<div style="${style}">${cls}: ${count}</div>`;
+                statsHTML += `<div style="${style}">${displayName}: ${count}</div>`;
             });
 
             statsHTML += '</div>';
