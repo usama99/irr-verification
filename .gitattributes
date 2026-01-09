@@ -1,3 +1,4 @@
 data/*.json filter=lfs diff=lfs merge=lfs -text
 data/country_index.json !filter !diff !merge
 credentials.json !filter !diff !merge
+data/country_index.json !text !filter !merge !diff
