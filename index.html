@@ -489,7 +489,7 @@
         let countryPages = {};
         let searchIndex = null;
         let searchDebounceTimer = null;
-        let selectedASClasses = new Set(['Tier1', 'Hypergiant', 'Large networks', 'Medium networks', 'Small networks', 'Unclassified']);
+        let selectedASClasses = new Set(['Tier1', 'Hypergiant', 'Large networks', 'Medium networks', 'Small networks', 'unknown']);
 
         const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfNAFdeWfeQ9RS-e2sQgysgGnPy75hl9BsJL3c-zMnXaC1yyA/formResponse";
         const FORM_FIELDS = {
@@ -747,7 +747,7 @@
                         <strong>Instructions:</strong> Review each peer and mark its current status.
                         Mark as <strong style="color: #28a745;">Active</strong> if peering relationship exists,
                         <strong style="color: #dc3545;">Obsolete</strong> if no longer peering, or
-                        <strong style="color: #6c757d;">Unknown</strong> if you're not certain.
+                        <strong style="color: #6c757d;">Unclassified</strong> if you're not certain.
                     </div>
                     <div class="progress-info">Verified: <strong id="progress-${country.replace(/\s+/g, '-')}">0</strong> of ${group.count} peers</div>
                     <div class="peer-verification-list" id="peer-list-${country.replace(/\s+/g, '-')}">
