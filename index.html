@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IRR Link Verification Portal</title>
+    <title>IRR AS Link Validation Research</title>
 
     <!-- Pako.js for gzip decompression -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
@@ -16,1275 +16,326 @@
             min-height: 100vh;
             padding: 20px;
         }
-        .container { max-width: 1200px; margin: 0 auto; }
-        .login-box {
+        .container { max-width: 900px; margin: 0 auto; }
+        .header {
             background: white;
             border-radius: 12px;
             padding: 40px;
-            max-width: 500px;
-            margin: 100px auto;
+            margin-bottom: 30px;
             box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
         }
-        .main-content {
+        h1 { color: #333; font-size: 32px; margin-bottom: 10px; }
+        .subtitle { color: #666; font-size: 16px; margin-bottom: 30px; line-height: 1.6; }
+        .search-section {
             background: white;
             border-radius: 12px;
             padding: 40px;
+            margin-bottom: 30px;
             box-shadow: 0 20px 60px rgba(0,0,0,0.3);
         }
-        h1 { color: #333; margin-bottom: 10px; font-size: 28px; }
-        h2 { color: #333; margin-bottom: 10px; font-size: 24px; }
-        .subtitle { color: #666; margin-bottom: 30px; font-size: 14px; }
-        input[type="password"], input[type="text"] {
-            width: 100%;
-            padding: 12px;
+        .search-label {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .search-box {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            flex: 1;
+            padding: 15px;
             border: 2px solid #e0e0e0;
             border-radius: 8px;
-            font-size: 16px;
-            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #667eea;
         }
         button {
+            padding: 15px 30px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             border: none;
-            padding: 12px 24px;
             border-radius: 8px;
-            font-size: 16px;
+            font-size: 18px;
+            font-weight: 600;
             cursor: pointer;
             transition: transform 0.2s;
         }
         button:hover { transform: translateY(-2px); }
-        button:disabled { background: #ccc; cursor: not-allowed; transform: none; }
-        .hidden { display: none; }
-        .search-peer-section {
-            margin-bottom: 20px;
-            padding: 20px;
-            background: #f0f8ff;
-            border-radius: 8px;
-            border-left: 4px solid #667eea;
-        }
-        .filter-section {
-            margin-bottom: 20px;
-            padding: 20px;
-            background: #fff3e0;
-            border-radius: 8px;
-            border-left: 4px solid #ff9800;
-        }
-        .as-class-filters {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 15px;
-        }
-        .filter-checkbox {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 10px 16px;
-            background: white;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s;
-            user-select: none;
-        }
-        .filter-checkbox:hover {
-            border-color: #667eea;
-            background: #f8f9fa;
-        }
-        .filter-checkbox input[type="checkbox"] {
-            width: 18px;
-            height: 18px;
-            cursor: pointer;
-        }
-        .filter-checkbox.active {
-            background: #e7f3ff;
-            border-color: #2196F3;
-        }
-        .filter-stats {
-            margin-top: 15px;
-            padding: 12px;
-            background: white;
-            border-radius: 6px;
-            font-size: 14px;
-            color: #666;
-        }
-        .search-results {
-            margin-top: 15px;
-            padding: 15px;
-            background: #fff;
-            border-radius: 8px;
-            border: 1px solid #e0e0e0;
-            max-height: 400px;
-            overflow-y: auto;
-        }
-        .search-result-item {
-            padding: 12px;
-            margin-bottom: 10px;
-            background: #f8f9fa;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        .search-result-item:hover { background: #e9ecef; }
-        .search-match {
-            background: #fff3cd !important;
-            border-left: 4px solid #ffc107 !important;
-            animation: highlight 0.5s ease;
-        }
-        @keyframes highlight {
-            0% { background: #fff3cd; }
-            50% { background: #ffe082; }
-            100% { background: #fff3cd; }
-        }
-        .clear-btn { background: #6c757d; }
-        .large-as-warning {
-            padding: 15px;
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
-            border-radius: 4px;
-            margin-bottom: 20px;
-            font-size: 14px;
-            color: #856404;
-        }
-        .stats { display: flex; gap: 20px; margin-bottom: 20px; flex-wrap: wrap; }
-        .stat-box {
-            flex: 1;
-            min-width: 200px;
-            padding: 15px;
-            background: white;
-            border-radius: 8px;
-            border-left: 4px solid #667eea;
-        }
-        .stat-label { font-size: 12px; color: #666; text-transform: uppercase; }
-        .stat-value { font-size: 24px; font-weight: bold; color: #333; }
-        .country-group {
-            background: white;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            overflow: hidden;
-            transition: all 0.3s;
-        }
-        .country-group:hover { border-color: #667eea; }
-        .country-group.filtered-out {
-            display: none;
-        }
-        .country-header {
-            padding: 20px;
-            background: #f8f9fa;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .country-header:hover { background: #e9ecef; }
-        .country-title { font-size: 18px; font-weight: bold; color: #333; }
-        .country-count { color: #667eea; font-weight: bold; }
-        .country-preview { font-size: 13px; color: #666; margin-top: 5px; }
-        .country-details {
-            padding: 20px;
-            background: #fff;
-            border-top: 1px solid #e0e0e0;
-        }
-        .instruction-box {
-            padding: 15px;
-            background: #e7f3ff;
-            border-left: 4px solid #2196F3;
-            border-radius: 4px;
-            margin-bottom: 20px;
-            font-size: 14px;
-            color: #1565C0;
-        }
-        .peer-verification-list {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin-top: 15px;
-        }
-        .peer-verification-item {
-            padding: 15px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            border-left: 4px solid #667eea;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: all 0.3s;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .peer-verification-item.filtered-out {
-            display: none;
-        }
-        .peer-info { flex: 1; min-width: 200px; }
-        .peer-as { font-weight: bold; color: #333; margin-bottom: 4px; font-size: 15px; }
-        .peer-org { font-size: 13px; color: #666; }
-        .peer-as-class {
-            display: inline-block;
-            padding: 4px 10px;
-            border-radius: 12px;
-            font-size: 11px;
-            font-weight: bold;
-            margin-top: 4px;
-        }
-        .as-class-tier1 { background: #e3f2fd; color: #1976d2; }
-        .as-class-hypergiant { background: #fff3e0; color: #f57c00; }
-        .as-class-large { background: #e8f5e9; color: #388e3c; }
-        .as-class-medium { background: #f3e5f5; color: #7b1fa2; }
-        .as-class-small { background: #fce4ec; color: #c2185b; }
-        .as-class-unknown { background: #f5f5f5; color: #616161; }
-        .peer-actions { display: flex; gap: 10px; flex-shrink: 0; }
-        .radio-group { display: flex; gap: 15px; flex-wrap: wrap; }
-        .radio-option {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            cursor: pointer;
-            padding: 8px 12px;
-            border-radius: 6px;
-            transition: background 0.2s;
-        }
-        .radio-option:hover { background: #e9ecef; }
-        .radio-option input[type="radio"] { cursor: pointer; width: 18px; height: 18px; }
-        .radio-option label { cursor: pointer; font-size: 14px; font-weight: 500; white-space: nowrap; }
-        .radio-active { color: #28a745; }
-        .radio-obsolete { color: #dc3545; }
-        .radio-unknown { color: #6c757d; }
-        .pagination-controls {
-            margin-top: 20px;
-            padding: 15px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            text-align: center;
-        }
-        .pagination-controls p { margin-bottom: 10px; color: #666; font-size: 14px; }
-        .pagination-controls button { background: #667eea; }
-        .submit-section {
+        .example { font-size: 14px; color: #666; margin-top: 10px; }
+        .result-box {
             margin-top: 30px;
-            padding: 20px;
+            padding: 30px;
             background: #f8f9fa;
             border-radius: 8px;
-            text-align: center;
+            border-left: 4px solid #667eea;
+            display: none;
         }
-        .submit-btn {
-            padding: 15px 40px;
-            font-size: 18px;
-            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
-        }
-        .error { color: #dc3545; margin-top: 10px; }
-        .success { color: #28a745; margin-top: 10px; }
-        .contact {
-            text-align: center;
-            margin-top: 20px;
-            padding: 15px;
-            background: #fff3cd;
-            border-radius: 8px;
-            color: #856404;
-        }
-        .verification-summary {
-            margin-top: 20px;
-            padding: 15px;
-            background: #d4edda;
-            border-radius: 8px;
-            color: #155724;
-        }
-        .loading { text-align: center; padding: 20px; color: #667eea; font-size: 16px; }
-        .progress-info {
-            margin-top: 10px;
-            padding: 10px;
-            background: #fff;
-            border-radius: 6px;
-            font-size: 13px;
-            color: #666;
-        }
-        .success-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.8);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 10000;
-            animation: fadeIn 0.3s ease;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        .success-modal {
-            background: white;
-            border-radius: 16px;
-            padding: 40px;
-            max-width: 500px;
-            text-align: center;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-            animation: slideUp 0.4s ease;
-        }
-        @keyframes slideUp {
-            from { transform: translateY(50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        .success-icon {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            font-size: 50px;
-        }
-        .success-title {
+        .result-box.show { display: block; }
+        .as-number {
             font-size: 28px;
             font-weight: bold;
             color: #333;
             margin-bottom: 10px;
         }
-        .success-message {
+        .as-name {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        .as-org {
             font-size: 16px;
             color: #666;
+            margin-bottom: 5px;
+        }
+        .as-country {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .as-stats {
+            font-size: 18px;
+            color: #667eea;
+            font-weight: 600;
             margin-bottom: 20px;
-            line-height: 1.6;
         }
-        .success-stats {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-        .success-stat-row {
-            display: flex;
-            justify-content: space-between;
-            margin: 10px 0;
-            font-size: 15px;
-        }
-        .success-stat-label { color: #666; }
-        .success-stat-value { font-weight: bold; color: #333; }
-        .success-buttons {
-            display: flex;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .success-btn-primary {
-            flex: 1;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        .contact-btn {
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
             color: white;
             border: none;
-            padding: 15px;
             border-radius: 8px;
-            font-size: 16px;
-            font-weight: bold;
+            font-size: 18px;
+            font-weight: 600;
             cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .contact-btn:hover { transform: translateY(-2px); }
+        .error-box {
+            margin-top: 30px;
+            padding: 20px;
+            background: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            color: #856404;
+            display: none;
+        }
+        .error-box.show { display: block; }
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #667eea;
+            font-size: 16px;
+            display: none;
+        }
+        .loading.show { display: block; }
+        .info-section {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .info-section h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .info-section p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- LOGIN SECTION -->
-        <div id="loginSection" class="login-box">
-            <h2>🔒 IRR Links Verification Portal</h2>
-            <p class="subtitle">Enter your credentials</p>
-            <input type="text" id="asnInput" placeholder="AS Number (e.g., 10 or AS10)" onkeypress="if(event.key==='Enter') document.getElementById('passwordInput').focus()">
-            <input type="password" id="passwordInput" placeholder="Password" onkeypress="if(event.key==='Enter') login()">
-            <button onclick="login()">Login</button>
-            <p id="loginError" class="error hidden">Invalid AS number or password</p>
-            <div id="loginLoading" class="loading hidden">Loading your data...</div>
+        <!-- HEADER -->
+        <div class="header">
+            <h1>🌐 IRR AS Link Validation</h1>
+            <p class="subtitle">
+                Help validate Internet Routing Registry (IRR) data accuracy.<br>
+                Search for your AS to see extracted IRR links and request validation access.
+            </p>
         </div>
 
-        <!-- MAIN CONTENT SECTION -->
-        <div id="mainContent" class="main-content hidden">
-            <h1>IRR Link Verification</h1>
-            <p class="subtitle">Verify IRR peering data for your AS</p>
+        <!-- SEARCH SECTION -->
+        <div class="search-section">
+            <label class="search-label">🔍 Search Your Autonomous System (AS)</label>
+            <div class="search-box">
+                <input type="text" id="asnInput" placeholder="Enter AS Number (e.g., 7713 or AS7713)" onkeypress="if(event.key==='Enter') searchAS()">
+                <button onclick="searchAS()">Search</button>
+            </div>
+            <p class="example">Example: AS7713 (Telkom Indonesia), AS3356 (Level 3), AS15169 (Google)</p>
 
-            <div class="stats">
-                <div class="stat-box"><div class="stat-label">Your AS</div><div class="stat-value" id="currentAS">-</div></div>
-                <div class="stat-box"><div class="stat-label">Total Peer Links</div><div class="stat-value" id="linkCount">-</div></div>
-                <div class="stat-box"><div class="stat-label">Peer Countries</div><div class="stat-value" id="countryCount">-</div></div>
-                <div class="stat-box"><div class="stat-label">Verified Peers</div><div class="stat-value" id="verifiedCount">0</div></div>
+            <!-- LOADING -->
+            <div id="loading" class="loading">Searching...</div>
+
+            <!-- ERROR MESSAGE -->
+            <div id="errorBox" class="error-box">
+                <strong>AS Not Found</strong><br>
+                The AS number you entered was not found in our dataset. Please verify the AS number and try again.
             </div>
 
-            <div id="largeAsWarning" class="large-as-warning hidden">
-                <strong>⚠️ Large AS Detected</strong><br>
-                This AS has many peer links. Use search and filters to find specific peers quickly.
+            <!-- RESULT -->
+            <div id="resultBox" class="result-box">
+                <div class="as-number" id="asNumber"></div>
+                <div class="as-name" id="asName"></div>
+                <div class="as-org" id="asOrg"></div>
+                <div class="as-country" id="asCountry"></div>
+                <div class="as-stats" id="asStats"></div>
+                <a href="#" id="contactBtn" class="contact-btn">📧 Contact Us to Validate Your IRR Links</a>
             </div>
+        </div>
 
-            <!-- AS CLASS FILTER SECTION -->
-            <div class="filter-section">
-                <h3 style="margin-bottom: 10px;">🎯 Filter by Peer AS Classification</h3>
-                <div class="as-class-filters">
-                    <label class="filter-checkbox active">
-                        <input type="checkbox" value="all" checked onchange="toggleAllASClasses(this)">
-                        <span><strong>All AS Classes</strong></span>
-                    </label>
-                    <label class="filter-checkbox active">
-                        <input type="checkbox" value="Tier1" class="as-class-filter" checked onchange="filterByASClass()">
-                        <span>Tier1</span>
-                    </label>
-                    <label class="filter-checkbox active">
-                        <input type="checkbox" value="Hypergiant" class="as-class-filter" checked onchange="filterByASClass()">
-                        <span> Hypergiant</span>
-                    </label>
-                    <label class="filter-checkbox active">
-                        <input type="checkbox" value="Large networks" class="as-class-filter" checked onchange="filterByASClass()">
-                        <span>Large Networks</span>
-                    </label>
-                    <label class="filter-checkbox active">
-                        <input type="checkbox" value="Medium networks" class="as-class-filter" checked onchange="filterByASClass()">
-                        <span>Medium Networks</span>
-                    </label>
-                    <label class="filter-checkbox active">
-                        <input type="checkbox" value="Small networks" class="as-class-filter" checked onchange="filterByASClass()">
-                        <span>Small Networks</span>
-                    </label>
-                    <label class="filter-checkbox active">
-                        <input type="checkbox" value="Unknown" class="as-class-filter" checked onchange="filterByASClass()">
-                        <span>Unclassified</span>
-                    </label>
-                </div>
-                <div class="filter-stats" id="filterStats"></div>
-            </div>
+        <!-- INFO SECTION -->
+        <div class="info-section">
+            <h2>📋 About This Research</h2>
+            <p>
+                We are conducting academic research at Sangmyung University's Network Data Science Lab on Internet Routing Registry (IRR) data accuracy.
+                Our recent work "Exploring the Internet Routing Registries To Augment AS-level Topology" was published at IEEE INFOCOM 2025.
+            </p>
+            <p>
+                We extracted approximately 3.1 million AS links from IRR and found that 1.6 million are not visible in BGP, Traceroute, or IXP datasets.
+                These could represent active peering relationships or outdated entries. We need network operators to help validate their accuracy.
+            </p>
 
-            <!-- PEER SEARCH SECTION -->
-            <div class="search-peer-section">
-                <h3 style="margin-bottom: 10px;">🔍 Search Peer Links</h3>
-                <div style="display: flex; gap: 10px; margin-bottom: 10px;">
-                    <input type="text" id="peerSearchInput" placeholder="AS number • Organization name • Network name" style="flex: 1;" oninput="searchPeers()">
-                    <button class="clear-btn" onclick="clearPeerSearch()">Clear</button>
-                </div>
-                <div id="searchResults" class="search-results hidden"></div>
-            </div>
+            <h2>❓ How to Participate</h2>
+            <p>
+                1. <strong>Search</strong> for your AS number above<br>
+                2. <strong>Review</strong> the statistics showing how many IRR links we found for your AS<br>
+                3. <strong>Contact us</strong> to request validation portal access<br>
+                4. <strong>Validate</strong> your peer links (takes 5-10 minutes)
+            </p>
 
-            <div id="countryGroupsContainer"></div>
+            <h2>✉️ Contact</h2>
+            <p>
+                <strong>Email:</strong> usamaijaz404@gmail.com<br>
+                <strong>Lab:</strong> Network Data Science Lab, Sangmyung University<br>
+                <strong>Researcher:</strong> Usama Ejaz (PhD Student)
+            </p>
+        </div>
 
-            <div id="verificationSummary" class="verification-summary hidden">
-                <h3>✓ Verification Summary</h3>
-                <div id="summaryContent"></div>
-            </div>
-
-            <div class="submit-section">
-                <button class="submit-btn" onclick="submitVerification()">Submit Verification</button>
-                <p class="subtitle" style="margin-top: 10px;">Data will be saved automatically</p>
-            </div>
-
-            <div class="contact">For questions or technical issues, please contact: <strong>usamaijaz404@gmail.com</strong></div>
+        <div class="footer">
+            © 2025 Network Data Science Lab, Sangmyung University
         </div>
     </div>
 
-    <!-- Fuse.js - Lightweight fuzzy-search library -->
-    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-
     <script>
-        // ====================================================================
-        // GLOBAL VARIABLES
-        // ====================================================================
-        let CREDENTIALS = {};
+        // Large compressed files
+        const COMPRESSED_FILES = ['russia.json', 'germany.json', 'united_states.json', 'united_kingdom.json', 'brazil.json', 'poland.json', 'ukraine.json'];
+
         let countryIndex = {};
-        let currentASN = '';
-        let currentASData = null;
-        let peerVerifications = {};
-        let countryPages = {};
-        let searchIndex = null;
-        let searchDebounceTimer = null;
-        let selectedASClasses = new Set(['Tier1', 'Hypergiant', 'Large networks', 'Medium networks', 'Small networks', 'unknown']);
 
-        const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfNAFdeWfeQ9RS-e2sQgysgGnPy75hl9BsJL3c-zMnXaC1yyA/formResponse";
-        const FORM_FIELDS = {
-            asn: "entry.1255619771",
-            email: "entry.847494780",
-            data: "entry.143108106",
-            timestamp: "entry.969579197"
-        };
-        const PEERS_PER_PAGE = 50;
-        const LARGE_AS_THRESHOLD = 1000;
-        const MAX_SEARCH_RESULTS = 50;
-
-        // Large compressed files (will be loaded as .gz)
-        const COMPRESSED_FILES = ['russia.json', 'germany.json', 'united_states.json'];
-
-        // ====================================================================
-        // INITIALIZE
-        // ====================================================================
+        // Load country index on page load
         async function initialize() {
             try {
-                const credResponse = await fetch('credentials.json');
-                CREDENTIALS = await credResponse.json();
-
-                const indexResponse = await fetch('data/country_index.json');
-                countryIndex = await indexResponse.json();
-
-                console.log('✓ Portal initialized');
+                const response = await fetch('data/country_index.json');
+                countryIndex = await response.json();
+                console.log('✓ Country index loaded');
             } catch (error) {
-                console.error('Error loading portal data:', error);
-                alert('Error loading portal. Please contact support.');
+                console.error('Error loading country index:', error);
             }
         }
 
         initialize();
 
-        // ====================================================================
-        // SHA-256 HASH
-        // ====================================================================
-        async function sha256(message) {
-            const msgBuffer = new TextEncoder().encode(message);
-            const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
-            const hashArray = Array.from(new Uint8Array(hashBuffer));
-            return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+        // Load country file (handles compressed files)
+        async function loadCountryFile(filename) {
+            const isCompressed = COMPRESSED_FILES.includes(filename);
+
+            if (isCompressed) {
+                const gzFile = `data/${filename}.gz`;
+                const response = await fetch(gzFile);
+                const arrayBuffer = await response.arrayBuffer();
+                const decompressed = pako.ungzip(new Uint8Array(arrayBuffer), { to: 'string' });
+                return JSON.parse(decompressed);
+            } else {
+                const response = await fetch(`data/${filename}`);
+                return await response.json();
+            }
         }
 
-        // ====================================================================
-        // LOGIN
-        // ====================================================================
-        async function login() {
+        // Search AS
+        async function searchAS() {
             const asnInput = document.getElementById('asnInput').value.trim().replace(/^AS/i, '');
-            const password = document.getElementById('passwordInput').value;
 
-            if (!asnInput || !password) {
-                document.getElementById('loginError').textContent = 'Please enter both AS number and password';
-                document.getElementById('loginError').classList.remove('hidden');
+            if (!asnInput) {
                 return;
             }
 
-            document.getElementById('loginError').classList.add('hidden');
-            document.getElementById('loginLoading').classList.remove('hidden');
+            // Hide previous results
+            document.getElementById('resultBox').classList.remove('show');
+            document.getElementById('errorBox').classList.remove('show');
+            document.getElementById('loading').classList.add('show');
 
             try {
-                if (!CREDENTIALS[asnInput]) {
-                    throw new Error('AS number not found');
+                // Check if AS exists in index
+                if (!countryIndex[asnInput]) {
+                    throw new Error('AS not found');
                 }
 
-                const passwordHash = await sha256(password);
+                const asInfo = countryIndex[asnInput];
+                const countryFile = asInfo.filename;
+                const countryName = asInfo.country;
 
-                if (passwordHash !== CREDENTIALS[asnInput]) {
-                    throw new Error('Invalid password');
-                }
+                // Load country data
+                const countryData = await loadCountryFile(countryFile);
 
-                currentASN = asnInput;
-                await loadASData(asnInput);
-
-                document.getElementById('loginSection').classList.add('hidden');
-                document.getElementById('mainContent').classList.remove('hidden');
-
-            } catch (error) {
-                console.error('Login error:', error);
-                document.getElementById('loginError').textContent = 'Invalid AS number or password';
-                document.getElementById('loginError').classList.remove('hidden');
-            } finally {
-                document.getElementById('loginLoading').classList.add('hidden');
-            }
-        }
-
-        // ====================================================================
-        // LOAD AS DATA (WITH GZIP SUPPORT)
-        // ====================================================================
-        async function loadASData(asn) {
-            try {
-                if (!countryIndex[asn]) {
-                    throw new Error('AS not found in index');
-                }
-
-                const countryFile = countryIndex[asn].filename;
-
-                // Check if this is a large compressed file
-                const isCompressed = COMPRESSED_FILES.includes(countryFile);
-
-                let countryData;
-
-                if (isCompressed) {
-                    // Load compressed file
-                    const gzFile = `data/${countryFile}.gz`;
-                    console.log(`Loading compressed file: ${gzFile}`);
-
-                    const response = await fetch(gzFile);
-                    if (!response.ok) {
-                        throw new Error(`Failed to load ${gzFile}`);
-                    }
-
-                    const arrayBuffer = await response.arrayBuffer();
-
-                    // Decompress using pako
-                    const decompressed = pako.ungzip(new Uint8Array(arrayBuffer), { to: 'string' });
-                    countryData = JSON.parse(decompressed);
-
-                    console.log(`✓ Decompressed ${countryFile}`);
-                } else {
-                    // Load normal file
-                    const response = await fetch(`data/${countryFile}`);
-                    if (!response.ok) {
-                        throw new Error(`Failed to load ${countryFile}`);
-                    }
-                    countryData = await response.json();
-                }
-
-                if (!countryData[asn]) {
+                if (!countryData[asnInput]) {
                     throw new Error('AS data not found');
                 }
 
-                currentASData = countryData[asn];
-                buildSearchIndex();
-                displayResults();
-                updateFilterStats();
+                const asData = countryData[asnInput];
+                const asInfoDetail = asData.as_info || {};
+                const linkCount = asData.links ? asData.links.length : 0;
 
-            } catch (error) {
-                console.error('Error loading AS data:', error);
-                alert('Error loading your AS data. Please contact support.');
-            }
-        }
+                // Display result
+                document.getElementById('asNumber').textContent = `AS${asnInput}`;
+                document.getElementById('asName').textContent = asInfoDetail.name || 'Unknown';
+                document.getElementById('asOrg').textContent = asInfoDetail.org || 'Unknown Organization';
+                document.getElementById('asCountry').textContent = `📍 ${countryName}`;
+                document.getElementById('asStats').textContent = `📊 Total IRR Links: ${linkCount.toLocaleString()}`;
 
-        // ====================================================================
-        // BUILD SEARCH INDEX
-        // ====================================================================
-        function buildSearchIndex() {
-            console.log('Building search index...');
-            const searchData = [];
-
-            for (const [country, group] of Object.entries(currentASData.grouped_by_country)) {
-                group.peers.forEach(peer => {
-                    searchData.push({
-                        peer_as: peer.peer_as.toString().replace(/^AS/i, ''),
-                        peer_name: peer.peer_name,
-                        peer_org: peer.peer_org,
-                        peer_as_class: peer.peer_as_class || 'Unknown',
-                        country: country
-                    });
-                });
-            }
-
-            const options = {
-                keys: [
-                    { name: 'peer_as', weight: 2.0 },
-                    { name: 'peer_name', weight: 1.0 },
-                    { name: 'peer_org', weight: 1.0 }
-                ],
-                threshold: 0.4,
-                ignoreLocation: true,
-                minMatchCharLength: 1,
-                includeScore: true,
-                useExtendedSearch: true
-            };
-
-            searchIndex = new Fuse(searchData, options);
-            console.log(`✓ Search index built with ${searchData.length} peers`);
-        }
-
-        // ====================================================================
-        // DISPLAY RESULTS
-        // ====================================================================
-        function displayResults() {
-            const data = currentASData;
-            const asInfo = data.as_info || {};
-            const grouped = data.grouped_by_country || {};
-
-            const asDisplay = asInfo.name && asInfo.name !== 'Unknown'
-                ? `AS${currentASN} - ${asInfo.name} (${asInfo.country})`
-                : `AS${currentASN}`;
-
-            document.getElementById('currentAS').textContent = asDisplay;
-            document.getElementById('linkCount').textContent = data.links.length;
-            document.getElementById('countryCount').textContent = Object.keys(grouped).length;
-            document.getElementById('verifiedCount').textContent = '0';
-
-            if (data.links.length >= LARGE_AS_THRESHOLD) {
-                document.getElementById('largeAsWarning').classList.remove('hidden');
-            }
-
-            displayCountryGroups(grouped);
-        }
-
-        // ====================================================================
-        // DISPLAY COUNTRY GROUPS
-        // ====================================================================
-        function displayCountryGroups(grouped) {
-            const container = document.getElementById('countryGroupsContainer');
-            container.innerHTML = '';
-
-            const countryFlags = {
-                'Singapore': '🇸🇬', 'United States': '🇺🇸', 'Japan': '🇯🇵',
-                'Indonesia': '🇮🇩', 'Australia': '🇦🇺', 'Germany': '🇩🇪',
-                'United Kingdom': '🇬🇧', 'Netherlands': '🇳🇱', 'France': '🇫🇷',
-                'China': '🇨🇳', 'India': '🇮🇳', 'Malaysia': '🇲🇾',
-                'Thailand': '🇹🇭', 'South Korea': '🇰🇷', 'Canada': '🇨🇦',
-            };
-
-            for (const [country, group] of Object.entries(grouped)) {
-                const flag = countryFlags[country] || '🌏';
-                const countryDiv = createCountryGroup(country, group, flag);
-                container.appendChild(countryDiv);
-            }
-
-            filterByASClass();
-        }
-
-        // ====================================================================
-        // CREATE COUNTRY GROUP
-        // ====================================================================
-        function createCountryGroup(country, group, flag) {
-            const div = document.createElement('div');
-            div.className = 'country-group';
-            div.id = `country-${country.replace(/\s+/g, '-')}`;
-
-            const previewPeers = group.peers.slice(0, 3).map(p => p.peer_name).join(', ');
-            const moreText = group.peers.length > 3 ? ` and ${group.peers.length - 3} more` : '';
-
-            const peersToShow = group.peers.slice(0, PEERS_PER_PAGE);
-            const hasMore = group.peers.length > PEERS_PER_PAGE;
-
-            countryPages[country] = 0;
-
-            div.innerHTML = `
-                <div class="country-header" onclick="toggleCountryDetails('${country}')">
-                    <div>
-                        <div class="country-title">${flag} ${country} <span class="country-count">(${group.count} peers)</span></div>
-                        <div class="country-preview">${previewPeers}${moreText}</div>
-                    </div>
-                    <div>▼</div>
-                </div>
-                <div class="country-details hidden" id="details-${country.replace(/\s+/g, '-')}">
-                    <div class="instruction-box">
-                        <strong>Instructions:</strong> Review each peer and mark its current status.
-                        Mark as <strong style="color: #28a745;">Active</strong> if peering relationship exists,
-                        <strong style="color: #dc3545;">Obsolete</strong> if no longer peering, or
-                        <strong style="color: #6c757d;">Unclassified</strong> if you're not certain.
-                    </div>
-                    <div class="progress-info">Verified: <strong id="progress-${country.replace(/\s+/g, '-')}">0</strong> of ${group.count} peers</div>
-                    <div class="peer-verification-list" id="peer-list-${country.replace(/\s+/g, '-')}">
-                        ${peersToShow.map(peer => renderPeerItem(peer, country)).join('')}
-                    </div>
-                    ${hasMore ? `
-                        <div class="pagination-controls" id="pagination-${country.replace(/\s+/g, '-')}">
-                            <p>Showing ${PEERS_PER_PAGE} of ${group.count} peers</p>
-                            <button onclick="loadMorePeers('${country}', event)">Load ${Math.min(PEERS_PER_PAGE, group.count - PEERS_PER_PAGE)} More Peers</button>
-                        </div>
-                    ` : ''}
-                </div>
-            `;
-            return div;
-        }
-
-        // ====================================================================
-        // LOAD MORE PEERS
-        // ====================================================================
-        function loadMorePeers(country, event) {
-            event.stopPropagation();
-
-            const group = currentASData.grouped_by_country[country];
-            countryPages[country]++;
-
-            const start = countryPages[country] * PEERS_PER_PAGE;
-            const end = Math.min(start + PEERS_PER_PAGE, group.peers.length);
-            const peersToShow = group.peers.slice(start, end);
-
-            const listId = `peer-list-${country.replace(/\s+/g, '-')}`;
-            const listEl = document.getElementById(listId);
-
-            peersToShow.forEach(peer => {
-                listEl.innerHTML += renderPeerItem(peer, country);
-            });
-
-            const paginationId = `pagination-${country.replace(/\s+/g, '-')}`;
-            const paginationEl = document.getElementById(paginationId);
-            const loaded = Math.min(end, group.peers.length);
-            const remaining = group.peers.length - loaded;
-
-            if (remaining > 0) {
-                paginationEl.innerHTML = `
-                    <p>Showing ${loaded} of ${group.count} peers</p>
-                    <button onclick="loadMorePeers('${country}', event)">Load ${Math.min(PEERS_PER_PAGE, remaining)} More Peers</button>
-                `;
-            } else {
-                paginationEl.innerHTML = `<p>✓ All ${group.count} peers loaded</p>`;
-            }
-
-            filterByASClass();
-        }
-
-        // ====================================================================
-        // RENDER PEER ITEM
-        // ====================================================================
-        function renderPeerItem(peer, country) {
-            const asClass = peer.peer_as_class || 'Unknown';
-            const asClassDisplay = getASClassBadge(asClass);
-
-            return `
-                <div class="peer-verification-item" data-peer-as="${peer.peer_as}" data-peer-as-class="${asClass}">
-                    <div class="peer-info">
-                        <div class="peer-as">AS${peer.peer_as} - ${peer.peer_name}</div>
-                        <div class="peer-org">${peer.peer_org}</div>
-                        ${asClassDisplay}
-                    </div>
-                    <div class="peer-actions">
-                        <div class="radio-group">
-                            <div class="radio-option radio-active">
-                                <input type="radio" name="peer-${peer.peer_as}" value="active" id="active-${peer.peer_as}" onchange="markPeer('${peer.peer_as}', 'active', '${country}')">
-                                <label for="active-${peer.peer_as}">✓ Active</label>
-                            </div>
-                            <div class="radio-option radio-obsolete">
-                                <input type="radio" name="peer-${peer.peer_as}" value="obsolete" id="obsolete-${peer.peer_as}" onchange="markPeer('${peer.peer_as}', 'obsolete', '${country}')">
-                                <label for="obsolete-${peer.peer_as}">✗ Obsolete</label>
-                            </div>
-                            <div class="radio-option radio-unknown">
-                                <input type="radio" name="peer-${peer.peer_as}" value="unknown" id="unknown-${peer.peer_as}" onchange="markPeer('${peer.peer_as}', 'unknown', '${country}')">
-                                <label for="unknown-${peer.peer_as}">? Unknown</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            `;
-        }
-
-        // ====================================================================
-        // GET AS CLASS BADGE
-        // ====================================================================
-        function getASClassBadge(asClass) {
-            const classMap = {
-                'Tier1': { icon: '🌐', className: 'as-class-tier1', label: 'Tier1' },
-                'Hypergiant': { icon: '⚡', className: 'as-class-hypergiant', label: 'Hypergiant' },
-                'Large networks': { icon: '🏢', className: 'as-class-large', label: 'Large' },
-                'Medium networks': { icon: '🏭', className: 'as-class-medium', label: 'Medium' },
-                'Small networks': { icon: '🏪', className: 'as-class-small', label: 'Small' },
-                'Unknown': { icon: '❓', className: 'as-class-unknown', label: 'Unknown' }
-            };
-
-            const info = classMap[asClass] || classMap['Unknown'];
-            return `<span class="peer-as-class ${info.className}">${info.icon} ${info.label}</span>`;
-        }
-
-        // ====================================================================
-        // TOGGLE ALL AS CLASSES
-        // ====================================================================
-        function toggleAllASClasses(checkbox) {
-            const isChecked = checkbox.checked;
-            const filters = document.querySelectorAll('.as-class-filter');
-
-            filters.forEach(filter => {
-                filter.checked = isChecked;
-                filter.closest('.filter-checkbox').classList.toggle('active', isChecked);
-            });
-
-            if (isChecked) {
-                selectedASClasses = new Set(['Tier1', 'Hypergiant', 'Large networks', 'Medium networks', 'Small networks', 'Unknown']);
-            } else {
-                selectedASClasses.clear();
-            }
-
-            filterByASClass();
-        }
-
-        // ====================================================================
-        // FILTER BY AS CLASS
-        // ====================================================================
-        function filterByASClass() {
-            const filters = document.querySelectorAll('.as-class-filter');
-            selectedASClasses.clear();
-
-            filters.forEach(filter => {
-                if (filter.checked) {
-                    selectedASClasses.add(filter.value);
-                    filter.closest('.filter-checkbox').classList.add('active');
-                } else {
-                    filter.closest('.filter-checkbox').classList.remove('active');
-                }
-            });
-
-            const allCheckbox = document.querySelector('input[value="all"]');
-            if (allCheckbox) {
-                allCheckbox.checked = selectedASClasses.size === 6;
-                allCheckbox.closest('.filter-checkbox').classList.toggle('active', selectedASClasses.size === 6);
-            }
-
-            const allPeerItems = document.querySelectorAll('.peer-verification-item');
-
-            allPeerItems.forEach(item => {
-                const peerClass = item.getAttribute('data-peer-as-class');
-                const isVisible = selectedASClasses.has(peerClass);
-
-                if (isVisible) {
-                    item.classList.remove('filtered-out');
-                } else {
-                    item.classList.add('filtered-out');
-                }
-            });
-
-            updateCountryGroupsVisibility();
-            updateFilterStats();
-        }
-
-        // ====================================================================
-        // UPDATE COUNTRY GROUPS VISIBILITY
-        // ====================================================================
-        function updateCountryGroupsVisibility() {
-            const countryGroups = document.querySelectorAll('.country-group');
-
-            countryGroups.forEach(group => {
-                const peerItems = group.querySelectorAll('.peer-verification-item');
-                const visiblePeers = Array.from(peerItems).filter(item =>
-                    !item.classList.contains('filtered-out')
+                // Setup contact button
+                const contactBtn = document.getElementById('contactBtn');
+                const emailSubject = encodeURIComponent(`IRR Link Validation Request - AS${asnInput}`);
+                const emailBody = encodeURIComponent(
+                    `Hello,\n\n` +
+                    `I would like to request access to validate IRR links for:\n\n` +
+                    `AS Number: ${asnInput}\n` +
+                    `AS Name: ${asInfoDetail.name || 'Unknown'}\n` +
+                    `Organization: ${asInfoDetail.org || 'Unknown'}\n` +
+                    `Country: ${countryName}\n` +
+                    `Total IRR Links: ${linkCount}\n\n` +
+                    `Please provide validation portal access.\n\n` +
+                    `Thank you.`
                 );
+                contactBtn.href = `mailto:usamaijaz404@gmail.com?subject=${emailSubject}&body=${emailBody}`;
 
-                if (visiblePeers.length === 0) {
-                    group.classList.add('filtered-out');
-                } else {
-                    group.classList.remove('filtered-out');
-                }
-            });
-        }
+                document.getElementById('resultBox').classList.add('show');
+                document.getElementById('loading').classList.remove('show');
 
-        // ====================================================================
-        // UPDATE FILTER STATS
-        // ====================================================================
-        function updateFilterStats() {
-            const statsDiv = document.getElementById('filterStats');
-
-            const classCounts = {};
-            let totalVisible = 0;
-            let totalPeers = 0;
-
-            for (const [country, group] of Object.entries(currentASData.grouped_by_country)) {
-                group.peers.forEach(peer => {
-                    const asClass = peer.peer_as_class || 'Unknown';
-                    classCounts[asClass] = (classCounts[asClass] || 0) + 1;
-                    totalPeers++;
-
-                    if (selectedASClasses.has(asClass)) {
-                        totalVisible++;
-                    }
-                });
-            }
-
-            let statsHTML = `<strong>Showing ${totalVisible} of ${totalPeers} peers</strong><br><br>`;
-            statsHTML += '<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; font-size: 13px;">';
-
-            const classOrder = ['Tier1', 'Hypergiant', 'Large networks', 'Medium networks', 'Small networks', 'Unknown'];
-            classOrder.forEach(cls => {
-                const count = classCounts[cls] || 0;
-                const isSelected = selectedASClasses.has(cls);
-                const style = isSelected ? 'font-weight: bold; color: #2196F3;' : 'color: #999;';
-                const displayName = cls === 'Unknown' ? 'Unclassified' : cls;
-                // statsHTML += `<div style="${style}">${cls}: ${count}</div>`;
-                statsHTML += `<div style="${style}">${displayName}: ${count}</div>`;
-            });
-
-            statsHTML += '</div>';
-            statsDiv.innerHTML = statsHTML;
-        }
-
-        // ====================================================================
-        // SEARCH PEERS
-        // ====================================================================
-        function searchPeers() {
-            clearTimeout(searchDebounceTimer);
-
-            const searchTerm = document.getElementById('peerSearchInput').value.trim();
-            const resultsDiv = document.getElementById('searchResults');
-
-            if (!searchTerm || searchTerm.length < 1) {
-                resultsDiv.classList.add('hidden');
-                clearHighlights();
-                return;
-            }
-
-            searchDebounceTimer = setTimeout(() => {
-                performSearch(searchTerm, resultsDiv);
-            }, 150);
-        }
-
-        function performSearch(searchTerm, resultsDiv) {
-            const cleanSearchTerm = searchTerm.replace(/^AS/i, '').trim().toLowerCase();
-
-            let results = [];
-
-            if (/^\d+$/.test(cleanSearchTerm)) {
-                results = searchIndex.search(cleanSearchTerm, { limit: 1000 });
-
-                const directMatches = [];
-                for (const [country, group] of Object.entries(currentASData.grouped_by_country)) {
-                    group.peers.forEach(peer => {
-                        const peerASClean = peer.peer_as.toString().replace(/^AS/i, '');
-                        if (peerASClean === cleanSearchTerm) {
-                            directMatches.push({
-                                item: {
-                                    peer_as: peer.peer_as,
-                                    peer_name: peer.peer_name,
-                                    peer_org: peer.peer_org,
-                                    peer_as_class: peer.peer_as_class || 'Unknown',
-                                    country: country
-                                },
-                                score: 0
-                            });
-                        }
-                    });
-                }
-
-                const allMatches = [...directMatches, ...results];
-                const seen = new Set();
-                results = allMatches.filter(r => {
-                    const key = r.item.peer_as + r.item.country;
-                    if (seen.has(key)) return false;
-                    seen.add(key);
-                    return true;
-                });
-            } else {
-                results = searchIndex.search(searchTerm, { limit: 1000 });
-            }
-
-            if (results.length === 0) {
-                resultsDiv.innerHTML = '<p style="color: #666;">No peers found matching "' + searchTerm + '"</p>';
-                resultsDiv.classList.remove('hidden');
-                clearHighlights();
-                return;
-            }
-
-            const groupedResults = {};
-            results.slice(0, MAX_SEARCH_RESULTS).forEach(result => {
-                const peer = result.item;
-                if (!groupedResults[peer.country]) {
-                    groupedResults[peer.country] = [];
-                }
-                groupedResults[peer.country].push(peer);
-            });
-
-            let html = `<strong>Found ${results.length} peer(s)</strong>`;
-            if (results.length > MAX_SEARCH_RESULTS) {
-                html += ` <span style="color: #dc3545;">(showing first ${MAX_SEARCH_RESULTS})</span>`;
-            }
-            html += '<br><br>';
-
-            for (const [country, peers] of Object.entries(groupedResults)) {
-                html += `<div class="search-result-item" onclick="jumpToPeer('${country}', '${peers[0].peer_as}')">
-                    <strong>${getCountryFlag(country)} ${country}</strong>: ${peers.length} match(es)<br>
-                    <small style="color: #666;">${peers.map(p => 'AS' + p.peer_as + ' - ' + p.peer_name).join(', ')}</small>
-                </div>`;
-            }
-
-            resultsDiv.innerHTML = html;
-            resultsDiv.classList.remove('hidden');
-        }
-
-        // ====================================================================
-        // JUMP TO PEER
-        // ====================================================================
-        function jumpToPeer(country, peerAS) {
-            const detailsId = `details-${country.replace(/\s+/g, '-')}`;
-            const details = document.getElementById(detailsId);
-            details.classList.remove('hidden');
-
-            const group = currentASData.grouped_by_country[country];
-            const peerASClean = peerAS.toString().replace(/^AS/i, '');
-            const peerIndex = group.peers.findIndex(p => p.peer_as.toString().replace(/^AS/i, '') === peerASClean);
-            const currentPage = countryPages[country] || 0;
-            const peersLoaded = (currentPage + 1) * PEERS_PER_PAGE;
-
-            while (peerIndex >= peersLoaded && peersLoaded < group.peers.length) {
-                loadMorePeers(country, { stopPropagation: () => {} });
-            }
-
-            const countryDiv = document.getElementById(`country-${country.replace(/\s+/g, '-')}`);
-            countryDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-            setTimeout(() => {
-                const peerItems = countryDiv.querySelectorAll('.peer-verification-item');
-                peerItems.forEach(item => {
-                    const itemAS = item.getAttribute('data-peer-as').toString().replace(/^AS/i, '');
-                    if (itemAS === peerASClean) {
-                        item.classList.add('search-match');
-                        item.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    }
-                });
-            }, 500);
-        }
-
-        function clearHighlights() {
-            document.querySelectorAll('.search-match').forEach(el => {
-                el.classList.remove('search-match');
-            });
-        }
-
-        function clearPeerSearch() {
-            document.getElementById('peerSearchInput').value = '';
-            document.getElementById('searchResults').classList.add('hidden');
-            clearHighlights();
-        }
-
-        function getCountryFlag(country) {
-            const flags = {
-                'Singapore': '🇸🇬', 'United States': '🇺🇸', 'Japan': '🇯🇵',
-                'Indonesia': '🇮🇩', 'Australia': '🇦🇺', 'Germany': '🇩🇪',
-                'United Kingdom': '🇬🇧', 'Netherlands': '🇳🇱', 'France': '🇫🇷',
-                'China': '🇨🇳', 'India': '🇮🇳', 'Malaysia': '🇲🇾',
-                'Thailand': '🇹🇭', 'South Korea': '🇰🇷', 'Canada': '🇨🇦',
-            };
-            return flags[country] || '🌏';
-        }
-
-        function toggleCountryDetails(country) {
-            const detailsId = `details-${country.replace(/\s+/g, '-')}`;
-            const details = document.getElementById(detailsId);
-            details.classList.toggle('hidden');
-        }
-
-        function markPeer(peerAS, status, country) {
-            peerVerifications[peerAS] = status;
-            updateVerifiedCount();
-            updateCountryProgress(country);
-            showVerificationSummary();
-        }
-
-        function updateCountryProgress(country) {
-            const progressId = `progress-${country.replace(/\s+/g, '-')}`;
-            const progressEl = document.getElementById(progressId);
-            if (progressEl) {
-                const countryData = currentASData.grouped_by_country[country];
-                const verified = countryData.peers.filter(p => peerVerifications.hasOwnProperty(p.peer_as)).length;
-                progressEl.textContent = verified;
-            }
-        }
-
-        function updateVerifiedCount() {
-            const verified = Object.keys(peerVerifications).length;
-            document.getElementById('verifiedCount').textContent = verified;
-        }
-
-        function showVerificationSummary() {
-            const summary = document.getElementById('verificationSummary');
-            const content = document.getElementById('summaryContent');
-
-            if (Object.keys(peerVerifications).length === 0) {
-                summary.classList.add('hidden');
-                return;
-            }
-
-            const activeCount = Object.values(peerVerifications).filter(v => v === 'active').length;
-            const obsoleteCount = Object.values(peerVerifications).filter(v => v === 'obsolete').length;
-            const unknownCount = Object.values(peerVerifications).filter(v => v === 'unknown').length;
-
-            let html = '<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">';
-            html += `<div><strong>Active:</strong> ${activeCount} peers</div>`;
-            html += `<div><strong>Obsolete:</strong> ${obsoleteCount} peers</div>`;
-            html += `<div><strong>Unknown:</strong> ${unknownCount} peers</div>`;
-            html += '</div>';
-
-            content.innerHTML = html;
-            summary.classList.remove('hidden');
-        }
-
-        async function submitVerification() {
-            if (Object.keys(peerVerifications).length === 0) {
-                alert('Please verify at least one peer before submitting.');
-                return;
-            }
-
-            const currentTime = new Date().toISOString();
-
-            const data = {
-                asn: currentASN,
-                as_info: currentASData.as_info,
-                peer_verifications: peerVerifications,
-                timestamp: currentTime,
-                total_peers: currentASData.links.length,
-                verified_peers: Object.keys(peerVerifications).length,
-                summary: {
-                    active: Object.values(peerVerifications).filter(v => v === 'active').length,
-                    obsolete: Object.values(peerVerifications).filter(v => v === 'obsolete').length,
-                    unknown: Object.values(peerVerifications).filter(v => v === 'unknown').length
-                }
-            };
-
-            downloadJSONBackup(data);
-            await submitToGoogleForm(data);
-            showSuccessOverlay(data);
-        }
-
-        async function submitToGoogleForm(data) {
-            const formData = new FormData();
-            formData.append(FORM_FIELDS.asn, data.asn);
-            formData.append(FORM_FIELDS.email, '');
-            formData.append(FORM_FIELDS.data, JSON.stringify(data));
-            formData.append(FORM_FIELDS.timestamp, data.timestamp);
-
-            try {
-                const iframe = document.createElement('iframe');
-                iframe.name = 'hidden_iframe_' + Date.now();
-                iframe.style.display = 'none';
-                document.body.appendChild(iframe);
-
-                const form = document.createElement('form');
-                form.method = 'POST';
-                form.action = GOOGLE_FORM_URL;
-                form.target = iframe.name;
-
-                for (const [key, value] of formData.entries()) {
-                    const input = document.createElement('input');
-                    input.type = 'hidden';
-                    input.name = key;
-                    input.value = value;
-                    form.appendChild(input);
-                }
-
-                document.body.appendChild(form);
-                form.submit();
-
-                setTimeout(() => {
-                    document.body.removeChild(form);
-                    document.body.removeChild(iframe);
-                }, 2000);
             } catch (error) {
-                console.error('Google Form submission error:', error);
+                console.error('Search error:', error);
+                document.getElementById('errorBox').classList.add('show');
+                document.getElementById('loading').classList.remove('show');
             }
-        }
-
-        function downloadJSONBackup(data) {
-            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `AS${data.asn}_verification_${Date.now()}.json`;
-            a.click();
-            URL.revokeObjectURL(url);
-        }
-
-        function showSuccessOverlay(data) {
-            const overlay = document.createElement('div');
-            overlay.className = 'success-overlay';
-            overlay.innerHTML = `
-                <div class="success-modal">
-                    <div class="success-icon">✓</div>
-                    <div class="success-title">Verification Submitted!</div>
-                    <div class="success-message">
-                        Your verification for AS${data.asn} has been successfully submitted and saved.
-                    </div>
-                    <div class="success-stats">
-                        <div class="success-stat-row">
-                            <span class="success-stat-label">AS Number:</span>
-                            <span class="success-stat-value">AS${data.asn}</span>
-                        </div>
-                        <div class="success-stat-row">
-                            <span class="success-stat-label">Peers Verified:</span>
-                            <span class="success-stat-value">${data.verified_peers} of ${data.total_peers}</span>
-                        </div>
-                        <div class="success-stat-row">
-                            <span class="success-stat-label">Active:</span>
-                            <span class="success-stat-value" style="color: #28a745;">${data.summary.active}</span>
-                        </div>
-                        <div class="success-stat-row">
-                            <span class="success-stat-label">Obsolete:</span>
-                            <span class="success-stat-value" style="color: #dc3545;">${data.summary.obsolete}</span>
-                        </div>
-                        <div class="success-stat-row">
-                            <span class="success-stat-label">Unknown:</span>
-                            <span class="success-stat-value" style="color: #6c757d;">${data.summary.unknown}</span>
-                        </div>
-                    </div>
-                    <div class="success-buttons">
-                        <button class="success-btn-primary" onclick="location.reload()">
-                            Done
-                        </button>
-                    </div>
-                </div>
-            `;
-            document.body.appendChild(overlay);
         }
     </script>
 </body>
